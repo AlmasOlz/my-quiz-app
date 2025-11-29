@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="quiz-screen" class="quiz-card">
+        <div class="quiz-header">
+            <a href="index.html" style="text-decoration: none; color: #555; margin-right: auto;">
+                <i class="fas fa-arrow-left"></i> Артқа
+            </a>
+            <h2 id="quiz-title" style="margin: 0; font-size: 18px;">Тақырып</h2>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <h3 id="question-text" style="font-size: 18px; margin-bottom: 20px;"></h3>
+
+<img id="question-img" src="" alt="Сурет" style="display: none; max-width: 100%; max-height: 250px; margin: 0 auto 20px; border-radius: 8px;">
+<div id="options-list"></div>
+        <div id="question-count" style="text-align: center; color: #666; margin-bottom: 10px;"></div>
+        <h3 id="question-text" style="font-size: 18px; margin-bottom: 20px;"></h3>
+        
+        <div id="options-list"></div>
+
+        <button id="next-btn" class="next-btn" onclick="nextQuestion()">Келесі сұрақ</button>
+    </div>
+
+    <div id="result-screen" class="quiz-card" style="display: none; text-align: center;">
+        <i class="fas fa-trophy" style="font-size: 50px; color: #ffc107; margin-bottom: 20px;"></i>
+        <h2>Тест аяқталды!</h2>
+        <p style="font-size: 18px; color: #555;">Сіздің нәтижеңіз:</p>
+        
+        <div style="font-size: 40px; font-weight: bold; color: #2b6cb0; margin: 10px 0;">
+            <span id="score-text">0</span> / <span id="total-text">0</span>
+        </div>
+
+        <p id="feedback-text" style="margin-bottom: 30px;"></p>
+
+        <button onclick="location.reload()" class="next-btn" style="display: inline-block; background: #6c757d; margin-right: 10px;">Қайта тапсыру</button>
+        <a href="index.html" class="next-btn" style="display: inline-block; text-decoration: none;">Мәзірге шығу</a>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Меню карталары (index.html үшін) */
+.menu-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-5px); }
+.card h3 { color: #1a237e; }
+
+.start-btn {
+    display: block;
+    background: #2b6cb0;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.start-btn:hover { background: #1a4971; }
+
+/* Тест интерфейсі (quiz.html үшін) */
+.quiz-card {
+    background: white;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.progress-container {
+    width: 100%;
+    background: #e0e0e0;
+    height: 8px;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+.progress-bar { height: 100%; background: #2b6cb0; width: 0%; transition: width 0.3s; }
+
+.option-item {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.option-item:hover { background: #f9f9f9; }
+
+.circle {
+    height: 18px; width: 18px;
+    border: 2px solid #ccc; border-radius: 50%;
+    margin-right: 15px; display: inline-block;
+}
+
+.correct { background: #d4edda; border-color: #28a745; color: #155724; }
+.correct .circle { background: #28a745; border-color: #28a745; }
+
+.wrong { background: #f8d7da; border-color: #dc3545; color: #721c24; }
+.wrong .circle { background: #dc3545; border-color: #dc3545; }
+
+.disabled { pointer-events: none; }
+
+.next-btn {
+    background: #2b6cb0; color: white; border: none;
+    padding: 12px 25px; border-radius: 8px; cursor: pointer;
+    margin-top: 20px; display: none;
+}
