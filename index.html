@@ -2,20 +2,42 @@
 <html lang="kk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тест таңдау</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Қандай тест тапсырасыз?</h1>
-    
-    <div class="menu-container">
+    <div class="main-container">
+        <h1 class="main-title">Тест таңдаңыз <i class="fas fa-tasks"></i></h1>
         
-        <div class="card">
-    <h3>Ықтималдық теориясы (РК1)</h3>
-    <p>60+ сұрақ</p>
-    <a href="quiz.html?topic=math" class="start-btn">Бастау</a>
-</div>
+        <div class="menu-container">
+            
+            <div class="card">
+                <div class="card-icon math-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h3>Ықтималдық теориясы</h3>
+                <p class="subtitle">РК1 • 60+ сұрақ</p>
+                <a href="quiz.html?topic=math" class="start-btn">
+                    Бастау <i class="fas fa-play"></i>
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon java-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h3>Java Programming</h3>
+                <p class="subtitle">OOP, Core • 80+ сұрақ</p>
+                <a href="quiz.html?topic=java" class="start-btn">
+                    Бастау <i class="fas fa-play"></i>
+                </a>
+            </div>
+
+        </div>
     </div>
 
 </body>

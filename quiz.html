@@ -2,48 +2,64 @@
 <html lang="kk">
 <head>
     <meta charset="UTF-8">
-    <title>Тест</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="quiz-screen" class="quiz-card">
         <div class="quiz-header">
-            <a href="index.html" style="text-decoration: none; color: #555; margin-right: auto;">
+            <a href="index.html" class="back-link">
                 <i class="fas fa-arrow-left"></i> Артқа
             </a>
-            <h2 id="quiz-title" style="margin: 0; font-size: 18px;">Тақырып</h2>
+            <div class="timer-box">
+                <span id="quiz-title">Тақырып</span>
+            </div>
         </div>
         
         <div class="progress-container">
             <div class="progress-bar" id="progress-bar"></div>
         </div>
-        <h3 id="question-text" style="font-size: 18px; margin-bottom: 20px;"></h3>
-
-<img id="question-img" src="" alt="Сурет" style="display: none; max-width: 100%; max-height: 250px; margin: 0 auto 20px; border-radius: 8px;">
-<div id="options-list"></div>
-        <div id="question-count" style="text-align: center; color: #666; margin-bottom: 10px;"></div>
-        <h3 id="question-text" style="font-size: 18px; margin-bottom: 20px;"></h3>
         
-        <div id="options-list"></div>
+        <div id="question-count" class="q-count">1 / 10</div>
 
-        <button id="next-btn" class="next-btn" onclick="nextQuestion()">Келесі сұрақ</button>
+        <h3 id="question-text">Сұрақ жүктелуде...</h3>
+
+        <div class="img-container">
+            <img id="question-img" src="" alt="Сурет" style="display: none;">
+        </div>
+        
+        <div id="options-list" class="options-grid"></div>
+
+        <button id="next-btn" class="next-btn" onclick="nextQuestion()">
+            Келесі сұрақ <i class="fas fa-arrow-right"></i>
+        </button>
     </div>
 
-    <div id="result-screen" class="quiz-card" style="display: none; text-align: center;">
-        <i class="fas fa-trophy" style="font-size: 50px; color: #ffc107; margin-bottom: 20px;"></i>
+    <div id="result-screen" class="quiz-card result-card" style="display: none;">
+        <div class="trophy-icon">
+            <i class="fas fa-trophy"></i>
+        </div>
         <h2>Тест аяқталды!</h2>
-        <p style="font-size: 18px; color: #555;">Сіздің нәтижеңіз:</p>
+        <p class="result-label">Сіздің нәтижеңіз:</p>
         
-        <div style="font-size: 40px; font-weight: bold; color: #2b6cb0; margin: 10px 0;">
+        <div class="score-box">
             <span id="score-text">0</span> / <span id="total-text">0</span>
         </div>
 
-        <p id="feedback-text" style="margin-bottom: 30px;"></p>
+        <p id="feedback-text" class="feedback"></p>
 
-        <button onclick="location.reload()" class="next-btn" style="display: inline-block; background: #6c757d; margin-right: 10px;">Қайта тапсыру</button>
-        <a href="index.html" class="next-btn" style="display: inline-block; text-decoration: none;">Мәзірге шығу</a>
+        <div class="action-buttons">
+            <button onclick="location.reload()" class="btn-restart">
+                <i class="fas fa-redo"></i> Қайта тапсыру
+            </button>
+            <a href="index.html" class="btn-home">
+                <i class="fas fa-home"></i> Мәзір
+            </a>
+        </div>
     </div>
 
     <script src="questions.js"></script>
