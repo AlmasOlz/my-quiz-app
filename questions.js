@@ -1232,4 +1232,1109 @@ const allTests = {
     ],
    
 
+
+
+    sysadmin: [
+        {
+            question: "Келесі операндылар r8, m8, r16, m16 қандай командаларда қолданылады?",
+            options: ["Барлығы дұрыс", "Логикалық көбейту", "0-ді 1-ге және 1-ді 0-ге алмастыру", "Логикалық бөлу", "Жоққа шығару"],
+            correct: 0
+        },
+        {
+            question: "TEST командасы қандай қызмет атқарады?",
+            options: ["Әдетте тексеру үшін қолданылады", "AND командасының қызметі", "OR командасының қызметі", "Регистрлерді босатады", "Жылжыту қызметі"],
+            correct: 0
+        },
+        {
+            question: "Процедураны шақыру командасы?",
+            options: ["CALL", "RET", "AND", "Retry", "PUSH"],
+            correct: 0
+        },
+        {
+            question: "Процедурадан қайту командасы?",
+            options: ["RET", "CALL", "AND", "Retry", "PUSH"],
+            correct: 0
+        },
+        {
+            question: "Негізгі немесе аралық мәліметтерді сақтауға арналған мөлшер?",
+            options: ["Регистр", "Бит", "Стек", "Буфер жады", "Разряд"],
+            correct: 0
+        },
+        {
+            question: "Стек — бұл не?",
+            options: ["Қойма", "Жад көлемі", "Регистр түрі", "Орындалатын команда", "Ештеңе емес"],
+            correct: 0
+        },
+        {
+            question: "Төмендегілердің қайсысы регистр?",
+            options: ["AX", "START", "MOV", "RET", "SEGMENT"],
+            correct: 0
+        },
+        {
+            question: "ADD SP, 2N қандай мысал?",
+            options: ["N сөзден стекті тазалау", "SP регистрін екі есе арттыру", "2N өрнегін есептеу", "Жаңа мән қосу", "Мысал дұрыс емес"],
+            correct: 0
+        },
+        {
+            question: "Алғашқы шағын процессорларды кім шығарды (1971)?",
+            options: ["Intel", "AMD", "IBM", "DARPA", "Пентагон"],
+            correct: 0
+        },
+        {
+            question: "IBM алғашқы PC қандай процессормен шықты?",
+            options: ["8088", "8086", "8080", "6060", "8060"],
+            correct: 0
+        },
+        {
+            question: "AH регистріне белгілерді жүктейтін команда?",
+            options: ["LAHF", "IN", "LEA", "OUT", "SAHF"],
+            correct: 0
+        },
+        {
+            question: "Стектен белгілерді шығаратын команда?",
+            options: ["POPF", "LAHF", "SAHF", "PUSHF", "LEA"],
+            correct: 0
+        },
+        {
+            question: "Циклды басқару командалары?",
+            options: ["LOOP, LOOPE (LOOPZ)", "IN, OUT", "LAHF, SAHF", "CALL, RET", "PUSHF, POPF"],
+            correct: 0
+        },
+        {
+            question: "Басқаруды шартсыз ауыстыру форматы?",
+            options: ["JMP [модификатор] ауысу_адресі", "JX ауысу_таңбасы", "PUSH <таратқыш>", "MOV <қабылдағыш>, <таратқыш>", "POP <қабылдағыш>"],
+            correct: 0
+        },
+        {
+            question: "“Тең” шарты үшін модификатор?",
+            options: ["E", "N", "G", "L", "A"],
+            correct: 0
+        },
+        {
+            question: "“Үлкен” шарт модификаторы?",
+            options: ["G", "E", "N", "L", "A"],
+            correct: 0
+        },
+        {
+            question: "Шартты ауысу форматы?",
+            options: ["JMP [модификатор] ауысу_адресі", "PUSH", "MOV", "POP", "ADD"],
+            correct: 0
+        },
+        {
+            question: "ADC командасының принципі?",
+            options: ["Қабылдағыш = қабылдағыш + таратқыш + CF", "Таратқыш = қабылдағыш + қабылдағыш", "… – CF", "Қабылдағыш = қабылдағыш – таратқыш", "Қабылдағыш = қабылдағыш + таратқыш"],
+            correct: 0
+        },
+        {
+            question: "Таңбасыз көбейту командасы?",
+            options: ["MUL", "CMP", "SUB", "SBB", "IMUL"],
+            correct: 0
+        },
+        {
+            question: "Қосу нәтижесін ондыққа келтіру командасы?",
+            options: ["DAA", "DAS", "CBW", "CWD", "CWDE"],
+            correct: 0
+        },
+        {
+            question: "Байт → сөз түрлендіру командасы?",
+            options: ["CBW", "CWDE", "CWD", "CWDE", "CDQ"],
+            correct: 0
+        },
+        {
+            question: "AX → EAX кеңейту командасы?",
+            options: ["CWDE", "CBW", "CWD", "CWDE", "CDQ"],
+            correct: 0
+        },
+        {
+            question: "Есептеу машинасында қолданылатын санау жүйесі?",
+            options: ["Екілік", "Оналтылық", "Ондық", "Сегіздік", "Алтылық-ондық"],
+            correct: 0
+        },
+        {
+            question: "5 санының екілік түрі?",
+            options: ["0101", "1011", "1010", "1100", "1101"],
+            correct: 0
+        },
+        {
+            question: "1110 санының оналтылық түрі?",
+            options: ["0Eh", "14", "6", "A", "Q"],
+            correct: 0
+        },
+        {
+            question: "Байтты, сөзді, екілік сөзді анықтау директивалары қайсы?",
+            options: ["DB, DW, DD", "DQ, DW, DB", "DW, DT, DQ", "OF, DF, IF", "DF, TF, IF"],
+            correct: 0
+        },
+        {
+            question: "Қосу нәтижесін қалыпқа келтіру командасы қайда көрсетілген?",
+            options: ["AAM, AAD", "SUB, SBB", "MUL, DIV", "AAD, ADC", "AAA, DAA"],
+            correct: 0
+        },
+        {
+            question: "Логикалық командалар қайсы?",
+            options: ["AND, OR, XOR, NOT, TEST", "AAS, AAD, AAM, DAS, DAA", "SUB, SBB, CMP, DEC", "ADD, ADC, INC", "MUL, IMUL, DIV, IDIV"],
+            correct: 0
+        },
+        {
+            question: "Процедураны шақыру және қайту командасы қайда көрсетілген?",
+            options: ["INT, IRET", "JMP, JNP", "JP, JO", "CALL, RET", "LOOP, LOOPE"],
+            correct: 0
+        },
+        {
+            question: "Тасымал, бағыт, үзу белгілерін тазалау командалары?",
+            options: ["STC, STD, STI", "CBW, CWD, CDD, CWDE", "CLC, CLD, CLI", "SUB, SBB, AAS, DAS", "AAS, AAD, AAM, DAS, DAA"],
+            correct: 0
+        },
+        {
+            question: "Үлкен немесе тең / кіші емес / тасымал жоқ ауысу командалары?",
+            options: ["JB / JNAE / JC", "JAE / JNB / JNC", "JBE / JNA / JB", "JGE / JNL / JC", "JG / JNLE / JE"],
+            correct: 0
+        },
+        {
+            question: "Тасымал арқылы циклдық оңға жылжыту командасы?",
+            options: ["RCR", "SHR", "SER", "RCL", "REP"],
+            correct: 0
+        },
+        {
+            question: "Кестеден беру (перекодировка) командасы?",
+            options: ["XLAT", "WAIT", "TEST", "XOR", "XCHG"],
+            correct: 0
+        },
+        {
+            question: "Операцияның болмауын көрсететін команда?",
+            options: ["NOP", "XOR", "NEG", "MUV", "AND"],
+            correct: 0
+        },{
+            question: "Қайталау блогының директивасы?",
+            options: ["REPT", "MACRO", "ENDIF", "LOCAL", "PURG"],
+            correct: 0
+        },
+        {
+            question: "XOR командасы қандай операция орындайды?",
+            options: ["модуль 2 бойынша қосу", "азайту", "терістеу", "көбейту", "бөлу"],
+            correct: 0
+        },
+        {
+            question: "Стандартты құрылғы дескрипторлары қайда орналасқан?",
+            options: ["0, 1, 2, 3, 4", "10, 11, 12, 13, 14", "A, B, C, D, E", "a, b, c, d, e", "\"0, 1, 2, 3, 4\""],
+            correct: 0
+        },
+        {
+            question: "int n командасында n нені көрсетеді?",
+            options: ["үзу нөмірі", "байттар саны", "не болса сол", "команда нөмірі", "функция нөмірі"],
+            correct: 0
+        },
+        {
+            question: "INT 21h функция нөмірі қай регистрге жазылады?",
+            options: ["AH", "BH", "CL", "DX", "ESI"],
+            correct: 0
+        },
+        {
+            question: "INT 21h, 9 функциясында жол қандай символмен аяқталуы керек?",
+            options: ["$", "B", "H", "%", ";"],
+            correct: 0
+        },
+        {
+            question: "INT 16h 0 функциясы AX-ке нені қайтарады?",
+            options: ["скан-код және ASCII-код", "дескриптор", "байт саны", "жол ұзындығы", "$"],
+            correct: 0
+        },
+        {
+            question: "Тасымал болғанда және нөл болғанда орындалатын көшу командалары?",
+            options: ["JC және JZ", "JE және JNZ", "JNE және JC", "JNZ және JMP", "JE және JNE"],
+            correct: 0
+        },
+        {
+            question: "Мән нөлден үлкен және мән нөл болғанда орындалатын командалар?",
+            options: ["JA және JZ", "JE және JNZ", "JNE және JA", "JNZ және JMP", "JE және JNE"],
+            correct: 0
+        },
+        {
+            question: "Шартсыз көшу командасы?",
+            options: ["JMP", "JNZ", "JZ", "JE", "JNE"],
+            correct: 0
+        },
+        {
+            question: "i8086 адрес шинасының разрядтылығы қандай?",
+            options: ["20", "32", "16", "64", "8"],
+            correct: 0
+        },
+        {
+            question: "Жедел жадыдағы 1 параграфтың өлшемі?",
+            options: ["16 байт", "32 бит", "64 КБ", "1 МБ", "2 КБ"],
+            correct: 0
+        },
+        {
+            question: "16-разрядты микропроцессорда бір сегменттің өлшемі?",
+            options: ["64 КБ", "1 МБ", "32 КБ", "1 бит", "16 байт"],
+            correct: 0
+        },
+        {
+            question: "COM-файл құру үшін TASM компиляторына қандай кілт беру керек?",
+            options: ["/t", "/x", "/z", "/zi", "/v"],
+            correct: 0
+        },
+        {
+            question: "AL регистрінің кіші тетрадасын нөлге келтіру командасы?",
+            options: ["AND AL, 0F0h", "AND AL, 0Fh", "OR AL, 0F0h", "OR AL, 0Fh", "NOT AL"],
+            correct: 0
+        },
+        {
+            question: "100100101101001001b оналтылыққа айналуы?",
+            options: ["24B49h", "23C42h", "48593h", "253E3h", "09A38h"],
+            correct: 0
+        },
+        {
+            question: "Қандай директива программа сегментін сегменттік регистрмен байланыстырады?",
+            options: ["ASSUME", "USE16", "SEGMENT", "COMMON", "DW"],
+            correct: 0
+        },
+        {
+            question: "Жалаушалар регистріндегі жұптық белгі (PF) қандай болады, егер нәтиже 04DFh болса?",
+            options: ["0", "1", "2", "1.5", "7"],
+            correct: 0
+        },
+        {
+            question: "Қадам бойынша орындауға жауап беретін жалауша?",
+            options: ["TF", "AF", "ZF", "OF", "DF"],
+            correct: 0
+        },
+        {
+            question: "Аппараттық үзуге рұқсат беретін жалауша?",
+            options: ["IF", "TF", "AF", "ZF", "DF"],
+            correct: 0
+        },
+        {
+            question: "Нөлдік нәтиже алынғанда қай жалауша орнатылады?",
+            options: ["ZF", "CF", "PF", "AF", "TF"],
+            correct: 0
+        },
+        {
+            question: "Операнд мәнін 1-ге арттыратын команда?",
+            options: ["INC", "DEC", "PUSH", "XOR", "AND"],
+            correct: 0
+        },
+        {
+            question: "Операнд мәнін 1-ге кемітетін команда?",
+            options: ["DEC", "INT", "INC", "PUSH", "XOR"],
+            correct: 0
+        },
+        {
+            question: "MOV BX, OFFSET A адрестеу түрі?",
+            options: ["Тікелей адрестеу", "Төте", "Регистрлік", "Жанама", "Масштабталған"],
+            correct: 0
+        },
+        {
+            question: "MOV AX, [BX+2][SI] адрестеу түрі?",
+            options: ["Индекстелген-базалық адрестеу", "Төте", "Регистрлік", "Тікелей", "Масштабталған"],
+            correct: 0
+        },
+        {
+            question: "Сегменттік регистрлерді көрсетіңіз.",
+            options: ["CS, SS, DS, ES, GS, FS.", "DR0, DR1, DR2, DR3, DR6, DR7", "CR0, CR2, CR3, CR4, CR8", "EAX, EBX, ECX, EDX, ESI, EDI, EBP, ESP", "TF, ZF, SF, CF, OF, IF, DF, PF, AF"],
+            correct: 0
+        },
+        {
+            question: "Жалаушалар (flags) регистрлерін көрсетіңіз.",
+            options: ["TF, ZF, PF, AC, OF.", "DR0, DR1, DR2, DR3, DR6, DR7", "CR0, CR2, CR3, CR4, CR8", "EAX, EBX, ECX, EDX, ESI, EDI, EBP, ESP", "CS, SS, DS, ES, FS, GS"],
+            correct: 0
+        },
+        {
+            question: "Жалпы міндетті (general purpose) регистрлер?",
+            options: ["EAX, EBX, ECX, EDX, EBP, ESI, EDI, ESP.", "DR0, DR1, DR2, DR3, DR6, DR7", "CR0, CR2, CR3, CR4, CR8", "TF, ZF, PF, AC, OF, CF, SF, IF, DF, AF", "CS, SS, DS, ES, FS, GS"],
+            correct: 0
+        },
+        {
+            question: "HANDLE деген не?",
+            options: ["Дескриптор", "Адрес", "Массив", "Үзу", "Регистер"],
+            correct: 0
+        },
+        {
+            question: "Стандартты енгізу деген не?",
+            options: ["STD_INPUT_HANDLE", "STD_OUTPUT_HANDLE", "FILE_HND", "BIOS_HANDLE", "PORT_IO"],
+            correct: 0
+        },
+        {
+            question: "Консоль буфері деген не?",
+            options: ["Экран символдарын сақтайтын аймақ", "BIOS үзу буфері", "Файл буфері", "Стек", "GDI буфер"],
+            correct: 0
+        },
+        {
+            question: "Консоль түсін өзгерту функциясы?",
+            options: ["SetConsoleTextAttribute", "ChangeColor", "SetText", "ConsoleColor", "WinColor"],
+            correct: 0
+        },
+        {
+            question: "Жадыны қорғаудың мақсаты қандай?",
+            options: ["Барлығы дұрыс", "Бір процестің екінші процеске кедергі келтіруін болдырмау", "Қатесіз жұмыс істеуді қамтамасыз ету", "Виртуалды адрестеудің негізгі бөлігі", "Жүйелік қауіпсіздікті арттыру"],
+            correct: 0
+        },
+        {
+            question: "Бағдарламалау тіліндегі трансляция процесі не береді?",
+            options: ["Барлығы дұрыс", "Бастапқы кодты түрлендіреді", "Машина кодын шығарады", "Орындауға дайын бинарлық код жасайды", "Қателерді анықтауға көмектеседі"],
+            correct: 0
+        },
+        {
+            question: "Интерпретатордың рөлі қандай?",
+            options: ["Барлығы дұрыс", "Бағдарламаны жол-жолмен орындайды", "Бірден орындау мүмкіндігін береді", "Тестілеуге ыңғайлы", "Компиляциясыз жұмыс істей береді"],
+            correct: 0
+        },
+        {
+            question: "Компилятордың негізгі қызметі?",
+            options: ["Барлығы дұрыс", "Кодты толық машиналық форматқа аударады", "Бинарлық файл жасайды", "Орындау жылдамдығын арттырады", "Қателерді алдын ала табады"],
+            correct: 0
+        },
+        {
+            question: "Бағдарламалау тілі қандай міндет атқарады?",
+            options: ["Барлығы дұрыс", "Алгоритмдерді сипаттауға мүмкіндік береді", "Машинаға түсінікті нұсқауға айналады", "Жасанды тілдер тобына жатады", "Архитектурадан тәуелсіздік береді"],
+            correct: 0
+        },
+        {
+            question: "Процеске арналған беттер кестесі не істейді?",
+            options: ["Барлығы дұрыс", "Виртуалды адрестерді физикалық беттерге сәйкестендіреді", "Жадыны қорғауға қатысады", "Процестер арасындағы оқшаулауды қамтамасыз етеді", "Адрестік кеңістікті ұйымдастырады"],
+            correct: 0
+        },
+        {
+            question: "SWAPFS не үшін қажет?",
+            options: ["Барлығы дұрыс", "Swap аймағын құруға арналған", "Виртуалды жадыны кеңейтеді", "Жады жетпегенде дискті қолданады", "Жүйелік жадыны балансқа келтіреді"],
+            correct: 0
+        },
+        {
+            question: "Экрандық видеобуфер адресiн анықтау үшiн:",
+            options: ["VIDEO-RAM SEGMENT AT 0B800h", "VIDEO-RAM PRIVATE AT 0B800h", "VIDEO-RAM MEMORY AT 0B800h", "VIDEO-RAM STACK AT 0B800h", "VIDEO-RAM MEMPAGE AT 0B800h"],
+            correct: 0
+        },
+        {
+            question: "i80386 және одан жоғарғы микропроцессорлар сегменттерi қанша разрядтық болады?",
+            options: ["16 немесе 32", "8 немесе 16", "8 немесе 32", "16 немесе 64", "32 немесе 64"],
+            correct: 0
+        },
+        {
+            question: "Сегменттi анықтаудың қысқышы директиваларында код сегментiнiң басы:",
+            options: [".CODE [аты]", ".DATA", ".CONST", ".FARDATA [аты]", ".STACK [өлшемi]"],
+            correct: 0
+        },
+        {
+            question: "Процедураны сипаттаған кезде басы қандай нұсқаумен беріледі?",
+            options: ["PROC", "RET", "ENDP", "FAR", "NEAR"],
+            correct: 0
+        },
+        {
+            question: "Аудармалау кезінде сыртқы файл мәтінін қоса енгізетін директива:",
+            options: ["INCLUDE", "EXTRN", "PUBLIC", "TITLE", "SUBTTL"],
+            correct: 0
+        },
+        {
+            question: "Листинг бетiнiң өлшемiн беретін директива:",
+            options: ["PAGE", "EXTRN", "INCLUDE", "TITLE", "SUBTTL"],
+            correct: 0
+        },
+        {
+            question: "INT 21h — символды бейнесімен шығару функциясы:",
+            options: ["06h", "01h", "07h", "08h", "0Ah"],
+            correct: 0
+        },
+        {
+            question: "INT 21h — тікелей енгізу–шығару:",
+            options: ["06h", "01h", "07h", "08h", "0Ah"],
+            correct: 0
+        },
+        {
+            question: "INT 21h — символды бейнесіз енгізу (Ctrl/C тексерілмейді):",
+            options: ["+07h", "01h", "06h", "08h", "0Ah"],
+            correct: 0
+        },
+        {
+            question: "INT 21h — символды бейнесіз енгізу (Ctrl/C тексеріледі):",
+            options: ["08h", "01h", "06h", "07h", "0Ah"],
+            correct: 0
+        },
+        {
+            question: "INT 21h — буфер арқылы бейнесі бар жолды енгізу:",
+            options: ["0Ah", "01h", "06h", "07h", "08h"],
+            correct: 0
+        },
+        {
+            question: "INT 21h — стандартты құрылғы күйін тексеру:",
+            options: ["0Bh", "0Ch", "07h", "08h", "0Ah"],
+            correct: 0
+        },
+        {
+            question: "INT 21h — кіріс буферін тазарту және енгізу:",
+            options: ["0Ch", "0Bh", "07h", "08h", "0Ah"],
+            correct: 0
+        },
+        {
+            question: "Пайдаланушы буферіне жолды орналастыру функциясы:",
+            options: ["0Ah", "0Bh", "01h", "08h", "0Ch"],
+            correct: 0
+        },
+        {
+            question: "Буферде символ бар-жоғын тексеру:",
+            options: ["0Bh", "0Ah", "01h", "08h", "0Ch"],
+            correct: 0
+        },
+        {
+            question: "Синхронды функциялар:",
+            options: ["Барлық жауап дұрыс", "01h", "07h", "08h", "0Ah"],
+            correct: 0
+        },
+        {
+            question: "INT 16h — буферден екібайттық кодты оқу:",
+            options: ["00h", "01h", "02h", "03h", "04h"],
+            correct: 0
+        },
+        {
+            question: "INT 16h — пернетақта күйін оқу (буферден шығармай):",
+            options: ["01h", "00h", "02h", "03h", "04h"],
+            correct: 0
+        },
+        {
+            question: "INT 16h — пернетақта белгісін оқу:",
+            options: ["02h", "00h", "01h", "03h", "04h"],
+            correct: 0
+        },
+        {
+            question: "Қандай логикалық оператор 1 немесе 2 ақиқат болса, ақиқат береді?",
+            options: ["OR", "AND", "NOT", "XOR", "ондай жоқ"],
+            correct: 0
+        },
+        {
+            question: "Қай атрибут сегментте түзетуді орындамайды?",
+            options: ["BYTE", "WORD", "DWORD", "PARA", "PAGE"],
+            correct: 0
+        },
+        {
+            question: "Жазбаларды сипаттайтын директива:",
+            options: ["RECORD", "STRUC", "SEGMENT", "STR", "ASSUME"],
+            correct: 0
+        },
+        {
+            question: "1 өрнек 2 өрнекке тең болса ақиқат (оператор):",
+            options: ["EQ", "NE", "LT", "GT", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "1 өрнек 2 өрнекке тең емес:",
+            options: ["NE", "EQ", "LT", "GT", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "1 өрнек 2 өрнектен кіші:",
+            options: ["LT", "NE", "EQ", "GT", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "1 өрнек 2 өрнектен үлкен:",
+            options: ["GT", "LT", "NE", "EQ", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "Логикалық оператор — өрнек ақиқат болса жалған, әйтпесе ақиқат:",
+            options: ["NOT", "AND", "OR", "XOR", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "1 және 2 өрнек екеуі де ақиқат:",
+            options: ["AND", "NOT", "OR", "XOR", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "Циклдық оңға жылжыту командасы:",
+            options: ["ROR", "ROL", "RCR", "RCL", "SAL"],
+            correct: 0
+        },
+        {
+            question: "Тасымал арқылы циклдық солға жылжыту:",
+            options: ["RCL", "RCR", "ROR", "ROL", "SAL"],
+            correct: 0
+        },
+        {
+            question: "LOOP үшін қай регистр санайды?",
+            options: ["CX", "DX", "AX", "BX", "SP"],
+            correct: 0
+        },
+        {
+            question: "Егер көбейгіш байт болса, көбейткіш қайда?",
+            options: ["AL", "AX", "AH", "BL", "BH"],
+            correct: 0
+        },
+        {
+            question: "Егер көбейгіш сөз болса, көбейткіш қайда?",
+            options: ["AX", "AL", "DX", "BL", "BH"],
+            correct: 0
+        },
+        {
+            question: "Көбейгіш қоссөз болса — көбейткіш қайда?",
+            options: ["EAX", "AX", "EBX", "ECX", "AL"],
+            correct: 0
+        },
+        {
+            question: "Көбейгіш байт болса — нәтиженің кіші бөлігі:",
+            options: ["AL", "BL", "AX", "EAX", "DX"],
+            correct: 0
+        },
+        {
+            question: "Көбейгіш байт болса — үлкен бөлігі:",
+            options: ["AH", "BL", "AL", "DL", "LDH"],
+            correct: 0
+        },
+        {
+            question: "Бөлгіш байт болса — бөлінгіш қайда?",
+            options: ["AX", "EAX", "BX", "EBX", "AH"],
+            correct: 0
+        },
+        {
+            question: "Бөлгіш сөз болса — бөлінгіштің кіші бөлігі:",
+            options: ["AX", "DX", "BX", "CX", "BL"],
+            correct: 0
+        },
+        {
+            question: "Бөлінгіштің үлкен бөлігі (бөлгіш сөз):",
+            options: ["DX", "AX", "DL", "DH", "AH"],
+            correct: 0
+        },
+        {
+            question: "Егер бөлінгіш AX болса — қалдық:",
+            options: ["AH", "DX", "CX", "AX", "DL"],
+            correct: 0
+        },
+        {
+            question: "Бөлгіш байт болса — қалдық:",
+            options: ["AH", "DX", "CX", "AX", "DL"],
+            correct: 0
+        },
+        {
+            question: "xor al,al / add al,11 нәтижесі:",
+            options: ["0Bh", "1Bh", "0Ah", "0Ch", "0Fh"],
+            correct: 0
+        },
+        {
+            question: "MOVSB — операнд саны:",
+            options: ["0", "1", "2", "4", "3"],
+            correct: 0
+        },
+        {
+            question: "CMPSB — операнд саны:",
+            options: ["болмайды", "1", "2", "4", "3"],
+            correct: 0
+        },
+        {
+            question: "Логикалық оңға жылжыту командасы:",
+            options: ["SHR", "SHL", "SAL", "SAR", "ROR"],
+            correct: 0
+        },
+        {
+            question: "Арифметикалық солға жылжыту:",
+            options: ["SAL", "SAR", "SHL", "SHR", "ROR"],
+            correct: 0
+        },
+        {
+            question: "Қандай командалар OF, SF, ZF, AF, PF, CF өзгертеді?",
+            options: ["ADC және ADD", "AAD және AAM", "AAA және ADC", "AAS және ADC", "ADC және AAM"],
+            correct: 0
+        },
+        {
+            question: "Байт бөлу директивасы:",
+            options: ["DB", "DW", "DD", "DX", "DS"],
+            correct: 0
+        },
+        {
+            question: "MOV AX, [BX+2] — адрестеу түрі:",
+            options: ["базалық", "тура", "тікелей", "индекстік", "жанама-регистрлік"],
+            correct: 0
+        },
+        {
+            question: "Стек көрсеткіші регистрі:",
+            options: ["SP", "BP", "CX", "DI", "AX"],
+            correct: 0
+        },
+        {
+            question: "REP MOVS тізбегі қандай әрекет орындайды?",
+            options: ["STR2 жолын STR1-ге 500 рет көшіреді", "STR1 жолын STR2-ге 500 рет көшіреді", "500 рет салыстырады", "Тек бірінші байтты ауыстырады", "Ешқайсысы емес"],
+            correct: 0
+        },
+        {
+            question: "LOOP командасы қай регистрмен жұмыс істейді?",
+            options: ["CX", "SI", "DX", "BP", "AX"],
+            correct: 0
+        },
+        {
+            question: "9-битті ерекшелеу және терістеу үшін дұрыс тізбек:",
+            options: ["MOV DX,AX / AND DX,200h / NOT DX / AND DX,200h.", "MOV DX,AX / AND DX,0FFFDh / NOT AX", "MOV DX,AX / TEST DX,200h / NOT DX", "AND AX,38h / ROL AX,1", "MOV AX,200h"],
+            correct: 0
+        },
+        {
+            question: "ADD командасы қандай?",
+            options: ["Екіадресті", "Бірадресті", "Адрессіз", "Үшадресті", "Мүлде команда емес"],
+            correct: 0
+        },
+        {
+            question: "Операцияларға тікелей қатыспайтын регистр:",
+            options: ["CS", "CX", "AX", "DI", "BX"],
+            correct: 0
+        },
+        {
+            question: "Келесі тізбек қандай әрекет орындайды (код сұрыптау)?",
+            options: ["Массивті сұрыптау", "MAX табу", "MIN табу", "Деректерді көшіру", "Ештеңе"],
+            correct: 0
+        },
+        {
+            question: "Жолдан байтты AL-ге жүктейтін команда:",
+            options: ["LODSB", "STOSB", "SCASB", "LODSW", "XLAT"],
+            correct: 0
+        },
+        {
+            question: "Порт номері ретінде қолданылатын регистр:",
+            options: ["DX", "DI", "BX", "CX", "AH"],
+            correct: 0
+        },
+        {
+            question: "Қадамдық орындауды басқаратын жалауша:",
+            options: ["TF", "IF", "ZF", "CF", "PF"],
+            correct: 0
+        },
+        {
+            question: "Таратқыш–жолды көрсететін регистр жұбы:",
+            options: ["DS, SI", "ES, DI", "DS, BX", "ES, CX", "GS, DI"],
+            correct: 0
+        },
+        {
+            question: "Арифметикалық оңға жылжыту командасы:",
+            options: ["SAR", "SHR", "SHL", "SAL", "ROR"],
+            correct: 0
+        },
+        {
+            question: "MOV AX, 2[SI] — қандай адрестеу?",
+            options: ["Индекстік", "Тура", "Регистрлік", "Базалық", "Масштабталған"],
+            correct: 0
+        },
+        {
+            question: "Жолдарды өңдеуге бағыттайтын жалауша:",
+            options: ["DF", "CF", "ZF", "IF", "AF"],
+            correct: 0
+        },
+        {
+            question: "Бөлуден қалдық (операнд — байт):",
+            options: ["AH", "AX", "BL", "BH", "AL"],
+            correct: 0
+        },
+        {
+            question: "CALL орындалғанда стекке не түседі?",
+            options: ["IP", "BP", "BH", "DS", "AX"],
+            correct: 0
+        },
+        {
+            question: "JMP қандай командалар тобына жатады?",
+            options: ["Шартсыз", "Шартты", "Логикалық", "Жылжыту", "Үзуді өңдеу"],
+            correct: 0
+        },
+        {
+            question: "SCASB қай регистрмен салыстырады?",
+            options: ["AL", "BL", "DL", "DS", "AX"],
+            correct: 0
+        },
+        {
+            question: "MOV AX,5 — адрестеу режимі:",
+            options: ["Тура", "Тікелей", "Регистрлік", "Индекстік", "Масштабталған"],
+            correct: 0
+        },
+        {
+            question: "Таңбаны терістеу командасы:",
+            options: ["NEG", "XLAT", "AAA", "XCHG", "TEST"],
+            correct: 0
+        },
+        {
+            question: "Компилятор дегеніміз:",
+            options: ["Тексті машиналық кодқа аударатын программа", "Графика шығару құралы", "Логикалық команда", "Процессор кеші", "BIOS модулі"],
+            correct: 0
+        },
+        {
+            question: "Үзу дегеніміз:",
+            options: ["Сыртқы сигнал нәтижесінде басқаруды арнайы өңдеушіге беру", "Регистрлерді тазалау", "Программа модулі", "Драйверді қосу", "Маркерді ауыстыру"],
+            correct: 0
+        },
+        {
+            question: ".COM файл үшін дұрыс әрекет:",
+            options: ["Трансляциядан кейін EXE2BIN арқылы COM форматына ауыстыру", "Файлды .BAT түріне ауыстыру", ".EXE форматына ғана болады", "/N кілтін қолдану керек", "Қолданылмайды"],
+            correct: 0
+        },
+        {
+            question: "Программадағы қателерді экранға шығару:",
+            options: ["/Z кілті", "/ZI", "/N", "EXE2BIN", "DEBUG"],
+            correct: 0
+        },
+        {
+            question: "/ZI кілті:",
+            options: ["CodeView үшін толық отладка ақпаратын қосады", "Қателерді экранға шығарады", "Белгілерді жасырады", "Программаны оптимизациялайды", "Ештеңе"],
+            correct: 0
+        },
+        {
+            question: "Көмекші (auxiliary) сегмент регистрлерін көрсетіңіз.",
+            options: ["FS, GS", "EAX, EBX", "CR0, CR4", "TF, ZF", "DR0, DR1"],
+            correct: 0
+        },
+        {
+            question: "64-биттік кеңейтілген регистрлерді көрсетіңіз.",
+            options: ["RAX, RBX, RCX", "CS, DS", "CR2, CR3", "TF, IF", "DR2, DR7"],
+            correct: 0
+        },
+        {
+            question: "Нәтиже/арифметикалық операцияларда жиі қолданылатын регистрлерді көрсетіңіз.",
+            options: ["EAX, ECX, EDX", "CR0, CR3", "FS, GS", "TF, CF", "DR1, DR6"],
+            correct: 0
+        },
+        {
+            question: "ASCII коды:",
+            options: ["Пернетақта–дисплей–принтер арасындағы алмасуға арналған", "Тек 16-биттік код", "Графикалық режим", "Микропроцессор кеші", "Машиналық код"],
+            correct: 0
+        },
+        {
+            question: "Микропроцессордың программалық моделі:",
+            options: ["32 регистрдан тұрады", "16 регистр", "8 регистр", "Бір регистр", "Тек жалауша"],
+            correct: 0
+        },
+        {
+            question: "LDTR регистрі:",
+            options: ["Локальды дескрипторлар кестесі (LDT)", "Үзу кестесінің регистрі", "Тапсырма регистрі", "GDT регистрі", "Debug регистрі"],
+            correct: 0
+        },
+        {
+            question: "GDTR регистрі:",
+            options: ["Глобальды дескрипторлар кестесінің базасы мен лимиті", "LDT регистрі", "Task регистрі", "Debug регистрі", "Page регистрі"],
+            correct: 0
+        },
+        {
+            question: "Үзу инициализацияланатын қатынау типі:",
+            options: ["Үзуге қатынау типі", "Стекті қолдану", "Жүйелік регистр", "Түзету режимі", "Жады секциясы"],
+            correct: 0
+        },
+        {
+            question: "Жалпы міндетті алып-орналастыру командасы:",
+            options: ["MOV", "FLD", "POP", "PUSH", "XCHG"],
+            correct: 0
+        },
+        {
+            question: "1 өрнек 2 өрнекке тең емес:",
+            options: ["NE", "EQ", "LT", "GT", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "1 өрнек 2 өрнектен кіші:",
+            options: ["LT", "NE", "EQ", "GT", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "1 өрнек 2 өрнектен үлкен:",
+            options: ["GT", "LT", "NE", "EQ", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "Логикалық оператор — өрнек ақиқат болса жалған, әйтпесе ақиқат:",
+            options: ["NOT", "AND", "OR", "XOR", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "1 және 2 өрнек екеуі де ақиқат:",
+            options: ["AND", "NOT", "OR", "XOR", "жоқ"],
+            correct: 0
+        },
+        {
+            question: "Циклдық оңға жылжыту командасы:",
+            options: ["ROR", "ROL", "RCR", "RCL", "SAL"],
+            correct: 0
+        },
+        {
+            question: "Тасымал арқылы циклдық солға жылжыту (бірінші нұсқа):",
+            options: ["RCL", "RCR", "ROR", "ROL", "SAL"],
+            correct: 0
+        },
+        {
+            question: "Тасымал арқылы циклдық солға жылжыту (екінші нұсқа):",
+            options: ["RCL", "RCR", "ROR", "ROL", "SAL"],
+            correct: 0
+        },
+        {
+            question: "LOOP үшін қай регистр санайды?",
+            options: ["CX", "DX", "AX", "BX", "SP"],
+            correct: 0
+        },
+        {
+            question: "Егер көбейгіш байт болса, көбейткіш қайда?",
+            options: ["AL", "AX", "AH", "BL", "BH"],
+            correct: 0
+        },
+        {
+            question: "Егер көбейгіш сөз болса, көбейткіш қайда?",
+            options: ["AX", "AL", "DX", "BL", "BH"],
+            correct: 0
+        },
+        {
+            question: "Көбейгіш қоссөз болса — көбейткіш қайда?",
+            options: ["EAX", "AX", "EBX", "ECX", "AL"],
+            correct: 0
+        },
+        {
+            question: "Көбейгіш байт болса — нәтиженің кіші бөлігі:",
+            options: ["AL", "BL", "AX", "EAX", "DX"],
+            correct: 0
+        },
+        {
+            question: "Көбейгіш байт болса — үлкен бөлігі:",
+            options: ["AH", "BL", "AL", "DL", "LDH"],
+            correct: 0
+        },
+        {
+            question: "Бөлгіш байт болса — бөлінгіш қайда?",
+            options: ["AX", "EAX", "BX", "EBX", "AH"],
+            correct: 0
+        },
+        {
+            question: "Бөлгіш сөз болса — бөлінгіштің кіші бөлігі:",
+            options: ["AX", "DX", "BX", "CX", "BL"],
+            correct: 0
+        },
+        {
+            question: "Бөлінгіштің үлкен бөлігі:",
+            options: ["DX", "AX", "DL", "DH", "AH"],
+            correct: 0
+        },
+        {
+            question: "Егер бөлінгіш AX болса — қалдық:",
+            options: ["DX", "AL", "AH", "AX", "DL"],
+            correct: 0
+        },
+        {
+            question: "Бөлгіш байт болса — қалдық:",
+            options: ["AH", "DX", "CX", "AX", "DL"],
+            correct: 0
+        },
+        {
+            question: "xor al,al / add al,11 нәтижесі:",
+            options: ["0Bh", "1Bh", "0Ah", "0Ch", "0Fh"],
+            correct: 0
+        },
+        {
+            question: "MOVSB — операнд саны:",
+            options: ["0", "1", "2", "4", "3"],
+            correct: 0
+        },
+        {
+            question: "CMPSB — операнд саны:",
+            options: ["болмайды", "1", "2", "4", "3"],
+            correct: 0
+        },
+        {
+            question: "Логикалық оңға жылжыту командасы:",
+            options: ["SHR", "SHL", "SAL", "SAR", "ROR"],
+            correct: 0
+        },
+        {
+            question: "Арифметикалық солға жылжыту:",
+            options: ["SAL", "SAR", "SHL", "SHR", "ROR"],
+            correct: 0
+        },
+        {
+            question: "AL және ZF нәтижесі (AND):",
+            options: ["0,1", "0,0", "1,0", "1,1", "255,0"],
+            correct: 0
+        },
+        {
+            question: "AL және ZF нәтижесі (TEST):",
+            options: ["4,1", "0,1", "4,0", "1,0", "1,1"],
+            correct: 0
+        },
+        {
+            question: "AL және CF нәтижесі (SHL):",
+            options: ["10,0", "2,1", "2,0", "10,1", "5,0"],
+            correct: 0
+        },
+        {
+            question: "Қандай командалар OF, SF, ZF, AF, PF, CF өзгертеді?",
+            options: ["ADC және ADD", "AAD және AAM", "AAA және ADC", "AAS және ADC", "ADC және AAM"],
+            correct: 0
+        },
+        {
+            question: "Байт бөлу директивасы:",
+            options: ["DB", "DW", "DD", "DX", "DS"],
+            correct: 0
+        },
+        {
+            question: "MOV AX, [BX+2] — адрестеу түрі:",
+            options: ["базалық", "тура", "тікелей", "индекстік", "жанама-регистрлік"],
+            correct: 0
+        },
+        {
+            question: "Стек көрсеткіші регистрі:",
+            options: ["SP", "BP", "CX", "DI", "AX"],
+            correct: 0
+        },
+        {
+            question: "REP MOVS тізбегі қандай әрекет орындайды?",
+            options: ["STR2 жолын STR1-ге 500 рет көшіреді", "STR1 жолын STR2-ге 500 рет көшіреді", "500 рет салыстырады", "Тек бірінші байтты ауыстырады", "Ешқайсысы емес"],
+            correct: 0
+        },
+        {
+            question: "LOOP командасы қай регистрмен жұмыс істейді?",
+            options: ["CX", "SI", "DX", "BP", "AX"],
+            correct: 0
+        },
+        {
+            question: "9-битті ерекшелеу және терістеу үшін дұрыс тізбек:",
+            options: ["MOV DX,AX / AND DX,200h / NOT DX / AND DX,200h.", "MOV DX,AX / AND DX,0FFFDh / NOT AX", "MOV DX,AX / TEST DX,200h / NOT DX", "AND AX,38h / ROL AX,1", "MOV AX,200h"],
+            correct: 0
+        },
+        {
+            question: "ADD командасы қандай?",
+            options: ["Екіадресті", "Бірадресті", "Адрессіз", "Үшадресті", "Мүлде команда емес"],
+            correct: 0
+        },
+        {
+            question: "Операцияларға тікелей қатыспайтын регистр:",
+            options: ["CS.", "CX", "AX", "DI", "BX"],
+            correct: 0
+        },
+        {
+            question: "Келесі тізбек қандай әрекет орындайды (сұрыптау)?",
+            options: ["Массивті сұрыптау", "MAX табу", "MIN табу", "Деректерді көшіру", "Ештеңе"],
+            correct: 0
+        },
+        {
+            question: "Жолдан байтты AL-ге жүктейтін команда:",
+            options: ["LODSB.", "STOSB", "SCASB", "LODSW", "XLAT"],
+            correct: 0
+        },
+        {
+            question: "Порт номері ретінде қолданылатын регистр:",
+            options: ["DX", "DI", "BX", "CX", "AH"],
+            correct: 0
+        },
+        {
+            question: "Қадамдық орындауды басқаратын жалауша:",
+            options: ["TF", "IF", "ZF", "CF", "PF"],
+            correct: 0
+        },
+        {
+            question: "Таратқыш–жолды көрсететін регистр жұбы:",
+            options: ["DS, SI.", "ES, DI", "DS, BX", "ES, CX", "GS, DI"],
+            correct: 0
+        },
+        {
+            question: "Арифметикалық оңға жылжыту командасы:",
+            options: ["SAR.", "SHR", "SHL", "SAL", "ROR"],
+            correct: 0
+        },
+        {
+            question: "MOV AX, 2[SI] — қандай адрестеу?",
+            options: ["Индекстік.", "Тура", "Регистрлік", "Базалық", "Масштабталған"],
+            correct: 0
+        },
+        {
+            question: "Жолдарды өңдеуге бағыттайтын жалауша:",
+            options: ["DF", "CF", "ZF", "IF", "AF"],
+            correct: 0
+        },
+        {
+            question: "Бөлуден қалдық (операнд — байт):",
+            options: ["AH", "AX", "BL", "BH", "AL"],
+            correct: 0
+        },
+        {
+            question: "CALL орындалғанда стекке не түседі?",
+            options: ["IP", "BP", "BH", "DS", "AX"],
+            correct: 0
+        },
+        {
+            question: "JMP қандай командалар тобына жатады?",
+            options: ["Шартсыз.", "Шартты", "Логикалық", "Жылжыту", "Үзуді өңдеу"],
+            correct: 0
+        },
+        {
+            question: "SCASB қай регистрмен салыстырады?",
+            options: ["AL", "BL", "DL", "DS", "AX"],
+            correct: 0
+        },
+        {
+            question: "MOV AX,5 — адрестеу режимі:",
+            options: ["Тура.", "Тікелей", "Регистрлік", "Индекстік", "Масштабталған"],
+            correct: 0
+        },
+        {
+            question: "Таңбаны терістеу командасы:",
+            options: ["NEG", "XLAT", "AAA", "XCHG", "TEST"],
+            correct: 0
+        },
+        {
+            question: "Компилятор дегеніміз:",
+            options: ["Тексті машиналық кодқа аударатын программа", "Графика шығару құралы", "Логикалық команда", "Процессор кеші", "BIOS модулі"],
+            correct: 0
+        },
+        {
+            question: "Үзу дегеніміз:",
+            options: ["Сыртқы сигнал нәтижесінде басқаруды арнайы өңдеушіге беру", "Регистрлерді тазалау", "Программа модулі", "Драйверді қосу", "Маркерді ауыстыру"],
+            correct: 0
+        },
+        {
+            question: ".COM файл үшін дұрыс әрекет:",
+            options: ["Трансляциядан кейін EXE2BIN арқылы COM форматына ауыстыру", "Файлды .BAT түріне ауыстыру", ".EXE форматына ғана болады", "/N кілтін қолдану керек", "Қолданылмайды"],
+            correct: 0
+        },
+        {
+            question: "Программадағы қателерді экранға шығару:",
+            options: ["/Z кілті", "/ZI", "/N", "EXE2BIN", "DEBUG"],
+            correct: 0
+        },
+        {
+            question: "/ZI кілті:",
+            options: ["CodeView үшін толық отладка ақпаратын қосады", "Қателерді экранға шығарады", "Белгілерді жасырады", "Программаны оптимизациялайды", "Ештеңе"],
+            correct: 0
+        },
+        {
+            question: "Көмекші (auxiliary) сегмент регистрлерін көрсетіңіз.",
+            options: ["FS, GS.", "EAX, EBX", "CR0, CR4", "TF, ZF", "DR0, DR1"],
+            correct: 0
+        },
+        {
+            question: "64-биттік кеңейтілген регистрлерді көрсетіңіз.",
+            options: ["RAX, RBX, RCX.", "CS, DS", "CR2, CR3", "TF, IF", "DR2, DR7"],
+            correct: 0
+        },
+        {
+            question: "Нәтиже/арифметикалық операцияларда жиі қолданылатын регистрлерді көрсетіңіз.",
+            options: ["EAX, ECX, EDX.", "CR0, CR3", "FS, GS", "TF, CF", "DR1, DR6"],
+            correct: 0
+        },
+        {
+            question: "ASCII коды:",
+            options: ["Пернетақта–дисплей–принтер арасындағы алмасуға арналған", "Тек 16-биттік код", "Графикалық режим", "Микропроцессор кеші", "Машиналық код"],
+            correct: 0
+        },
+        {
+            question: "Микропроцессордың программалық моделі:",
+            options: ["32 регистрдан тұрады", "16 регистр", "8 регистр", "Бір регистр", "Тек жалауша"],
+            correct: 0
+        },
+        {
+            question: "LDTR регистрі:",
+            options: ["Локальды дескрипторлар кестесі (LDT)", "Үзу кестесінің регистрі", "Тапсырма регистрі", "GDT регистрі", "Debug регистрі"],
+            correct: 0
+        },
+        {
+            question: "GDTR регистрі:",
+            options: ["Глобальды дескрипторлар кестесінің базасы мен лимиті", "LDT регистрі", "Task регистрі", "Debug регистрі", "Page регистрі"],
+            correct: 0
+        },
+        {
+            question: "Үзу инициализацияланатын қатынау типі:",
+            options: ["Үзуге қатынау типі", "Стекті қолдану", "Жүйелік регистр", "Түзету режимі", "Жады секциясы"],
+            correct: 0
+        },
+        {
+            question: "Жалпы міндетті алып-орналастыру командасы:",
+            options: ["MOV", "FLD", "POP", "PUSH", "XCHG"],
+            correct: 0
+        }
+
+    ]
+
 };
