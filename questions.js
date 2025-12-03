@@ -2361,6 +2361,405 @@ const allTests = {
             options: ["Б", "В", "Е", "Г", "А"],
             correct: 0
         },
+    ],
+    javaa: [
+      {
+            question: "Public static void main әдісі үшін қандай параметр жарнамалары дұрыс? (2 дұрыс жауап)",
+            options: ["String[] args", "String args[]", "Strings args[]", "String args"],
+            correct: [0, 1]
+        },
+        {
+            question: "Ұсынылған пакеттердің қайсысында class System бар?",
+            options: ["java.lang", "java.io", "java.base", "java.util"],
+            correct: 0
+        },
+        {
+            question: "First.java атты Java қолданбасын компиляциялайтын команда қайсы?",
+            options: ["javac First.java", "javac First", "java First.class", "java First.java"],
+            correct: 0
+        },
+        {
+            question: "Java кілт сөздері қандай сөздер? (2 дұрыс жауап)",
+            options: ["for", "void", "classpath", "main", "out"],
+            correct: [0, 1]
+        },
+        {
+            question: "Кластың әдісін жариялау кезінде қандай кілттік сөздерді қолдануға болады? (2 дұрыс жауап)",
+            options: ["final", "abstract", "volatile", "enum", "default"],
+            correct: [0, 1]
+        },
+        {
+            question: "Келесі айнымалы атауларының қайсысы дұрыс? (3 дұрыс жауап)",
+            options: ["int j1;", "int _j2;", "int j_3;", "int #j4;", "int @j5;"],
+            correct: [0, 1, 2]
+        },
+        {
+            question: "Boolean типі үшін әдепкі (default) мән?",
+            options: ["false", "true", "Boolean.TRUE", "Boolean.FALSE"],
+            correct: 0
+        },
+        {
+            question: "A{} класы үшін дұрыс конструктор жарияланымы?",
+            options: ["A() {}", "A() {this.super();}", "A() {Object.super();}", "A() {A.super();}"],
+            correct: 0
+        },
+        {
+            question: "Object класына қатысты келесі әдістердің қайсысы final-әдіс болып табылады? (4 дұрыс жауап)",
+            options: ["getClass()", "notify()", "wait()", "notifyAll()", "finalize()"],
+            correct: [0, 1, 2, 3]
+        },
+        {
+            question: "OutputStream класының flush() әдісі не үшін қолданылады?",
+            options: ["Шығару буферін тазалау (Clear buffer)", "Шығару ағынын жабу", "Буфер өлшемін өзгерту", "Файлды өшіру"],
+            correct: 0
+        },
+        {
+            question: "System класының out статикалық өрісі қай кластың объектісі?",
+            options: ["PrintStream", "DataOutputStream", "OutputStream", "BufferedOutputStream"],
+            correct: 0
+        },
+
+        // --- КОДТАР МЕН СУРЕТТЕР ---
+        {
+            question: "Компиляция мен іске қосу нәтижесінде не болады?",
+            img: "images/java1.png",
+            options: ["00", "01", "11", "compilation fails", "runtime error"],
+            correct: 0
+        },
+        {
+            question: "Кодты командалық жолдан 'java P R I V E T' деп іске қосқанда нәтиже қандай?",
+            img: "images/java2.png",
+            options: ["RVIR", "IEVI", "PIRP", "compilation fails"],
+            correct: 0
+        },
+        {
+            question: "Код фрагментін орындау нәтижесінде value айнымалысының мәні (Ternary)?",
+            img: "images/java3.png",
+            options: ["1", "2", "3", "4"],
+            correct: 0
+        },
+        {
+            question: "Циклді орындау нәтижесінде консольге қандай мән шығады? (Continue)",
+            img: "images/java4.png",
+            options: ["0 0", "1 -1", "2 -2", "Ештеңе шығарылмайды"],
+            correct: 0
+        },
+        {
+            question: "Келесі массив жарияланымдарының қайсысы дұрыс?",
+            options: ["String array [] = {\"j\", \"r\", \"e\"};", "String array [] = new String {\"j\" \"s\" \"e\"};", "String array [] = { \"j \" \" v\" \"m\"};", "String array = {\"j\", \"d\", \"k\"};"],
+            correct: 0
+        },
+        {
+            question: "Келесі кодты компиляциялап іске қосқанда нәтиже қандай болады? (Char array)",
+            img: "images/java5.png",
+            options: ["[a, b, c]", "[b, c, d]", "[aa, bb, cc]", "compilation fails"],
+            correct: 0
+        },
+        {
+            question: "Жолдармен (String) қандай операция дұрыс?",
+            img: "images/java6.png",
+            options: ["s1 + s2", "s1 - s2", "s2 || s3", "s1 ++ s3"],
+            correct: 0
+        },
+        {
+            question: "Кодты компиляциялап орындау нәтижесінде не шығарылады? (Overloading)",
+             img: "images/java7.png",
+            options: ["long int", "int int", "long long", "int long"],
+            correct: 0
+        },
+        {
+            question: "Келесі әдіс жарияланымдарының қайсысы дұрыс?",
+            options: ["final static void method(){}", "protected abstract void method();", "private final void method(){}", "Барлығы дұрыс емес"],
+            correct: [0, 1, 2] // Бұл жерде бірнешеуі дұрыс болуы мүмкін
+        },
+        {
+            question: "Пакетте жарияланған кластың дұрыс жарияланымы?",
+            options: ["public class Type {}", "final public class Type {}", "class Type {}", "abstract class Type {}"],
+            correct: [0, 1, 2, 3]
+        },
+        {
+            question: "Нөлдік сілтеме (null) арқылы статикалық әдісті шақыру нәтижесі?",
+             img: "images/java8.png",
+            options: ["1", "compilation fails", "NullPointerException", "null"],
+            correct: 0
+        },
+        {
+            question: "Объектілерді салыстыру (==, equals, hashCode) нәтижесі?",
+             img: "images/java9.png",
+            options: ["false, false, false", "false, true, false", "true, true, false", "false, true, true"],
+            correct: 0
+        },
+        {
+            question: "Generics: компиляциялап іске қосу нәтижесі?",
+             img: "images/java10.png",
+            options: ["false true", "true false", "false false", "true true"],
+            correct: 0
+        },
+        {
+            question: "Enum конструкторы қанша рет шақырылады?",
+             img: "images/java11.png",
+            options: ["5", "0", "1", "compilation fails"],
+            correct: 0
+        },
+        {
+            question: "action() әдісінде бос орынға не жазу керек (new instance)?",
+             img: "images/java12.png",
+            options: ["new X()", "super", "this", "X"],
+            correct: 0
+        },
+        {
+            question: "Мұрагерлік (Inheritance): нәтиже қандай болады?",
+            img: "images/java13.png",
+            options: ["derived", "base", "compilation fails", "runtime exception"],
+            correct: 0
+        },
+        {
+            question: "Конструкторлар тізбегі (Chaining): нәтижесі?",
+             img: "images/java14.png",
+            options: ["10", "12", "01", "compilation fails"],
+            correct: 0
+        },
+        {
+            question: "Статикалық өрістерді жасыру (Shadowing): нәтижесі?",
+             img: "images/java15.png",
+            options: ["1011", "1000", "1010", "1111"],
+            correct: 0
+        },
+        {
+            question: "Әдісті қайта анықтау (Override): line 1 орнына не қоюға болады?",
+             img: "images/java16.png",
+            options: ["void action(){}", "public void action(){}", "protected void action(){}", "int action() {}"],
+            correct: [0, 1]
+        },
+        {
+            question: "Super конструктор: Қай мәлімдеме дұрыс?",
+             img: "images/java17.png",
+            options: ["егер Base() { this(1); } қосса, дұрыс", "код өзгеріссіз жұмыс істейді", "егер Base() { Base(1); } қосса", "егер Current() { Base(); } қосса"],
+            correct: 0
+        },
+        {
+            question: "Статикалық ішкі класты (Static Nested) құру жолы?",
+             img: "images/java18.png",
+            options: ["Garden.Plant plant = new Garden.Plant();", "Plant plant = new Plant();", "Garden.Plant plant = new Garden().new Plant();", "Plant plant = new Garden.Plant();"],
+            correct: 0
+        },
+        {
+            question: "Inner класынан Outer өрісіне қол жеткізу (line 1)?",
+             img: "images/java19.png",
+            options: ["new Outer().size", "size", "Outer.size", "Outer.Inner.size"],
+            correct: 0
+        },
+        {
+            question: "Inner класының объектісін жасауда қайсысы ҚАТЕ?",
+             img: "images/java20.png",
+            options: ["Inner b = Outer.new Inner();", "Inner a = new Inner();", "Outer.Inner d = new Outer().new Inner();", "Inner c = new Outer().new Inner();"],
+            correct: 0
+        },
+        {
+            question: "Ішкі кластардың инициализация тәртібі:",
+             img: "images/java21.png",
+            options: ["owner clazz inner method2", "owner clazz inner method1", "compilation fails", "clazz owner inner method2"],
+            correct: 0
+        },
+        {
+            question: "Static мұрагерлік: i айнымалысына қол жеткізу?",
+             img: "images/java22.png",
+            options: ["Outer.Inner.i", "Outer.Inner.Clazz.i", "new Outer.Inner().i", "Outer.Inner.super.i"],
+            correct: 0
+        },
+        {
+            question: "Интерфейстерді дұрыс жариялау жолы (line 1, 2, 3)?",
+             img: "images/java23.png",
+            options: ["implements; Readable; public void read(){}", "extends; Editor; public void edit(){}", "implements; Readable; void read(){}", "extends; Editor; protected void edit(){}"],
+            correct: 0
+        },
+        {
+            question: "Алмаз проблемасы (екі интерфейсте бірдей өріс):",
+             img: "images/java24.png",
+            options: ["compilation fails", "1", "2", "runtime error"],
+            correct: 0
+        },
+        {
+            question: "Класс пен интерфейс: дұрыс жарияланымды табыңыз.",
+             img: "images/java25.png",
+            options: ["class Edit extends Read implements Readable {}", "interface Editable extends Readable{}", "interface Editable implements Readable{}", "class Edit implements Readable, Read {}"],
+            correct: [0, 1]
+        },
+        {
+            question: "Сілтемелерді типтеу (Casting): Қайсысы дұрыс?",
+             img: "images/java26.png",
+            options: ["First a = (First)new Clazz();", "First c = (First)new Klass();", "Second d = (Second) new Clazz();", "Klass e = (Second)new Clazz();"],
+            correct: [0, 1]
+        },
+        {
+            question: "Stream API: count() нәтижесі?",
+             img: "images/java27.png",
+            options: ["2", "0", "3", "compilation fails"],
+            correct: 0
+        },
+        {
+            question: "Stream findFirst(): нәтижесі?",
+             img: "images/java28.png",
+            options: ["0 1 JDK", "0 0 JDK", "0 JDK", "0 1 2 3 4 JDK"],
+            correct: 0
+        },
+        {
+            question: "Stream: ең үлкен бүтін элементті табу (line 1)?",
+             img: "images/java29.png",
+            options: ["numbers.max()", "numbers.boxed().max(...)", "numbers.max(Integer::max).get()", "numbers.max(...).get()"],
+            correct: 0
+        },
+        {
+            question: "Stream peek vs map: нәтижесі?",
+             img: "images/java30.png",
+            options: ["14", "11", "12", "24"],
+            correct: 0
+        },
+        {
+            question: "4-тен қысқа жолдар санын анықтау (line 1)?",
+             img: "images/java31.png",
+            options: ["strings.filter(x -> x.length() <= 4).count()", "strings.peek(...).count()", "strings.map(...).count()"],
+            correct: 0
+        },
+        {
+            question: "Pass by value (String): нәтижесі?",
+             img: "images/java32.png",
+            options: ["HelloHello", "Hello", "Hellonull", "runtime error"],
+            correct: 0
+        },
+        {
+            question: "String concatenation: 1 + 2 + s + 4 + 5",
+             img: "images/java33.png",
+            options: ["3345", "12345", "1239", "339"],
+            correct: 0
+        },
+        {
+            question: "String Pool: қай оператор true береді?",
+             img: "images/java34.png",
+            options: ["s2 == s4", "s2 == s3", "s1 == s2", "s1 == s3"],
+            correct: 0
+        },
+        {
+            question: "String concat цикл ішінде: нәтижесі?",
+             img: "images/java35.png",
+            options: ["[a, b, c]", "[a0, b1, c2]", "[a1, b2, c3]", "compilation fails"],
+            correct: 0
+        },
+        {
+            question: "String vs StringBuffer: 01ab алу үшін?",
+             img: "images/java36.png",
+            options: ["st = st.concat(\"1\"); sb.append(\"b\");", "st.concat(\"1\"); sb.append(\"b\");", "st = st.concat(\"1\"); sb.concat(\"b\");", "Ешқайсысы"],
+            correct: 0
+        },
+        {
+            question: "Exception handling (ArithmeticException): нәтижесі?",
+             img: "images/java37.png",
+            options: ["FinallyE0", "E0", "E0Finally", "E0E1"],
+            correct: 0
+        },
+        {
+            question: "Custom Exception (WhiteException): нәтижесі?",
+             img: "images/java38.png",
+            options: ["0 1 1", "1 1 1", "0 0 1", "1 0 1"],
+            correct: 0
+        },
+        {
+            question: "B класының конструкторын жариялау (Throws)?",
+             img: "images/java39.png",
+            options: ["B() throws IOException{}", "B() throws Exception {}", "B() throws FileNotFoundException{", "B(){}"],
+            correct: [0, 1]
+        },
+        {
+            question: "Әдісті қайта анықтау (Throws Exception):",
+             img: "images/java40.png",
+            options: ["void m(){}", "void m() throws FileNotFoundException {}", "void m() throws IOException {}", "void m() throws Exception {}"],
+            correct: [0, 1]
+        },
+        {
+            question: "Консольдан оқу (BufferedReader): line 1?",
+             img: "images/java41.png",
+            options: ["int number = Integer.valueOf(reader.readLine());", "int number = reader.read();", "int number = new Scanner(...);", "int number = String.parseInt(...)"],
+            correct: 0
+        },
+        {
+            question: "Files.copy: егер файл бар болса?",
+             img: "images/java42.png",
+            options: ["FileAlreadyExistsException", "NoSuchFileException", "FileNotFoundException", "Файл көшіріледі"],
+            correct: 0
+        },
+        {
+            question: "BufferedWriter конструкторларының қайсысы қате?",
+             img: "images/java43.png",
+            options: ["1-жолда қате (File)", "2-жолда қате", "3-жолда қате", "Барлығы дұрыс"],
+            correct: 0
+        },
+        {
+            question: "Stream GroupingBy: нәтижесі?",
+             img: "images/java44.png",
+            options: ["50.0 70.0 (ретсіз)", "1, 50.0...", "Ештеңе шығарылмайды", "70.0 50.0"],
+            correct: 0
+        },
+        {
+            question: "Stream Reduce (Sum): нәтижесі?",
+             img: "images/java45.png",
+            options: ["4, 190.0", "4, 0.0", "17, 0.0", "17, 190.0"],
+            correct: 0
+        },
+        {
+            question: "Stream Reduce (Max ternary): нәтижесі?",
+             img: "images/java46.png",
+            options: ["7, 70.0", "5, 70.0", "1, 50.0", "Ештеңе шығарылмайды"],
+            correct: 0
+        },
+        {
+            question: "Stream Average (Double): нәтижесі?",
+             img: "images/java47.png",
+            options: ["15.0", "0.0", "20.0", "compilation fails"],
+            correct: 0
+        },
+        {
+            question: "Map compute methods: нәтижесі?",
+             img: "images/java48.png",
+            options: ["1, 3", "4, 3", "2, 4", "runtime error"],
+            correct: 0
+        },
+        {
+            question: "Stream Match (anyMatch): нәтижесі?",
+             img: "images/java49.png",
+            options: ["anyMatch(i -> i == 2);", "noneMatch...", "allMatch...", "findFirst()"],
+            correct: 0
+        },
+        {
+            question: "Thread құру (Runnable) дұрыс жолы?",
+             img: "images/java50.png",
+            options: ["new Thread(new GoThread());", "new Thread().new GoThread();", "new Runnable(new GoThread());", "new GoThread()"],
+            correct: 0
+        },
+        {
+            question: "Циклде қанша ағын іске қосылады?",
+             img: "images/java51.png",
+            options: ["4", "0", "1", "2"],
+            correct: 0
+        },
+        {
+            question: "Wait/Notify: нәтижесі қандай?",
+             img: "images/java52.png",
+            options: ["01 және тұрып қалады", "012 және аяқтайды", "01 және аяқтайды", "02 шығады"],
+            correct: 0
+        },
+        {
+            question: "AtomicInteger: нәтижесі?",
+             img: "images/java53.png",
+            options: ["1234 кез келген реттілікте", "4444", "0000", "0123"],
+            correct: 0
+        },
+        {
+            question: "ExecutorService (Run vs Call): нәтижесі?",
+             img: "images/java54.png",
+            options: ["RC", "CR", "R және қате", "C және қате"],
+            correct: 0
+        }
     ]
+
 
 };
