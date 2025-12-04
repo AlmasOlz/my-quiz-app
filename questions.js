@@ -2410,7 +2410,7 @@ const allTests = {
         },
         {
             question: "OutputStream класының flush() әдісі не үшін қолданылады?",
-            options: ["Шығару буферін тазалау (Clear buffer)", "Шығару ағынын жабу", "Буфер өлшемін өзгерту", "Файлды өшіру"],
+            options: ["Шығару буферін тазалау", "Шығару ағынын жабу", "Буфер өлшемін өзгерту", "Файлды өшіру"],
             correct: 0
         },
         {
@@ -2424,13 +2424,13 @@ const allTests = {
             question: "Компиляция мен іске қосу нәтижесінде не болады?",
             img: "images/java1.png",
             options: ["00", "01", "11", "compilation fails", "runtime error"],
-            correct: 0
+            correct: 3
         },
         {
             question: "Кодты командалық жолдан 'java P R I V E T' деп іске қосқанда нәтиже қандай?",
             img: "images/java2.png",
             options: ["RVIR", "IEVI", "PIRP", "compilation fails"],
-            correct: 0
+            correct: 1
         },
         {
             question: "Код фрагментін орындау нәтижесінде value айнымалысының мәні (Ternary)?",
