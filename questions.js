@@ -3760,6 +3760,1135 @@ const allTests = {
             options: ["Масштабталу, кросс-платформалық және қуатты экожүйе (Big Data құралдарымен үйлесімділік)", "Тек жылдамдық", "Ешқандай артықшылығы жоқ", "Тек вебте жұмыс істейді", "Python-нан әлдеқайда оңай болуы"],
             correct: 0
         }
+    ],
+    linux: [
+        {
+            question: "VIM редакторында өзгерістерді сақтап және шығу командасы қандай?",
+            options: [":wq", ":q!", ":exit now", ":save exit", ":x!"],
+            correct: 0
+        },
+        {
+            question: "Мәтін жазу үшін «Енгізу режиміне» (Insert) өту пернесі?",
+            options: ["i", "x", "v", ":", "Esc"],
+            correct: 0
+        },
+        {
+            question: "Курсор тұрған тұтас жолды өшіру (қиып алу) командасы?",
+            options: ["dd", "dw", "xx", "delete", "rr"],
+            correct: 0
+        },
+        {
+            question: "VIM-де соңғы әрекетті болдырмау (артқа қайтару/Undo) пернесі?",
+            options: ["u", "Ctrl+z", "r", "b", ":back"],
+            correct: 0
+        },
+        {
+            question: "Курсорды файлдың ең басына бірден апару командасы?",
+            options: ["gg", "G", "^", "0", "top"],
+            correct: 0
+        },
+        {
+            question: "Курсорды файлдың ең соңына апару командасы?",
+            options: ["G (Shift+g)", "gg", "end", "$", "L"],
+            correct: 0
+        },
+        {
+            question: "VIM-де файлды сақтамай, күштеп шығу командасы?",
+            options: [":q!", ":wq", ":exit", ":stop", ":q"],
+            correct: 0
+        },
+        {
+            question: "Курсорды бір символға солға жылжыту пернесі (VIM навигациясы)?",
+            options: ["h", "j", "k", "l", "m"],
+            correct: 0
+        },
+        {
+            question: "Курсорды бір жолға төмен түсіру пернесі?",
+            options: ["j", "k", "h", "l", "p"],
+            correct: 0
+        },
+        {
+            question: "Курсорды бір жолға жоғары көтеру пернесі?",
+            options: ["k", "j", "u", "d", "^"],
+            correct: 0
+        },
+        {
+            question: "Курсорды бір символға оңға жылжыту пернесі?",
+            options: ["l", "h", "r", "w", "b"],
+            correct: 0
+        },
+        {
+            question: "Курсор тұрған бір әріпті өшіру пернесі?",
+            options: ["x", "d", "r", "i", "a"],
+            correct: 0
+        },
+        {
+            question: "Көшірілген немесе қиып алынған жолды қою (Paste) пернесі?",
+            options: ["p", "v", "c", "i", "y"],
+            correct: 0
+        },
+        {
+            question: "Тұтас жолды көшіріп алу (Yank) командасы?",
+            options: ["yy", "cy", "cp", "dd", "pp"],
+            correct: 0
+        },
+        {
+            question: "Болдырмауды қайтару (Redo / алға жылжу) комбинациясы?",
+            options: ["Ctrl + r", "Ctrl + z", "u", "Ctrl + y", "Shift + r"],
+            correct: 0
+        },
+        {
+            question: "VIM-де бірнеше файл ашылғанда келесі файлға өту командасы?",
+            options: [":n", ":prev", ":back", ":jump", ":f"],
+            correct: 0
+        },
+        {
+            question: "Бірнеше файл ашылғанда алдыңғы файлға қайту командасы?",
+            options: [":N", ":next", ":go", ":b", ":f"],
+            correct: 0
+        },
+        {
+            question: "Экранды тігінен (вертикаль) екіге бөлу командасы?",
+            options: [":vsp", ":sp", ":split", ":div", ":cut"],
+            correct: 0
+        },
+        {
+            question: "Экранды көлденеңінен (горизонталь) екіге бөлу командасы?",
+            options: [":sp", ":vsp", ":ver", ":hor", ":row"],
+            correct: 0
+        },
+        {
+            question: "Терезелер арасында ауысу үшін қолданылатын пернелер комбинациясы?",
+            options: ["Ctrl + w", "Alt + Tab", "Shift + w", "Ctrl + Tab", "Esc + w"],
+            correct: 0
+        },
+        {
+            question: "Файлдағы барлық «ескі» сөзін «жаңа» сөзіне алмастыру командасы?",
+            options: [":%s/ескі/жаңа/g", ":s/ескі/жаңа/", ":replace all", "/ескі/жаңа/", ":ch old new"],
+            correct: 0
+        },
+        {
+            question: "VIM-де тікбұрышты блок (блоктап белгілеу) режиміне өту пернесі?",
+            options: ["Ctrl + v", "Shift + v", "v", "Alt + v", "b"],
+            correct: 0
+        },
+        {
+            question: "VIM баптаулары (конфигурация) сақталатын негізгі файл?",
+            options: [".vimrc", ".bashrc", "config.vim", "vim.conf", ".profile"],
+            correct: 0
+        },
+        {
+            question: "VIM-де жол нөмірлерін көрсету командасы?",
+            options: [":set number", ":show lines", ":num on", ":display num", ":line id"],
+            correct: 0
+        },
+        {
+            question: "VIM-де синтаксисті бояуды қосу (кодты түсті ету) командасы?",
+            options: [":syntax on", ":color on", ":style enable", ":code color", ":paint on"],
+            correct: 0
+        },
+        {
+            question: "Барлық ашық тұрған файлдардан бірден шығу командасы?",
+            options: [":qa", ":q", ":exit all", ":close", ":stop"],
+            correct: 0
+        },
+        {
+            question: "Барлық ашық тұрған файлдарды сақтап, сосын шығу командасы?",
+            options: [":wqa", ":wa", ":saveall", ":xall", ":done"],
+            correct: 0
+        },
+        {
+            question: "Ағымдағы терезеден басқа терезелердің бәрін жабу командасы?",
+            options: [":only", ":single", ":one", ":close others", ":hide"],
+            correct: 0
+        },
+        {
+            question: "Мәтін ішінен сөз іздеу үшін қолданылатын белгі?",
+            options: ["/", "?", ":", "@", "#"],
+            correct: 0
+        },
+        {
+            question: "Іздеу кезінде келесі сәйкестікке өту пернесі?",
+            options: ["n", "N", "p", "next", "g"],
+            correct: 0
+        },
+        {
+            question: "Linux жүйесінде IP-адрестерді көру командасы?",
+            options: ["ip addr", "show ip", "ip config", "net show", "get ip"],
+            correct: 0
+        },
+        {
+            question: "Желіні баптауға арналған ыңғайлы графикалық (TUI) утилита?",
+            options: ["nmtui", "nmcli", "net-edit", "gui-net", "ip-setup"],
+            correct: 0
+        },
+        {
+            question: "Желіні консоль арқылы басқаратын командалық утилита?",
+            options: ["nmcli", "nmtui", "netcli", "ipcmd", "con-man"],
+            correct: 0
+        },
+        {
+            question: "Интернет байланысын тексеру үшін қолданылатын команда?",
+            options: ["ping google.com", "check net", "test ip", "connect google", "status net"],
+            correct: 0
+        },
+        {
+            question: "RedHat/CentOS жүйелерінде желілік интерфейс файлдары қай папкада жатады?",
+            options: ["/etc/sysconfig/network-scripts/", "/etc/network/", "/bin/network/", "/usr/local/net/", "/var/lib/network/"],
+            correct: 0
+        },
+        {
+            question: "Желілік файлда IP-адресті қолмен (статикалық) қою үшін BOOTPROTO мәні қандай болуы керек?",
+            options: ["none (немесе static)", "dhcp", "auto", "yes", "dynamic"],
+            correct: 0
+        },
+        {
+            question: "Желілік файлда компьютер жүктелгенде желінің қосылуын қамтамасыз ететін параметр?",
+            options: ["ONBOOT=\"yes\"", "AUTOSTART=\"true\"", "ENABLED=\"1\"", "START=\"now\"", "BOOT=\"on\""],
+            correct: 0
+        },
+        {
+            question: "Желілік файлда компьютердің IP-адресі жазылатын параметр?",
+            options: ["IPADDR", "MYIP", "ADDRESS", "HOSTIP", "NETIP"],
+            correct: 0
+        },
+        {
+            question: "Желілік файлда Роутердің (Шлюз) адресі жазылатын параметр?",
+            options: ["GATEWAY", "ROUTER", "EXIT", "NEXTHOP", "PORT"],
+            correct: 0
+        },
+        {
+            question: "Желілік файлда желі маскасы жазылатын параметр?",
+            options: ["NETMASK", "MASK", "PREFIX_NET", "SUBMASK", "IP_MASK"],
+            correct: 0
+        },
+        {
+            question: "Желілік файлда DNS сервер адресі жазылатын параметр?",
+            options: ["DNS1", "NAMESERVER", "SERVER_DNS", "DOMAIN_IP", "NS1"],
+            correct: 0
+        },
+        {
+            question: "Желілік қызметті (Network Service) толығымен қайта іске қосу командасы?",
+            options: ["systemctl restart network", "service net reload", "network reset", "systemctl stop net", "restart-net"],
+            correct: 0
+        },
+        {
+            question: "DNS серверлерінің тізімі сақталатын жалпы жүйелік файл?",
+            options: ["/etc/resolv.conf", "/etc/hosts", "/etc/dns.conf", "/var/dns", "/etc/network/dns"],
+            correct: 0
+        },
+        {
+            question: "Компьютердің желілік атын (hostname) өзгерту командасы?",
+            options: ["hostnamectl set-hostname", "name set", "change-name", "ip name", "set host"],
+            correct: 0
+        },
+        {
+            question: "nmcli арқылы құрылғылар (devices) тізімін көру командасы?",
+            options: ["nmcli d", "nmcli c", "nmcli list", "nmcli show", "nmcli view"],
+            correct: 0
+        },
+        {
+            question: "nmcli арқылы қосылымдар (connections) тізімін көру командасы?",
+            options: ["nmcli c", "nmcli d", "nmcli connect", "nmcli status", "nmcli link"],
+            correct: 0
+        },
+        {
+            question: "Шлюзді (gateway) немесе маршруттарды көру командасы?",
+            options: ["ip route", "route show", "gateway list", "net stat", "map net"],
+            correct: 0
+        },
+        {
+            question: "Компьютердің ағымдағы атын ғана шығаратын команда?",
+            options: ["hostname", "name", "whoami", "id", "getname"],
+            correct: 0
+        },
+        {
+            question: "Желілік интерфейсті (мысалы, ens33) өшіріп, қайта қосудың дұрыс жолы (nmcli арқылы)?",
+            options: ["nmcli c down ens33 && nmcli c up ens33", "nmcli restart ens33", "nmcli reset ens33", "nmcli stop start ens33", "nmcli reload ens33"],
+            correct: 0
+        },
+        {
+            question: "VIM-де «Жолдап белгілеу» (бүкіл жолды ерекшелеу) үшін Визуалды режимге өту пернесі?",
+            options: ["Shift + v ", "Ctrl + v", "v", "Alt + v", "Tab + v"],
+            correct: 0
+        },
+        {
+            question: "getent passwd olzhabaialmas командасы не үшін қажет?",
+            options: ["Қолданушы туралы жүйелік ақпаратты алу үшін", "Қолданушының паролін өзгерту үшін", "Қолданушыны өшіру үшін", "Жаңа қолданушы құру үшін", "Қолданушыны топқа қосу үшін"],
+            correct: 0
+        },
+        {
+            question: "useradd -m -d /home/kliff -k /home/olzhabaialmas командасындағы -k кілті не істейді?",
+            options: ["Скелеттік директориядан файлдарды көшіреді", "Қолданушыны бұғаттайды", "Парольді өшіреді", "Үй каталогын жасауға тыйым салады", "Қолданушының Shell-ын өзгертеді"],
+            correct: 0
+        },
+        {
+            question: "Қолданушының логинін (атын) қалай өзгертеміз?",
+            options: ["usermod -l newname oldname", "usermod -n newname oldname", "useradd -l newname", "mv /home/oldname /home/newname", "passwd -l newname"],
+            correct: 0
+        },
+        {
+            question: "usermod -s /sbin/nologin vova командасының нәтижесі қандай?",
+            options: ["vova қолданушысы жүйеге кіре алмайды (Shell бұғатталған)", "vova қолданушысы root құқығын алады", "vova тек SSH арқылы кіре алады", "vova қолданушысы өшіріледі", "vova-ның паролі жойылады"],
+            correct: 0
+        },
+        {
+            question: "Қолданушыны қосымша топтарға (secondary groups) ескі топтардан шығармай қосу кілті?",
+            options: ["-a -G (append groups)", "-g (primary group)", "-u (uid)", "-l (login)", "-d (directory)"],
+            correct: 0
+        },
+        {
+            question: "userdel -r kliff командасы жай userdel kliff-тен немен ерекшеленеді?",
+            options: ["Қолданушының үй каталогын және поштасын қоса өшіреді", "Тек парольді өшіреді", "Қолданушыны тек бұғаттайды", "Қолданушыны топтан шығарады", "Ешқандай айырмашылығы жоқ"],
+            correct: 0
+        },
+        {
+            question: "chage -l vova командасы не көрсетеді?",
+            options: ["Аккаунттың және парольдің жарамдылық мерзімі туралы ақпаратты", "Қолданушының топтарын", "Қолданушының файлдарын", "Қолданушының IP адресін", "Қолданушының соңғы командаларын"],
+            correct: 0
+        },
+        {
+            question: "usermod -e 2022-12-20 vova командасы не істейді?",
+            options: ["Аккаунттың өту мерзімін орнатады", "Аккаунтты 20 желтоқсанда құрады", "Парольді 20 желтоқсанға дейін ұзартады", "Email адресін өзгертеді", "Файлдарды 2022 жылға дейін жасырады"],
+            correct: 0
+        },
+        {
+            question: "/etc/group файлында не сақталады?",
+            options: ["Топтар және олардың мүшелері туралы ақпарат", "Қолданушылардың парольдері", "DNS баптаулары", "Желілік интерфейстер", "Sudo құқықтары"],
+            correct: 0
+        },
+        {
+            question: "Логин жасағанда \"Last login\" хабарламасын шығармау үшін үй каталогында қандай файл болуы керек?",
+            options: [".hushlogin", ".nologin", ".bashrc", ".profile", ".hidden"],
+            correct: 0
+        },
+        {
+            question: "chmod 761 саны нені білдіреді?",
+            options: ["u=rwx (7), g=rw (6), o=x (1)", "u=rw (6), g=rwx (7), o=x (1)", "u=x (1), g=rw (6), o=rwx (7)", "u=rwx (7), g=rx (5), o=x (1)", "u=rw (6), g=r (4), o=x (1)"],
+            correct: 0
+        },
+        {
+            question: "Директорияның ішіндегі барлық файлдарға құқықты бірден өзгерту кілті?",
+            options: ["-R (Recursive)", "-r (read)", "-f (force)", "-a (all)", "-v (verbose)"],
+            correct: 0
+        },
+        {
+            question: "chmod u=w,g=w,o=w file.txt командасының сандық баламасы қандай?",
+            options: ["222 (Write only)", "444 (Read only)", "111 (Execute only)", "666 (Read/Write)", "777 (Full access)"],
+            correct: 0
+        },
+        {
+            question: "Файлдың иесін (owner) өзгерту командасы?",
+            options: ["chown", "chmod", "chgrp", "passwd", "usermod"],
+            correct: 0
+        },
+        {
+            question: "chmod 4700 script командасындағы 4 саны нені білдіреді?",
+            options: ["SUID — скрипт иесінің құқығымен орындалады", "SGID (Set Group ID)", "Sticky Bit", "Hidden file", "Read only"],
+            correct: 0
+        },
+        {
+            question: "chmod 1777 Temp (Sticky Bit) орнатылған папканың ерекшелігі?",
+            options: ["Файлды тек оны құрған адам ғана өшіре алады", "Файлды кез келген адам өшіре алады", "Папкаға ешкім жаза алмайды", "Папка автоматты түрде тазаланады", "Папка жасырын болады"],
+            correct: 0
+        },
+        {
+            question: "chown :mike file командасы нені өзгертеді?",
+            options: ["Тек файлдың тобын (Group) mike-қа өзгертеді", "Файлдың иесін mike-қа өзгертеді", "Иесін де, тобын да mike-қа өзгертеді", "Файлдың атын mike-қа өзгертеді", "Файлға mike қолданушысы үшін құқық береді"],
+            correct: 0
+        },
+        {
+            question: "Егер файлға r-- құқығы болса, сандық мәні қанша?",
+            options: ["4", "2", "1", "5", "6"],
+            correct: 0
+        },
+        {
+            question: "chmod 2666 командасындағы 2 саны нені білдіреді?",
+            options: ["SGID — файл топтың құқығымен орындалады", "SUID", "Sticky Bit", "Execute permission", "Write permission"],
+            correct: 0
+        },
+        {
+            question: "ls -l командасында drwxr-xr-x нені білдіреді?",
+            options: ["Бұл директория (d)", "Бұл кәдімгі файл (-)", "Бұл сілтеме (l)", "Бұл құрылғы (c)", "Бұл жасырын файл (.)"],
+            correct: 0
+        },
+        {
+            question: "Жүйедегі барлық процестерді көру командасы?",
+            options: ["ps aux", "ps", "ls -l", "groups", "history"],
+            correct: 0
+        },
+        {
+            question: "Процестің приоритетін іске қосқанда орнату командасы?",
+            options: ["nice -n <priority> command", "renice", "top", "kill", "chmod"],
+            correct: 0
+        },
+        {
+            question: "Жұмыс істеп тұрған процестің (PID 603) приоритетін өзгерту?",
+            options: ["renice -n <value> -p 603", "nice -n <value> 603", "kill -n 603", "ps 603", "top 603"],
+            correct: 0
+        },
+        {
+            question: "Аты vim болатын барлық процестерді өлтіру командасы?",
+            options: ["killall vim", "kill vim", "stop vim", "end vim", "rm vim"],
+            correct: 0
+        },
+        {
+            question: "Фондағы (background) тапсырмаларды көру командасы?",
+            options: ["jobs", "ps", "bg", "fg", "top"],
+            correct: 0
+        },
+        {
+            question: "Тоқтатылған процесті фонда (background) жалғастыру?",
+            options: ["bg %1", "fg %1", "jobs", "kill %1", "start %1"],
+            correct: 0
+        },
+        {
+            question: "Процесті фондық режимде іске қосу белгісі?",
+            options: ["& (амперсанд)", "$ (доллар)", "# (решетка)", "! (леп белгісі)", "% (пайыз)"],
+            correct: 0
+        },
+        {
+            question: "sleep 10000 командасы не істейді?",
+            options: ["Процесті 10000 секундқа кідіртеді (ұйықтатады)", "Процесті 10000 секундтан кейін өшіреді", "Процесті 10000 рет қайталайды", "Жүйені 10000 секундқа жүктейді", "10000 файл жасайды"],
+            correct: 0
+        },
+        {
+            question: "IP адресті көру командасы?",
+            options: ["ip a", "ip ping", "netstat", "ls ip", "get ip"],
+            correct: 0
+        },
+        {
+            question: "Желілік интерфейстерді баптайтын негізгі файл (Debian)?",
+            options: ["/etc/network/interfaces", "/etc/sysconfig/network", "/etc/netplan", "/etc/hosts", "/etc/resolv.conf"],
+            correct: 0
+        },
+        {
+            question: "Статикалық IP орнату үшін конфигурацияда не жазылады?",
+            options: ["iface ens33 inet static", "iface ens33 inet dhcp", "iface ens33 inet loopback", "iface ens33 inet dynamic", "iface ens33 inet auto"],
+            correct: 0
+        },
+        {
+            question: "IP адрестер мен домендік атауларды сәйкестендіретін локальды файл?",
+            options: ["/etc/hosts", "/etc/hostname", "/etc/dns", "/etc/network", "/etc/resolv.conf"],
+            correct: 0
+        },
+        {
+            question: "DHCP серверінің конфигурациялық файлы қайда орналасқан?",
+            options: ["/etc/dhcp/dhcpd.conf", "/etc/dhcpd.conf", "/var/lib/dhcp/dhcpd.conf", "/etc/network/dhcp", "/home/dhcp.conf"],
+            correct: 0
+        },
+        {
+            question: "SSH серверге стандартты емес порт (мысалы, 2239) арқылы қосылу?",
+            options: ["ssh -p 2239 user@host", "ssh -P 2239 user@host", "ssh --port 2239 user@host", "ssh :2239 user@host", "ssh user@host:2239"],
+            correct: 0
+        },
+        {
+            question: "Файлды қашықтағы серверге SSH арқылы көшіру?",
+            options: ["scp -P 2239 file user@host:/path", "cp -ssh file user@host:/path", "ftp file user@host", "mv file user@host", "rsync file user@host"],
+            correct: 0
+        },
+        {
+            question: "SSH кілттерін генерациялау командасы?",
+            options: ["ssh-keygen", "ssh-add", "ssh-copy", "ssh-create", "ssh-new"],
+            correct: 0
+        },
+        {
+            question: "SSH ашық кілтін (public key) серверге көшіру командасы?",
+            options: ["ssh-copy-id user@host", "ssh-send-key user@host", "scp key.pub user@host", "cat key >> server", "ssh-upload user@host"],
+            correct: 0
+        },
+        {
+            question: "SSH арқылы root болып кіруге тыйым салу параметрі?",
+            options: ["PermitRootLogin no", "AllowRoot no", "BlockRoot yes", "UserRoot deny", "NoRootLogin"],
+            correct: 0
+        },
+        {
+            question: "SSH арқылы парольмен кіруді өшіру параметрі?",
+            options: ["PasswordAuthentication no", "UsePassword no", "NoPassword yes", "AuthPass no", "LoginPass false"],
+            correct: 0
+        },
+        {
+            question: "Белгілі бір IP-ден SSH кіруге рұқсат беретін файл?",
+            options: ["/etc/hosts.allow", "/etc/hosts.deny", "/etc/ssh/allow", "/etc/firewall", "/etc/access"],
+            correct: 0
+        },
+        {
+            question: "Сервисті (мысалы, ssh) іске қосу командасы?",
+            options: ["systemctl start sshd", "service start sshd", "ssh start", "system start sshd", "/etc/init.d/ssh start"],
+            correct: 0
+        },
+        {
+            question: "Сервисті автожүктеуден алып тастау (өшіру)?",
+            options: ["systemctl disable sshd", "systemctl stop sshd", "systemctl hide sshd", "systemctl off sshd", "systemctl delete sshd"],
+            correct: 0
+        },
+        {
+            question: "Жүйедегі барлық Unit файлдарын тізімдеу?",
+            options: ["systemctl list-unit-files", "systemctl list-all", "systemctl show", "ps aux", "ls /etc/systemd"],
+            correct: 0
+        },
+        {
+            question: "sudo құқықтарын редакциялайтын арнайы қауіпсіз команда?",
+            options: ["visudo", "vim /etc/sudoers", "nano /etc/passwd", "sudo edit", "sudo write"],
+            correct: 0
+        },
+        {
+            question: "/etc/sudoers файлында ALL=(ALL:ALL) ALL нені білдіреді?",
+            options: ["Қолданушы барлық командаларды кез келген қолданушы атынан орындай алады", "Қолданушы ешқандай команда орындай алмайды", "Тек root командаларын орындай алады", "Тек өз командаларын орындай алады", "Интернетке толық рұқсат"],
+            correct: 0
+        },
+        {
+            question: "Sudo арқылы команданы басқа қолданушы (mike) атынан орындау?",
+            options: ["sudo -u mike command", "sudo -n mike command", "su mike command", "runas mike command", "exec mike command"],
+            correct: 0
+        },
+        {
+            question: "sudo қолданғанда пароль сұрамау үшін не жазылады?",
+            options: ["NOPASSWD:ALL", "NOPASS:ALL", "PASSWORD:NO", "FREEPASS", "OPEN:ALL"],
+            correct: 0
+        },
+        {
+            question: "Өзіңізге қолжетімді sudo құқықтарын көру командасы?",
+            options: ["sudo -l", "sudo -s", "sudo -v", "sudo -h", "sudo -check"],
+            correct: 0
+        },
+        {
+            question: "Root ортасына толық ауысу (login shell)?",
+            options: ["su -l root", "su root", "cd root", "login root", "admin root"],
+            correct: 0
+        },
+        {
+            question: "hostname deb1 командасы не істейді?",
+            options: ["Жүйенің атауын deb1 деп уақытша өзгертеді", "deb1 қолданушысын жасайды", "deb1 файлын өшіреді", "Жүйені қайта жүктейді", "IP адресті көрсетеді"],
+            correct: 0
+        },
+        {
+            question: "usermod -L vova командасы не істейді?",
+            options: ["vova қолданушысын бұғаттайды (Lock)", "vova қолданушысын жүйеден өшіреді", "vova қолданушысының паролін өзгертеді", "vova қолданушысын root тобына қосады", "vova қолданушысының үй каталогын жасайды"],
+            correct: 0
+        },
+        {
+            question: "Файлға chmod 777 құқығы берілсе, бұл нені білдіреді?",
+            options: ["Барлық қолданушылар оқи, жаза және орындай алады (rwx-rwx-rwx)", "Тек иесі (owner) ғана толық құқыққа ие болады", "Файл тек оқуға арналған болады (read-only)", "Файлды ешкім аша алмайды", "Бұл түбірлік (root) құқықты білдіреді"],
+            correct: 0
+        },
+        {
+            question: "Жұмыс істеп тұрған процестің приоритетін өзгерту үшін қай команда қолданылады?",
+            options: ["renice", "nice", "top", "ps", "kill"],
+            correct: 0
+        },
+        {
+            question: "ssh -p 2239 root@192.168.150.148 командасындағы -p кілті не үшін қажет?",
+            options: ["SSH қосылымы үшін стандартты емес портты көрсету (2239)", "Парольді енгізуді сұрау", "Протокол түрін таңдау", "Ping тексерісін жүргізу", "Құпия сөзді файлдан оқу"],
+            correct: 0
+        },
+        {
+            question: "systemctl enable ssh.service командасының қызметі қандай?",
+            options: ["Сервисті автожүктеуге қосу (жүйе қосылғанда автоматты түрде іске қосылады)", "Сервисті дәл қазір іске қосу", "Сервисті тоқтату", "Сервистің статусын тексеру", "Сервисті жүйеден өшіріп тастау"],
+            correct: 0
+        },
+        {
+            question: "Директорияға chmod 1777 (Sticky bit) қойылса, оның ерекшелігі неде?",
+            options: ["Файлды тек оның иесі немесе root қана өшіре алады", "Файлды кез келген қолданушы өшіре алады", "Директорияға кіруге тыйым салынады", "Бұл файлды SUID ретінде іске қосады", "Жаңа файлдар жасырын болады"],
+            correct: 0
+        },
+        {
+            question: "sudo құқықтарын баптайтын файлды қауіпсіз түрде редакциялау командасы қандай?",
+            options: ["visudo", "vim /etc/sudoers", "nano /etc/passwd", "sudo edit", "chmod +s sudo"],
+            correct: 0
+        },
+        {
+            question: "kill -9 командасы процесске не істейді?",
+            options: ["Процесті бірден, мәжбүрлеп тоқтатады (SIGKILL)", "Процесті уақытша тоқтатады (Pause)", "Процесті фондық режимге жібереді", "Процесті қайта іске қосады (Restart)", "Процестің приоритетін төмендетеді"],
+            correct: 0
+        },
+        {
+            question: "scp командасы не үшін қолданылады?",
+            options: ["Файлдарды желі арқылы қауіпсіз көшіру үшін (SSH арқылы)", "Файлдардың атын өзгерту үшін", "Сервердің конфигурациясын тексеру үшін", "Жаңа SSH кілттерін генерациялау үшін", "Жергілікті желіні сканерлеу үшін"],
+            correct: 0
+        },
+        {
+            question: "Қолданушыға жүйеге кіруге тыйым салу үшін оның shell-ін қалай өзгертеміз?",
+            options: ["usermod -s /sbin/nologin user_name", "usermod -s /bin/bash user_name", "chmod 000 /home/user_name", "passwd -d user_name", "useradd -D user_name"],
+            correct: 0
+        },
+        {
+            question: "Фонда (background) тоқтап тұрған тапсырманы жалғастыру командасы?",
+            options: ["bg", "fg", "jobs", "stop", "kill"],
+            correct: 0
+        },
+        {
+            question: "getent passwd vova командасы не көрсетеді?",
+            options: ["vova қолданушысы туралы ақпаратты (UID, GID, home dir, shell)", "vova қолданушысының құпия сөзін (ашық түрде)", "vova қолданушысының соңғы кірген уақытын", "vova іске қосқан процестерді", "vova-ның IP адресін"],
+            correct: 0
+        },
+        {
+            question: "usermod -a -G alex vova командасындағы -a кілті не үшін өте маңызды?",
+            options: ["Қолданушыны ескі топтарынан шығармай, жаңа топқа қосады (Append)", "Қолданушыны барлық ескі топтардан шығарып тастайды", "Бұл кілт әкімші құқығын береді", "Топтың атын өзгертеді", "Топты жасырын етеді"],
+            correct: 0
+        },
+        {
+            question: "Топты жүйеден өшіру командасы?",
+            options: ["groupdel group_name", "delgroup group_name", "rmgroup group_name", "groupmod -d group_name", "groups -r group_name"],
+            correct: 0
+        },
+        {
+            question: "passwd alex командасы не істейді?",
+            options: ["alex қолданушысының құпия сөзін (паролін) өзгертеді немесе орнатады", "alex қолданушысының құпия сөзін көрсетеді", "alex қолданушысын бұғаттайды", "alex қолданушысының логинін өзгертеді", "alex қолданушысын өшіреді"],
+            correct: 0
+        },
+        {
+            question: "Жаңа қолданушы қосқанда /bin/bash қабықшасын (shell) бірден орнату?",
+            options: ["useradd -s /bin/bash user", "useradd -shell /bin/bash user", "useradd -b /bin/bash user", "useradd -x /bin/bash user", "useradd -bash user"],
+            correct: 0
+        },
+        {
+            question: "usermod -l vova alex командасы не істейді?",
+            options: ["alex қолданушысының логинін (атын) vova деп өзгертеді", "vova қолданушысының атын alex деп өзгертеді", "alex қолданушысын vova тобына қосады", "alex қолданушысын бұғаттайды", "Екі қолданушының орындарын ауыстырады"],
+            correct: 0
+        },
+        {
+            question: "usermod -U vova командасының қызметі?",
+            options: ["vova қолданушысын бұғаттан шығарады (Unlock)", "vova қолданушысын бұғаттайды", "vova қолданушысын жаңартады (Update)", "vova қолданушысын өшіреді", "vova қолданушысының үй каталогын тазалайды"],
+            correct: 0
+        },
+        {
+            question: "Қолданушының негізгі тобын (primary group) өзгерту кілті?",
+            options: ["-g (кіші әріп / строчная)", "-G (үлкен әріп / заглавная)", "-p", "-a", "-m"],
+            correct: 0
+        },
+        {
+            question: "Белгілі бір қолданушының (мысалы, olzhabaialmas) мүшелік ететін топтарын көру?",
+            options: ["groups olzhabaialmas", "id -g olzhabaialmas", "cat /etc/group | grep olzhabaialmas", "showgroups olzhabaialmas", "getgroups olzhabaialmas"],
+            correct: 0
+        },
+        {
+            question: "Жүйеге жаңа топ қосу командасы?",
+            options: ["addgroup newusers (немесе groupadd)", "newgroup newusers", "creategroup newusers", "usermod -g newusers", "gpasswd -a newusers"],
+            correct: 0
+        },
+        {
+            question: "Қолданушының shell-ын /bin/false ету не үшін қажет?",
+            options: ["Қолданушының жүйеге кіруіне (login) толық тыйым салу үшін", "Қолданушыға әкімші құқығын беру үшін", "Қолданушыға тек FTP арқылы кіруге рұқсат ету үшін", "Жүйелік қателерді жөндеу үшін", "Парольсіз кіру үшін"],
+            correct: 0
+        },
+        {
+            question: "rm -rf 10.txt командасы не істейді?",
+            options: ["Файлды ескертусіз және мәжбүрлеп өшіреді", "Файлды себетке (trash) жібереді", "Файлды архивтейді", "Файлдың атын өзгертеді", "Файлдың құқықтарын өшіреді"],
+            correct: 0
+        },
+        {
+            question: "touch 5.txt командасы егер файл жоқ болса не істейді?",
+            options: ["5.txt атты жаңа бос файл жасайды", "Қате береді", "Файлды іздейді", "Файлдың ішіне мәтін жазады", "Директория жасайды"],
+            correct: 0
+        },
+        {
+            question: "Бір уақытта бірнеше папка (Test1, Test2, Test3) құру командасы?",
+            options: ["mkdir Test1 Test2 Test3", "mkdir -p Test1/Test2/Test3", "create Test1 Test2 Test3", "touch Test1 Test2 Test3", "addfolder Test1 Test2 Test3"],
+            correct: 0
+        },
+        {
+            question: "cp -R newdir2 Test1 командасы нені білдіреді?",
+            options: ["newdir2 папкасын ішіндегі барлық файлдарымен бірге Test1 ішіне көшіру (Recursive)", "newdir2 папкасының атын Test1 деп өзгерту", "newdir2 папкасын Test1 папкасымен салыстыру", "newdir2 папкасын өшіріп, Test1 жасау", "newdir2 папкасын архивтеу"],
+            correct: 0
+        },
+        {
+            question: "chmod 0761 командасындағы соңғы 1 саны кімге және қандай құқық береді?",
+            options: ["Басқаларға (Others) тек орындау (Execute) құқығын береді", "Басқаларға жазу құқығын береді", "Топқа (Group) оқу құқығын береді", "Иесіне (Owner) толық құқық береді", "Ешкімге ешқандай құқық бермейді"],
+            correct: 0
+        },
+        {
+            question: "chown -v root history.txt командасындағы -v кілті не үшін?",
+            options: ["Verbose — орындалған іс-әрекет туралы егжей-тегжейлі хабарлама шығару", "Version — бағдарлама нұсқасын көрсету", "Verify — файлдың дұрыстығын тексеру", "Virtual — виртуалды өзгеріс жасау", "Very fast — жылдам орындау"],
+            correct: 0
+        },
+        {
+            question: "chmod u-w 111.txt командасы не істейді?",
+            options: ["Файл иесінен (user) жазу (write) құқығын алып тастайды", "Файл иесіне жазу құқығын береді", "Барлық қолданушылардан жазу құқығын алады", "Файлды жасырын етеді", "Файлды өшіреді"],
+            correct: 0
+        },
+        {
+            question: "chmod 666 құқығы файл үшін нені білдіреді?",
+            options: ["rw-rw-rw- (Барлығы оқып және жаза алады, бірақ орындай алмайды)", "rwx-rwx-rwx (Толық рұқсат)", "r--r--r-- (Тек оқу)", "---rw-rw- (Иесіне құқық жоқ)", "--x--x--x (Тек орындау)"],
+            correct: 0
+        },
+        {
+            question: "chown natasha:mike his1 командасы файлдың иесі мен тобын кімдерге өзгертеді?",
+            options: ["Иесі — natasha, тобы — mike", "Иесі — mike, тобы — natasha", "Иесі мен тобы екеуі де natasha", "Иесі мен тобы екеуі де mike", "Бұл команда қате"],
+            correct: 0
+        },
+        {
+            question: "Файлды өшіргенде әр файл үшін рұқсат сұрайтын (verbose/interactive) кілт?",
+            options: ["rm -v (немесе -i)", "rm -f", "rm -r", "rm -q", "rm -s"],
+            correct: 0
+        },
+        {
+            question: "ps -u olzhabaialmas командасы не көрсетеді?",
+            options: ["Тек olzhabaialmas қолданушысы іске қосқан процестерді", "Барлық процестерді", "Жүйелік процестерді", "Root процестерін", "Тоқтатылған процестерді"],
+            correct: 0
+        },
+        {
+            question: "top утилитасында нақты қолданушының процестерін сүзу командасы?",
+            options: ["top -u username", "top -p username", "top -g username", "top -s username", "top -filter username"],
+            correct: 0
+        },
+        {
+            question: "Процесті атауы бойынша емес, PID бойынша өлтіру командасы?",
+            options: ["kill <PID>", "killall <PID>", "pkill <PID>", "stop <PID>", "end <PID>"],
+            correct: 0
+        },
+        {
+            question: "systemctl list-units --all командасы не үшін қажет?",
+            options: ["Жүйедегі барлық (белсенді және белсенді емес) unit-терді көрсету үшін", "Тек іске қосылған сервистерді көрсету үшін", "Тек қатесі бар сервистерді көрсету үшін", "Барлық файлдарды көрсету үшін", "Жүйені өшіру үшін"],
+            correct: 0
+        },
+        {
+            question: "Systemd сервистерінің тізімінен \"network\" сөзі барларын табу?",
+            options: ["systemctl list-unit-files | grep network", "systemctl status network", "systemctl find network", "ls network", "ps network"],
+            correct: 0
+        },
+        {
+            question: "sleep 10000 & командасындағы & белгісі процесті қалай іске қосады?",
+            options: ["Фондық режимде (Background)", "Алдыңғы планда (Foreground)", "Әкімші құқығымен", "Қауіпсіз режимде", "Приоритеті жоғары режимде"],
+            correct: 0
+        },
+        {
+            question: "killall vim командасы не істейді?",
+            options: ["vim атауы бар барлық процестерді тоқтатады", "Тек бірінші табылған vim процесін тоқтатады", "vim бағдарламасын іске қосады", "vim конфигурациясын өшіреді", "Жүйені қайта жүктейді"],
+            correct: 0
+        },
+        {
+            question: "reboot командасы не істейді?",
+            options: ["Жүйені қайта жүктейді", "Жүйені толық өшіреді", "Жүйені ұйықтатады (Sleep)", "Желіні қайта қосады", "Графикалық интерфейсті өшіреді"],
+            correct: 0
+        },
+        {
+            question: "ip addr add 192.168.0.1/24 dev ens33 командасы не істейді?",
+            options: ["ens33 интерфейсіне 192.168.0.1 IP адресін тағайындайды", "ens33 интерфейсінен IP адресті өшіреді", "192.168.0.1 адресін тексереді (ping)", "Маршрут қосады", "Интерфейсті өшіреді"],
+            correct: 0
+        },
+        {
+            question: "/etc/network/interfaces файлындағы allow-hotplug enp0s3 нені білдіреді?",
+            options: ["Кабель жалғанғанда немесе оқиға болғанда интерфейсті автоматты қосу", "Интерфейсті қолмен қосуды талап етеді", "Интерфейсті мүлдем өшіреді", "Тек ыстық пернелермен қосылады", "Бұл жол қате"],
+            correct: 0
+        },
+        {
+            question: "DHCP сервер орнату үшін қандай пакет қажет?",
+            options: ["isc-dhcp-server", "dhcp-client", "net-tools", "network-manager", "apache2"],
+            correct: 0
+        },
+        {
+            question: "dhcpd.conf файлындағы range 192.168.0.10 192.168.0.20; жолы не үшін жауап береді?",
+            options: ["Клиенттерге берілетін IP адрестер пулын (аралығын) анықтайды", "Сервердің өз IP адресін анықтайды", "DNS серверлерін көрсетеді", "Шлюзді (Gateway) көрсетеді", "Жалға алу уақытын көрсетеді"],
+            correct: 0
+        },
+        {
+            question: "Берілген IP адрестер (leases) туралы ақпарат қай файлда сақталады?",
+            options: ["/var/lib/dhcp/dhcpd.leases", "/etc/dhcp/leases", "/var/log/dhcp", "/tmp/dhcp.leases", "/home/leases"],
+            correct: 0
+        },
+        {
+            question: "ping deb1 командасы жұмыс істеуі үшін /etc/hosts файлына не жазу керек?",
+            options: ["IP_address deb1 (мысалы, 192.168.0.1 deb1)", "name deb1", "dns deb1", "server deb1", "host deb1"],
+            correct: 0
+        },
+        {
+            question: "Hostname-ді өзгертетін команда?",
+            options: ["hostname new_name", "name new_name", "renamenode new_name", "setname new_name", "host new_name"],
+            correct: 0
+        },
+        {
+            question: "SSH сервер конфигурациясында Port 2239 деп жазсақ, сервер қай портты тыңдайды?",
+            options: ["2239", "22 (Стандартты)", "80", "443", "Кездейсоқ порт"],
+            correct: 0
+        },
+        {
+            question: "scp -P 2239 root@192.168.150.148:/root/1.txt /root/ командасы не істейді?",
+            options: ["Қашықтағы серверден 1.txt файлын жергілікті /root папкасына көшіреді", "Жергілікті файлды серверге жібереді", "Файлды серверде өшіреді", "Файлды серверде ашады", "Файлды тексереді"],
+            correct: 0
+        },
+        {
+            question: "/etc/hosts.allow файлына sshd: 192.168.150.154 жазу нені білдіреді?",
+            options: ["192.168.150.154 IP адресіне SSH арқылы қосылуға рұқсат беру", "192.168.150.154 IP адресіне тыйым салу", "Барлық IP-ге рұқсат беру", "Тек FTP-ге рұқсат беру", "Бұл IP-ді бұғаттау"],
+            correct: 0
+        },
+        {
+            question: "/etc/hosts.deny файлына sshd: ALL жазудың мағынасы?",
+            options: ["Барлық хосттарға SSH арқылы қосылуға тыйым салу (егер allow файлында рұқсат болмаса)", "Барлығына рұқсат беру", "Барлық сервистерді тоқтату", "SSH серверін өшіру", "Парольдерді өшіру"],
+            correct: 0
+        },
+        {
+            question: "Парольсіз кіру үшін SSH кілтін (key) орнатқаннан кейін қай файлды өзгертеміз?",
+            options: ["/etc/ssh/sshd_config (PasswordAuthentication no қою үшін)", "/etc/passwd", "/etc/shadow", "/etc/group", "/etc/network/interfaces"],
+            correct: 0
+        },
+        {
+            question: "SSH кілтін автоматты түрде серверге орнату командасы?",
+            options: ["ssh-copy-id user@host", "ssh-install-key user@host", "scp key user@host", "putty key", "ssh-keygen -send"],
+            correct: 0
+        },
+        {
+            question: "systemctl restart ssh командасы не үшін қажет?",
+            options: ["Конфигурация файлдары өзгерген соң, өзгерістер күшіне енуі үшін", "SSH серверін орнату үшін", "SSH серверін өшіру үшін", "Сервердің статусын көру үшін", "Клиенттерді ажырату үшін"],
+            correct: 0
+        },
+        {
+            question: "su -l root командасы жай su командасынан немен ерекшеленеді?",
+            options: ["Root ортасының айнымалыларын (Environment variables) толық жүктейді", "Root паролін сұрамайды", "Еш айырмашылығы жоқ", "Тек файлдарды көруге рұқсат береді", "Root-ты бұғаттайды"],
+            correct: 0
+        },
+        {
+            question: "visudo командасы қандай файлды ашады?",
+            options: ["/etc/sudoers (уақытша көшірмесін)", "/etc/passwd", "/etc/shadow", "/etc/group", "/etc/visudo.conf"],
+            correct: 0
+        },
+        {
+            question: "sudo -u mike date командасы нені орындайды?",
+            options: ["date командасын mike қолданушысының атынан орындайды", "mike қолданушысының датасын өзгертеді", "mike қолданушысын жасайды", "Жүйелік уақытты mike деп өзгертеді", "mike қолданушысының паролін көрсетеді"],
+            correct: 0
+        },
+        {
+            question: "/etc/sudoers файлында NOPASSWD:ALL параметрі не береді?",
+            options: ["Командаларды орындағанда пароль сұрамайды", "Парольді міндетті түрде сұрайды", "Парольді өзгертуге тыйым салады", "Барлық парольдерді өшіреді", "Жаңа пароль жасайды"],
+            correct: 0
+        },
+        {
+            question: "whoami командасы не көрсетеді?",
+            options: ["Дәл қазіргі белсенді қолданушының атын", "Жүйенің атын", "Барлық қолданушыларды", "Компьютердің IP адресін", "Операциялық жүйенің версиясын"],
+            correct: 0
+        },
+        {
+            question: "exit командасы консольде не істейді?",
+            options: ["Ағымдағы сессияны немесе shell-ды жабады (log out)", "Компьютерді өшіреді (shutdown)", "Компьютерді қайта жүктейді (reboot)", "Экранды тазалайды (clear)", "Процестерді тоқтатады"],
+            correct: 0
+        },
+        {
+            question: "cat Test1/passwd3 командасы не істейді?",
+            options: ["Test1 папкасындағы passwd3 файлының мазмұнын экранға шығарады", "Файлды өшіреді", "Файлды көшіреді", "Файлдың атын өзгертеді", "Файлға жаңа жол қосады"],
+            correct: 0
+        },
+        {
+            question: "grep командасы (мысалы systemctl list-unit-files | grep x11) не үшін қолданылады?",
+            options: ["Мәтіннен немесе тізімнен нақты сөзді/шаблоды іздеу (сүзу) үшін", "Файлдарды архивтеу үшін", "Интернеттен файл жүктеу үшін", "Дискіні форматтау үшін", "Процессор жүктемесін көру үшін"],
+            correct: 0
+        },
+        {
+            question: "usermod -a -G alex vova командасындағы -a кілті не үшін өте маңызды?",
+            options: ["Қолданушыны ескі топтарынан шығармай, жаңа топқа қосады (Append)", "Қолданушыны барлық ескі топтардан шығарып тастайды", "Бұл кілт әкімші құқығын береді", "Топтың атын өзгертеді", "Топты жасырын етеді"],
+            correct: 0
+        },
+        {
+            question: "Топты жүйеден өшіру командасы?",
+            options: ["groupdel group_name", "delgroup group_name", "rmgroup group_name", "groupmod -d group_name", "groups -r group_name"],
+            correct: 0
+        },
+        {
+            question: "passwd alex командасы не істейді?",
+            options: ["alex қолданушысының құпия сөзін (паролін) өзгертеді немесе орнатады", "alex қолданушысының құпия сөзін көрсетеді", "alex қолданушысын бұғаттайды", "alex қолданушысының логинін өзгертеді", "alex қолданушысын өшіреді"],
+            correct: 0
+        },
+        {
+            question: "Жаңа қолданушы қосқанда /bin/bash қабықшасын (shell) бірден орнату?",
+            options: ["useradd -s /bin/bash user", "useradd -shell /bin/bash user", "useradd -b /bin/bash user", "useradd -x /bin/bash user", "useradd -bash user"],
+            correct: 0
+        },
+        {
+            question: "usermod -l vova alex командасы не істейді?",
+            options: ["alex қолданушысының логинін (атын) vova деп өзгертеді", "vova қолданушысының атын alex деп өзгертеді", "alex қолданушысын vova тобына қосады", "alex қолданушысын бұғаттайды", "Екі қолданушының орындарын ауыстырады"],
+            correct: 0
+        },
+        {
+            question: "usermod -U vova командасының қызметі?",
+            options: ["vova қолданушысын бұғаттан шығарады (Unlock)", "vova қолданушысын бұғаттайды", "vova қолданушысын жаңартады (Update)", "vova қолданушысын өшіреді", "vova қолданушысының үй каталогын тазалайды"],
+            correct: 0
+        },
+        {
+            question: "Қолданушының негізгі тобын (primary group) өзгерту кілті?",
+            options: ["-g (кіші әріп / строчная)", "-G (үлкен әріп / заглавная)", "-p", "-a", "-m"],
+            correct: 0
+        },
+        {
+            question: "Белгілі бір қолданушының (мысалы, olzhabaialmas) мүшелік ететін топтарын көру?",
+            options: ["groups olzhabaialmas", "id -g olzhabaialmas", "cat /etc/group | grep olzhabaialmas", "showgroups olzhabaialmas", "getgroups olzhabaialmas"],
+            correct: 0
+        },
+        {
+            question: "Жүйеге жаңа топ қосу командасы?",
+            options: ["addgroup newusers (немесе groupadd)", "newgroup newusers", "creategroup newusers", "usermod -g newusers", "gpasswd -a newusers"],
+            correct: 0
+        },
+        {
+            question: "Қолданушының shell-ын /bin/false ету не үшін қажет?",
+            options: ["Қолданушының жүйеге кіруіне (login) толық тыйым салу үшін", "Қолданушыға әкімші құқығын беру үшін", "Қолданушыға тек FTP арқылы кіруге рұқсат ету үшін", "Жүйелік қателерді жөндеу үшін", "Парольсіз кіру үшін"],
+            correct: 0
+        },
+        {
+            question: "rm -rf 10.txt командасы не істейді?",
+            options: ["Файлды ескертусіз және мәжбүрлеп өшіреді", "Файлды себетке (trash) жібереді", "Файлды архивтейді", "Файлдың атын өзгертеді", "Файлдың құқықтарын өшіреді"],
+            correct: 0
+        },
+        {
+            question: "touch 5.txt командасы егер файл жоқ болса не істейді?",
+            options: ["5.txt атты жаңа бос файл жасайды", "Қате береді", "Файлды іздейді", "Файлдың ішіне мәтін жазады", "Директория жасайды"],
+            correct: 0
+        },
+        {
+            question: "Бір уақытта бірнеше папка (Test1, Test2, Test3) құру командасы?",
+            options: ["mkdir Test1 Test2 Test3", "mkdir -p Test1/Test2/Test3", "create Test1 Test2 Test3", "touch Test1 Test2 Test3", "addfolder Test1 Test2 Test3"],
+            correct: 0
+        },
+        {
+            question: "cp -R newdir2 Test1 командасы нені білдіреді?",
+            options: ["newdir2 папкасын ішіндегі барлық файлдарымен бірге Test1 ішіне көшіру (Recursive)", "newdir2 папкасының атын Test1 деп өзгерту", "newdir2 папкасын Test1 папкасымен салыстыру", "newdir2 папкасын өшіріп, Test1 жасау", "newdir2 папкасын архивтеу"],
+            correct: 0
+        },
+        {
+            question: "chmod 0761 командасындағы соңғы 1 саны кімге және қандай құқық береді?",
+            options: ["Басқаларға (Others) тек орындау (Execute) құқығын береді", "Басқаларға жазу құқығын береді", "Топқа (Group) оқу құқығын береді", "Иесіне (Owner) толық құқық береді", "Ешкімге ешқандай құқық бермейді"],
+            correct: 0
+        },
+        {
+            question: "chown -v root history.txt командасындағы -v кілті не үшін?",
+            options: ["Verbose — орындалған іс-әрекет туралы егжей-тегжейлі хабарлама шығару", "Version — бағдарлама нұсқасын көрсету", "Verify — файлдың дұрыстығын тексеру", "Virtual — виртуалды өзгеріс жасау", "Very fast — жылдам орындау"],
+            correct: 0
+        },
+        {
+            question: "chmod u-w 111.txt командасы не істейді?",
+            options: ["Файл иесінен (user) жазу (write) құқығын алып тастайды", "Файл иесіне жазу құқығын береді", "Барлық қолданушылардан жазу құқығын алады", "Файлды жасырын етеді", "Файлды өшіреді"],
+            correct: 0
+        },
+        {
+            question: "chmod 666 құқығы файл үшін нені білдіреді?",
+            options: ["rw-rw-rw- (Барлығы оқып және жаза алады, бірақ орындай алмайды)", "rwx-rwx-rwx (Толық рұқсат)", "r--r--r-- (Тек оқу)", "---rw-rw- (Иесіне құқық жоқ)", "--x--x--x (Тек орындау)"],
+            correct: 0
+        },
+        {
+            question: "chown natasha:mike his1 командасы файлдың иесі мен тобын кімдерге өзгертеді?",
+            options: ["Иесі — natasha, тобы — mike", "Иесі — mike, тобы — natasha", "Иесі мен тобы екеуі де natasha", "Иесі мен тобы екеуі де mike", "Бұл команда қате"],
+            correct: 0
+        },
+        {
+            question: "Файлды өшіргенде әр файл үшін рұқсат сұрайтын (verbose/interactive) кілт?",
+            options: ["rm -v (немесе -i)", "rm -f", "rm -r", "rm -q", "rm -s"],
+            correct: 0
+        },
+        {
+            question: "ps -u olzhabaialmas командасы не көрсетеді?",
+            options: ["Тек olzhabaialmas қолданушысы іске қосқан процестерді", "Барлық процестерді", "Жүйелік процестерді", "Root процестерін", "Тоқтатылған процестерді"],
+            correct: 0
+        },
+        {
+            question: "top утилитасында нақты қолданушының процестерін сүзу командасы?",
+            options: ["top -u username", "top -p username", "top -g username", "top -s username", "top -filter username"],
+            correct: 0
+        },
+        {
+            question: "Процесті атауы бойынша емес, PID бойынша өлтіру командасы?",
+            options: ["kill <PID>", "killall <PID>", "pkill <PID>", "stop <PID>", "end <PID>"],
+            correct: 0
+        },
+        {
+            question: "systemctl list-units --all командасы не үшін қажет?",
+            options: ["Жүйедегі барлық (белсенді және белсенді емес) unit-терді көрсету үшін", "Тек іске қосылған сервистерді көрсету үшін", "Тек қатесі бар сервистерді көрсету үшін", "Барлық файлдарды көрсету үшін", "Жүйені өшіру үшін"],
+            correct: 0
+        },
+        {
+            question: "Systemd сервистерінің тізімінен \"network\" сөзі барларын табу?",
+            options: ["systemctl list-unit-files | grep network", "systemctl status network", "systemctl find network", "ls network", "ps network"],
+            correct: 0
+        },
+        {
+            question: "sleep 10000 & командасындағы & белгісі процесті қалай іске қосады?",
+            options: ["Фондық режимде (Background)", "Алдыңғы планда (Foreground)", "Әкімші құқығымен", "Қауіпсіз режимде", "Приоритеті жоғары режимде"],
+            correct: 0
+        },
+        {
+            question: "killall vim командасы не істейді?",
+            options: ["vim атауы бар барлық процестерді тоқтатады", "Тек бірінші табылған vim процесін тоқтатады", "vim бағдарламасын іске қосады", "vim конфигурациясын өшіреді", "Жүйені қайта жүктейді"],
+            correct: 0
+        },
+        {
+            question: "reboot командасы не істейді?",
+            options: ["Жүйені қайта жүктейді", "Жүйені толық өшіреді", "Жүйені ұйықтатады (Sleep)", "Желіні қайта қосады", "Графикалық интерфейсті өшіреді"],
+            correct: 0
+        },
+        {
+            question: "ip addr add 192.168.0.1/24 dev ens33 командасы не істейді?",
+            options: ["ens33 интерфейсіне 192.168.0.1 IP адресін тағайындайды", "ens33 интерфейсінен IP адресті өшіреді", "192.168.0.1 адресін тексереді (ping)", "Маршрут қосады", "Интерфейсті өшіреді"],
+            correct: 0
+        },
+        {
+            question: "/etc/network/interfaces файлында allow-hotplug enp0s3 нені білдіреді?",
+            options: ["Кабель жалғанғанда немесе оқиға болғанда интерфейсті автоматты қосу", "Интерфейсті қолмен қосуды талап етеді", "Интерфейсті мүлдем өшіреді", "Тек ыстық пернелермен қосылады", "Бұл жол қате"],
+            correct: 0
+        },
+        {
+            question: "DHCP сервер орнату үшін қандай пакет қажет?",
+            options: ["isc-dhcp-server", "dhcp-client", "net-tools", "network-manager", "apache2"],
+            correct: 0
+        },
+        {
+            question: "dhcpd.conf файлындағы range 192.168.0.10 192.168.0.20; жолы не үшін жауап береді?",
+            options: ["Клиенттерге берілетін IP адрестер пулын (аралығын) анықтайды", "Сервердің өз IP адресін анықтайды", "DNS серверлерін көрсетеді", "Шлюзді (Gateway) көрсетеді", "Жалға алу уақытын көрсетеді"],
+            correct: 0
+        },
+        {
+            question: "Берілген IP адрестер (leases) туралы ақпарат қай файлда сақталады?",
+            options: ["/var/lib/dhcp/dhcpd.leases", "/etc/dhcp/leases", "/var/log/dhcp", "/tmp/dhcp.leases", "/home/leases"],
+            correct: 0
+        },
+        {
+            question: "ping deb1 командасы жұмыс істеуі үшін /etc/hosts файлына не жазу керек?",
+            options: ["IP_address deb1 (мысалы, 192.168.0.1 deb1)", "name deb1", "dns deb1", "server deb1", "host deb1"],
+            correct: 0
+        },
+        {
+            question: "Hostname-ді өзгертетін команда?",
+            options: ["hostname new_name", "name new_name", "renamenode new_name", "setname new_name", "host new_name"],
+            correct: 0
+        },
+        {
+            question: "SSH сервер конфигурациясында Port 2239 деп жазсақ, сервер қай портты тыңдайды?",
+            options: ["2239", "22 (Стандартты)", "80", "443", "Кездейсоқ порт"],
+            correct: 0
+        },
+        {
+            question: "scp -P 2239 root@192.168.150.148:/root/1.txt /root/ командасы не істейді?",
+            options: ["Қашықтағы серверден 1.txt файлын жергілікті /root папкасына көшіреді", "Жергілікті файлды серверге жібереді", "Файлды серверде өшіреді", "Файлды серверде ашады", "Файлды тексереді"],
+            correct: 0
+        },
+        {
+            question: "/etc/hosts.allow файлына sshd: 192.168.150.154 жазу нені білдіреді?",
+            options: ["192.168.150.154 IP адресіне SSH арқылы қосылуға рұқсат беру", "192.168.150.154 IP адресіне тыйым салу", "Барлық IP-ге рұқсат беру", "Тек FTP-ге рұқсат беру", "Бұл IP-ді бұғаттау"],
+            correct: 0
+        },
+        {
+            question: "/etc/hosts.deny файлына sshd: ALL жазудың мағынасы?",
+            options: ["Барлық хосттарға SSH арқылы қосылуға тыйым салу (егер allow файлында рұқсат болмаса)", "Барлығына рұқсат беру", "Барлық сервистерді тоқтату", "SSH серверін өшіру", "Парольдерді өшіру"],
+            correct: 0
+        },
+        {
+            question: "Парольсіз кіру үшін SSH кілтін (key) орнатқаннан кейін қай файлды өзгертеміз?",
+            options: ["/etc/ssh/sshd_config (PasswordAuthentication no қою үшін)", "/etc/passwd", "/etc/shadow", "/etc/group", "/etc/network/interfaces"],
+            correct: 0
+        },
+        {
+            question: "SSH кілтін автоматты түрде серверге орнату командасы?",
+            options: ["ssh-copy-id user@host", "ssh-install-key user@host", "scp key user@host", "putty key", "ssh-keygen -send"],
+            correct: 0
+        },
+        {
+            question: "systemctl restart ssh командасы не үшін қажет?",
+            options: ["Конфигурация файлдары өзгерген соң, өзгерістер күшіне енуі үшін", "SSH серверін орнату үшін", "SSH серверін өшіру үшін", "Сервердің статусын көру үшін", "Клиенттерді ажырату үшін"],
+            correct: 0
+        },
+        {
+            question: "su -l root командасы жай su командасынан немен ерекшеленеді?",
+            options: ["Root ортасының айнымалыларын (Environment variables) толық жүктейді", "Root паролін сұрамайды", "Еш айырмашылығы жоқ", "Тек файлдарды көруге рұқсат береді", "Root-ты бұғаттайды"],
+            correct: 0
+        },
+        {
+            question: "visudo командасы қандай файлды ашады?",
+            options: ["/etc/sudoers (уақытша көшірмесін)", "/etc/passwd", "/etc/shadow", "/etc/group", "/etc/visudo.conf"],
+            correct: 0
+        },
+        {
+            question: "sudo -u mike date командасы нені орындайды?",
+            options: ["date командасын mike қолданушысының атынан орындайды", "mike қолданушысының датасын өзгертеді", "mike қолданушысын жасайды", "Жүйелік уақытты mike деп өзгертеді", "mike қолданушысының паролін көрсетеді"],
+            correct: 0
+        },
+        {
+            question: "/etc/sudoers файлында NOPASSWD:ALL параметрі не береді?",
+            options: ["Командаларды орындағанда пароль сұрамайды", "Парольді міндетті түрде сұрайды", "Парольді өзгертуге тыйым салады", "Барлық парольдерді өшіреді", "Жаңа пароль жасайды"],
+            correct: 0
+        },
+        {
+            question: "whoami командасы не көрсетеді?",
+            options: ["Дәл қазіргі белсенді қолданушының атын", "Жүйенің атын", "Барлық қолданушыларды", "Компьютердің IP адресін", "Операциялық жүйенің версиясын"],
+            correct: 0
+        },
+        {
+            question: "exit командасы консольде не істейді?",
+            options: ["Ағымдағы сессияны немесе shell-ды жабады (log out)", "Компьютерді өшіреді (shutdown)", "Компьютерді қайта жүктейді (reboot)", "Экранды тазалайды (clear)", "Процестерді тоқтатады"],
+            correct: 0
+        },
+        {
+            question: "cat Test1/passwd3 командасы не істейді?",
+            options: ["Test1 папкасындағы passwd3 файлының мазмұнын экранға шығарады", "Файлды өшіреді", "Файлды көшіреді", "Файлдың атын өзгертеді", "Файлға жаңа жол қосады"],
+            correct: 0
+        },
+        {
+            question: "grep командасы (мысалы systemctl list-unit-files | grep x11) не үшін қолданылады?",
+            options: ["Мәтіннен немесе тізімнен нақты сөзді/шаблоды іздеу (сүзу) үшін", "Файлдарды архивтеу үшін", "Интернеттен файл жүктеу үшін", "Дискіні форматтау үшін", "Процессор жүктемесін көру үшін"],
+            correct: 0
+        },
+        {
+            question: "chmod командасының көмекшісін (help) қалай шақырамыз?",
+            options: ["chmod --help", "chmod ?", "chmod -h", "help chmod", "info chmod"],
+            correct: 0
+        },
+        {
+            question: "rwx құқығының сандық мәні қанша?",
+            options: ["7 (4+2+1)", "6 (4+2)", "5 (4+1)", "3 (2+1)", "4"],
+            correct: 0
+        },
+        {
+            question: "ip a командасы қандай ақпаратты көрсетпейді?",
+            options: ["DNS серверлердің тізімін", "IP адрестерді", "MAC адрестерді", "Интерфейс аттарын", "Интерфейс күйін (UP/DOWN)"],
+            correct: 0
+        },
+        {
+            question: "cat /etc/passwd файлында парольдер неге көрінбейді (x тұрады)?",
+            options: ["Себебі парольдердің хэштері /etc/shadow файлында сақталады", "Парольдер мүлдем сақталмайды", "Жүйеде пароль жоқ", "Бұл файл жасырын", "Парольдер шифрланбаған"],
+            correct: 0
+        },
+        {
+            question: "usermod -s /bin/bash командасы не өзгертеді?",
+            options: ["Қолданушының кіру қабықшасын (Login Shell) Bash-қа ауыстырады", "Қолданушының атын Bash деп өзгертеді", "Қолданушыға Bash скриптін береді", "Bash бағдарламасын өшіреді", "Барлық файлдарды Bash-қа айналдырады"],
+            correct: 0
+        },
+        {
+            question: "chown -R кілті не үшін керек?",
+            options: ["Папканың және оның ішіндегі барлық файлдардың иесін өзгерту үшін (Recursive)", "Тек папканың иесін өзгерту үшін", "Тек файлдардың иесін өзгерту үшін", "Иесін кездейсоқ өзгерту үшін", "Иесін бұрынғы қалпына келтіру үшін"],
+            correct: 0
+        },
+        {
+            question: "userdel командасымен топты өшіруге бола ма?",
+            options: ["Жоқ, топты өшіру үшін groupdel қолданылады", "Иә, болады", "Иә, егер -g кілтін қосса", "Иә, егер топ бос болса", "Тек root өшіре алады"],
+            correct: 0
+        },
+        {
+            question: "top утилитасынан шығу пернесі?",
+            options: ["q", "exit", "Esc", "Enter", "Space"],
+            correct: 0
+        },
+        {
+            question: "chmod командасында a+w нені білдіреді?",
+            options: ["Барлық қолданушыларға (all) жазу (write) құқығын қосу", "Барлығынан жазу құқығын алу", "Админдерге ғана жазу құқығын беру", "Автоматты түрде жазу", "Архив жасау"],
+            correct: 0
+        },
+        {
+            question: "hostname командасы аргументсіз не көрсетеді?",
+            options: ["Жүйенің қазіргі атын", "Жүйенің IP адресін", "Қолданушының атын", "Домен атын", "Желі атын"],
+            correct: 0
+        },
+        {
+            question: "ls -l нәтижесінде бірінші символ - (сызықша) болса, бұл не?",
+            options: ["Кәдімгі файл (Regular file)", "Директория (d)", "Ссылка (l)", "Блоктық құрылғы (b)", "Сокет (s)"],
+            correct: 0
+        },
+        {
+            question: "passwd командасын root басқа қолданушы үшін қалай қолданады?",
+            options: ["passwd username жазу арқылы", "Тек passwd жазу арқылы", "passwd -u username", "passwd -o username", "change pass username"],
+            correct: 0
+        },
+        {
+            question: "Берілген файл бойынша ең соңғы өтілген тақырып қандай?",
+            options: ["Sudoers және Visudo", "SSH", "Network", "Process", "File permissions"],
+            correct: 0
+        },
+
+
     ]
 
 
