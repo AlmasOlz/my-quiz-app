@@ -1286,7 +1286,7 @@ const allTests = {
         correct: 0
     },
     {
-        question: "Процедураны шақыру және қайту командасы қайда көрсетілген?",
+        question: "Процедураны шақыру және қайту командасы қайда көрсетілген? Дұрыс жауабы негізі = CALL, RET ",
         options: ["INT, IRET", "JMP, JNP", "JP, JO", "CALL, RET", "LOOP, LOOPE"],
         correct: 3
     },
