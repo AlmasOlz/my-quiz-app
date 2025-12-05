@@ -24,7 +24,14 @@
             <div class="progress-bar" id="progress-bar"></div>
         </div>
         
-        <div id="question-count" class="q-count">1 / 10</div>
+        <div class="info-bar">
+            <div id="question-count" class="q-count">1 / 10</div>
+            
+            <div class="jump-box">
+                <input type="number" id="jump-input" placeholder="№" min="1">
+                <button onclick="jumpToQuestion()" class="jump-btn">Өту</button>
+            </div>
+        </div>
 
         <h3 id="question-text">Сұрақ жүктелуде...</h3>
 
@@ -34,12 +41,19 @@
         
         <div id="options-list" class="options-grid"></div>
 
-        <button id="check-btn" class="next-btn" style="display: none; background: #ffc107; color: #333;" onclick="checkMultiAnswer()">
-            Жауапты тексеру
-        </button>
-        <button id="next-btn" class="next-btn" onclick="nextQuestion()">
-            Келесі сұрақ <i class="fas fa-arrow-right"></i>
-        </button>
+        <div class="navigation-buttons">
+            <button id="prev-btn" class="nav-btn prev-btn" onclick="prevQuestion()" style="display: none;">
+                <i class="fas fa-arrow-left"></i> Артқа
+            </button>
+
+            <button id="check-btn" class="nav-btn check-btn" style="display: none;" onclick="checkMultiAnswer()">
+                Тексеру
+            </button>
+
+            <button id="next-btn" class="nav-btn next-btn" onclick="nextQuestion()" style="display: none;">
+                Келесі <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
     </div>
 
     <div id="result-screen" class="quiz-card result-card" style="display: none;">

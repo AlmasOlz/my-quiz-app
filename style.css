@@ -1,13 +1,9 @@
 /* 1. НЕГІЗГІ ПАРАМЕТРЛЕР */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Күлгін-көк градиент */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +12,6 @@ body {
     color: #333;
 }
 
-/* 2. КАРТОЧКА ДИЗАЙНЫ */
 .quiz-card {
     background: #ffffff;
     width: 100%;
@@ -24,18 +19,14 @@ body {
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
     animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Анимация */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* 3. ТАҚЫРЫП ЖӘНЕ HEADER */
 .quiz-header {
     display: flex;
     justify-content: space-between;
@@ -43,384 +34,74 @@ body {
     margin-bottom: 20px;
 }
 
-.back-link {
-    text-decoration: none;
-    color: #764ba2;
-    font-weight: 600;
-    font-size: 14px;
-    transition: color 0.3s;
-}
+.back-link { text-decoration: none; color: #764ba2; font-weight: 600; font-size: 14px; }
+#quiz-title { font-weight: 700; color: #444; text-transform: uppercase; font-size: 14px; }
 
-.back-link:hover {
-    color: #5a367e;
-}
-
-#quiz-title {
-    font-weight: 700;
-    color: #444;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 14px;
-}
-
-/* 4. ПРОГРЕСС БАР */
 .progress-container {
-    width: 100%;
-    background-color: #f0f0f0;
-    border-radius: 50px;
-    height: 10px;
-    margin-bottom: 10px;
-    overflow: hidden;
+    width: 100%; background-color: #f0f0f0; border-radius: 50px; height: 10px; margin-bottom: 15px; overflow: hidden;
 }
-
 .progress-bar {
-    height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    width: 0%;
-    border-radius: 50px;
-    transition: width 0.4s ease-in-out;
+    height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); width: 0%; border-radius: 50px; transition: width 0.4s ease-in-out;
 }
 
-.q-count {
-    text-align: right;
-    font-size: 12px;
-    color: #888;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-/* 5. СҰРАҚ ЖӘНЕ СУРЕТ */
-#question-text {
-    font-size: 20px;
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.img-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#question-img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* 6. ЖАУАП НҰСҚАЛАРЫ (БАТЫРМАЛАР) */
-.options-grid {
+/* INFO BAR (Санағыш + Өту) */
+.info-bar {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
+.q-count { font-weight: 600; color: #888; font-size: 14px; }
+
+/* ӨТУ БЛОГЫ */
+.jump-box { display: flex; gap: 5px; }
+.jump-box input {
+    width: 60px; padding: 5px; border: 1px solid #ccc; border-radius: 8px; text-align: center; outline: none;
+}
+.jump-box input:focus { border-color: #667eea; }
+.jump-btn {
+    background: #667eea; color: white; border: none; padding: 5px 12px; border-radius: 8px; cursor: pointer; font-size: 13px;
+}
+
+#question-text { font-size: 18px; font-weight: 600; color: #2d3748; margin-bottom: 20px; text-align: center; }
+.img-container { text-align: center; margin-bottom: 20px; }
+#question-img { max-width: 100%; max-height: 250px; border-radius: 10px; }
+
+/* ЖАУАПТАР */
+.options-grid { display: flex; flex-direction: column; gap: 10px; }
 .option-item {
-    background: #f8f9fa;
-    border: 2px solid transparent;
-    padding: 15px 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #555;
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    background: #f8f9fa; border: 2px solid transparent; padding: 15px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; transition: all 0.2s;
 }
+.option-item:hover { background: #eef2ff; border-color: #667eea; }
+.circle { height: 12px; width: 12px; border: 2px solid #ccc; border-radius: 50%; margin-right: 15px; }
 
-.option-item:hover {
-    background: #eef2ff;
-    border-color: #667eea;
-    transform: translateY(-2px);
-    color: #667eea;
+.option-item.correct { background: #d4edda; border-color: #28a745; color: #155724; }
+.option-item.correct .circle { background: #28a745; border-color: #28a745; }
+.option-item.wrong { background: #f8d7da; border-color: #dc3545; color: #721c24; }
+.option-item.wrong .circle { background: #dc3545; border-color: #dc3545; }
+.disabled { pointer-events: none; opacity: 0.9; }
+
+/* БАТЫРМАЛАР БЛОГЫ */
+.navigation-buttons { display: flex; justify-content: space-between; gap: 10px; margin-top: 20px; }
+.nav-btn {
+    flex: 1; padding: 12px; border-radius: 12px; font-weight: 600; border: none; color: white; cursor: pointer; font-size: 15px;
 }
+.prev-btn { background: #e0e0e0; color: #555; }
+.check-btn { background: #ffc107; color: #333; }
+.next-btn { background: linear-gradient(90deg, #667eea, #764ba2); }
 
-.circle {
-    height: 12px;
-    width: 12px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    margin-right: 15px;
-    flex-shrink: 0;
-    transition: all 0.3s;
-}
+/* НӘТИЖЕ */
+.result-card { text-align: center; }
+.trophy-icon { font-size: 60px; color: #ffb700; margin-bottom: 15px; }
+.score-box { font-size: 40px; font-weight: 800; color: #667eea; margin: 10px 0; }
+.action-buttons { display: flex; gap: 10px; justify-content: center; margin-top: 20px; }
+.btn-restart, .btn-home { padding: 10px 20px; border-radius: 10px; border: none; cursor: pointer; }
+.btn-restart { background: #667eea; color: white; }
+.btn-home { background: #edf2f7; color: #4a5568; text-decoration: none; display: flex; align-items: center; }
 
-/* Дұрыс/Бұрыс стильдері (JS қосады) */
-.option-item.correct {
-    background: #d4edda;
-    border-color: #28a745;
-    color: #155724;
-}
-.option-item.correct .circle {
-    background: #28a745;
-    border-color: #28a745;
-}
-
-.option-item.wrong {
-    background: #f8d7da;
-    border-color: #dc3545;
-    color: #721c24;
-}
-.option-item.wrong .circle {
-    background: #dc3545;
-    border-color: #dc3545;
-}
-
-.disabled {
-    pointer-events: none;
-    opacity: 0.9;
-}
-
-/* 7. КЕЛЕСІ БАТЫРМАСЫ */
-.next-btn {
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 15px;
-    margin-top: 25px;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    display: none; /* Басында жасырын */
-    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
-}
-
-.next-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.6);
-}
-
-/* 8. НӘТИЖЕ ЭКРАНЫ */
-.result-card {
-    text-align: center;
-}
-
-.trophy-icon {
-    font-size: 60px;
-    color: #ffb700;
-    margin-bottom: 15px;
-    animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-@keyframes popIn {
-    0% { transform: scale(0); }
-    100% { transform: scale(1); }
-}
-
-.score-box {
-    font-size: 48px;
-    font-weight: 800;
-    background: -webkit-linear-gradient(#667eea, #764ba2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 10px 0;
-}
-
-.action-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 25px;
-}
-
-.btn-restart, .btn-home {
-    padding: 12px 25px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 14px;
-    text-decoration: none;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.btn-restart {
-    background: #667eea;
-    color: white;
-    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.4);
-}
-.btn-restart:hover { background: #5a6fd6; }
-
-.btn-home {
-    background: #edf2f7;
-    color: #4a5568;
-}
-.btn-home:hover { background: #e2e8f0; }
-.main-container {
-    text-align: center;
-    width: 100%;
-    max-width: 1000px;
-    animation: fadeIn 0.8s ease-out;
-}
-
-/* Бас тақырып */
-.main-title {
-    color: white;
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 40px;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    letter-spacing: 1px;
-}
-
-/* Карточкалар торы (Сетка) */
-.menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-/* Карточка дизайны */
-.card {
-    background: rgba(255, 255, 255, 0.95);
-    width: 280px;
-    padding: 30px 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Hover эффект (Көтерілу) */
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-}
-
-/* Иконкалар дөңгелегі */
-.card-icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    color: white;
-    margin-bottom: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.math-icon {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-}
-
-.java-icon {
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-}
-
-/* Мәтіндер */
-.card h3 {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-
-.subtitle {
-    color: #777;
-    font-size: 13px;
-    margin-bottom: 25px;
-}
-
-/* Бастау батырмасы */
-.start-btn {
-    text-decoration: none;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    color: white;
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 14px;
-    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.3);
-    transition: all 0.3s;
-}
-
-.start-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.5);
-}
-/* ========================================= */
-/* МОБИЛЬДІ ҚҰРЫЛҒЫЛАР ҮШІН (RESPONSIVE)     */
-/* ========================================= */
-
-@media screen and (max-width: 768px) {
-
-    /* 1. Жалпы экран (Фон) */
-    body {
-        padding: 15px; /* Шеткі шегіністі азайту */
-        align-items: flex-start; /* Ортада емес, жоғарыдан бастау */
-        padding-top: 40px;
-    }
-
-    /* 2. Негізгі тақырып */
-    .main-title {
-        font-size: 28px; /* Тақырыпты сәл кішірейту */
-        margin-bottom: 25px;
-    }
-
-    /* 3. Тест карточкасы (Quiz Card) */
-    .quiz-card {
-        padding: 20px; /* Ішкі шегіністі азайту */
-        border-radius: 15px;
-    }
-
-    /* 4. Мәзір карточкалары (Index Menu) */
-    .card {
-        width: 100%; /* Телефонда толық енімен тұру */
-        max-width: 100%;
-        margin-bottom: 15px; /* Арақашықтық */
-    }
-
-    .menu-container {
-        gap: 15px;
-        flex-direction: column; /* Карточкаларды асты-үстіне қою */
-        align-items: center;
-    }
-
-    /* 5. Сұрақ мәтіні */
-    #question-text {
-        font-size: 18px; /* Мәтін телефонға сыю үшін */
-        text-align: left; /* Сол жаққа туралау (оқуға ыңғайлы) */
-    }
-
-    /* 6. Жауап батырмалары (ЕҢ МАҢЫЗДЫСЫ) */
-    .option-item {
-        padding: 16px; /* Басуға ыңғайлы болу үшін үлкейту */
-        font-size: 15px;
-        margin-bottom: 8px;
-        min-height: 55px; /* Саусақ тигізуге ыңғайлы биіктік */
-        display: flex;
-        align-items: center; /* Мәтінді ортаға қою */
-    }
-
-    /* 7. Суреттер */
-    #question-img {
-        max-height: 180px; /* Сурет тым үлкен болып кетпесін */
-        width: auto;
-        max-width: 100%;
-    }
-
-    /* 8. Келесі сұрақ батырмасы */
-    .next-btn {
-        padding: 18px; /* Батырманы үлкейту */
-        font-size: 18px;
-        position: sticky; /* Төменге жабысып тұруы мүмкін */
-        bottom: 10px;
-    }
+/* МОБИЛЬДІ */
+@media (max-width: 768px) {
+    body { padding-top: 40px; align-items: flex-start; }
+    .nav-btn { font-size: 14px; padding: 10px; }
 }

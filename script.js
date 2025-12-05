@@ -1,17 +1,16 @@
-// URL параметрлерін оқу
 const urlParams = new URLSearchParams(window.location.search);
 const topic = urlParams.get('topic');
 
 let currentQuestions = [];
 let quizTitle = "";
 
-// Тест тақырыптарын тексеру
 if (allTests[topic]) {
     currentQuestions = allTests[topic];
     if (topic === 'os') quizTitle = "Операциялық жүйелер";
     else if (topic === 'algo') quizTitle = "Алгоритмдеу";
     else if (topic === 'math') quizTitle = "Ықтималдық теориясы";
     else if (topic === 'java') quizTitle = "Java Programming";
+    else if (topic === 'sysadmin') quizTitle = "Сис. Админ";
 } else {
     alert("Тест табылған жоқ!");
     window.location.href = "index.html";
@@ -21,7 +20,10 @@ if (allTests[topic]) {
 let currentQuestionIndex = 0;
 let score = 0;
 const totalQuestions = currentQuestions.length;
-let isMultiSelect = false; // Көп жауапты сұрақ па?
+let isMultiSelect = false;
+
+// ТАРИХ (Жауаптарды сақтау үшін)
+let userHistory = new Array(totalQuestions).fill(null);
 
 // Элементтер
 const quizScreen = document.getElementById('quiz-screen');
@@ -31,18 +33,20 @@ const questionText = document.getElementById('question-text');
 const optionsList = document.getElementById('options-list');
 const questionCount = document.getElementById('question-count');
 const progressBar = document.getElementById('progress-bar');
-const nextBtn = document.getElementById('next-btn');
-const checkBtn = document.getElementById('check-btn'); // ЖАҢА
 const imgEl = document.getElementById('question-img');
+const jumpInput = document.getElementById('jump-input');
 
-// Нәтиже элементтері
+// Батырмалар
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const checkBtn = document.getElementById('check-btn');
+
 const scoreText = document.getElementById('score-text');
 const totalText = document.getElementById('total-text');
 const feedbackText = document.getElementById('feedback-text');
 
 titleEl.innerText = quizTitle;
 
-// Араластыру функциясы
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -58,7 +62,7 @@ function loadQuestion() {
     questionText.innerText = `${currentQuestionIndex + 1}. ${data.question}`;
     questionCount.innerText = `Сұрақ ${currentQuestionIndex + 1} / ${totalQuestions}`;
     
-    // Суретті көрсету логикасы
+    // Сурет
     if (data.img) {
         imgEl.src = data.img;
         imgEl.style.display = 'block';
@@ -67,132 +71,142 @@ function loadQuestion() {
         imgEl.src = "";
     }
 
+    // Прогресс
     const progressPercent = ((currentQuestionIndex + 1) / totalQuestions) * 100;
     progressBar.style.width = `${progressPercent}%`;
 
     optionsList.innerHTML = '';
+    
+    // Батырмалардың көрінуі
+    prevBtn.style.display = currentQuestionIndex > 0 ? 'block' : 'none';
     nextBtn.style.display = 'none';
-    checkBtn.style.display = 'none'; // Тексеру батырмасын жасыру
+    checkBtn.style.display = 'none';
 
-    // Көп жауапты сұрақты анықтау (Егер correct массив болса - true)
     isMultiSelect = Array.isArray(data.correct);
 
-    // Жауаптарды дайындау
-    let answers = data.options.map((opt, index) => {
-        // Егер массив болса includes қолданамыз, болмаса ===
-        let correctStatus = isMultiSelect ? data.correct.includes(index) : index === data.correct;
-        return { text: opt, isCorrect: correctStatus };
-    });
-    
-    answers = shuffleArray(answers);
+    // Жауаптарды дайындау (егер бұрын араласпаған болса)
+    if (!data.shuffledOptions) {
+        let answers = data.options.map((opt, index) => {
+            let correctStatus = isMultiSelect ? data.correct.includes(index) : index === data.correct;
+            return { text: opt, isCorrect: correctStatus };
+        });
+        data.shuffledOptions = shuffleArray(answers);
+    }
 
     // Жауаптарды шығару
-    answers.forEach((answerObj) => {
+    data.shuffledOptions.forEach((answerObj, uiIndex) => {
         const div = document.createElement('div');
         div.className = 'option-item';
         div.innerHTML = `<span class="circle"></span> ${answerObj.text}`;
         
-        // Жауаптың дұрыстығын сақтаймыз
         div.dataset.isCorrect = answerObj.isCorrect;
+        div.dataset.uiIndex = uiIndex;
 
-        // Басу логикасы (Select)
-        div.onclick = () => selectOption(div);
-        
+        div.onclick = () => selectOption(div, uiIndex);
         optionsList.appendChild(div);
     });
 
-    // Егер көп жауапты болса, "Тексеру" батырмасын шығарамыз
-    if (isMultiSelect) {
-        checkBtn.style.display = 'block';
+    // Тарихты тексеру (Егер жауап берілген болса, қалпына келтіру)
+    const history = userHistory[currentQuestionIndex];
+    if (history && history.answered) {
+        restoreState(history);
+    } else {
+        if (isMultiSelect) checkBtn.style.display = 'block';
     }
 }
 
-// НҰСҚАНЫ ТАҢДАУ (Басқан кезде)
-function selectOption(selectedDiv) {
-    // Егер жауап тексеріліп қойса, ештеңе істемейміз
+// ТАРИХТАН ҚАЛПЫНА КЕЛТІРУ
+function restoreState(history) {
+    const options = optionsList.children;
+    for (let i = 0; i < options.length; i++) {
+        const div = options[i];
+        div.classList.add('disabled');
+        if (history.selectedIndices.includes(i)) {
+            if (div.dataset.isCorrect === "true") div.classList.add('correct');
+            else div.classList.add('wrong');
+        }
+        if (div.dataset.isCorrect === "true") div.classList.add('correct');
+    }
+    nextBtn.style.display = 'block';
+    checkBtn.style.display = 'none';
+}
+
+// ТАҢДАУ
+function selectOption(selectedDiv, uiIndex) {
     if (selectedDiv.classList.contains('disabled')) return;
 
     if (isMultiSelect) {
-        // --- КӨП ЖАУАПТЫ РЕЖИМ ---
-        // Жай ғана "selected" класын қосып/аламыз (Toggle)
         selectedDiv.classList.toggle('selected');
-        
-        // Көк түспен белгілеу (CSS-ке қосымша стиль керек емес, осы жерден береміз)
         if(selectedDiv.classList.contains('selected')) {
             selectedDiv.style.backgroundColor = "#eef2ff";
             selectedDiv.style.borderColor = "#667eea";
             selectedDiv.querySelector('.circle').style.backgroundColor = "#667eea";
         } else {
-            selectedDiv.style.backgroundColor = ""; // Қалпына келтіру
+            selectedDiv.style.backgroundColor = "";
             selectedDiv.style.borderColor = "";
             selectedDiv.querySelector('.circle').style.backgroundColor = "";
         }
-
     } else {
-        // --- БІР ЖАУАПТЫ РЕЖИМ (Ескі логика) ---
-        checkSingleAnswer(selectedDiv);
+        checkSingleAnswer(selectedDiv, uiIndex);
     }
 }
 
 // БІР ЖАУАПТЫ ТЕКСЕРУ
-function checkSingleAnswer(selectedDiv) {
-    const options = optionsList.children;
+function checkSingleAnswer(selectedDiv, uiIndex) {
     const isCorrect = selectedDiv.dataset.isCorrect === "true";
-
     if (isCorrect) score++;
 
+    userHistory[currentQuestionIndex] = { answered: true, selectedIndices: [uiIndex] };
+
+    const options = optionsList.children;
     for (let i = 0; i < options.length; i++) {
         options[i].classList.add('disabled');
-        if (options[i].dataset.isCorrect === "true") {
-            options[i].classList.add('correct');
-        }
+        if (options[i].dataset.isCorrect === "true") options[i].classList.add('correct');
     }
 
-    if (isCorrect) {
-        selectedDiv.classList.add('correct');
-    } else {
-        selectedDiv.classList.add('wrong');
-    }
+    if (isCorrect) selectedDiv.classList.add('correct');
+    else selectedDiv.classList.add('wrong');
+
     nextBtn.style.display = 'block';
 }
 
-// КӨП ЖАУАПТЫ ТЕКСЕРУ (Тексеру батырмасын басқанда)
+// КӨП ЖАУАПТЫ ТЕКСЕРУ
 function checkMultiAnswer() {
     const options = optionsList.children;
-    let allCorrectFound = true; // Барлық дұрыс табылды ма?
-    let noWrongSelected = true; // Қате таңдалмады ма?
+    let allCorrectFound = true;
+    let noWrongSelected = true;
+    let selectedIndices = [];
 
     for (let i = 0; i < options.length; i++) {
         const div = options[i];
         const isSelected = div.classList.contains('selected');
         const isActuallyCorrect = div.dataset.isCorrect === "true";
 
-        div.classList.add('disabled'); // Бұғаттау
-        div.style.backgroundColor = ""; // Уақытша түсті алып тастау
+        if (isSelected) selectedIndices.push(i);
+        div.classList.add('disabled');
+        div.style.backgroundColor = "";
+        div.style.borderColor = "";
+        div.querySelector('.circle').style.backgroundColor = "";
 
-        // Визуалды нәтиже
         if (isActuallyCorrect) {
-            div.classList.add('correct'); // Дұрысты жасыл қылу
-            if (!isSelected) allCorrectFound = false; // Дұрыс жауап таңдалмай қалды
-        } 
-        
-        if (isSelected) {
-            if (!isActuallyCorrect) {
-                div.classList.add('wrong'); // Қатені таңдап қойды
-                noWrongSelected = false;
-            }
+            div.classList.add('correct');
+            if (!isSelected) allCorrectFound = false;
+        }
+        if (isSelected && !isActuallyCorrect) {
+            div.classList.add('wrong');
+            noWrongSelected = false;
         }
     }
 
-    // Ұпай беру (Егер барлық дұрыс таңдалып, ЕШҚАНДАЙ қате таңдалмаса ғана)
-    if (allCorrectFound && noWrongSelected) {
-        score++;
-    }
+    if (allCorrectFound && noWrongSelected) score++;
 
+    userHistory[currentQuestionIndex] = { answered: true, selectedIndices: selectedIndices };
+    
     checkBtn.style.display = 'none';
     nextBtn.style.display = 'block';
 }
 
+// НАВИГАЦИЯ
 function nextQuestion() {
     if (currentQuestionIndex < totalQuestions - 1) {
         currentQuestionIndex++;
@@ -202,6 +216,30 @@ function nextQuestion() {
     }
 }
 
+function prevQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        loadQuestion();
+    }
+}
+
+function jumpToQuestion() {
+    const val = parseInt(jumpInput.value);
+    if (val >= 1 && val <= totalQuestions) {
+        currentQuestionIndex = val - 1;
+        loadQuestion();
+        jumpInput.value = "";
+    } else {
+        alert("Дұрыс сан енгізіңіз (1-" + totalQuestions + ")");
+    }
+}
+
+// Enter пернесі
+jumpInput.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") jumpToQuestion();
+});
+
+// НӘТИЖЕ
 function showResults() {
     quizScreen.style.display = 'none';
     resultScreen.style.display = 'block';
