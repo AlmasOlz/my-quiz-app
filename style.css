@@ -105,3 +105,20 @@ body {
     body { padding-top: 40px; align-items: flex-start; }
     .nav-btn { font-size: 14px; padding: 10px; }
 }
+/* Вариант ішіндегі сурет */
+.option-img {
+    max-width: 100%;  /* Сурет батырмадан шығып кетпеуі үшін */
+    max-height: 80px; /* Биіктігін шектеу (қалауыңызша өзгертіңіз) */
+    object-fit: contain; /* Пропорцияны сақтау */
+    margin-left: 10px;
+    background: white; /* Формула анық көріну үшін фон */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Option item-ді икемді ету */
+.option-item {
+    display: flex;
+    align-items: center; /* Ортаға келтіру */
+    gap: 10px;
+}

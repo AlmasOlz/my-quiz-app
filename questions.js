@@ -4893,6 +4893,374 @@ matht:[{
         },
 
 
+    ],
+    mathrk: [
+        {
+            question: "X кездейсоқ шама үшін үлестірім функциясының қандай қасиеті бар?",
+            options: [
+                { text: "", img: "images/math/1/2.png" }, // Дұрыс: F(x) кемімейтін, шектер...
+                { text: "F(x) үнемі кемиді.", img: null },
+                { text: "F(x) барлық x үшін 0-ге тең болады.", img: null },
+                { text: "Үлестірім функциясы үздіксіз кездейсоқ шамалар үшін болмайды.", img: null },
+                { text: "F(x) барлық x үшін 1-ге тең болады.", img: null }
+            ],
+            correct: 0
+        },
+        {
+            question: "φ-Фишер критерийі",
+            options: [
+                { text: "", img: "images/math/2/1.png" }, // Дұрыс: (φ1-φ2) * sqrt(...)
+                { text: "", img: "images/math/2/2.png" },
+                { text: "", img: "images/math/2/3.png" },
+                { text: "", img: "images/math/2/4.png" },
+                { text: "", img: "images/math/2/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Ең кіші квадраттар әдісімен сызықтық модельдегі β1 регрессия коэффициенті қалай анықталады?",
+            options: [
+                { text: "", img: "images/math/3/1.png" }, // Дұрыс: (φ1-φ2) * sqrt(...)
+                { text: "", img: "images/math/3/2.png" },
+                { text: "", img: "images/math/3/3.png" },
+                { text: "", img: "images/math/3/4.png" },
+                { text: "", img: "images/math/3/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Белгісіз σ² дисперсиясы үшін сенімді аралық қалай есептеледі? s² іріктемелі дисперсиясын пайдалана отырып қалыпты үлестіруде?",
+            options: [
+                { text: "", img: "images/math/4/1.png" }, // Дұрыс: (φ1-φ2) * sqrt(...)
+                { text: "", img: "images/math/4/2.png" },
+                { text: "", img: "images/math/4/3.png" },
+                { text: "", img: "images/math/4/4.png" },
+                { text: "", img: "images/math/4/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Кездейсоқ шаманың интегралды функциясы берілген, математикалық күтуді есептеңіз M(x)",
+            img: "images/math/s/7.png",
+            options: [
+                { text: "7/2", img: null },
+                { text: "3/4", img: null },
+                { text: "2", img: null },
+                { text: "11/6", img: null },
+                { text: "1", img: null }
+            ],
+            correct: 0
+        },
+        {
+            question: "Дұрыс сөйлемді табу керек: Егер ықтималдық - тұрақты және аз, сынақтар саны n - үлкен сан λ=np<=const болса, онда Пуассонның жақындатылған формуласын аламыз:",
+            options: [
+                { text: "", img: "images/math/5/1.png" }, // Дұрыс: (φ1-φ2) * sqrt(...)
+                { text: "", img: "images/math/5/2.png" },
+                { text: "", img: "images/math/5/3.png" },
+                { text: "", img: "images/math/5/4.png" },
+                { text: "", img: "images/math/5/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Экспоненциалдық тәуелділік үшін сызықтық емес регрессия теңдеуі қандай?",
+            options: [
+                { text: "", img: "images/math/6/1.png" }, // Дұрыс: (φ1-φ2) * sqrt(...)
+                { text: "", img: "images/math/6/2.png" },
+                { text: "", img: "images/math/6/3.png" },
+                { text: "", img: "images/math/6/4.png" },
+                { text: "", img: "images/math/6/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Кездейсоқ шаманың интегралды функциясы берілген, математикалық күтуді есептеңіз M(x)",
+            img: "images/math/s/8.png",
+            options: [
+                { text: "8/3", img: null },
+                { text: "1/3", img: null },
+                { text: "4", img: null },
+                { text: "4/3", img: null },
+                { text: "1", img: null }
+            ],
+            correct: 0
+        },
+        {
+            question: "Белгілі σ² дисперсия кезінде математикалық күтім μ үшін келесі интервалдардың қайсысы сенімді интервал болып табылады?",
+            options: [
+                { text: "", img: "images/math/7/1.png" }, // Дұрыс: (φ1-φ2) * sqrt(...)
+                { text: "", img: "images/math/7/2.png" },
+                { text: "", img: "images/math/7/3.png" },
+                { text: "", img: "images/math/7/4.png" },
+                { text: "", img: "images/math/7/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Формулалардың қайсысын орталық момент ретінде ұсынамыз?",
+            options: [
+                { text: "", img: "images/math/8/1.png" }, // Дұрыс: (φ1-φ2) * sqrt(...)
+                { text: "", img: "images/math/8/2.png" },
+                { text: "", img: "images/math/8/3.png" },
+                { text: "", img: "images/math/8/4.png" },
+                { text: "", img: "images/math/8/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Тәуелсіз іріктемелер үшін Стьюденттің t-критерийі:",
+            options: [
+                { text: "", img: "images/math/9/1.png" }, // Дұрыс: (φ1-φ2) * sqrt(...)
+                { text: "", img: "images/math/9/2.png" },
+                { text: "", img: "images/math/9/3.png" },
+                { text: "", img: "images/math/9/4.png" },
+                { text: "", img: "images/math/9/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Кездейсоқ шаманың интегралды функциясы берілген, математикалық күтуді есептеңіз M(x)",
+            img: "images/math/s/2.png",
+            options: [
+                { text: "2", img: null },
+                { text: "4/3", img: null },
+                { text: "1/3", img: null },
+                { text: "9/4", img: null },
+                { text: "1", img: null }
+            ],
+            correct: 0
+        },
+        {
+            question: "s² тәуелсіз іріктемелер үшін Стьюденттің t-критерийі (Ортақ дисперсия формуласы):",
+            options: [
+                { text: "", img: "images/math/10/1.png" }, 
+                { text: "", img: "images/math/10/2.png" },
+                { text: "", img: "images/math/10/3.png" },
+                { text: "", img: "images/math/10/4.png" },
+                { text: "", img: "images/math/10/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Экспоненциалдық тәуелділік үшін сызықтық емес регрессия теңдеуі қандай? (Қайталау)",
+            options: [
+                { text: "", img: "images/math/11/1.png" }, 
+                { text: "", img: "images/math/11/2.png" },
+                { text: "", img: "images/math/11/3.png" },
+                { text: "", img: "images/math/11/4.png" },
+                { text: "", img: "images/math/11/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Егер іріктеме аз (n < 30) және дисперсия белгісіз болса, μ математикалық күту үшін қандай интервал сенімді интервал болып табылады?",
+            options: [
+                { text: "", img: "images/math/12/1.png" }, 
+                { text: "", img: "images/math/12/2.png" },
+                { text: "", img: "images/math/12/3.png" },
+                { text: "", img: "images/math/12/4.png" },
+                { text: "", img: "images/math/12/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Кездейсоқ шаманың интегралды функциясы берілген, математикалық күтуді есептеңіз M(x) (Қайталау: 0..3 аралығы)",
+            options: [
+                { text: "2", img: null },
+                { text: "9/4", img: null },
+                { text: "4/3", img: null },
+                { text: "1", img: null },
+                { text: "1/3", img: null }
+            ],
+            correct: 0
+        },
+        {
+            question: "Тәуелсіз іріктемелер үшін Стьюденттің t-критерийі (Қайталау):",
+            options: [
+                { text: "", img: "images/math/13/1.png" }, 
+                { text: "", img: "images/math/13/2.png" },
+                { text: "", img: "images/math/13/3.png" },
+                { text: "", img: "images/math/13/4.png" },
+                { text: "", img: "images/math/13/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Белгісіз σ² дисперсиясы үшін сенімді аралық қалай есептеледі? s² іріктемелі дисперсиясын пайдалана отырып қалыпты үлестіруде?",
+            options: [
+                { text: "", img: "images/math/14/1.png" }, 
+                { text: "", img: "images/math/14/2.png" },
+                { text: "", img: "images/math/14/3.png" },
+                { text: "", img: "images/math/14/4.png" },
+                { text: "", img: "images/math/14/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Нормальды үлестірімінің ықтималдық тығыздығының функциясы қандай?",
+            options: [
+                { text: "", img: "images/math/15/1.png" }, 
+                { text: "", img: "images/math/15/2.png" },
+                { text: "", img: "images/math/15/3.png" },
+                { text: "", img: "images/math/15/4.png" },
+                { text: "", img: "images/math/15/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Кездейсоқ шаманың эксцесі (немесе эксцесс коэффициенті) деп аталатын санның формуласын көрсетіңіз",
+            options: [
+                { text: "", img: "images/math/16/1.png" }, 
+                { text: "", img: "images/math/16/2.png" },
+                { text: "", img: "images/math/16/3.png" },
+                { text: "", img: "images/math/16/4.png" },
+                { text: "", img: "images/math/16/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Екі топқа арналған Sp² ортақ дисперсия",
+            options: [
+                { text: "", img: "images/math/17/1.png" }, 
+                { text: "", img: "images/math/17/2.png" },
+                { text: "", img: "images/math/17/3.png" },
+                { text: "", img: "images/math/17/4.png" },
+                { text: "", img: "images/math/17/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Дұрыс сөйлемді табу керек: Егер ықтималдық - тұрақты және аз... (Пуассон)",
+            options: [
+                { text: "", img: "images/math/18/1.png" }, 
+                { text: "", img: "images/math/18/2.png" },
+                { text: "", img: "images/math/18/3.png" },
+                { text: "", img: "images/math/18/4.png" },
+                { text: "", img: "images/math/18/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "F-статистикасының дұрыс жазбасын келтіріңіз:",
+            options: [
+                { text: "", img: "images/math/19/1.png" }, 
+                { text: "", img: "images/math/19/2.png" },
+                { text: "", img: "images/math/19/3.png" },
+                { text: "", img: "images/math/19/4.png" },
+                { text: "", img: "images/math/19/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "χ2 және Стьюден сандық үлестірімі келесі түрде беріледі:",
+            options: [
+                { text: "", img: "images/math/20/1.png" }, 
+                { text: "", img: "images/math/20/2.png" },
+                { text: "", img: "images/math/20/3.png" },
+                { text: "", img: "images/math/20/4.png" },
+                { text: "", img: "images/math/20/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Нормальды үлестірімінің ықтималдық тығыздығының функциясы қандай? (Қайталау)",
+            options: [
+                { text: "", img: "images/math/21/1.png" }, 
+                { text: "", img: "images/math/21/2.png" },
+                { text: "", img: "images/math/21/3.png" },
+                { text: "", img: "images/math/21/4.png" },
+                { text: "", img: "images/math/21/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Манна-Уитни U-критеридің дұрыс формуласын көрсетіңіз",
+            options: [
+                { text: "", img: "images/math/22/1.png" }, 
+                { text: "", img: "images/math/22/2.png" },
+                { text: "", img: "images/math/22/3.png" },
+                { text: "", img: "images/math/22/4.png" },
+                { text: "", img: "images/math/22/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Тығыздық функциясының дұрыс формуласын көрсетіңіз.",
+            options: [
+                { text: "", img: "images/math/23/1.png" }, 
+                { text: "", img: "images/math/23/2.png" },
+                { text: "", img: "images/math/23/3.png" },
+                { text: "", img: "images/math/23/4.png" },
+                { text: "", img: "images/math/23/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Экспоненциалды үлестірімнің параметрлері қандай?",
+            options: [
+                { text: "Орташа мәні μ, дисперсиясы μ²", img: null }, // Дұрыс
+                { text: "Орташа мәні λ, дисперсиясы λ", img: null },
+                { text: "Орташа мәні μ, дисперсиясы λ", img: null },
+                { text: "Орташа мәні λ, дисперсиясы μ", img: null },
+                { text: "Орташа мәні λ, дисперсиясы λ²", img: null }
+            ],
+            correct: 0
+        },
+        {
+            question: "Бастапқы және орталық моменттер байланыстыратын формулалардың дұрыстығын көрсетіңіз:",
+            options: [
+                { text: "", img: "images/math/24/1.png" }, 
+                { text: "", img: "images/math/24/2.png" },
+                { text: "", img: "images/math/24/3.png" },
+                { text: "", img: "images/math/24/4.png" },
+                { text: "", img: "images/math/24/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Мына формулалардың қайсысы χ2- тестіні есептеу үшін пайдаланылады?",
+            options: [
+                { text: "", img: "images/math/chi_test/2.png" }, // Дұрыс: sum (Oi - Ei)^2 / Ei
+                { text: "", img: "images/math/chi_test/1.png" },
+                { text: "", img: "images/math/chi_test/3.png" },
+                { text: "", img: "images/math/chi_test/4.png" },
+                { text: "", img: "images/math/chi_test/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Егер іріктеме аз (n < 30) және дисперсия белгісіз болса... (Қайталау)",
+            options: [
+                { text: "", img: "images/math/smalln2/1.png" }, // Дұрыс
+                { text: "", img: "images/math/smalln2/2.png" },
+                { text: "", img: "images/math/smalln2/3.png" },
+                { text: "", img: "images/math/smalln2/4.png" },
+                { text: "", img: "images/math/smalln2/5.png" }
+            ],
+            correct: 0
+        },
+        {
+            question: "Кездейсоқ шаманың интегралды функциясы берілген... (Қайталау 0..3)",
+            options: [
+                { text: "2", img: null },
+                { text: "4/3", img: null },
+                { text: "1/3", img: null },
+                { text: "1", img: null },
+                { text: "9/4", img: null }
+            ],
+            correct: 0
+        },
+        {
+            question: "Нормальды үлестірімде μ және σ қандай рөл атқарады?",
+            options: [
+                { text: "μ — орташа мән, σ — стандартты ауытқу", img: null }, // Дұрыс
+                { text: "μ — орташа мәннің квадрат, σ — дисперсия", img: null },
+                { text: "μ — стандартты ауытқу, σ — орташа мән", img: null },
+                { text: "μ — орташа мән, σ — ықтималдық", img: null },
+                { text: "μ — вариация, σ — дисперсия", img: null }
+            ],
+            correct: 0
+        }
     ]
 
 
