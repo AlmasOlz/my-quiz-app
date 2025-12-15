@@ -4898,7 +4898,7 @@ matht:[{
         {
             question: "X кездейсоқ шама үшін үлестірім функциясының қандай қасиеті бар?",
             options: [
-                { text: "", img: "images/math/1/2.png" }, // Дұрыс: F(x) кемімейтін, шектер...
+                { text: "", img: "images/math/1/1.png" }, // Дұрыс: F(x) кемімейтін, шектер...
                 { text: "F(x) үнемі кемиді.", img: null },
                 { text: "F(x) барлық x үшін 0-ге тең болады.", img: null },
                 { text: "Үлестірім функциясы үздіксіз кездейсоқ шамалар үшін болмайды.", img: null },
@@ -5041,17 +5041,7 @@ matht:[{
             ],
             correct: 0
         },
-        {
-            question: "Экспоненциалдық тәуелділік үшін сызықтық емес регрессия теңдеуі қандай? (Қайталау)",
-            options: [
-                { text: "", img: "images/math/11/1.png" }, 
-                { text: "", img: "images/math/11/2.png" },
-                { text: "", img: "images/math/11/3.png" },
-                { text: "", img: "images/math/11/4.png" },
-                { text: "", img: "images/math/11/5.png" }
-            ],
-            correct: 0
-        },
+        
         {
             question: "Егер іріктеме аз (n < 30) және дисперсия белгісіз болса, μ математикалық күту үшін қандай интервал сенімді интервал болып табылады?",
             options: [
@@ -5060,39 +5050,6 @@ matht:[{
                 { text: "", img: "images/math/12/3.png" },
                 { text: "", img: "images/math/12/4.png" },
                 { text: "", img: "images/math/12/5.png" }
-            ],
-            correct: 0
-        },
-        {
-            question: "Кездейсоқ шаманың интегралды функциясы берілген, математикалық күтуді есептеңіз M(x) (Қайталау: 0..3 аралығы)",
-            options: [
-                { text: "2", img: null },
-                { text: "9/4", img: null },
-                { text: "4/3", img: null },
-                { text: "1", img: null },
-                { text: "1/3", img: null }
-            ],
-            correct: 0
-        },
-        {
-            question: "Тәуелсіз іріктемелер үшін Стьюденттің t-критерийі (Қайталау):",
-            options: [
-                { text: "", img: "images/math/13/1.png" }, 
-                { text: "", img: "images/math/13/2.png" },
-                { text: "", img: "images/math/13/3.png" },
-                { text: "", img: "images/math/13/4.png" },
-                { text: "", img: "images/math/13/5.png" }
-            ],
-            correct: 0
-        },
-        {
-            question: "Белгісіз σ² дисперсиясы үшін сенімді аралық қалай есептеледі? s² іріктемелі дисперсиясын пайдалана отырып қалыпты үлестіруде?",
-            options: [
-                { text: "", img: "images/math/14/1.png" }, 
-                { text: "", img: "images/math/14/2.png" },
-                { text: "", img: "images/math/14/3.png" },
-                { text: "", img: "images/math/14/4.png" },
-                { text: "", img: "images/math/14/5.png" }
             ],
             correct: 0
         },
@@ -5130,17 +5087,6 @@ matht:[{
             correct: 0
         },
         {
-            question: "Дұрыс сөйлемді табу керек: Егер ықтималдық - тұрақты және аз... (Пуассон)",
-            options: [
-                { text: "", img: "images/math/18/1.png" }, 
-                { text: "", img: "images/math/18/2.png" },
-                { text: "", img: "images/math/18/3.png" },
-                { text: "", img: "images/math/18/4.png" },
-                { text: "", img: "images/math/18/5.png" }
-            ],
-            correct: 0
-        },
-        {
             question: "F-статистикасының дұрыс жазбасын келтіріңіз:",
             options: [
                 { text: "", img: "images/math/19/1.png" }, 
@@ -5162,17 +5108,7 @@ matht:[{
             ],
             correct: 0
         },
-        {
-            question: "Нормальды үлестірімінің ықтималдық тығыздығының функциясы қандай? (Қайталау)",
-            options: [
-                { text: "", img: "images/math/21/1.png" }, 
-                { text: "", img: "images/math/21/2.png" },
-                { text: "", img: "images/math/21/3.png" },
-                { text: "", img: "images/math/21/4.png" },
-                { text: "", img: "images/math/21/5.png" }
-            ],
-            correct: 0
-        },
+       
         {
             question: "Манна-Уитни U-критеридің дұрыс формуласын көрсетіңіз",
             options: [
@@ -5220,33 +5156,11 @@ matht:[{
         {
             question: "Мына формулалардың қайсысы χ2- тестіні есептеу үшін пайдаланылады?",
             options: [
-                { text: "", img: "images/math/chi_test/2.png" }, // Дұрыс: sum (Oi - Ei)^2 / Ei
-                { text: "", img: "images/math/chi_test/1.png" },
-                { text: "", img: "images/math/chi_test/3.png" },
-                { text: "", img: "images/math/chi_test/4.png" },
-                { text: "", img: "images/math/chi_test/5.png" }
-            ],
-            correct: 0
-        },
-        {
-            question: "Егер іріктеме аз (n < 30) және дисперсия белгісіз болса... (Қайталау)",
-            options: [
-                { text: "", img: "images/math/smalln2/1.png" }, // Дұрыс
-                { text: "", img: "images/math/smalln2/2.png" },
-                { text: "", img: "images/math/smalln2/3.png" },
-                { text: "", img: "images/math/smalln2/4.png" },
-                { text: "", img: "images/math/smalln2/5.png" }
-            ],
-            correct: 0
-        },
-        {
-            question: "Кездейсоқ шаманың интегралды функциясы берілген... (Қайталау 0..3)",
-            options: [
-                { text: "2", img: null },
-                { text: "4/3", img: null },
-                { text: "1/3", img: null },
-                { text: "1", img: null },
-                { text: "9/4", img: null }
+                { text: "", img: "images/math/25/1.png" }, // Дұрыс: sum (Oi - Ei)^2 / Ei
+                { text: "", img: "images/math/25/2.png" },
+                { text: "", img: "images/math/25/3.png" },
+                { text: "", img: "images/math/25/4.png" },
+                { text: "", img: "images/math/25/5.png" }
             ],
             correct: 0
         },
