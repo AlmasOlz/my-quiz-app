@@ -8143,9 +8143,2982 @@ frontcss: [
     ],
     correct: 0
   }
-    ]
+    ],
 
+frontall: [
+ {
+            question: "HTML дегеніміз не?",
+            options: [
+                "HyperText Markup Language",
+                "HyperText Making Language",
+                "Home Tool Markup Language",
+                "HighText Machine Language",
+                "Hyperlink Text Manage Language"
+            ],
+            correct: 0
+        },
+        {
+            question: "HTML құжатының дұрыс құрылымы қандай?",
+            options: [
+                "&lt;html&gt;&lt;head&gt;...&lt;/head&gt;&lt;body&gt;...&lt;/body&gt;&lt;/html&gt;",
+                "&lt;head&gt;&lt;body&gt;...&lt;/body&gt;&lt;html&gt;...&lt;/html&gt;&lt;/head&gt;",
+                "&lt;body&gt;&lt;head&gt;...&lt;/head&gt;&lt;html&gt;...&lt;/html&gt;&lt;/body&gt;",
+                "&lt;html&gt;&lt;body&gt;...&lt;/body&gt;&lt;head&gt;...&lt;/head&gt;&lt;/html&gt;",
+                "&lt;head&gt;&lt;html&gt;...&lt;/html&gt;&lt;body&gt;...&lt;/body&gt;&lt;/head&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Ең үлкен тақырып (heading) тегі қандай?",
+            options: [
+                "&lt;h1&gt;",
+                "&lt;h6&gt;",
+                "&lt;head&gt;",
+                "&lt;heading&gt;",
+                "&lt;title&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Жаңа жолға түсу (үзу) тегі қандай?",
+            options: [
+                "&lt;br&gt;",
+                "&lt;lb&gt;",
+                "&lt;break&gt;",
+                "&lt;newline&gt;",
+                "&lt;stop&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Гиперсілтеме (ссылка) жасау үшін қандай тег қолданылады?",
+            options: [
+                "&lt;a&gt;",
+                "&lt;link&gt;",
+                "&lt;href&gt;",
+                "&lt;url&gt;",
+                "&lt;nav&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Сілтеменің адресін көрсететін атрибут қандай?",
+            options: [
+                "href",
+                "src",
+                "link",
+                "url",
+                "path"
+            ],
+            correct: 0
+        },
+        {
+            question: "Сурет кірістіру үшін қандай тег қолданылады?",
+            options: [
+                "&lt;img&gt;",
+                "&lt;image&gt;",
+                "&lt;pic&gt;",
+                "&lt;src&gt;",
+                "&lt;picture&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Суреттің жолын (файлын) көрсететін атрибут?",
+            options: [
+                "src",
+                "href",
+                "link",
+                "source",
+                "path"
+            ],
+            correct: 0
+        },
+        {
+            question: "Реттелмеген тізімді (маркерленген) құру тегі?",
+            options: [
+                "&lt;ul&gt;",
+                "&lt;ol&gt;",
+                "&lt;li&gt;",
+                "&lt;list&gt;",
+                "&lt;dl&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Реттелген тізімді (нөмірленген) құру тегі?",
+            options: [
+                "&lt;ol&gt;",
+                "&lt;ul&gt;",
+                "&lt;li&gt;",
+                "&lt;list&gt;",
+                "&lt;dl&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Тізім элементін белгілейтін тег?",
+            options: [
+                "&lt;li&gt;",
+                "&lt;ul&gt;",
+                "&lt;ol&gt;",
+                "&lt;el&gt;",
+                "&lt;item&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "HTML5 құжатының типін қалай жариялаймыз?",
+            options: [
+                "&lt;!DOCTYPE html&gt;",
+                "&lt;!DOCTYPE HTML5&gt;",
+                "&lt;html type=\"5\"&gt;",
+                "&lt;doctype html&gt;",
+                "&lt;?html5?&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Беттің тақырыбын (браузер қойындысында көрінетін) қай тег анықтайды?",
+            options: [
+                "&lt;title&gt;",
+                "&lt;head&gt;",
+                "&lt;meta&gt;",
+                "&lt;header&gt;",
+                "&lt;h1&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтінді қалың (bold) ету үшін қолданылатын тег (мағыналық маңыздылығы бар)?",
+            options: [
+                "&lt;strong&gt;",
+                "&lt;b&gt;",
+                "&lt;bold&gt;",
+                "&lt;heavy&gt;",
+                "&lt;big&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтінді курсив (italic) ету үшін қолданылатын тег?",
+            options: [
+                "&lt;em&gt;",
+                "&lt;i&gt;",
+                "&lt;italic&gt;",
+                "&lt;slanted&gt;",
+                "&lt;cursive&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "HTML-де түсініктеме (комментарий) қалай жазылады?",
+            options: [
+                "&lt;!-- Бұл түсініктеме --&gt;",
+                "// Бұл түсініктеме",
+                "/* Бұл түсініктеме */",
+                "&lt;comment&gt; Бұл түсініктеме &lt;/comment&gt;",
+                "&lt;! Бұл түсініктеме !&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Кестені (таблица) құру тегі?",
+            options: [
+                "&lt;table&gt;",
+                "&lt;tab&gt;",
+                "&lt;grid&gt;",
+                "&lt;spreadsheet&gt;",
+                "&lt;tb&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Кестедегі жолды (қатарды) анықтайтын тег?",
+            options: [
+                "&lt;tr&gt;",
+                "&lt;td&gt;",
+                "&lt;th&gt;",
+                "&lt;row&gt;",
+                "&lt;line&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Кестедегі ұяшықты (деректерді) анықтайтын тег?",
+            options: [
+                "&lt;td&gt;",
+                "&lt;tr&gt;",
+                "&lt;th&gt;",
+                "&lt;cell&gt;",
+                "&lt;data&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Кестенің тақырып ұяшығын (header cell) анықтайтын тег?",
+            options: [
+                "&lt;th&gt;",
+                "&lt;thead&gt;",
+                "&lt;td&gt;",
+                "&lt;head&gt;",
+                "&lt;title&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Форма жасау үшін қолданылатын тег?",
+            options: [
+                "&lt;form&gt;",
+                "&lt;input&gt;",
+                "&lt;table&gt;",
+                "&lt;structure&gt;",
+                "&lt;data&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтін енгізу өрісін жасайтын тег?",
+            options: [
+                "&lt;input type=\"text\"&gt;",
+                "&lt;textfield&gt;",
+                "&lt;textinput&gt;",
+                "&lt;type=\"text\"&gt;",
+                "&lt;input text&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Құпия сөз енгізу өрісі (жұлдызшамен көрінетін)?",
+            options: [
+                "&lt;input type=\"password\"&gt;",
+                "&lt;input type=\"secret\"&gt;",
+                "&lt;input type=\"hidden\"&gt;",
+                "&lt;password&gt;",
+                "&lt;secure&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Радио батырма (бір таңдау) жасау?",
+            options: [
+                "&lt;input type=\"radio\"&gt;",
+                "&lt;input type=\"circle\"&gt;",
+                "&lt;radio&gt;",
+                "&lt;select&gt;",
+                "&lt;option&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Қанат белгісі (чекбокс, көп таңдау) жасау?",
+            options: [
+                "&lt;input type=\"checkbox\"&gt;",
+                "&lt;input type=\"check\"&gt;",
+                "&lt;checkbox&gt;",
+                "&lt;box&gt;",
+                "&lt;tick&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Төмен түсетін тізім (выпадающий список) жасау тегі?",
+            options: [
+                "&lt;select&gt;",
+                "&lt;list&gt;",
+                "&lt;dropdown&gt;",
+                "&lt;option&gt;",
+                "&lt;input type=\"list\"&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Төмен түсетін тізімнің ішіндегі нұсқаны көрсететін тег?",
+            options: [
+                "&lt;option&gt;",
+                "&lt;select&gt;",
+                "&lt;choice&gt;",
+                "&lt;item&gt;",
+                "&lt;value&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Үлкен мәтін жазуға арналған көп жолды өріс?",
+            options: [
+                "&lt;textarea&gt;",
+                "&lt;input type=\"textarea\"&gt;",
+                "&lt;text&gt;",
+                "&lt;bigtext&gt;",
+                "&lt;box&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Батырма (кнопка) жасайтын тег?",
+            options: [
+                "&lt;button&gt;",
+                "&lt;click&gt;",
+                "&lt;input type=\"click\"&gt;",
+                "&lt;btn&gt;",
+                "&lt;press&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтерді топтауға арналған блоктық тег (контейнер)?",
+            options: [
+                "&lt;div&gt;",
+                "&lt;span&gt;",
+                "&lt;group&gt;",
+                "&lt;section&gt;",
+                "&lt;block&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтін ішіндегі кішігірім бөлікті топтауға арналған кірістірілген (inline) тег?",
+            options: [
+                "&lt;span&gt;",
+                "&lt;div&gt;",
+                "&lt;p&gt;",
+                "&lt;line&gt;",
+                "&lt;text&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Сілтемені жаңа қойындыда (вкладкада) ашу үшін қолданылатын атрибут?",
+            options: [
+                "target=\"_blank\"",
+                "target=\"new\"",
+                "target=\"_self\"",
+                "window=\"new\"",
+                "open=\"new\""
+            ],
+            correct: 0
+        },
+        {
+            question: "Сурет жүктелмей қалғанда шығатын мәтіндік сипаттама атрибуты?",
+            options: [
+                "alt",
+                "title",
+                "desc",
+                "src",
+                "text"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементке тышқанды апарғанда шығатын көмекші мәтін атрибуты?",
+            options: [
+                "title",
+                "alt",
+                "tooltip",
+                "hover",
+                "help"
+            ],
+            correct: 0
+        },
+        {
+            question: "HTML5-те сайттың \"бас бөлігін\" білдіретін семантикалық тег?",
+            options: [
+                "&lt;header&gt;",
+                "&lt;head&gt;",
+                "&lt;top&gt;",
+                "&lt;nav&gt;",
+                "&lt;main&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "HTML5-те сайттың \"төменгі бөлігін\" (подвал) білдіретін тег?",
+            options: [
+                "&lt;footer&gt;",
+                "&lt;bottom&gt;",
+                "&lt;end&gt;",
+                "&lt;foot&gt;",
+                "&lt;base&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Навигациялық сілтемелер тобын қамтитын семантикалық тег?",
+            options: [
+                "&lt;nav&gt;",
+                "&lt;navigation&gt;",
+                "&lt;menu&gt;",
+                "&lt;links&gt;",
+                "&lt;header&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Негізгі контенттен бөлек, бүйірлік панельді (sidebar) білдіретін тег?",
+            options: [
+                "&lt;aside&gt;",
+                "&lt;sidebar&gt;",
+                "&lt;side&gt;",
+                "&lt;section&gt;",
+                "&lt;div&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Беттің кодтауын (кодировка) UTF-8 деп орнату?",
+            options: [
+                "&lt;meta charset=\"UTF-8\"&gt;",
+                "&lt;meta encoding=\"UTF-8\"&gt;",
+                "&lt;charset=\"UTF-8\"&gt;",
+                "&lt;html charset=\"UTF-8\"&gt;",
+                "&lt;head charset=\"UTF-8\"&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "CSS файлын HTML-ге қосу тегі?",
+            options: [
+                "&lt;link rel=\"stylesheet\" href=\"style.css\"&gt;",
+                "&lt;style src=\"style.css\"&gt;",
+                "&lt;css href=\"style.css\"&gt;",
+                "&lt;script href=\"style.css\"&gt;",
+                "&lt;file type=\"css\" src=\"style.css\"&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "JavaScript кодын қосу немесе жазу тегі?",
+            options: [
+                "&lt;script&gt;",
+                "&lt;js&gt;",
+                "&lt;javascript&gt;",
+                "&lt;code&gt;",
+                "&lt;link&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Ең кіші тақырып (heading) тегі?",
+            options: [
+                "&lt;h6&gt;",
+                "&lt;h1&gt;",
+                "&lt;small&gt;",
+                "&lt;header&gt;",
+                "&lt;h0&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Параграф (абзац) тегі қандай?",
+            options: [
+                "&lt;p&gt;",
+                "&lt;text&gt;",
+                "&lt;para&gt;",
+                "&lt;paragraph&gt;",
+                "&lt;line&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Input өрісінде көмекші мәтінді (өшіп тұратын подсказка) көрсету атрибуты?",
+            options: [
+                "placeholder",
+                "value",
+                "name",
+                "hint",
+                "text"
+            ],
+            correct: 0
+        },
+        {
+            question: "Кесте бағаналарын біріктіру атрибуты (Colspan)?",
+            options: [
+                "colspan",
+                "rowspan",
+                "span",
+                "merge",
+                "col"
+            ],
+            correct: 0
+        },
+        {
+            question: "Кесте жолдарын біріктіру атрибуты (Rowspan)?",
+            options: [
+                "rowspan",
+                "colspan",
+                "row",
+                "merge-row",
+                "span-row"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементке бірегей (unique) идентификатор беру атрибуты?",
+            options: [
+                "id",
+                "class",
+                "name",
+                "key",
+                "tag"
+            ],
+            correct: 0
+        },
+        {
+            question: "Бірнеше элементке ортақ стиль беру үшін қолданылатын атрибут?",
+            options: [
+                "class",
+                "id",
+                "style",
+                "group",
+                "type"
+            ],
+            correct: 0
+        },
+        {
+            question: "Көлденең сызық сызу тегі?",
+            options: [
+                "&lt;hr&gt;",
+                "&lt;br&gt;",
+                "&lt;line&gt;",
+                "&lt;border&gt;",
+                "&lt;tr&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтіннің астын сызу тегі?",
+            options: [
+                "&lt;u&gt;",
+                "&lt;s&gt;",
+                "&lt;i&gt;",
+                "&lt;under&gt;",
+                "&lt;bottom&gt;"
+            ],
+            correct: 0
+        },
+         {
+            question: "CSS сөзінің толық мағынасы қандай?",
+            options: [
+                "Cascading Style Sheets",
+                "Computer Style Sheets",
+                "Creative Style System",
+                "Colorful Style Sheets",
+                "Cascading Simple Sheets"
+            ],
+            correct: 0
+        },
+        {
+            question: "CSS-ті HTML парақшасына қосудың дұрыс жолы (сыртқы файл арқылы)?",
+            options: [
+                "&lt;link rel=\"stylesheet\" href=\"style.css\"&gt;",
+                "&lt;style src=\"style.css\"&gt;",
+                "&lt;css file=\"style.css\"&gt;",
+                "&lt;script href=\"style.css\"&gt;",
+                "&lt;stylesheet&gt;style.css&lt;/stylesheet&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "HTML элементін id арқылы қалай таңдаймыз?",
+            options: [
+                "#elementId",
+                ".elementId",
+                "*elementId",
+                "id=elementId",
+                "elementId"
+            ],
+            correct: 0
+        },
+        {
+            question: "HTML элементін class арқылы қалай таңдаймыз?",
+            options: [
+                ".elementClass",
+                "#elementClass",
+                "*elementClass",
+                "class=elementClass",
+                "^elementClass"
+            ],
+            correct: 0
+        },
+        {
+            question: "Барлық &lt;p&gt; элементтерін таңдау үшін не қолданылады?",
+            options: [
+                "p",
+                ".p",
+                "#p",
+                "all.p",
+                "&lt;p&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтіннің түсін өзгертетін қасиет?",
+            options: [
+                "color",
+                "text-color",
+                "font-color",
+                "fg-color",
+                "background-color"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтіннің өлшемін өзгертетін қасиет?",
+            options: [
+                "font-size",
+                "text-size",
+                "size",
+                "font-height",
+                "text-style"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің фон түсін өзгерту?",
+            options: [
+                "background-color",
+                "color-background",
+                "bg-color",
+                "bgcolor",
+                "background"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтінді ортаға туралау (центрлеу)?",
+            options: [
+                "text-align: center;",
+                "align: center;",
+                "text-position: center;",
+                "font-align: center;",
+                "content-align: center;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің шеттеріндегі сыртқы шегін (отступ) өзгерту?",
+            options: [
+                "margin",
+                "padding",
+                "border",
+                "spacing",
+                "indent"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің ішкі шегін (мазмұн мен жиек арасы) өзгерту?",
+            options: [
+                "padding",
+                "margin",
+                "border",
+                "spacing",
+                "inner-space"
+            ],
+            correct: 0
+        },
+        {
+            question: "Сілтеменің астындағы сызықты алып тастау?",
+            options: [
+                "text-decoration: none;",
+                "text-style: no-underline;",
+                "decoration: none;",
+                "text-align: none;",
+                "underline: none;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Қаріптің (шрифт) түрін өзгерту?",
+            options: [
+                "font-family",
+                "font-style",
+                "font-type",
+                "text-family",
+                "font-name"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтінді қалың (bold) ету?",
+            options: [
+                "font-weight: bold;",
+                "font-style: bold;",
+                "text-weight: bold;",
+                "font: bold;",
+                "style: bold;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің шекарасын (рамкасын) сызу?",
+            options: [
+                "border",
+                "outline",
+                "stroke",
+                "line",
+                "frame"
+            ],
+            correct: 0
+        },
+        {
+            question: "CSS-те түсініктеме (комментарий) қалай жазылады?",
+            options: [
+                "/* Бұл түсініктеме */",
+                "// Бұл түсініктеме",
+                "``",
+                "' Бұл түсініктеме",
+                "# Бұл түсініктеме"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің енін (ширина) белгілеу?",
+            options: [
+                "width",
+                "height",
+                "size",
+                "breadth",
+                "wide"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің биіктігін (высота) белгілеу?",
+            options: [
+                "height",
+                "width",
+                "tall",
+                "size",
+                "length"
+            ],
+            correct: 0
+        },
+        {
+            question: "Барлық элементтерді таңдайтын әмбебап селектор?",
+            options: [
+                "*",
+                "all",
+                "root",
+                "html",
+                "body"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементті тышқанмен нұсқағанда (наведение) стильді өзгерту псевдо-класы?",
+            options: [
+                ":hover",
+                ":active",
+                ":focus",
+                ":mouse",
+                ":point"
+            ],
+            correct: 0
+        },
+        {
+            question: "Flexbox режимін қосу қасиеті?",
+            options: [
+                "display: flex;",
+                "display: block;",
+                "position: flex;",
+                "layout: flex;",
+                "display: grid;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Flex-контейнерде элементтерді көлденеңінен (негізгі ось бойынша) ортаға келтіру?",
+            options: [
+                "justify-content: center;",
+                "align-items: center;",
+                "text-align: center;",
+                "flex-align: center;",
+                "content: center;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Flex-контейнерде элементтерді тігінен (көлденең ось бойынша) ортаға келтіру?",
+            options: [
+                "align-items: center;",
+                "justify-content: center;",
+                "vertical-align: middle;",
+                "align-content: center;",
+                "items: center;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементті жасыру (орын алмайды)?",
+            options: [
+                "display: none;",
+                "visibility: hidden;",
+                "opacity: 0;",
+                "hidden: true;",
+                "display: hidden;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементті жасыру, бірақ орнын сақтап қалу?",
+            options: [
+                "visibility: hidden;",
+                "display: none;",
+                "display: block;",
+                "visible: false;",
+                "opacity: 1;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Тізімнің маркерлерін (нүктелерін) алып тастау?",
+            options: [
+                "list-style-type: none;",
+                "list-decoration: none;",
+                "text-decoration: none;",
+                "marker: none;",
+                "bullet: none;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің бұрыштарын дөңгелету?",
+            options: [
+                "border-radius",
+                "border-round",
+                "corner-radius",
+                "border-style",
+                "round"
+            ],
+            correct: 0
+        },
+        {
+            question: "position: absolute жұмыс істеуі үшін ата-аналық элементте қандай позиция болуы керек?",
+            options: [
+                "relative",
+                "static",
+                "fixed",
+                "none",
+                "absolute"
+            ],
+            correct: 0
+        },
+        {
+            question: "Экранды айналдырғанда (спрос) элементті бір орында қатты бекіту?",
+            options: [
+                "position: fixed;",
+                "position: absolute;",
+                "position: static;",
+                "position: sticky;",
+                "position: relative;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтінді бас әріптерге айналдыру (Transform)?",
+            options: [
+                "text-transform: uppercase;",
+                "text-transform: capitalize;",
+                "text-style: uppercase;",
+                "font-transform: uppercase;",
+                "text: upper;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің мөлдірлігін (прозрачность) өзгерту?",
+            options: [
+                "opacity",
+                "transparent",
+                "visibility",
+                "filter",
+                "clear"
+            ],
+            correct: 0
+        },
+        {
+            question: "Сөздердің арасындағы қашықтықты өзгерту?",
+            options: [
+                "word-spacing",
+                "letter-spacing",
+                "text-spacing",
+                "line-height",
+                "word-margin"
+            ],
+            correct: 0
+        },
+        {
+            question: "Әріптердің арасындағы қашықтықты өзгерту?",
+            options: [
+                "letter-spacing",
+                "word-spacing",
+                "font-spacing",
+                "char-spacing",
+                "text-indent"
+            ],
+            correct: 0
+        },
+        {
+            question: "Жолдардың арасындағы биіктікті (интервал) өзгерту?",
+            options: [
+                "line-height",
+                "text-height",
+                "spacing",
+                "line-spacing",
+                "font-height"
+            ],
+            correct: 0
+        },
+        {
+            question: "Курсорды элементке апарғанда \"қол\" (сілтеме белгісі) болып өзгеруі?",
+            options: [
+                "cursor: pointer;",
+                "cursor: hand;",
+                "cursor: click;",
+                "mouse: pointer;",
+                "cursor: default;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Ата-аналық элементтің бірінші баласын таңдау?",
+            options: [
+                ":first-child",
+                ":child-first",
+                ":one-child",
+                ":nth-child(0)",
+                ":start-child"
+            ],
+            correct: 0
+        },
+        {
+            question: "Ең маңызды стильді белгілеу (басымдық беру)?",
+            options: [
+                "!important",
+                "!priority",
+                "!top",
+                "!override",
+                "!master"
+            ],
+            correct: 0
+        },
+        {
+            question: "Grid (тор) жүйесін қосу?",
+            options: [
+                "display: grid;",
+                "display: table;",
+                "display: flex;",
+                "display: block;",
+                "grid: on;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Фондық суретті қайталамау үшін?",
+            options: [
+                "background-repeat: no-repeat;",
+                "background-repeat: none;",
+                "repeat: no;",
+                "background: unique;",
+                "image-repeat: none;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Padding элементтің өлшемін үлкейтпеуі үшін (ішіне кіргізу)?",
+            options: [
+                "box-sizing: border-box;",
+                "box-sizing: content-box;",
+                "box-sizing: padding-box;",
+                "size: border;",
+                "box-model: border;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің көлеңкесін (shadow) жасау?",
+            options: [
+                "box-shadow",
+                "text-shadow",
+                "border-shadow",
+                "element-shadow",
+                "shadow"
+            ],
+            correct: 0
+        },
+        {
+            question: "Мәтіннің көлеңкесін жасау?",
+            options: [
+                "text-shadow",
+                "box-shadow",
+                "font-shadow",
+                "word-shadow",
+                "shadow-text"
+            ],
+            correct: 0
+        },
+        {
+            question: "Иілгіш (Flex) бағытын тігінен қою?",
+            options: [
+                "flex-direction: column;",
+                "flex-direction: row;",
+                "flex-wrap: wrap;",
+                "align: vertical;",
+                "display: column;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Z осі бойынша элементтердің қабаттасу ретін анықтау?",
+            options: [
+                "z-index",
+                "layer-index",
+                "stack-order",
+                "depth",
+                "position-z"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элемент мазмұны сыймай қалғанда \"скролл\" (scroll) қосу?",
+            options: [
+                "overflow: scroll;",
+                "display: scroll;",
+                "overflow: hidden;",
+                "scroll: auto;",
+                "text-overflow: scroll;"
+            ],
+            correct: 0
+        },
+        {
+            question: "1rem неге тең?",
+            options: [
+                "Түбірлік (html) элементтің қаріп өлшеміне",
+                "Ата-аналық элементтің қаріп өлшеміне",
+                "Браузердің еніне",
+                "16 пиксельге (әрқашан)",
+                "10 пиксельге"
+            ],
+            correct: 0
+        },
+        {
+            question: "100vh нені білдіреді?",
+            options: [
+                "Экранның (viewport) толық биіктігі",
+                "Экранның толық ені",
+                "Ата-аналық элементтің 100% биіктігі",
+                "100 пиксель",
+                "Құжаттың толық биіктігі"
+            ],
+            correct: 0
+        },
+        {
+            question: "div p селекторы нені білдіреді?",
+            options: [
+                "div ішіндегі барлық p элементтерін таңдайды",
+                "div және p элементтерін таңдайды",
+                "Тек div-тен кейін тұрған p-ны таңдайды",
+                "p ішіндегі div-терді таңдайды",
+                "div немесе p-ны таңдайды"
+            ],
+            correct: 0
+        },
+        {
+            question: "Анимацияның уақытын және әсерін баяулату үшін қолданылатын базалық қасиет?",
+            options: [
+                "transition",
+                "animation",
+                "transform",
+                "move",
+                "change"
+            ],
+            correct: 0
+        },
+        {
+            question: "Input өрісі белсенді болғанда (фокуста) жиегін өзгерту?",
+            options: [
+                "input:focus { border: ... }",
+                "input:hover { border: ... }",
+                "input:active { border: ... }",
+                "input:selected { border: ... }",
+                "input:click { border: ... }"
+            ],
+            correct: 0
+        },
+        {
+            question: "JavaScript кодын HTML-ге қосу үшін қандай тег қолданылады?",
+            options: [
+                "&lt;script&gt;",
+                "&lt;js&gt;",
+                "&lt;javascript&gt;",
+                "&lt;code&gt;",
+                "&lt;link&gt;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Айнымалыны (variable) жариялаудың қазіргі заманғы дұрыс кілт сөзі?",
+            options: [
+                "let",
+                "variable",
+                "dim",
+                "int",
+                "string"
+            ],
+            correct: 0
+        },
+        {
+            question: "Өзгермейтін тұрақтыны жариялау кілт сөзі?",
+            options: [
+                "const",
+                "let",
+                "var",
+                "static",
+                "fixed"
+            ],
+            correct: 0
+        },
+        {
+            question: "Консольге хабарлама шығару командасы?",
+            options: [
+                "console.log(\"Hello\")",
+                "print(\"Hello\")",
+                "alert(\"Hello\")",
+                "write(\"Hello\")",
+                "log.console(\"Hello\")"
+            ],
+            correct: 0
+        },
+        {
+            question: "Қай оператор теңдікті қатаң тексереді (типін де, мәнін де)?",
+            options: [
+                "===",
+                "==",
+                "=",
+                "!=",
+                "!=="
+            ],
+            correct: 0
+        },
+        {
+            question: "JavaScript-те массивті (array) қалай жасаймыз?",
+            options: [
+                "let arr = [1, 2, 3];",
+                "let arr = (1, 2, 3);",
+                "let arr = {1, 2, 3};",
+                "let arr = \"1, 2, 3\";",
+                "let arr = &lt;1, 2, 3&gt;;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Объектіні (object) қалай жасаймыз?",
+            options: [
+                "let obj = { name: \"Ali\", age: 25 };",
+                "let obj = [ name: \"Ali\", age: 25 ];",
+                "let obj = ( name: \"Ali\", age: 25 );",
+                "let obj = \"name: Ali, age: 25\";",
+                "let obj = name -> \"Ali\", age -> 25;"
+            ],
+            correct: 0
+        },
+        {
+            question: "Объектінің қасиетін (property) алудың дұрыс жолы?",
+            options: [
+                "obj.name",
+                "obj(name)",
+                "obj->name",
+                "obj::name",
+                "obj:name"
+            ],
+            correct: 0
+        },
+        {
+            question: "Функцияны қалай дұрыс жариялаймыз?",
+            options: [
+                "function myFunction() { ... }",
+                "def myFunction() { ... }",
+                "func myFunction() { ... }",
+                "create myFunction() { ... }",
+                "function:myFunction() { ... }"
+            ],
+            correct: 0
+        },
+        {
+            question: "\"Стрелкалы\" (Arrow) функцияның дұрыс жазылуы?",
+            options: [
+                "const func = () => { ... };",
+                "const func = () -> { ... };",
+                "const func = () => function { ... };",
+                "const func => () { ... };",
+                "const func -> () { ... };"
+            ],
+            correct: 0
+        },
+        {
+            question: "Массивтің ұзындығын қалай білеміз?",
+            options: [
+                "arr.length",
+                "arr.size",
+                "arr.count",
+                "arr.index",
+                "arr.width"
+            ],
+            correct: 0
+        },
+        {
+            question: "Массивтің соңына элемент қосу әдісі?",
+            options: [
+                "arr.push(element)",
+                "arr.add(element)",
+                "arr.append(element)",
+                "arr.insert(element)",
+                "arr.put(element)"
+            ],
+            correct: 0
+        },
+        {
+            question: "alert(\"Hello\") не істейді?",
+            options: [
+                "Браузерде хабарлама терезесін шығарады",
+                "Консольге жазады",
+                "Беттегі мәтінді өзгертеді",
+                "Бетті жаңартады",
+                "Қатені көрсетеді"
+            ],
+            correct: 0
+        },
+        {
+            question: "Шартты оператордың дұрыс жазылуы?",
+            options: [
+                "if (i == 5) { ... }",
+                "if i == 5 then { ... }",
+                "if i = 5 { ... }",
+                "if (i == 5) then { ... }",
+                "check (i == 5) { ... }"
+            ],
+            correct: 0
+        },
+        {
+            question: "for циклінің дұрыс құрылымы?",
+            options: [
+                "for (let i = 0; i < 5; i++) { ... }",
+                "for (i = 0; i < 5) { ... }",
+                "for (i <= 5; i++) { ... }",
+                "loop (let i = 0; i < 5; i++) { ... }",
+                "for (let i = 0 to 5) { ... }"
+            ],
+            correct: 0
+        },
+        {
+            question: "Жолдарды біріктіру (конкатенация) операторы?",
+            options: [
+                "+",
+                "&",
+                ".",
+                ",",
+                "concat"
+            ],
+            correct: 0
+        },
+        {
+            question: "typeof операторы не істейді?",
+            options: [
+                "Деректердің типін анықтайды",
+                "Айнымалының мәнін өзгертеді",
+                "Типті жолға айналдырады",
+                "Айнымалыны жояды",
+                "Объектіні тексереді"
+            ],
+            correct: 0
+        },
+        {
+            question: "Логикалық \"ЖӘНЕ\" (AND) операторы?",
+            options: [
+                "&&",
+                "||",
+                "&",
+                "and",
+                "!"
+            ],
+            correct: 0
+        },
+        {
+            question: "Логикалық \"НЕМЕСЕ\" (OR) операторы?",
+            options: [
+                "||",
+                "&&",
+                "or",
+                "|",
+                "??"
+            ],
+            correct: 0
+        },
+        {
+            question: "DOM элементін id бойынша алу?",
+            options: [
+                "document.getElementById(\"demo\")",
+                "document.getElement(\"demo\")",
+                "document.getId(\"demo\")",
+                "window.getElementById(\"demo\")",
+                "document.querySelector(\"demo\")"
+            ],
+            correct: 0
+        },
+        {
+            question: "DOM элементін CSS селекторы (мысалы, класс) арқылы алу?",
+            options: [
+                "document.querySelector(\".className\")",
+                "document.getClass(\".className\")",
+                "document.select(\".className\")",
+                "document.query(\".className\")",
+                "document.findElement(\".className\")"
+            ],
+            correct: 0
+        },
+        {
+            question: "Элементтің ішіндегі мәтінді өзгерту қасиеті?",
+            options: [
+                "element.innerText = \"New Text\"",
+                "element.text = \"New Text\"",
+                "element.content = \"New Text\"",
+                "element.value = \"New Text\"",
+                "element.html = \"New Text\""
+            ],
+            correct: 0
+        },
+        {
+            question: "NaN нені білдіреді?",
+            options: [
+                "Not a Number (Сан емес)",
+                "Not a Null",
+                "New Array Number",
+                "Not a Name",
+                "No any Number"
+            ],
+            correct: 0
+        },
+        {
+            question: "Функциядан мәнді қайтару кілт сөзі?",
+            options: [
+                "return",
+                "get",
+                "back",
+                "result",
+                "value"
+            ],
+            correct: 0
+        },
+        {
+            question: "Бір жолдық түсініктеме (комментарий) қалай жазылады?",
+            options: [
+                "// Түсініктеме",
+                "``",
+                "/* Түсініктеме */",
+                "' Түсініктеме",
+                "# Түсініктеме"
+            ],
+            correct: 0
+        },
+        {
+            question: "map() әдісі не істейді?",
+            options: [
+                "Массив элементтерін өзгертіп, жаңа массив қайтарады",
+                "Массив элементтерін сүзгілейді (filter)",
+                "Массив элементтерінің қосындысын табады",
+                "Массив элементтерін тексереді",
+                "Массивті тазалайды"
+            ],
+            correct: 0
+        },
+        {
+            question: "JSON.stringify() не істейді?",
+            options: [
+                "Объектіні JSON жолына (string) айналдырады",
+                "JSON жолын объектіге айналдырады",
+                "JSON файлын оқиды",
+                "JSON файлын жасайды",
+                "Деректер қорына қосады"
+            ],
+            correct: 0
+        },
+        {
+            question: "JSON.parse() не істейді?",
+            options: [
+                "JSON жолын JavaScript объектісіне айналдырады",
+                "Объектіні JSON жолына айналдырады",
+                "JSON файлын өшіреді",
+                "JSON пішімін тексереді",
+                "Серверге дерек жібереді"
+            ],
+            correct: 0
+        },
+        {
+            question: "Асинхронды кодта қатені ұстап алу блогы?",
+            options: [
+                "catch",
+                "error",
+                "fail",
+                "stop",
+                "break"
+            ],
+            correct: 0
+        },
+        {
+            question: "Батырманы басқанда орындалатын оқиға (событие)?",
+            options: [
+                "onclick",
+                "onchange",
+                "onmouse",
+                "onpress",
+                "onhover"
+            ],
+            correct: 0
+        },
+        {
+            question: "Айнымалының мәнін бірге арттыру (инкремент)?",
+            options: [
+                "i++",
+                "i =+ 1",
+                "i + 1",
+                "add(i)",
+                "i +="
+            ],
+            correct: 0
+        },
+        {
+            question: "Қалдықты табу операторы (Модуль)?",
+            options: [
+                "%",
+                "/",
+                "mod",
+                "div",
+                "#"
+            ],
+            correct: 0
+        },
+        {
+            question: "setTimeout функциясы не үшін керек?",
+            options: [
+                "Кодты белгілі бір уақыттан кейін орындау үшін",
+                "Кодты қайталап орындау үшін",
+                "Уақытты тоқтату үшін",
+                "Ағымдағы уақытты алу үшін",
+                "Таймерді өшіру үшін"
+            ],
+            correct: 0
+        },
+        {
+            question: "setInterval функциясы не үшін керек?",
+            options: [
+                "Кодты белгілі бір интервалмен қайталап орындау үшін",
+                "Кодты бір рет орындау үшін",
+                "Браузерді жаңарту үшін",
+                "Кешігу (delay) жасау үшін",
+                "Циклді тоқтату үшін"
+            ],
+            correct: 0
+        },
+        {
+            question: "Жолдың (string) ішіндегі таңбалар санын қалай аламыз?",
+            options: [
+                "str.length",
+                "str.size",
+                "str.count",
+                "str.chars",
+                "str.index"
+            ],
+            correct: 0
+        },
+        {
+            question: "null деген не?",
+            options: [
+                "Мәннің жоқ екенін білдіретін арнайы нысан",
+                "Сандық нөл (0)",
+                "Анықталмаған (undefined)",
+                "Бос жол (\"\")",
+                "Қате (error)"
+            ],
+            correct: 0
+        },
+        {
+            question: "undefined деген не?",
+            options: [
+                "Айнымалы жарияланған, бірақ мәні берілмеген",
+                "Айнымалы мүлдем жоқ",
+                "Нөлге тең мән",
+                "Объектінің бос екені",
+                "Функцияның қатесі"
+            ],
+            correct: 0
+        },
+        {
+            question: "Санды жолға (String) айналдыру әдісі?",
+            options: [
+                "num.toString()",
+                "num.text()",
+                "String(num).val()",
+                "num.convert()",
+                "num.parse()"
+            ],
+            correct: 0
+        },
+        {
+            question: "Жолды санға (Int) айналдыру функциясы?",
+            options: [
+                "parseInt(\"10\")",
+                "parseNumber(\"10\")",
+                "toInteger(\"10\")",
+                "int(\"10\")",
+                "getNumber(\"10\")"
+            ],
+            correct: 0
+        },
+        {
+            question: "Массивтің бірінші элементін алып тастау әдісі?",
+            options: [
+                "shift()",
+                "pop()",
+                "remove()",
+                "delete()",
+                "unshift()"
+            ],
+            correct: 0
+        },
+        {
+            question: "Массивтің соңына элемент қосу әдісі?",
+            options: [
+                "pop()",
+                "shift()",
+                "push()",
+                "end()",
+                "removeLast()"
+            ],
+            correct: 0
+        },
+        {
+            question: "Оқиғаны тыңдаушыны қосу әдісі?",
+            options: [
+                "element.addEventListener(\"click\", func)",
+                "element.attachEvent(\"click\", func)",
+                "element.listen(\"click\", func)",
+                "element.on(\"click\", func)",
+                "element.handle(\"click\", func)"
+            ],
+            correct: 0
+        },
+        {
+            question: "Пішіннің (форманың) жіберілуін (default behavior) болдырмау?",
+            options: [
+                "event.preventDefault()",
+                "event.stop()",
+                "event.cancel()",
+                "return false",
+                "form.stop()"
+            ],
+            correct: 0
+        },
+        {
+            question: "ES6: Көп жолды мәтін үшін қандай тырнақша қолданылады?",
+            options: [
+                "Кері тырнақша (Backticks) `... `",
+                "Жалқы тырнақша '...'",
+                "Қос тырнақша \"...\"",
+                "Тырнақшасыз",
+                "Жақша (...)"
+            ],
+            correct: 0
+        },
+        {
+            question: "localStorage деректі қалай сақтаймыз?",
+            options: [
+                "localStorage.setItem(\"key\", \"value\")",
+                "localStorage.add(\"key\", \"value\")",
+                "localStorage.save(\"key\", \"value\")",
+                "localStorage.store(\"key\", \"value\")",
+                "localStorage.put(\"key\", \"value\")"
+            ],
+            correct: 0
+        },
+        {
+            question: "Math.random() қандай санды қайтарады?",
+            options: [
+                "0 мен 1 арасындағы бөлшек сан",
+                "1 мен 100 арасындағы бүтін сан",
+                "Кез келген бүтін сан",
+                "Тек 0 немесе 1",
+                "Теріс сан"
+            ],
+            correct: 0
+        },
+        {
+            question: "Санды дөңгелектеу (ең жақын бүтінге дейін)?",
+            options: [
+                "Math.round(4.7)",
+                "Math.ceil(4.7)",
+                "Math.floor(4.7)",
+                "Math.rnd(4.7)",
+                "Math.int(4.7)"
+            ],
+            correct: 0
+        },
+        {
+            question: "this кілт сөзі нені білдіреді?",
+            options: [
+                "Ағымдағы объектіге сілтеме",
+                "Алдыңғы функция",
+                "Глобалды айнымалы",
+                "Келесі қадам",
+                "HTML файл"
+            ],
+            correct: 0
+        },
+        {
+            question: "Қай цикл түрі шартты кем дегенде бір рет орындайды?",
+            options: [
+                "do...while",
+                "while",
+                "for",
+                "foreach",
+                "map"
+            ],
+            correct: 0
+        },
+        {
+            question: "Айнымалының типін және мәнін салыстырмайтын (жұмсақ) теңдік?",
+            options: [
+                "==",
+                "===",
+                "=",
+                "!=",
+                "!=="
+            ],
+            correct: 0
+        },
+        {
+    question: "DOM дегеніміз не?",
+    options: [
+      "Document Object Model",
+      "Data Object Mode",
+      "Document Oriented Module",
+      "Digital Object Method",
+      "Data Oriented Model"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементті id атрибуты бойынша алу әдісі?",
+    options: [
+      "document.getElementById('id')",
+      "document.getElement('id')",
+      "document.findId('id')",
+      "window.getId('id')",
+      "document.queryId('id')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементті class атауы бойынша алу әдісі?",
+    options: [
+      "document.getElementsByClassName('class')",
+      "document.getElementByClass('class')",
+      "document.findClass('class')",
+      "document.getClass('class')",
+      "query.className('class')"
+    ],
+    correct: 0
+  },
+  {
+    question: "CSS селекторы арқылы БІРІНШІ сәйкес келетін элементті алу?",
+    options: [
+      "document.querySelector('.class')",
+      "document.query('.class')",
+      "document.selectAll('.class')",
+      "document.find('.class')",
+      "css.select('.class')"
+    ],
+    correct: 0
+  },
+  {
+    question: "CSS селекторы арқылы БАРЛЫҚ сәйкес келетін элементтерді алу?",
+    options: [
+      "document.querySelectorAll('.class')",
+      "document.querySelectorAll('.class')",
+      "document.findAll('.class')",
+      "document.list('.class')",
+      "document.selectAll('.class')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементтің ішіндегі HTML кодын өзгерту қасиеті?",
+    options: [
+      "innerHTML",
+      "innerHTMLCode",
+      "htmlContent",
+      "innerContent",
+      "setHTML"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементтің ішіндегі тек МӘТІНДІ (тегсіз) өзгерту қасиеті?",
+    options: [
+      "textContent",
+      "textValue",
+      "content",
+      "writeText",
+      "stringContent"
+    ],
+    correct: 0
+  },
+  {
+    question: "Жаңа HTML элементін құру әдісі?",
+    options: [
+      "document.createElement('div')",
+      "document.newElement('div')",
+      "document.makeElement('div')",
+      "window.create('div')",
+      "html.new('div')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементті басқа элементтің соңына қосу (баласы ретінде)?",
+    options: [
+      "parentElement.appendChild(newElement)",
+      "parentElement.add(newElement)",
+      "parentElement.insert(newElement)",
+      "parentElement.push(newElement)",
+      "parentElement.attach(newElement)"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементті DOM-нан өшіру әдісі?",
+    options: [
+      "element.remove()",
+      "element.delete()",
+      "element.clear()",
+      "element.destroy()",
+      "element.erase()"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементке жаңа класс қосу?",
+    options: [
+      "element.classList.add('active')",
+      "element.className.add('active')",
+      "element.addClass('active')",
+      "element.classes.push('active')",
+      "element.style.class = 'active'"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементтен классты өшіру?",
+    options: [
+      "element.classList.remove('active')",
+      "element.classList.delete('active')",
+      "element.removeClass('active')",
+      "element.className.remove('active')",
+      "element.deleteClass('active')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементте класс бар-жоғын тексеру?",
+    options: [
+      "element.classList.contains('active')",
+      "element.classList.has('active')",
+      "element.hasClass('active')",
+      "element.className.exist('active')",
+      "element.checkClass('active')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Егер класс бар болса өшіру, жоқ болса қосу (ауыстырып-қосқыш)?",
+    options: [
+      "element.classList.toggle('active')",
+      "element.classList.switch('active')",
+      "element.toggleClass('active')",
+      "element.className.change('active')",
+      "element.swapClass('active')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Input өрісінің мәнін (value) қалай аламыз?",
+    options: [
+      "inputElement.value",
+      "inputElement.text",
+      "inputElement.content",
+      "inputElement.data",
+      "inputElement.val()"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементтің стилін өзгерту (мысалы, түсін)?",
+    options: [
+      "element.style.color = 'red'",
+      "element.css.color = 'red'",
+      "element.color = 'red'",
+      "element.style('color', 'red')",
+      "style(element).color = 'red'"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементті жасыру (CSS арқылы)?",
+    options: [
+      "element.style.display = 'none'",
+      "element.style.visibility = 'gone'",
+      "element.hide()",
+      "element.hidden = true",
+      "element.display = 'none'"
+    ],
+    correct: 0
+  },
+  {
+    question: "Оқиға тыңдаушысын (Event Listener) қосу?",
+    options: [
+      "element.addEventListener('click', func)",
+      "element.attachEvent('click', func)",
+      "element.listen('click', func)",
+      "element.on('click', func)",
+      "element.handleEvent('click', func)"
+    ],
+    correct: 0
+  },
+  {
+    question: "Оқиға тыңдаушысын өшіру?",
+    options: [
+      "element.removeEventListener('click', func)",
+      "element.deleteEventListener('click', func)",
+      "element.stopListening('click', func)",
+      "element.off('click', func)",
+      "element.detachEvent('click', func)"
+    ],
+    correct: 0
+  },
+  {
+    question: "Ата-аналық элементті алу?",
+    options: [
+      "element.parentNode",
+      "element.parent",
+      "element.parentElementNode",
+      "element.father",
+      "element.top"
+    ],
+    correct: 0
+  },
+  {
+    question: "Келесі көршілес элементті (sibling) алу?",
+    options: [
+      "element.nextElementSibling",
+      "element.nextSiblingElement",
+      "element.nextNode",
+      "element.next",
+      "element.after"
+    ],
+    correct: 0
+  },
+  {
+    question: "Алдыңғы көршілес элементті алу?",
+    options: [
+      "element.previousElementSibling",
+      "element.prevSibling",
+      "element.before",
+      "element.previous",
+      "element.backNode"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементтің атрибутын алу?",
+    options: [
+      "element.getAttribute('src')",
+      "element.getAttr('src')",
+      "element.attribute('src')",
+      "element.src()",
+      "element.read('src')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементке атрибут орнату?",
+    options: [
+      "element.setAttribute('src', 'img.png')",
+      "element.setAttr('src', 'img.png')",
+      "element.addAttr('src', 'img.png')",
+      "element.attr('src', 'img.png')",
+      "element.put('src', 'img.png')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Атрибуттың бар-жоғын тексеру?",
+    options: [
+      "element.hasAttribute('disabled')",
+      "element.isAttribute('disabled')",
+      "element.checkAttr('disabled')",
+      "element.containsAttr('disabled')",
+      "element.exist('disabled')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Атрибутты өшіру?",
+    options: [
+      "element.removeAttribute('title')",
+      "element.deleteAttribute('title')",
+      "element.clearAttr('title')",
+      "element.removeAttr('title')",
+      "element.killAttribute('title')"
+    ],
+    correct: 0
+  },
+  {
+    question: "HTML құжаты толық жүктелгенде орындалатын оқиға?",
+    options: [
+      "DOMContentLoaded",
+      "HTMLReady",
+      "PageLoaded",
+      "DocumentReady",
+      "FullLoad"
+    ],
+    correct: 0
+  },
+  {
+    question: "Оқиғаның (event) пайда болуын тоқтату (всплытие)?",
+    options: [
+      "event.stopPropagation()",
+      "event.stop()",
+      "event.cancelBubble()",
+      "event.halt()",
+      "event.pause()"
+    ],
+    correct: 0
+  },
+  {
+    question: "Сілтеменің немесе форманың стандартты әрекетін болдырмау?",
+    options: [
+      "event.preventDefault()",
+      "event.stopDefault()",
+      "event.cancelDefault()",
+      "event.noAction()",
+      "event.block()"
+    ],
+    correct: 0
+  },
+  {
+    question: "document.write() не істейді?",
+    options: [
+      "HTML құжатына тікелей мәтін жазады (көбіне ескі тәсіл)",
+      "Консольге жазады",
+      "Файлға жазады",
+      "Дерекқорға жазады",
+      "Жаңа терезе ашады"
+    ],
+    correct: 0
+  },
+  {
+    question: "window объектісі нені білдіреді?",
+    options: [
+      "Браузер терезесін (глобалды объект)",
+      "HTML құжатын",
+      "CSS файлды",
+      "Серверді",
+      "JavaScript файлын"
+    ],
+    correct: 0
+  },
+  {
+    question: "Бетті жаңарту (reload) командасы?",
+    options: [
+      "location.reload()",
+      "window.refresh()",
+      "document.reload()",
+      "page.refresh()",
+      "browser.restart()"
+    ],
+    correct: 0
+  },
+  {
+    question: "Басқа URL-ге өту (redirect)?",
+    options: [
+      "window.location.href = 'url'",
+      "window.go('url')",
+      "document.url = 'url'",
+      "navigator.goto('url')",
+      "window.redirect('url')"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементтің барлық балаларын (child nodes) алу?",
+    options: [
+      "element.childNodes",
+      "element.allChildren",
+      "element.kids",
+      "element.nodes",
+      "element.childList"
+    ],
+    correct: 0
+  },
+  {
+    question: "Тек элемент болып табылатын балаларды алу (текстерді санамағанда)?",
+    options: [
+      "element.children",
+      "element.childNodes",
+      "element.childElements",
+      "element.tags",
+      "element.onlyElements"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементке фокус қою (курсорды апару)?",
+    options: [
+      "element.focus()",
+      "element.select()",
+      "element.active()",
+      "element.click()",
+      "element.highlight()"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементтен фокусты алу?",
+    options: [
+      "element.blur()",
+      "element.unfocus()",
+      "element.loseFocus()",
+      "element.deselect()",
+      "element.hideFocus()"
+    ],
+    correct: 0
+  },
+  {
+    question: "this оқиға өңдеушісінде (handler) нені білдіреді?",
+    options: [
+      "Оқиға болған элементті",
+      "Window объектісін",
+      "Document объектісін",
+      "Console объектісін",
+      "Ештеңені"
+    ],
+    correct: 0
+  },
+  {
+    question: "Тышқан элемент үстіне келгендегі оқиға?",
+    options: [
+      "mouseover",
+      "mouseclick",
+      "mousetop",
+      "mouseon",
+      "hover"
+    ],
+    correct: 0
+  },
+  {
+    question: "Тышқан элементтен кеткендегі оқиға?",
+    options: [
+      "mouseout",
+      "mouseleave",
+      "mouseoff",
+      "mousegone",
+      "exit"
+    ],
+    correct: 0
+  },
+  {
+    question: "Пернетақтада түйме басылғандағы оқиға?",
+    options: [
+      "keydown",
+      "keypressing",
+      "keyclick",
+      "keyboard",
+      "buttondown"
+    ],
+    correct: 0
+  },
+  {
+    question: "Форма жіберілгенде орындалатын оқиға?",
+    options: [
+      "submit",
+      "send",
+      "done",
+      "enter",
+      "post"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементті басқа элементтің АЛДЫНА қосу?",
+    options: [
+      "parentNode.insertBefore(newNode, referenceNode)",
+      "parentNode.addBefore(newNode, referenceNode)",
+      "parentNode.prepend(newNode)",
+      "parentNode.insert(newNode)",
+      "parentNode.pushFront(newNode)"
+    ],
+    correct: 0
+  },
+  {
+    question: "Элементтің көшірмесін жасау (клондау)?",
+    options: [
+      "element.cloneNode(true)",
+      "element.copy()",
+      "element.duplicate()",
+      "element.replicate()",
+      "element.mirror()"
+    ],
+    correct: 0
+  },
+  {
+    question: "Браузердің көрінетін аймағының ені?",
+    options: [
+      "window.innerWidth",
+      "window.width",
+      "document.width",
+      "screen.width",
+      "client.width"
+    ],
+    correct: 0
+  },
+  {
+    question: "document.title нені өзгертеді?",
+    options: [
+      "Браузер қойындысының (tab) атауын",
+      "Беттің басты тақырыбын (h1)",
+      "URL адресін",
+      "Мета тегтерді",
+      "Файл атын"
+    ],
+    correct: 0
+  },
+  {
+    question: "Айнымалының DOM элементі екенін тексеру (мысалы)?",
+    options: [
+      "obj instanceof Element",
+      "obj.isElement()",
+      "typeof obj === 'html'",
+      "obj.type === 'dom'",
+      "check(obj)"
+    ],
+    correct: 0
+  },
+  {
+    question: "Бірінші бала элементті алу?",
+    options: [
+      "element.firstElementChild",
+      "element.firstChildNode",
+      "element.childFirst",
+      "element.startChild",
+      "element.topChild"
+    ],
+    correct: 0
+  },
+  {
+    question: "Соңғы бала элементті алу?",
+    options: [
+      "element.lastElementChild",
+      "element.lastChildNode",
+      "element.childLast",
+      "element.endChild",
+      "element.bottomChild"
+    ],
+    correct: 0
+  },
+  {
+    question: "id атауы сандардан басталуы мүмкін бе?",
+    options: [
+      "Жоқ, CSS-те және JS-те қате тудыруы мүмкін",
+      "Иә, кез келген уақытта",
+      "Тек querySelector үшін",
+      "HTML5-те ғана",
+      "Ешқашан қате емес"
+    ],
+    correct: 0
+  },
+        {
+    question: "HTTP дегеніміз не?",
+    options: [
+      "HyperText Transfer Protocol (Мәтінді тасымалдау хаттамасы)",
+      "HyperText Testing Program",
+      "High Transfer Text Protocol",
+      "Home Tool Transfer Protocol",
+      "Hosting Text Transfer Program"
+    ],
+    correct: 0
+  },
+  {
+    question: "Клиент-Сервер архитектурасында \"Клиент\" кім?",
+    options: [
+      "Сұраныс жіберетін бағдарлама (мысалы, браузер)",
+      "Жауап беретін компьютер",
+      "Деректер қоры",
+      "Интернет провайдер",
+      "Желілік кабель"
+    ],
+    correct: 0
+  },
+  {
+    question: "Серверден деректерді АЛУ үшін қолданылатын әдіс?",
+    options: [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "PATCH"
+    ],
+    correct: 0
+  },
+  {
+    question: "Серверге жаңа дерек жіберу (жасау) үшін қолданылатын әдіс?",
+    options: [
+      "POST",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "TRACE"
+    ],
+    correct: 0
+  },
+  {
+    question: "200 OK статус коды нені білдіреді?",
+    options: [
+      "Сұраныс сәтті орындалды",
+      "Серверде қате болды",
+      "Бет табылмады",
+      "Сұраныс қайта бағытталды",
+      "Рұқсат жоқ"
+    ],
+    correct: 0
+  },
+  {
+    question: "404 Not Found статус коды нені білдіреді?",
+    options: [
+      "Ресурс табылмады",
+      "Сервер істен шықты",
+      "Сәтті аяқталды",
+      "Рұқсат етілмеген",
+      "Төлем қажет"
+    ],
+    correct: 0
+  },
+  {
+    question: "500 Internal Server Error нені білдіреді?",
+    options: [
+      "Сервер жағындағы ішкі қате",
+      "Клиент қате жіберді",
+      "Бет табылмады",
+      "Жауап бос",
+      "Уақыт бітті"
+    ],
+    correct: 0
+  },
+  {
+    question: "HTTPS дегеніміз не?",
+    options: [
+      "HTTP-дің шифрланған қауіпсіз нұсқасы (Secure)",
+      "HTTP-дің жылдам нұсқасы",
+      "HTTP Server",
+      "HTTP Simple",
+      "HTTP Standard"
+    ],
+    correct: 0
+  },
+  {
+    question: "HTTP хаттамасының стандартты порты қандай?",
+    options: [
+      "80",
+      "443",
+      "21",
+      "22",
+      "8080"
+    ],
+    correct: 0
+  },
+  {
+    question: "HTTPS хаттамасының стандартты порты қандай?",
+    options: [
+      "443",
+      "80",
+      "3000",
+      "5000",
+      "25"
+    ],
+    correct: 0
+  },
+  {
+    question: "Деректерді жаңарту (толық ауыстыру) үшін қандай әдіс қолданылады?",
+    options: [
+      "PUT",
+      "GET",
+      "POST",
+      "DELETE",
+      "HEAD"
+    ],
+    correct: 0
+  },
+  {
+    question: "Ресурсты өшіру үшін қандай әдіс қолданылады?",
+    options: [
+      "DELETE",
+      "REMOVE",
+      "CLEAR",
+      "ERASE",
+      "KILL"
+    ],
+    correct: 0
+  },
+  {
+    question: "Сұраныс (Request) құрамына не кірмейді?",
+    options: [
+      "Сервердің IP адресі (бұл DNS арқылы шешіледі, сұраныс ішінде URL болады)",
+      "URL",
+      "HTTP әдісі (Method)",
+      "Хедерлер (Headers)",
+      "Денесі (Body)"
+    ],
+    correct: 0
+  },
+  {
+    question: "Серверге деректердің қандай форматта екенін айтатын хедер?",
+    options: [
+      "Content-Type",
+      "Content-Length",
+      "User-Agent",
+      "Accept",
+      "Authorization"
+    ],
+    correct: 0
+  },
+  {
+    question: "401 Unauthorized статус коды нені білдіреді?",
+    options: [
+      "Пайдаланушы жүйеге кірмеген (авторизация қажет)",
+      "Ресурсқа кіруге тыйым салынған (Forbidden)",
+      "Ресурс табылмады",
+      "Сұраныс қате",
+      "Сервер бос емес"
+    ],
+    correct: 0
+  },
+  {
+    question: "403 Forbidden статус коды нені білдіреді?",
+    options: [
+      "Сервер сұранысты түсінді, бірақ орындаудан бас тартты (құқығы жоқ)",
+      "Пайдаланушы жүйеге кірмеген",
+      "Бет табылмады",
+      "Сервер қатесі",
+      "Жолы қате"
+    ],
+    correct: 0
+  },
+  {
+    question: "URL сөзінің толық мағынасы?",
+    options: [
+      "Uniform Resource Locator",
+      "Universal Resource Link",
+      "Uniform Request Link",
+      "United Resource Locator",
+      "User Resource List"
+    ],
+    correct: 0
+  },
+  {
+    question: "GET сұранысының POST сұранысынан басты айырмашылығы?",
+    options: [
+      "GET деректерді URL арқылы ашық жібереді, POST денесінде (Body) жасырын жібереді",
+      "GET қауіпсіз, POST қауіпсіз емес",
+      "GET тек суреттер үшін, POST мәтін үшін",
+      "GET серверде, POST клиентте орындалады",
+      "Айырмашылығы жоқ"
+    ],
+    correct: 0
+  },
+  {
+    question: "301 Moved Permanently нені білдіреді?",
+    options: [
+      "Ресурс тұрақты түрде жаңа адрес бойынша ауыстырылды (Redirect)",
+      "Ресурс уақытша ауыстырылды",
+      "Қате сұраныс",
+      "Сервер жауап бермейді",
+      "Кэштелген дерек"
+    ],
+    correct: 0
+  },
+  {
+    question: "\"Stateless\" (күйді сақтамайтын) хаттама деген не?",
+    options: [
+      "Сервер әрбір сұранысты алдыңғысымен байланыссыз, жаңа деп қабылдайды",
+      "Сервер барлық сұраныстарды есте сақтайды",
+      "Серверде жады (memory) жоқ",
+      "Клиентте IP адрес жоқ",
+      "Интернетсіз жұмыс істейді"
+    ],
+    correct: 0
+  },
+  {
+    question: "JSON форматының толық аты?",
+    options: [
+      "JavaScript Object Notation",
+      "Java Source Object Name",
+      "JavaScript Option Network",
+      "Java Standard Object Note",
+      "JSON Object Notation"
+    ],
+    correct: 0
+  },
+  {
+    question: "Жергілікті компьютердің стандартты IP адресі (localhost)?",
+    options: [
+      "127.0.0.1",
+      "192.168.1.1",
+      "0.0.0.0",
+      "8.8.8.8",
+      "255.255.255.0"
+    ],
+    correct: 0
+  },
+  {
+    question: "Сұраныс параметрлері (Query Parameters) қай таңбадан кейін жазылады?",
+    options: [
+      "?",
+      "&",
+      "#",
+      "@",
+      "/"
+    ],
+    correct: 0
+  },
+  {
+    question: "Бірнеше параметрді URL-де бөліп тұратын таңба?",
+    options: [
+      "&",
+      "?",
+      "#",
+      "%",
+      "$"
+    ],
+    correct: 0
+  },
+  {
+    question: "API дегеніміз не?",
+    options: [
+      "Application Programming Interface",
+      "Application Protocol Internet",
+      "Advanced Program Interaction",
+      "Apple Program Interface",
+      "Applied Public Interface"
+    ],
+    correct: 0
+  },
+  {
+    question: "User-Agent хедері нені білдіреді?",
+    options: [
+      "Клиенттің (браузердің) және операциялық жүйенің атауы",
+      "Пайдаланушының аты-жөні",
+      "Сервердің аты",
+      "Сайттың IP адресі",
+      "Интернет жылдамдығы"
+    ],
+    correct: 0
+  },
+  {
+    question: "Cookie деген не?",
+    options: [
+      "Сервер клиент жағында сақтайтын шағын мәтіндік файл",
+      "Вирус",
+      "Браузердің тарихы",
+      "Сурет файлы",
+      "Бағдарлама коды"
+    ],
+    correct: 0
+  },
+  {
+    question: "CORS қатесі немен байланысты?",
+    options: [
+      "Cross-Origin Resource Sharing (Басқа доменнен сұраныс жасау шектеуі)",
+      "Сервердің істен шығуы",
+      "Интернеттің жоқтығы",
+      "HTTPS қатесі",
+      "Дерекқор қатесі"
+    ],
+    correct: 0
+  },
+  {
+    question: "DNS қызметі не істейді?",
+    options: [
+      "Домен атын (google.com) IP адреспен сәйкестендіреді",
+      "Сайтты безендіреді",
+      "Деректерді шифрлайды",
+      "Хаттарды жібереді",
+      "Вирустарды тексереді"
+    ],
+    correct: 0
+  },
+  {
+    question: "HTTP/2-нің HTTP/1.1-ден басты артықшылығы?",
+    options: [
+      "Мультиплексирование (бір байланыс арқылы бірнеше сұраныс жіберу)",
+      "Жаңа әдістер (GET, POST-тан басқа)",
+      "URL қолданбайды",
+      "Тек суреттерді жібереді",
+      "Интернет керек емес"
+    ],
+    correct: 0
+  },
+        {
+    question: "React дегеніміз не?",
+    options: [
+      "Пайдаланушы интерфейсін (UI) құруға арналған JavaScript кітапханасы",
+      "Деректер қорын басқару жүйесі",
+      "CSS препроцессоры",
+      "Серверлік бағдарламалау тілі",
+      "Браузердің қозғалтқышы (engine)"
+    ],
+    correct: 0
+  },
+  {
+    question: "JSX дегеніміз не?",
+    options: [
+      "JavaScript XML (HTML-ді JavaScript ішінде жазуға мүмкіндік беретін синтаксис)",
+      "Java Syntax Extension",
+      "JSON Xylophone",
+      "JavaScript Extra",
+      "Java Source XML"
+    ],
+    correct: 0
+  },
+  {
+    question: "Компонентте күйді (state) сақтау үшін қандай хук қолданылады?",
+    options: [
+      "useState",
+      "useEffect",
+      "useContext",
+      "useReducer",
+      "useMemo"
+    ],
+    correct: 0
+  },
+  {
+    question: "useEffect хукі не үшін қолданылады?",
+    options: [
+      "Жанама әсерлерді (side effects) орындау үшін (мысалы, деректерді жүктеу, DOM өзгерту)",
+      "Күйді (state) өзгерту үшін",
+      "Контекст құру үшін",
+      "CSS стильдерін қосу үшін",
+      "Компонентті жою үшін"
+    ],
+    correct: 0
+  },
+  {
+    question: "Ата-аналық компоненттен бала компонентке деректерді қалай береміз?",
+    options: [
+      "Props арқылы",
+      "State арқылы",
+      "emit арқылы",
+      "return арқылы",
+      "import арқылы"
+    ],
+    correct: 0
+  },
+  {
+    question: "Virtual DOM (Виртуалды DOM) не үшін қажет?",
+    options: [
+      "Өнімділікті арттыру үшін (нақты DOM-ды тек қажет жерде жаңартады)",
+      "Серверді басқару үшін",
+      "Интернет жылдамдығын арттыру үшін",
+      "CSS жазу үшін",
+      "Қауіпсіздікті сақтау үшін"
+    ],
+    correct: 0
+  },
+  {
+    question: "React компоненттерінің атауы қалай жазылуы керек?",
+    options: [
+      "Бас әріппен (PascalCase, мысалы: MyComponent)",
+      "Кіші әріппен (camelCase)",
+      "Сызықшамен (kebab-case)",
+      "Астын сызумен (snake_case)",
+      "Барлығы үлкен әріппен"
+    ],
+    correct: 0
+  },
+  {
+    question: "Тізімдерді (Lists) рендеринг жасағанда әр элементте міндетті түрде болуы тиіс атрибут?",
+    options: [
+      "key",
+      "id",
+      "index",
+      "name",
+      "list-id"
+    ],
+    correct: 0
+  },
+  {
+    question: "useState хукінің дұрыс жазылу үлгісі?",
+    options: [
+      "const [count, setCount] = useState(0);",
+      "const count = useState(0);",
+      "let count = useState(0).value;",
+      "const {count, setCount} = useState(0);",
+      "var [count, update] = useState[0];"
+    ],
+    correct: 0
+  },
+  {
+    question: "React Fragment (<></>) не үшін қолданылады?",
+    options: [
+      "Қосымша DOM түйінін (div) қоспай, бірнеше элементті топтау үшін",
+      "CSS стильдерін жазу үшін",
+      "Компонентті жасыру үшін",
+      "Қатені тексеру үшін",
+      "Комментарий жазу үшін"
+    ],
+    correct: 0
+  },
+  {
+    question: "SPA (Single Page Application) деген не?",
+    options: [
+      "Бетті қайта жүктемей-ақ жаңартылатын бір беттік қосымша",
+      "Бір ғана HTML тегі бар сайт",
+      "Интернетсіз жұмыс істейтін сайт",
+      "Тек ұялы телефонға арналған сайт",
+      "Қарапайым статикалық сайт"
+    ],
+    correct: 0
+  },
+  {
+    question: "Контекст (Context API) не үшін қажет?",
+    options: [
+      "Props-ты \"бұрғыламай\" (prop drilling), деректерді терең компоненттерге тікелей жеткізу үшін",
+      "Серверге сұраныс жіберу үшін",
+      "Маршруттау (Routing) үшін",
+      "Суреттерді өңдеу үшін",
+      "Қауіпсіздік кілтін сақтау үшін"
+    ],
+    correct: 0
+  },
+  {
+    question: "useRef хукінің негізгі мақсатының бірі?",
+    options: [
+      "DOM элементіне тікелей қол жеткізу",
+      "Күйді жаңарту (рендер шақырады)",
+      "Серверлік кодты жазу",
+      "Стильдерді өзгерту",
+      "Бетті ауыстыру"
+    ],
+    correct: 0
+  },
+  {
+    question: "Next.js дегеніміз не?",
+    options: [
+      "React негізінде жасалған, серверлік рендеринг (SSR) және статикалық генерацияны (SSG) қолдайтын фреймворк",
+      "Жаңа бағдарламалау тілі",
+      "React-ті алмастыратын бәсекелес кітапхана",
+      "Тек CSS жазуға арналған құрал",
+      "Деректер қоры"
+    ],
+    correct: 0
+  },
+  {
+    question: "Next.js-те (App Router) жаңа бетті (page) қалай жасаймыз?",
+    options: [
+      "app/about/page.js файлын құру арқылы",
+      "app/about.js файлын құру арқылы",
+      "pages/new-page.html құру арқылы",
+      "Маршруттарды конфигурация файлында жазу арқылы",
+      "createPage('about') функциясын шақыру арқылы"
+    ],
+    correct: 0
+  },
+  {
+    question: "Next.js-те басқа бетке өту үшін қолданылатын компонент?",
+    options: [
+      "<Link href=\"/about\">... </Link>",
+      "<a href=\"/about\">... </a>",
+      "<NavLink to=\"/about\">... </NavLink>",
+      "<Go route=\"/about\">... </Go>",
+      "<RouterLink path=\"/about\">... </RouterLink>"
+    ],
+    correct: 0
+  },
+  {
+    question: "Image компонентінің (next/image) кәдімгі img тегінен артықшылығы?",
+    options: [
+      "Суреттерді автоматты түрде оңтайландырады (өлшемін өзгерту, lazy loading)",
+      "Суреттерді өшіріп тастайды",
+      "Тек PNG форматты қабылдайды",
+      "Суреттерді серверге жүктемейді",
+      "Ешқандай айырмашылығы жоқ"
+    ],
+    correct: 0
+  },
+  {
+    question: "\"use client\" директивасы нені білдіреді?",
+    options: [
+      "Бұл компонент клиент жағында (браузерде) жұмыс істейді және интерактивтілікке (useState, onClick) ие",
+      "Бұл компонент тек серверде жұмыс істейді",
+      "Бұл клиенттің аты",
+      "Бұл компонент деректер базасына қосылады",
+      "Кодты жасыру үшін қолданылады"
+    ],
+    correct: 0
+  },
+  {
+    question: "Next.js App Router-де компоненттер әдепкі бойынша (по умолчанию) қандай болып табылады?",
+    options: [
+      "Серверлік компоненттер (Server Components)",
+      "Клиенттік компоненттер (Client Components)",
+      "Гибридті компоненттер",
+      "Статикалық компоненттер",
+      "Асинхронды емес компоненттер"
+    ],
+    correct: 0
+  },
+  {
+    question: "Динамикалық маршрутты (Dynamic Route) қалай жасаймыз?",
+    options: [
+      "Папка атын төртбұрышты жақшаға алу арқылы (мысалы: [id])",
+      "Папка атына жұлдызша қою арқылы (*id)",
+      "Папка атына доллар белгісін қою арқылы ($id)",
+      "Арнайы конфигурация жазу арқылы",
+      "dynamic-id деп атау арқылы"
+    ],
+    correct: 0
+  },
+  {
+    question: "Барлық беттерге ортақ дизайнды (header, footer) қай файлда сақтаған дұрыс?",
+    options: [
+      "layout.js",
+      "page.js",
+      "template.js",
+      "global.js",
+      "common.js"
+    ],
+    correct: 0
+  },
+  {
+    question: "loading.js файлы не үшін қолданылады?",
+    options: [
+      "Бет жүктеліп жатқанда көрсетілетін интерфейсті (Loading UI) анықтау үшін",
+      "Скрипттерді жүктеу үшін",
+      "Серверді тоқтату үшін",
+      "Суреттерді жүктеу үшін",
+      "Қателерді көрсету үшін"
+    ],
+    correct: 0
+  },
+  {
+    question: "SEO (Search Engine Optimization) үшін Next.js не ұсынады?",
+    options: [
+      "Metadata API (title, description динамикалық түрде өзгерту мүмкіндігі)",
+      "SEO мүлдем қолдамайды",
+      "Тек Google үшін арнайы плагин",
+      "Автоматты түрде жарнама жасайды",
+      "Кілт сөздерді жасырады"
+    ],
+    correct: 0
+  },
+  {
+    question: "Next.js жобасын іске қосу командасы (development mode)?",
+    options: [
+      "npm run dev",
+      "npm start",
+      "npm build",
+      "node server.js",
+      "react start"
+    ],
+    correct: 0
+  },
 
+        {
+    question: "Next.js-те API (бэкэнд) роуттарын қайда жасаймыз (App Router)?",
+    options: [
+      "app/api/hello/route.js ішінде",
+      "app/backend/server.js ішінде",
+      "pages/server.js ішінде",
+      "api/index.html ішінде",
+      "database/route.js ішінде"
+    ],
+    correct: 0
+  },
+  {
+    question: "API Route файлында GET сұранысын қалай өңдейміз?",
+    options: [
+      "export async function GET(request) { ... }",
+      "function handleGet() { ... }",
+      "app.get('/', ...)",
+      "router.get( ... )",
+      "const GET = ..."
+    ],
+    correct: 0
+  },
+  {
+    question: "Серверлік компоненттерде деректерді қалай алуға (fetch) болады?",
+    options: [
+      "Тікелей async/await арқылы компонент ішінде (const data = await getData())",
+      "Тек useEffect арқылы",
+      "useServer хукі арқылы",
+      "Деректерді алу мүмкін емес",
+      "Axios кітапханасы міндетті түрде қажет"
+    ],
+    correct: 0
+  },
+  {
+    question: "Next.js бэкэндінде жауап қайтару үшін қолданылатын объект?",
+    options: [
+      "NextResponse.json({ data: ... })",
+      "res.send({ data: ... })",
+      "return { data: ... }",
+      "Response.send()",
+      "Server.reply()"
+    ],
+    correct: 0
+  },
+  {
+    question: "Server Actions дегеніміз не?",
+    options: [
+      "Клиенттен (формадан) тікелей шақырылатын, серверде орындалатын асинхронды функциялар",
+      "Серверді іске қосу командалары",
+      "Дерекқордың әрекеттері",
+      "Тек API роуттары",
+      "CSS анимациялары"
+    ],
+    correct: 0
+  },
+  {
+    question: "Серверлік компоненттерде (Server Components) нені қолдануға БОЛМАЙДЫ?",
+    options: [
+      "useState, useEffect, onClick сияқты браузерлік API-ларды",
+      "async/await",
+      "Дерекқор сұраныстарын",
+      "Басқа компоненттерді импорттауды",
+      "console.log (сервер консолінде)"
+    ],
+    correct: 0
+  },
+  {
+    question: "npm run build командасы не істейді?",
+    options: [
+      "Жобаны өндірістік (production) ортаға дайындап, оңтайландырылған нұсқасын жинайды",
+      "Жобаны өшіреді",
+      "Жобаны тесттен өткізеді",
+      "Тек суреттерді жинайды",
+      "Жобаны іске қосады (серверді көтереді)"
+    ],
+    correct: 0
+  },
+  {
+    question: "not-found.js файлы не үшін керек?",
+    options: [
+      "404 (Бет табылмады) қатесі шыққанда көрсетілетін арнайы бет",
+      "Сервер құлағанда шығатын бет",
+      "Іздеу жүйесіне арналған файл",
+      "Парольді қалпына келтіру беті",
+      "Админ панелі"
+    ],
+    correct: 0
+  },
+  {
+    question: "Middleware (middleware.js) Next.js-те не үшін қолданылады?",
+    options: [
+      "Сұраныс аяқталмас бұрын оны өңдеуге (мысалы, аутентификацияны тексеру, redirect жасау)",
+      "Деректер қорын тазалауға",
+      "CSS стильдерін қосуға",
+      "Компоненттерді рендерлеуге",
+      "Суреттерді жүктеуге"
+    ],
+    correct: 0
+  },
+  {
+    question: "Next.js кэштеу (caching) жүйесі әдепкі бойынша қандай fetch сұраныстарын кэштейді?",
+    options: [
+      "Барлық fetch сұраныстарын (егер арнайы бапталмаса)",
+      "Ешқашан кэштемейді",
+      "Тек POST сұраныстарын",
+      "Тек суреттерді",
+      "Тек жергілікті файлдарды"
+    ],
+    correct: 0
+  },
+  {
+    question: "Деректерді әр сұраныс сайын жаңарту (кэштемеу) үшін fetch-ке қандай опция қосамыз?",
+    options: [
+      "fetch(url, { cache: 'no-store' })",
+      "fetch(url, { cache: 'force-cache' })",
+      "fetch(url, { next: { revalidate: 3600 } })",
+      "fetch(url, { method: 'NO-CACHE' })",
+      "fetch(url, { refresh: true })"
+    ],
+    correct: 0
+  },
+  {
+    question: "Static Site Generation (SSG) дегеніміз не?",
+    options: [
+      "Беттерді build кезінде алдын ала жасап қою (HTML генерациялау)",
+      "Бетті әр сұраныс сайын серверде жинау (SSR)",
+      "Бетті браузерде жинау (CSR)",
+      "Динамикалық сайт",
+      "Мобильді қосымша"
+    ],
+    correct: 0
+  },
+  {
+    question: "Server Side Rendering (SSR) дегеніміз не?",
+    options: [
+      "Беттің HTML-ін әр сұраныс (request) түскен сайын серверде жасап беру",
+      "Бетті алдын ала жасап қою",
+      "Бетті тек браузерде көрсету",
+      "Статикалық файлдарды беру",
+      "Деректерді кэштеу"
+    ],
+    correct: 0
+  },
+  {
+    question: "Route Handlers (route.js) қандай HTTP әдістерін қолдайды?",
+    options: [
+      "GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS",
+      "Тек GET және POST",
+      "Тек GET",
+      "Тек POST",
+      "Тек DELETE"
+    ],
+    correct: 0
+  },
+  {
+    question: "Next.js жобасында орта айнымалыларын (Environment Variables) қай файлда сақтаймыз?",
+    options: [
+      ".env.local",
+      "config.js",
+      "variables.json",
+      "next.config.js",
+      "server.env"
+    ],
+    correct: 0
+  },
+  {
+    question: "Бэкэндте құпия ақпаратты (API кілттерді) клиентке жібермеу үшін не істеу керек?",
+    options: [
+      "Оларды тек серверлік компоненттерде немесе API роуттарда қолдану керек (және NEXT_PUBLIC_ префиксін қоспау керек)",
+      "Оларды console.log арқылы шығару керек",
+      "Оларды layout.js ішіне жазу керек",
+      "Клиенттік компонентте қолдана беруге болады",
+      "Оларды HTML-ге жазып қою керек"
+    ],
+    correct: 0
+  }
+
+]
     
 
 
