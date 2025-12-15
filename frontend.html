@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Таңдау</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Сіздің style.css немесе index.html-дегі стильдеріңіз осында болуы керек */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%); /* Frontend үшін сәл басқаша фон (қызғылт сары) */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .main-container { width: 100%; max-width: 1200px; text-align: center; }
+        .main-title { color: white; font-size: 2.5rem; margin-bottom: 40px; text-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .menu-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            width: 280px; padding: 30px 20px; border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            text-align: center; transition: transform 0.3s;
+            display: flex; flex-direction: column; align-items: center;
+            min-height: 320px; justify-content: space-between;
+        }
+        .card:hover { transform: translateY(-10px); }
+        
+        /* Frontend арнайы иконка стилі */
+        .front-icon { background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 36px; color: white; margin-bottom: 20px; }
+        
+        .card h3 { color: #2d3436; font-size: 1.1rem; margin-bottom: 10px; }
+        .subtitle { color: #636e72; font-size: 0.9rem; margin-bottom: 20px; }
+        
+        .start-btn {
+            background: linear-gradient(90deg, #2c3e50, #4ca1af); color: white;
+            padding: 12px 30px; border-radius: 50px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+        }
+        
+        /* Артқа қайту батырмасы */
+        .back-btn-top {
+            position: absolute; top: 20px; left: 20px;
+            color: white; text-decoration: none; font-weight: bold; font-size: 18px;
+            background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 30px;
+        }
+        .back-btn-top:hover { background: rgba(255,255,255,0.4); }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-btn-top"><i class="fas fa-arrow-left"></i> Артқа</a>
+
+    <div class="main-container">
+        <h1 class="main-title">Frontend Бөлімдері <i class="fas fa-laptop-code"></i></h1>
+        
+        <div class="menu-container">
+             <div class="card">
+                <div class="card-icon front-icon"><i class="fab fa-html5"></i></div>
+                <div class="card-content">
+                    <h3>Frontend: HTML</h3>
+                    <p class="subtitle">HyperText Markup Language</p>
+                    <a href="quiz.html?topic=front" class="start-btn">Бастау <i class="fas fa-play"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon front-icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="card-content">
+                    <h3>Frontend: CSS</h3>
+                    <p class="subtitle">Styles & Flexbox</p>
+                    <a href="quiz.html?topic=frontcss" class="start-btn">Бастау <i class="fas fa-play"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon front-icon"><i class="fab fa-js"></i></div>
+                <div class="card-content">
+                    <h3>JavaScript Core</h3>
+                    <p class="subtitle">Синтаксис & Логика</p>
+                    <a href="quiz.html?topic=frontjs" class="start-btn">Бастау <i class="fas fa-play"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon front-icon"><i class="fas fa-code"></i></div>
+                <div class="card-content">
+                    <h3>JS: DOM & Events</h3>
+                    <p class="subtitle">Интерактивті элементтер</p>
+                    <a href="quiz.html?topic=frontjsdom" class="start-btn">Бастау <i class="fas fa-play"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon front-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="card-content">
+                    <h3>HTTP & API</h3>
+                    <p class="subtitle">Сервермен жұмыс</p>
+                    <a href="quiz.html?topic=fronthttp" class="start-btn">Бастау <i class="fas fa-play"></i></a>
+                </div>
+            </div>
+            
+             <div class="card">
+                <div class="card-icon front-icon"><i class="fab fa-node"></i></div>
+                <div class="card-content">
+                    <h3>Backend Basics</h3>
+                    <p class="subtitle">Node.js кіріспе</p>
+                    <a href="quiz.html?topic=frontnode" class="start-btn">Бастау <i class="fas fa-play"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
