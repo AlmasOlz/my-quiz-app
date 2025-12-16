@@ -7714,7 +7714,7 @@ frontcss: [
         {
     question: "HTTP дегеніміз не?",
     options: [
-      "HyperText Transfer Protocol (Мәтінді тасымалдау хаттамасы)",
+      "HyperText Transfer Protocol ",
       "HyperText Testing Program",
       "High Transfer Text Protocol",
       "Home Tool Transfer Protocol",
@@ -7725,7 +7725,7 @@ frontcss: [
   {
     question: "Клиент-Сервер архитектурасында \"Клиент\" кім?",
     options: [
-      "Сұраныс жіберетін бағдарлама (мысалы, браузер)",
+      "Сұраныс жіберетін бағдарлама ",
       "Жауап беретін компьютер",
       "Деректер қоры",
       "Интернет провайдер",
@@ -10691,7 +10691,7 @@ frontal: [
         {
     question: "HTTP дегеніміз не?",
     options: [
-      "HyperText Transfer Protocol (Мәтінді тасымалдау хаттамасы)",
+      "HyperText Transfer Protocol ",
       "HyperText Testing Program",
       "High Transfer Text Protocol",
       "Home Tool Transfer Protocol",
@@ -10702,7 +10702,7 @@ frontal: [
   {
     question: "Клиент-Сервер архитектурасында \"Клиент\" кім?",
     options: [
-      "Сұраныс жіберетін бағдарлама (мысалы, браузер)",
+      "Сұраныс жіберетін бағдарлама ",
       "Жауап беретін компьютер",
       "Деректер қоры",
       "Интернет провайдер",
