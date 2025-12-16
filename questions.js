@@ -8210,14 +8210,14 @@ frontcss: [
   },
   {
     question: "Next.js-те басқа бетке өту үшін қолданылатын компонент?",
-    options: [
-      "<Link href=\"/about\">... </Link>",
-      "<a href=\"/about\">... </a>",
-      "<NavLink to=\"/about\">... </NavLink>",
-      "<Go route=\"/about\">... </Go>",
-      "<RouterLink path=\"/about\">... </RouterLink>"
-    ],
-    correct: 0
+            options: [
+                "&lt;Link href=\"/about\"&gt;... &lt;/Link&gt;",
+                "&lt;a href=\"/about\"&gt;... &lt;/a&gt;",
+                "&lt;NavLink to=\"/about\"&gt;... &lt;/NavLink&gt;",
+                "&lt;Go route=\"/about\"&gt;... &lt;/Go&gt;",
+                "&lt;RouterLink path=\"/about\"&gt;... &lt;/RouterLink&gt;"
+            ],
+            correct: 0
   },
   {
     question: "Image компонентінің (next/image) кәдімгі img тегінен артықшылығы?",
@@ -11185,14 +11185,14 @@ frontal: [
   },
   {
     question: "Next.js-те басқа бетке өту үшін қолданылатын компонент?",
-    options: [
-      "<Link href=\"/about\">... </Link>",
-      "<a href=\"/about\">... </a>",
-      "<NavLink to=\"/about\">... </NavLink>",
-      "<Go route=\"/about\">... </Go>",
-      "<RouterLink path=\"/about\">... </RouterLink>"
-    ],
-    correct: 0
+            options: [
+                "&lt;Link href=\"/about\"&gt;... &lt;/Link&gt;",
+                "&lt;a href=\"/about\"&gt;... &lt;/a&gt;",
+                "&lt;NavLink to=\"/about\"&gt;... &lt;/NavLink&gt;",
+                "&lt;Go route=\"/about\"&gt;... &lt;/Go&gt;",
+                "&lt;RouterLink path=\"/about\"&gt;... &lt;/RouterLink&gt;"
+            ],
+            correct: 0
   },
   {
     question: "Image компонентінің (next/image) кәдімгі img тегінен артықшылығы?",
