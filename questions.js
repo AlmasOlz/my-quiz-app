@@ -7050,9 +7050,9 @@ frontcss: [
         {
             question: "Массивтің соңына элемент қосу әдісі?",
             options: [
+                "push()",
                 "pop()",
                 "shift()",
-                "push()",
                 "end()",
                 "removeLast()"
             ],
