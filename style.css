@@ -252,3 +252,115 @@ body {
 .nav-btn:hover {
     transform: translateY(-2px);
 }
+/* --- КАРТОЧКА НЕГІЗІ --- */
+.card {
+    background: #ffffff;
+    width: 280px;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 340px;
+}
+
+/* Карточкаға тышқан апарғанда (Hover) */
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 50px rgba(51, 51, 153, 0.3); /* Күлгін көлеңке */
+}
+
+/* --- ИКОНКА --- */
+.card-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(255, 0, 204, 0.4); /* Neon көлеңке */
+    transition: transform 0.5s ease;
+    
+    /* Inline стильдегі градиент жұмыс істеуі үшін маңызды */
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
+}
+
+/* Иконкаға тышқан апарғанда айналу эффектісі */
+.card:hover .card-icon {
+    transform: rotate(180deg) scale(1.1);
+}
+
+.card-icon i {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+/* --- МӘТІНДЕР --- */
+.card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #636e72;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* --- БАСТАУ БАТЫРМАСЫ --- */
+.start-btn {
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    
+    /* Иконкамен бірдей градиент */
+    background: linear-gradient(135deg, #ff00cc 0%, #333399 100%);
+    background-size: 200% auto;
+    
+    box-shadow: 0 5px 15px rgba(51, 51, 153, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Батырмаға тышқан апарғанда */
+.start-btn:hover {
+    background-position: right center; /* Градиент жылжиды */
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 0, 204, 0.5);
+}
+
+.start-btn i {
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+}
+
+.start-btn:hover i {
+    transform: translateX(5px); /* Стрелка оңға жылжиды */
+}
+
+/* --- ГРАДИЕНТ АНИМАЦИЯСЫ --- */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

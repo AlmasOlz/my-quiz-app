@@ -4,10 +4,27 @@ const topic = urlParams.get('topic');
 let currentQuestions = [];
 let quizTitle = "";
 
-// ТАҚЫРЫПТАРДЫ ТЕКСЕРУ ЖӘНЕ АТАУЫН ОРНАТУ
+// 1. Араластыру функциясы (Мұны ең басына қойған дұрыс, ортақ қолдану үшін)
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+// 2. Сұрақтарды жүктеу және Тақырыпты анықтау (БІР ЖЕРДЕ БОЛУЫ КЕРЕК)
 if (allTests[topic]) {
-    currentQuestions = allTests[topic];
-    if (topic === 'os') quizTitle = "Операциялық жүйелер";
+    // Сұрақтарды көшіріп аламыз (маңызды!)
+    currentQuestions = [...allTests[topic]]; 
+
+    // Егер Mix (frontall) болса - сұрақтарды араластырамыз
+    if (topic === 'frontall') {
+        shuffleArray(currentQuestions); 
+        quizTitle = "Frontend: Full Mix (Random)";
+    } 
+    // Басқа тақырыптар үшін атаулар
+    else if (topic === 'os') quizTitle = "Операциялық жүйелер";
     else if (topic === 'algo') quizTitle = "Алгоритмдеу";
     else if (topic === 'math') quizTitle = "Ықтималдық теориясы";
     else if (topic === 'java') quizTitle = "Java Programming";
@@ -20,6 +37,7 @@ if (allTests[topic]) {
     else if (topic === 'fronthttp') quizTitle = "Frontend: HTTP/API";
     else if (topic === 'frontnode') quizTitle = "Frontend: Backend Basics";
     else quizTitle = "Тест";
+
 } else {
     alert("Тест табылған жоқ!");
     window.location.href = "index.html";
@@ -31,7 +49,7 @@ let score = 0;
 const totalQuestions = currentQuestions.length;
 let isMultiSelect = false;
 
-// ТАРИХ (Жауаптарды сақтау үшін массив)
+// ТАРИХ (Жауаптарды сақтау үшін)
 let userHistory = new Array(totalQuestions).fill(null);
 
 // ЭЛЕМЕНТТЕРДІ АЛУ
@@ -54,27 +72,17 @@ const scoreText = document.getElementById('score-text');
 const totalText = document.getElementById('total-text');
 const feedbackText = document.getElementById('feedback-text');
 
-// ТАҚЫРЫПТЫ ЭКРАНҒА ШЫҒАРУ
+// Тақырыпты экранға шығару
 titleEl.innerText = quizTitle;
-
-// АРАЛАСТЫРУ ФУНКЦИЯСЫ (Fisher-Yates Shuffle)
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
 
 // СҰРАҚТЫ ЖҮКТЕУ ФУНКЦИЯСЫ
 function loadQuestion() {
     const data = currentQuestions[currentQuestionIndex];
 
-    // Сұрақ мәтіні мен нөмірін жаңарту
     questionText.innerText = `${currentQuestionIndex + 1}. ${data.question}`;
     questionCount.innerText = `Сұрақ ${currentQuestionIndex + 1} / ${totalQuestions}`;
     
-    // Сұрақ суретін көрсету/жасыру
+    // Суретті көрсету/жасыру
     if (data.img) {
         imgEl.src = data.img;
         imgEl.style.display = 'block';
@@ -83,108 +91,90 @@ function loadQuestion() {
         imgEl.src = "";
     }
 
-    // Прогресс барды жаңарту
+    // Прогресс
     const progressPercent = ((currentQuestionIndex + 1) / totalQuestions) * 100;
     progressBar.style.width = `${progressPercent}%`;
 
-    // Жауаптар тізімін тазалау
     optionsList.innerHTML = '';
     
-    // Батырмаларды көрсету/жасыру логикасы
-    prevBtn.style.display = currentQuestionIndex > 0 ? 'block' : 'none'; // 1-ші сұрақта "Артқа" жоқ
+    // Батырмалар
+    prevBtn.style.display = currentQuestionIndex > 0 ? 'block' : 'none';
     nextBtn.style.display = 'none';
     checkBtn.style.display = 'none';
 
-    // Көп жауапты ма екенін тексеру (егер correct массив болса)
     isMultiSelect = Array.isArray(data.correct);
 
     // --- ЖАУАПТАРДЫ ДАЙЫНДАУ (Араластыру) ---
     if (!data.shuffledOptions) {
         let answers = data.options.map((opt, index) => {
-            // Жаңа формат (сурет бар) немесе ескі формат (тек мәтін) тексеру
             let text = typeof opt === 'object' ? opt.text : opt;
             let img = typeof opt === 'object' ? opt.img : null;
             
-            // Дұрыс жауап па?
             let correctStatus = isMultiSelect ? data.correct.includes(index) : index === data.correct;
             
             return { 
                 text: text, 
-                img: img, // Сурет жолы
+                img: img,
                 originalIndex: index, 
                 isCorrect: correctStatus 
             };
         });
+        // Options үшін де сол shuffleArray функциясын қолданамыз
         data.shuffledOptions = shuffleArray(answers);
     }
 
-    // --- ЖАУАПТАРДЫ ЭКРАНҒА ШЫҒАРУ ---
+    // --- ЖАУАПТАРДЫ ШЫҒАРУ ---
     data.shuffledOptions.forEach((answerObj, uiIndex) => {
         const div = document.createElement('div');
         div.className = 'option-item';
         
-        // Ішкі HTML құрастыру (Дөңгелек + Сурет + Мәтін)
         let contentHtml = '<span class="circle"></span> ';
-        
-        // Егер вариантта сурет болса
         if (answerObj.img) {
-            contentHtml += `<img src="${answerObj.img}" class="option-img" alt="Option Image">`;
+            contentHtml += `<img src="${answerObj.img}" class="option-img" alt="Image">`;
         }
-        
-        // Егер вариантта мәтін болса
         if (answerObj.text) {
             contentHtml += `<span>${answerObj.text}</span>`;
         }
 
         div.innerHTML = contentHtml;
-        
-        // Мета деректерді сақтау
         div.dataset.isCorrect = answerObj.isCorrect;
         div.dataset.uiIndex = uiIndex;
 
-        // Басу оқиғасын тіркеу
         div.onclick = () => selectOption(div, uiIndex);
         optionsList.appendChild(div);
     });
 
-    // --- ТАРИХТЫ ТЕКСЕРУ ---
+    // Тарихты тексеру
     const history = userHistory[currentQuestionIndex];
     if (history && history.answered) {
         restoreState(history);
     } else {
-        // Егер көп жауапты болса -> "Тексеру" батырмасын көрсету
         if (isMultiSelect) checkBtn.style.display = 'block';
     }
 }
 
-// ТАРИХТАН ҚАЛПЫНА КЕЛТІРУ ФУНКЦИЯСЫ
+// ТАРИХТАН ҚАЛПЫНА КЕЛТІРУ
 function restoreState(history) {
     const options = optionsList.children;
     for (let i = 0; i < options.length; i++) {
         const div = options[i];
-        div.classList.add('disabled'); // Қайта бастырмаймыз
-
-        // Таңдалған жауаптарды бояу
+        div.classList.add('disabled');
         if (history.selectedIndices.includes(i)) {
             if (div.dataset.isCorrect === "true") div.classList.add('correct');
             else div.classList.add('wrong');
         }
-        // Дұрыс жауапты әрқашан жасыл қылып көрсету
         if (div.dataset.isCorrect === "true") div.classList.add('correct');
     }
-    nextBtn.style.display = 'block'; // Келесіге өтуге рұқсат
+    nextBtn.style.display = 'block';
     checkBtn.style.display = 'none';
 }
 
-// НҰСҚАНЫ ТАҢДАУ (БАСУ)
+// ТАҢДАУ
 function selectOption(selectedDiv, uiIndex) {
     if (selectedDiv.classList.contains('disabled')) return;
 
     if (isMultiSelect) {
-        // --- КӨП ЖАУАПТЫ РЕЖИМ ---
         selectedDiv.classList.toggle('selected');
-        
-        // Көк түспен белгілеу (уақытша)
         if(selectedDiv.classList.contains('selected')) {
             selectedDiv.style.backgroundColor = "#eef2ff";
             selectedDiv.style.borderColor = "#667eea";
@@ -195,7 +185,6 @@ function selectOption(selectedDiv, uiIndex) {
             selectedDiv.querySelector('.circle').style.backgroundColor = "";
         }
     } else {
-        // --- БІР ЖАУАПТЫ РЕЖИМ (Бірден тексереді) ---
         checkSingleAnswer(selectedDiv, uiIndex);
     }
 }
@@ -205,24 +194,21 @@ function checkSingleAnswer(selectedDiv, uiIndex) {
     const isCorrect = selectedDiv.dataset.isCorrect === "true";
     if (isCorrect) score++;
 
-    // Тарихқа жазу
     userHistory[currentQuestionIndex] = { answered: true, selectedIndices: [uiIndex] };
 
     const options = optionsList.children;
     for (let i = 0; i < options.length; i++) {
         options[i].classList.add('disabled');
-        // Дұрыс жауапты көрсету
         if (options[i].dataset.isCorrect === "true") options[i].classList.add('correct');
     }
 
-    // Таңдаған жауапты бояу
     if (isCorrect) selectedDiv.classList.add('correct');
     else selectedDiv.classList.add('wrong');
 
     nextBtn.style.display = 'block';
 }
 
-// КӨП ЖАУАПТЫ ТЕКСЕРУ (Түйме басқанда)
+// КӨП ЖАУАПТЫ ТЕКСЕРУ
 function checkMultiAnswer() {
     const options = optionsList.children;
     let allCorrectFound = true;
@@ -236,13 +222,11 @@ function checkMultiAnswer() {
 
         if (isSelected) selectedIndices.push(i);
 
-        // Бұғаттау және уақытша түстерді тазалау
         div.classList.add('disabled');
         div.style.backgroundColor = "";
         div.style.borderColor = "";
         div.querySelector('.circle').style.backgroundColor = "";
 
-        // Тексеру және бояу
         if (isActuallyCorrect) {
             div.classList.add('correct');
             if (!isSelected) allCorrectFound = false;
@@ -253,17 +237,15 @@ function checkMultiAnswer() {
         }
     }
 
-    // Егер бәрі дұрыс болса ұпай қосу
     if (allCorrectFound && noWrongSelected) score++;
 
-    // Тарихқа жазу
     userHistory[currentQuestionIndex] = { answered: true, selectedIndices: selectedIndices };
     
     checkBtn.style.display = 'none';
     nextBtn.style.display = 'block';
 }
 
-// КЕЛЕСІ СҰРАҚҚА ӨТУ
+// НАВИГАЦИЯ
 function nextQuestion() {
     if (currentQuestionIndex < totalQuestions - 1) {
         currentQuestionIndex++;
@@ -273,7 +255,6 @@ function nextQuestion() {
     }
 }
 
-// АЛДЫҢҒЫ СҰРАҚҚА ӨТУ
 function prevQuestion() {
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
@@ -281,7 +262,6 @@ function prevQuestion() {
     }
 }
 
-// СҰРАҚҚА СЕКІРУ (JUMP)
 function jumpToQuestion() {
     const val = parseInt(jumpInput.value);
     if (val >= 1 && val <= totalQuestions) {
@@ -298,7 +278,7 @@ jumpInput.addEventListener("keypress", function(event) {
     if (event.key === "Enter") jumpToQuestion();
 });
 
-// НӘТИЖЕ ЭКРАНЫН КӨРСЕТУ
+// НӘТИЖЕ
 function showResults() {
     quizScreen.style.display = 'none';
     resultScreen.style.display = 'block';
@@ -318,5 +298,5 @@ function showResults() {
     }
 }
 
-// Бағдарламаны іске қосу
+// Іске қосу
 loadQuestion();

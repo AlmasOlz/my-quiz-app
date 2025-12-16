@@ -7050,8 +7050,8 @@ frontcss: [
         {
             question: "Массивтің соңына элемент қосу әдісі?",
             options: [
-                "push()",
                 "pop()",
+                "push()",
                 "shift()",
                 "end()",
                 "removeLast()"
@@ -8487,7 +8487,7 @@ frontcss: [
   }
     ],
 
-frontall: [
+frontal: [
  {
             question: "HTML дегеніміз не?",
             options: [
@@ -11460,8 +11460,19 @@ frontall: [
     correct: 0
   }
 
-]
+],
+
     
 
 
 };
+allTests.frontall = [
+    ...allTests.front,
+    ...allTests.frontcss,
+    ...allTests.frontjs,
+    ...allTests.frontjsdom,
+    ...allTests.fronthttp,
+    ...allTests.frontnode,
+    // Егер frontbe бөлімі сізде жоқ болса, осы жолды алып тастаңыз, әйтпесе қате шығады
+    ...(allTests.frontbe || []) 
+];
