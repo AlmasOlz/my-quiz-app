@@ -5988,7 +5988,7 @@ front: [
             correct: 0
         },
         {
-            question: "Кесте бағаналарын біріктіру атрибуты (Colspan)?",
+            question: "Кесте бағаналарын біріктіру атрибуты?",
             options: [
                 "colspan",
                 "rowspan",
@@ -5999,7 +5999,7 @@ front: [
             correct: 0
         },
         {
-            question: "Кесте жолдарын біріктіру атрибуты (Rowspan)?",
+            question: "Кесте жолдарын біріктіру атрибуты?",
             options: [
                 "rowspan",
                 "colspan",
@@ -11458,10 +11458,681 @@ frontal: [
       "Оларды HTML-ге жазып қою керек"
     ],
     correct: 0
-  }
+  },
+   {
+            question: "fetch не қайтарады?",
+            options: ["Promise", "JSON", "String", "HTML", "Array"],
+            correct: 0
+        },
+        {
+            question: "Жауаптан JSON қалай аламыз?",
+            options: [".json()", ".parse()", ".stringify()", ".read()", ".get()"],
+            correct: 0
+        },
+        {
+            question: "Тақырыптар үшін қандай тег қолданылады?",
+            options: ["&lt;h1&gt; - &lt;h6&gt;", "&lt;p&gt;", "&lt;span&gt;", "&lt;div&gt;", "&lt;section&gt;"],
+            correct: 0
+        },
+        {
+            question: "Көпжолды мәтін өрісін қалай жасауға болады?",
+            options: ["&lt;textarea&gt;", "&lt;input type=\"text\"&gt;", "&lt;text&gt;", "&lt;field&gt;", "&lt;multiline&gt;"],
+            correct: 0
+        },
+        {
+            question: "Тәуелсіз бөлімді қай тег белгілейді?",
+            options: ["&lt;article&gt;", "&lt;div&gt;", "&lt;span&gt;", "&lt;aside&gt;", "&lt;nav&gt;"],
+            correct: 0
+        },
+        {
+            question: "Анықтамалар тізімін сипаттайтын тег?",
+            options: ["&lt;dl&gt;", "&lt;ul&gt;", "&lt;ol&gt;", "&lt;li&gt;", "&lt;dt&gt;"],
+            correct: 0
+        },
+        {
+            question: "Мәтіннің түсін қалай орнатуға болады?",
+            options: ["color", "font-color", "text-color", "background-color", "style-color"],
+            correct: 0
+        },
+        {
+            question: "Фонды бүкіл элементке қалай созамыз?",
+            options: ["background-size: cover", "background-size: contain", "background-repeat: no-repeat", "background-position: center", "width: 100%"],
+            correct: 0
+        },
+        {
+            question: "Жолдар арасындағы интервалды қалай қоюға болады?",
+            options: ["line-height", "letter-spacing", "word-spacing", "margin-bottom", "padding-top"],
+            correct: 0
+        },
+        {
+            question: "Соңғы элементті қалай жоямыз?",
+            options: ["pop()", "push()", "shift()", "unshift()", "splice()"],
+            correct: 0
+        },
+        {
+            question: "Типтерсіз теңестікті қалай тексереміз?",
+            options: ["==", "===", "=", "!=", "!=="],
+            correct: 0
+        },
+        {
+            question: "Объект қасиетін қалай аламыз?",
+            options: ["obj.prop немесе obj['prop']", "obj(prop)", "obj{prop}", "obj-&gt;prop", "obj::prop"],
+            correct: 0
+        },
+        {
+            question: "Төмен қарай дөңгелектеу қалай жасалады?",
+            options: ["Math.floor()", "Math.ceil()", "Math.round()", "Math.abs()", "Math.trunc()"],
+            correct: 0
+        },
+        {
+            question: "Циклды қалай тоқтатуға болады?",
+            options: ["break", "continue", "stop", "exit", "return"],
+            correct: 0
+        },
+        {
+            question: "Циклды қалай тоқтатамыз?",
+            options: ["break", "halt", "pause", "close", "finish"],
+            correct: 0
+        },
+        {
+            question: "Балалар тізімін қалай аламыз?",
+            options: ["element.children", "element.childNodes", "element.parent", "element.siblings", "element.list"],
+            correct: 0
+        },
+        {
+            question: "Элемент ішіндегі мәтінді қалай аламыз?",
+            options: ["textContent немесе innerText", "innerHTML", "outerHTML", "value", "text"],
+            correct: 0
+        },
+        {
+            question: "Жоғарғы индекс (суперскрипт) үшін қандай тег қолданылады?",
+            options: ["&lt;sup&gt;", "&lt;sub&gt;", "&lt;top&gt;", "&lt;up&gt;", "&lt;high&gt;"],
+            correct: 0
+        },
+        {
+            question: "JavaScript кірістіру үшін қандай тег қолданылады?",
+            options: ["&lt;script&gt;", "&lt;js&gt;", "&lt;code&gt;", "&lt;javascript&gt;", "&lt;link&gt;"],
+            correct: 0
+        },
+        {
+            question: "Видео кірістіру үшін қандай тег бар?",
+            options: ["&lt;video&gt;", "&lt;movie&gt;", "&lt;media&gt;", "&lt;film&gt;", "&lt;source&gt;"],
+            correct: 0
+        },
+        {
+            question: "Санды жолға қалай айналдырамыз?",
+            options: ["String(num)", "Number(str)", "parseInt(num)", "parseFloat(num)", "Boolean(num)"],
+            correct: 0
+        },
+        {
+            question: "Элементті басына қалай қосамыз?",
+            options: ["prepend()", "append()", "appendChild()", "after()", "before()"],
+            correct: 0
+        },
+        {
+            question: "NaN қандай типке жатады?",
+            options: ["number", "string", "undefined", "object", "null"],
+            correct: 0
+        },
+        {
+            question: "Сүзгіден өткен элементтерден жаңа массив қай әдіс қайтарады?",
+            options: ["filter()", "map()", "reduce()", "forEach()", "find()"],
+            correct: 0
+        },
+        {
+            question: "CSS класс қосу қалай жасалады?",
+            options: ["classList.add()", "className.add()", "style.class()", "addClass()", "attr('class')"],
+            correct: 0
+        },
+        {
+            question: "Ата-аналық элементті қалай аламыз?",
+            options: ["parentElement", "childElement", "nextSibling", "previousSibling", "rootElement"],
+            correct: 0
+        },
+        {
+            question: "Элемент ішіндегі HTML-ды қалай аламыз?",
+            options: ["innerHTML", "innerText", "textContent", "outerHTML", "value"],
+            correct: 0
+        },
+        {
+            question: "Элементтің класс бар-жоғын қалай тексереміз?",
+            options: ["classList.contains()", "classList.has()", "className.check()", "exists()", "isClass()"],
+            correct: 0
+        },
+        {
+            question: "Элементті ата-анасының басына қалай қосамыз?",
+            options: ["parent.prepend(child)", "parent.append(child)", "parent.push(child)", "parent.add(child)", "parent.insert(child)"],
+            correct: 0
+        },
+        {
+            question: "JS-та GET сұрауын қалай жасауға болады?",
+            options: ["fetch(url)", "get(url)", "request(url)", "post(url)", "send(url)"],
+            correct: 0
+        },
+        {
+            question: "HTTP жауаптың сәтті екенін қалай тексереміз?",
+            options: ["response.ok", "response.status === 404", "response.success", "response.done", "response.good"],
+            correct: 0
+        },
+        {
+            question: "Сұрау кезінде кэшті қалай өшіруге болады?",
+            options: ["cache: 'no-store'", "cache: 'force-cache'", "cache: 'default'", "cache: 'reload'", "cache: 'only-if-cached'"],
+            correct: 0
+        },
+        {
+            question: "Кесте жасау үшін қандай тег қолданылады?",
+            options: ["&lt;table&gt;", "&lt;tr&gt;", "&lt;td&gt;", "&lt;th&gt;", "&lt;grid&gt;"],
+            correct: 0
+        },
+        {
+            question: "Қалың (жирный) мәтінді қалай жасауға болады?",
+            options: ["&lt;strong&gt; немесе &lt;b&gt;", "&lt;i&gt;", "&lt;em&gt;", "&lt;u&gt;", "&lt;p&gt;"],
+            correct: 0
+        },
+        {
+            question: "Беттегі негізгі контентті қандай тег белгілейді?",
+            options: ["&lt;main&gt;", "&lt;header&gt;", "&lt;footer&gt;", "&lt;section&gt;", "&lt;article&gt;"],
+            correct: 0
+        },
+        {
+            question: "Маркерлеу үшін қандай тег пайдаланылады?",
+            options: ["&lt;mark&gt;", "&lt;span&gt;", "&lt;div&gt;", "&lt;p&gt;", "&lt;highlight&gt;"],
+            correct: 0
+        },
+        {
+            question: "ID-сы бар элементке стиль қалай қолданылады?",
+            options: ["#id", ".id", "*id", "id{}", "&id"],
+            correct: 0
+        },
+        {
+            question: "Блокты жылдам горизонталь бойынша қалай орталау керек?",
+            options: ["margin: 0 auto", "text-align: center", "vertical-align: middle", "float: center", "align-self: center"],
+            correct: 0
+        },
+        {
+            question: "Фонды градиентпен қалай жасауға болады?",
+            options: ["background: linear-gradient(...)", "background: gradient(...)", "color: gradient", "image: gradient", "border: gradient"],
+            correct: 0
+        },
+        {
+            question: "Әріптер арасындағы аралықты қалай қоюға болады?",
+            options: ["letter-spacing", "word-spacing", "line-height", "text-indent", "font-spacing"],
+            correct: 0
+        },
+        {
+            question: "Жолды қалай қосамыз?",
+            options: ["+ немесе concat()", "*", "-", "/", "merge()"],
+            correct: 0
+        },
+        {
+            question: "Массивтерді қалай біріктіреміз?",
+            options: ["concat() немесе [...arr1, ...arr2]", "join()", "push()", "pop()", "splice()"],
+            correct: 0
+        },
+        {
+            question: "Элементті ата-анасының соңына қалай қосамыз?",
+            options: ["parent.append(child)", "parent.prepend(child)", "parent.before(child)", "parent.after(child)", "parent.remove(child)"],
+            correct: 0
+        },
+        {
+            question: "Next.js 13+ бет қалай жасалады?",
+            options: ["page.js", "index.js", "app.js", "layout.js", "route.js"],
+            correct: 0
+        },
+        {
+            question: "Шрифттарды Next.js-ке қалай қосамыз?",
+            options: ["next/font", "next/css", "next/style", "import 'fonts'", "&lt;link&gt;"],
+            correct: 0
+        },
+        {
+            question: "Нөмірленбеген тізім жасауда қандай тег қолданылады?",
+            options: ["&lt;ul&gt;", "&lt;ol&gt;", "&lt;dl&gt;", "&lt;li&gt;", "&lt;list&gt;"],
+            correct: 0
+        },
+        {
+            question: "CSS қосу үшін қай тег қолданылады?",
+            options: ["&lt;style&gt; немесе &lt;link&gt;", "&lt;script&gt;", "&lt;meta&gt;", "&lt;css&gt;", "&lt;design&gt;"],
+            correct: 0
+        },
+        {
+            question: "Айнымалы қалай жарияланады?",
+            options: ["let, const, var", "variable", "int", "string", "function"],
+            correct: 0
+        },
+        {
+            question: "Массивқа элементті соңына қалай қосамыз?",
+            options: ["push()", "pop()", "shift()", "unshift()", "add()"],
+            correct: 0
+        },
+        {
+            question: "Мәннің сан болып табылатынын қалай тексереміз?",
+            options: ["typeof x === 'number'", "isNumber()", "checkNum()", "isInt()", "validate()"],
+            correct: 0
+        },
+        {
+            question: "0-ден 1 дейін кездейсоқ сан қалай алынады?",
+            options: ["Math.random()", "Math.round()", "Math.floor()", "Math.ceil()", "Random()"],
+            correct: 0
+        },
+        {
+            question: "Элементті басқасының алдында қалай қосамыз?",
+            options: ["insertBefore()", "insertAfter()", "append()", "prepend()", "push()"],
+            correct: 0
+        },
+        {
+            question: "Элементтің барлық атрибуттарын қалай аламыз?",
+            options: ["element.attributes", "element.properties", "element.values", "element.list", "element.map"],
+            correct: 0
+        },
+        {
+            question: "fetch қатесін қалай өңдейміз?",
+            options: [".catch()", ".then()", ".finally()", ".try()", ".error()"],
+            correct: 0
+        },
+        {
+            question: "PUT сұрауын қалай жібереміз?",
+            options: ["method: 'PUT'", "method: 'POST'", "method: 'GET'", "method: 'DELETE'", "method: 'PATCH'"],
+            correct: 0
+        },
+        {
+            question: "Статикалық файлдар қай папкада сақталады?",
+            options: ["public", "static", "assets", "images", "files"],
+            correct: 0
+        },
+        {
+            question: "API-маршрут не қайтарады?",
+            options: ["NextResponse", "HTML", "Component", "CSS", "XML"],
+            correct: 0
+        },
+        {
+            question: "Нөмірленген тізім жасау үшін қандай тег қолданылады?",
+            options: ["&lt;ol&gt;", "&lt;ul&gt;", "&lt;dl&gt;", "&lt;li&gt;", "&lt;list&gt;"],
+            correct: 0
+        },
+        {
+            question: "Кесте жолы қандай тегпен белгіленеді?",
+            options: ["&lt;tr&gt;", "&lt;td&gt;", "&lt;th&gt;", "&lt;table&gt;", "&lt;tbody&gt;"],
+            correct: 0
+        },
+        {
+            question: "Мәтінді қалың ету үшін қандай қасиетті қолданады?",
+            options: ["font-weight", "font-style", "text-decoration", "font-size", "text-align"],
+            correct: 0
+        },
+        {
+            question: "Элементтің енін қалай қою керек?",
+            options: ["width", "height", "size", "length", "span"],
+            correct: 0
+        },
+        {
+            question: "Объект ұзындығын қалай білеміз?",
+            options: ["Object.keys(obj).length", "obj.length", "obj.size", "obj.count", "length(obj)"],
+            correct: 0
+        },
+        {
+            question: "Объект қасиетін қалай жоямыз?",
+            options: ["delete obj.prop", "remove obj.prop", "obj.prop = null", "clear obj.prop", "pop obj.prop"],
+            correct: 0
+        },
+        {
+            question: "Жолдың екі жағындағы бос орындарды қалай жоямыз?",
+            options: ["trim()", "strip()", "clean()", "slice()", "cut()"],
+            correct: 0
+        },
+        {
+            question: "Массивтің кем дегенде бір элементі тексеруден өтетінін қандай әдіс тексереді?",
+            options: ["some()", "every()", "filter()", "map()", "find()"],
+            correct: 0
+        },
+        {
+            question: "Оқиғаны қолмен қалай шақырамыз?",
+            options: ["dispatchEvent()", "trigger()", "call()", "emit()", "fire()"],
+            correct: 0
+        },
+        {
+            question: "HTML-комментарийлерді қандай синтаксиспен жазамыз?",
+            options: ["&lt;!-- ... --&gt;", "// ...", "/* ... */", "# ...", "{{ ... }}"],
+            correct: 0
+        }
 
 ],
-
+frontgeneral: [
+        {
+            question: "fetch не қайтарады?",
+            options: ["Promise", "JSON", "String", "HTML", "Array"],
+            correct: 0
+        },
+        {
+            question: "Жауаптан JSON қалай аламыз?",
+            options: [".json()", ".parse()", ".stringify()", ".read()", ".get()"],
+            correct: 0
+        },
+        {
+            question: "Тақырыптар үшін қандай тег қолданылады?",
+            options: ["&lt;h1&gt; - &lt;h6&gt;", "&lt;p&gt;", "&lt;span&gt;", "&lt;div&gt;", "&lt;section&gt;"],
+            correct: 0
+        },
+        {
+            question: "Көпжолды мәтін өрісін қалай жасауға болады?",
+            options: ["&lt;textarea&gt;", "&lt;input type=\"text\"&gt;", "&lt;text&gt;", "&lt;field&gt;", "&lt;multiline&gt;"],
+            correct: 0
+        },
+        {
+            question: "Тәуелсіз бөлімді қай тег белгілейді?",
+            options: ["&lt;article&gt;", "&lt;div&gt;", "&lt;span&gt;", "&lt;aside&gt;", "&lt;nav&gt;"],
+            correct: 0
+        },
+        {
+            question: "Анықтамалар тізімін сипаттайтын тег?",
+            options: ["&lt;dl&gt;", "&lt;ul&gt;", "&lt;ol&gt;", "&lt;li&gt;", "&lt;dt&gt;"],
+            correct: 0
+        },
+        {
+            question: "Мәтіннің түсін қалай орнатуға болады?",
+            options: ["color", "font-color", "text-color", "background-color", "style-color"],
+            correct: 0
+        },
+        {
+            question: "Фонды бүкіл элементке қалай созамыз?",
+            options: ["background-size: cover", "background-size: contain", "background-repeat: no-repeat", "background-position: center", "width: 100%"],
+            correct: 0
+        },
+        {
+            question: "Жолдар арасындағы интервалды қалай қоюға болады?",
+            options: ["line-height", "letter-spacing", "word-spacing", "margin-bottom", "padding-top"],
+            correct: 0
+        },
+        {
+            question: "Соңғы элементті қалай жоямыз?",
+            options: ["pop()", "push()", "shift()", "unshift()", "splice()"],
+            correct: 0
+        },
+        {
+            question: "Типтерсіз теңестікті қалай тексереміз?",
+            options: ["==", "===", "=", "!=", "!=="],
+            correct: 0
+        },
+        {
+            question: "Объект қасиетін қалай аламыз?",
+            options: ["obj.prop немесе obj['prop']", "obj(prop)", "obj{prop}", "obj-&gt;prop", "obj::prop"],
+            correct: 0
+        },
+        {
+            question: "Төмен қарай дөңгелектеу қалай жасалады?",
+            options: ["Math.floor()", "Math.ceil()", "Math.round()", "Math.abs()", "Math.trunc()"],
+            correct: 0
+        },
+        {
+            question: "Циклды қалай тоқтатуға болады?",
+            options: ["break", "continue", "stop", "exit", "return"],
+            correct: 0
+        },
+        {
+            question: "Циклды қалай тоқтатамыз?",
+            options: ["break", "halt", "pause", "close", "finish"],
+            correct: 0
+        },
+        {
+            question: "Балалар тізімін қалай аламыз?",
+            options: ["element.children", "element.childNodes", "element.parent", "element.siblings", "element.list"],
+            correct: 0
+        },
+        {
+            question: "Элемент ішіндегі мәтінді қалай аламыз?",
+            options: ["textContent немесе innerText", "innerHTML", "outerHTML", "value", "text"],
+            correct: 0
+        },
+        {
+            question: "Жоғарғы индекс (суперскрипт) үшін қандай тег қолданылады?",
+            options: ["&lt;sup&gt;", "&lt;sub&gt;", "&lt;top&gt;", "&lt;up&gt;", "&lt;high&gt;"],
+            correct: 0
+        },
+        {
+            question: "JavaScript кірістіру үшін қандай тег қолданылады?",
+            options: ["&lt;script&gt;", "&lt;js&gt;", "&lt;code&gt;", "&lt;javascript&gt;", "&lt;link&gt;"],
+            correct: 0
+        },
+        {
+            question: "Видео кірістіру үшін қандай тег бар?",
+            options: ["&lt;video&gt;", "&lt;movie&gt;", "&lt;media&gt;", "&lt;film&gt;", "&lt;source&gt;"],
+            correct: 0
+        },
+        {
+            question: "Санды жолға қалай айналдырамыз?",
+            options: ["String(num)", "Number(str)", "parseInt(num)", "parseFloat(num)", "Boolean(num)"],
+            correct: 0
+        },
+        {
+            question: "Элементті басына қалай қосамыз?",
+            options: ["prepend()", "append()", "appendChild()", "after()", "before()"],
+            correct: 0
+        },
+        {
+            question: "NaN қандай типке жатады?",
+            options: ["number", "string", "undefined", "object", "null"],
+            correct: 0
+        },
+        {
+            question: "Сүзгіден өткен элементтерден жаңа массив қай әдіс қайтарады?",
+            options: ["filter()", "map()", "reduce()", "forEach()", "find()"],
+            correct: 0
+        },
+        {
+            question: "CSS класс қосу қалай жасалады?",
+            options: ["classList.add()", "className.add()", "style.class()", "addClass()", "attr('class')"],
+            correct: 0
+        },
+        {
+            question: "Ата-аналық элементті қалай аламыз?",
+            options: ["parentElement", "childElement", "nextSibling", "previousSibling", "rootElement"],
+            correct: 0
+        },
+        {
+            question: "Элемент ішіндегі HTML-ды қалай аламыз?",
+            options: ["innerHTML", "innerText", "textContent", "outerHTML", "value"],
+            correct: 0
+        },
+        {
+            question: "Элементтің класс бар-жоғын қалай тексереміз?",
+            options: ["classList.contains()", "classList.has()", "className.check()", "exists()", "isClass()"],
+            correct: 0
+        },
+        {
+            question: "Элементті ата-анасының басына қалай қосамыз?",
+            options: ["parent.prepend(child)", "parent.append(child)", "parent.push(child)", "parent.add(child)", "parent.insert(child)"],
+            correct: 0
+        },
+        {
+            question: "JS-та GET сұрауын қалай жасауға болады?",
+            options: ["fetch(url)", "get(url)", "request(url)", "post(url)", "send(url)"],
+            correct: 0
+        },
+        {
+            question: "HTTP жауаптың сәтті екенін қалай тексереміз?",
+            options: ["response.ok", "response.status === 404", "response.success", "response.done", "response.good"],
+            correct: 0
+        },
+        {
+            question: "Сұрау кезінде кэшті қалай өшіруге болады?",
+            options: ["cache: 'no-store'", "cache: 'force-cache'", "cache: 'default'", "cache: 'reload'", "cache: 'only-if-cached'"],
+            correct: 0
+        },
+        {
+            question: "Кесте жасау үшін қандай тег қолданылады?",
+            options: ["&lt;table&gt;", "&lt;tr&gt;", "&lt;td&gt;", "&lt;th&gt;", "&lt;grid&gt;"],
+            correct: 0
+        },
+        {
+            question: "Қалың (жирный) мәтінді қалай жасауға болады?",
+            options: ["&lt;strong&gt; немесе &lt;b&gt;", "&lt;i&gt;", "&lt;em&gt;", "&lt;u&gt;", "&lt;p&gt;"],
+            correct: 0
+        },
+        {
+            question: "Беттегі негізгі контентті қандай тег белгілейді?",
+            options: ["&lt;main&gt;", "&lt;header&gt;", "&lt;footer&gt;", "&lt;section&gt;", "&lt;article&gt;"],
+            correct: 0
+        },
+        {
+            question: "Маркерлеу үшін қандай тег пайдаланылады?",
+            options: ["&lt;mark&gt;", "&lt;span&gt;", "&lt;div&gt;", "&lt;p&gt;", "&lt;highlight&gt;"],
+            correct: 0
+        },
+        {
+            question: "ID-сы бар элементке стиль қалай қолданылады?",
+            options: ["#id", ".id", "*id", "id{}", "&id"],
+            correct: 0
+        },
+        {
+            question: "Блокты жылдам горизонталь бойынша қалай орталау керек?",
+            options: ["margin: 0 auto", "text-align: center", "vertical-align: middle", "float: center", "align-self: center"],
+            correct: 0
+        },
+        {
+            question: "Фонды градиентпен қалай жасауға болады?",
+            options: ["background: linear-gradient(...)", "background: gradient(...)", "color: gradient", "image: gradient", "border: gradient"],
+            correct: 0
+        },
+        {
+            question: "Әріптер арасындағы аралықты қалай қоюға болады?",
+            options: ["letter-spacing", "word-spacing", "line-height", "text-indent", "font-spacing"],
+            correct: 0
+        },
+        {
+            question: "Жолды қалай қосамыз?",
+            options: ["+ немесе concat()", "*", "-", "/", "merge()"],
+            correct: 0
+        },
+        {
+            question: "Массивтерді қалай біріктіреміз?",
+            options: ["concat() немесе [...arr1, ...arr2]", "join()", "push()", "pop()", "splice()"],
+            correct: 0
+        },
+        {
+            question: "Элементті ата-анасының соңына қалай қосамыз?",
+            options: ["parent.append(child)", "parent.prepend(child)", "parent.before(child)", "parent.after(child)", "parent.remove(child)"],
+            correct: 0
+        },
+        {
+            question: "Next.js 13+ бет қалай жасалады?",
+            options: ["page.js", "index.js", "app.js", "layout.js", "route.js"],
+            correct: 0
+        },
+        {
+            question: "Шрифттарды Next.js-ке қалай қосамыз?",
+            options: ["next/font", "next/css", "next/style", "import 'fonts'", "&lt;link&gt;"],
+            correct: 0
+        },
+        {
+            question: "Нөмірленбеген тізім жасауда қандай тег қолданылады?",
+            options: ["&lt;ul&gt;", "&lt;ol&gt;", "&lt;dl&gt;", "&lt;li&gt;", "&lt;list&gt;"],
+            correct: 0
+        },
+        {
+            question: "CSS қосу үшін қай тег қолданылады?",
+            options: ["&lt;style&gt; немесе &lt;link&gt;", "&lt;script&gt;", "&lt;meta&gt;", "&lt;css&gt;", "&lt;design&gt;"],
+            correct: 0
+        },
+        {
+            question: "Айнымалы қалай жарияланады?",
+            options: ["let, const, var", "variable", "int", "string", "function"],
+            correct: 0
+        },
+        {
+            question: "Массивқа элементті соңына қалай қосамыз?",
+            options: ["push()", "pop()", "shift()", "unshift()", "add()"],
+            correct: 0
+        },
+        {
+            question: "Мәннің сан болып табылатынын қалай тексереміз?",
+            options: ["typeof x === 'number'", "isNumber()", "checkNum()", "isInt()", "validate()"],
+            correct: 0
+        },
+        {
+            question: "0-ден 1 дейін кездейсоқ сан қалай алынады?",
+            options: ["Math.random()", "Math.round()", "Math.floor()", "Math.ceil()", "Random()"],
+            correct: 0
+        },
+        {
+            question: "Элементті басқасының алдында қалай қосамыз?",
+            options: ["insertBefore()", "insertAfter()", "append()", "prepend()", "push()"],
+            correct: 0
+        },
+        {
+            question: "Элементтің барлық атрибуттарын қалай аламыз?",
+            options: ["element.attributes", "element.properties", "element.values", "element.list", "element.map"],
+            correct: 0
+        },
+        {
+            question: "fetch қатесін қалай өңдейміз?",
+            options: [".catch()", ".then()", ".finally()", ".try()", ".error()"],
+            correct: 0
+        },
+        {
+            question: "PUT сұрауын қалай жібереміз?",
+            options: ["method: 'PUT'", "method: 'POST'", "method: 'GET'", "method: 'DELETE'", "method: 'PATCH'"],
+            correct: 0
+        },
+        {
+            question: "Статикалық файлдар қай папкада сақталады?",
+            options: ["public", "static", "assets", "images", "files"],
+            correct: 0
+        },
+        {
+            question: "API-маршрут не қайтарады?",
+            options: ["NextResponse", "HTML", "Component", "CSS", "XML"],
+            correct: 0
+        },
+        {
+            question: "Нөмірленген тізім жасау үшін қандай тег қолданылады?",
+            options: ["&lt;ol&gt;", "&lt;ul&gt;", "&lt;dl&gt;", "&lt;li&gt;", "&lt;list&gt;"],
+            correct: 0
+        },
+        {
+            question: "Кесте жолы қандай тегпен белгіленеді?",
+            options: ["&lt;tr&gt;", "&lt;td&gt;", "&lt;th&gt;", "&lt;table&gt;", "&lt;tbody&gt;"],
+            correct: 0
+        },
+        {
+            question: "Мәтінді қалың ету үшін қандай қасиетті қолданады?",
+            options: ["font-weight", "font-style", "text-decoration", "font-size", "text-align"],
+            correct: 0
+        },
+        {
+            question: "Элементтің енін қалай қою керек?",
+            options: ["width", "height", "size", "length", "span"],
+            correct: 0
+        },
+        {
+            question: "Объект ұзындығын қалай білеміз?",
+            options: ["Object.keys(obj).length", "obj.length", "obj.size", "obj.count", "length(obj)"],
+            correct: 0
+        },
+        {
+            question: "Объект қасиетін қалай жоямыз?",
+            options: ["delete obj.prop", "remove obj.prop", "obj.prop = null", "clear obj.prop", "pop obj.prop"],
+            correct: 0
+        },
+        {
+            question: "Жолдың екі жағындағы бос орындарды қалай жоямыз?",
+            options: ["trim()", "strip()", "clean()", "slice()", "cut()"],
+            correct: 0
+        },
+        {
+            question: "Массивтің кем дегенде бір элементі тексеруден өтетінін қандай әдіс тексереді?",
+            options: ["some()", "every()", "filter()", "map()", "find()"],
+            correct: 0
+        },
+        {
+            question: "Оқиғаны қолмен қалай шақырамыз?",
+            options: ["dispatchEvent()", "trigger()", "call()", "emit()", "fire()"],
+            correct: 0
+        },
+        {
+            question: "HTML-комментарийлерді қандай синтаксиспен жазамыз?",
+            options: ["&lt;!-- ... --&gt;", "// ...", "/* ... */", "# ...", "{{ ... }}"],
+            correct: 0
+        }
+    ],
     
 
 
@@ -11474,5 +12145,6 @@ allTests.frontall = [
     ...allTests.fronthttp,
     ...allTests.frontnode,
     // Егер frontbe бөлімі сізде жоқ болса, осы жолды алып тастаңыз, әйтпесе қате шығады
-    ...(allTests.frontbe || []) 
+    ...allTests.frontbe ,
+    ...allTests.frontgeneral
 ];
