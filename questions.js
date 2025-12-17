@@ -1,3 +1,4 @@
+
 const allTests = {
     // Ескі тесттер (OS, Algo) қала береді...
     os: [
@@ -7050,8 +7051,8 @@ frontcss: [
         {
             question: "Массивтің соңына элемент қосу әдісі?",
             options: [
-                "pop()",
                 "push()",
+                "pop()",
                 "shift()",
                 "end()",
                 "removeLast()"
@@ -10031,9 +10032,9 @@ frontal: [
         {
             question: "Массивтің соңына элемент қосу әдісі?",
             options: [
+                "push()",
                 "pop()",
                 "shift()",
-                "push()",
                 "end()",
                 "removeLast()"
             ],
