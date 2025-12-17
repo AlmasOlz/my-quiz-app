@@ -4,7 +4,7 @@ const topic = urlParams.get('topic');
 let currentQuestions = [];
 let quizTitle = "";
 
-// 1. Араластыру функциясы (Мұны ең басына қойған дұрыс, ортақ қолдану үшін)
+// 1. Араластыру функциясы
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -13,17 +13,23 @@ function shuffleArray(array) {
     return array;
 }
 
-// 2. Сұрақтарды жүктеу және Тақырыпты анықтау (БІР ЖЕРДЕ БОЛУЫ КЕРЕК)
+// 2. Сұрақтарды жүктеу және Тақырыпты анықтау
 if (allTests[topic]) {
-    // Сұрақтарды көшіріп аламыз (маңызды!)
+    // Сұрақтарды көшіріп аламыз
     currentQuestions = [...allTests[topic]]; 
 
-    // Егер Mix (frontall) болса - сұрақтарды араластырамыз
+    // --- Frontend Mix (Random) ---
     if (topic === 'frontall') {
         shuffleArray(currentQuestions); 
         quizTitle = "Frontend: Full Mix (Random)";
     } 
-    // Басқа тақырыптар үшін атаулар
+    // --- Java Mix (Random) ---
+    else if (topic === 'javarandom') {
+        shuffleArray(currentQuestions); // <--- Қате түзелді: currentQuestions (s бар)
+        quizTitle = "Java: Full Random Test"; // <--- Тақырып түзелді
+    }
+
+    // --- Басқа тақырыптар ---
     else if (topic === 'os') quizTitle = "Операциялық жүйелер";
     else if (topic === 'algo') quizTitle = "Алгоритмдеу";
     else if (topic === 'math') quizTitle = "Ықтималдық теориясы";
@@ -36,6 +42,8 @@ if (allTests[topic]) {
     else if (topic === 'frontjsdom') quizTitle = "Frontend: JS DOM";
     else if (topic === 'fronthttp') quizTitle = "Frontend: HTTP/API";
     else if (topic === 'frontnode') quizTitle = "Frontend: Backend Basics";
+    else if (topic === 'frontbe') quizTitle = "Frontend: Backend Advanced";
+    else if (topic === 'frontgeneral') quizTitle = "Frontend: General Questions";
     else quizTitle = "Тест";
 
 } else {
@@ -43,13 +51,14 @@ if (allTests[topic]) {
     window.location.href = "index.html";
 }
 
+// ... (Қалған код сол қалпында, өзгертпей-ақ қойыңыз) ...
 // АЙНЫМАЛЫЛАР
 let currentQuestionIndex = 0;
 let score = 0;
 const totalQuestions = currentQuestions.length;
 let isMultiSelect = false;
 
-// ТАРИХ (Жауаптарды сақтау үшін)
+// ТАРИХ
 let userHistory = new Array(totalQuestions).fill(null);
 
 // ЭЛЕМЕНТТЕРДІ АЛУ
@@ -82,7 +91,6 @@ function loadQuestion() {
     questionText.innerText = `${currentQuestionIndex + 1}. ${data.question}`;
     questionCount.innerText = `Сұрақ ${currentQuestionIndex + 1} / ${totalQuestions}`;
     
-    // Суретті көрсету/жасыру
     if (data.img) {
         imgEl.src = data.img;
         imgEl.style.display = 'block';
@@ -91,20 +99,17 @@ function loadQuestion() {
         imgEl.src = "";
     }
 
-    // Прогресс
     const progressPercent = ((currentQuestionIndex + 1) / totalQuestions) * 100;
     progressBar.style.width = `${progressPercent}%`;
 
     optionsList.innerHTML = '';
     
-    // Батырмалар
     prevBtn.style.display = currentQuestionIndex > 0 ? 'block' : 'none';
     nextBtn.style.display = 'none';
     checkBtn.style.display = 'none';
 
     isMultiSelect = Array.isArray(data.correct);
 
-    // --- ЖАУАПТАРДЫ ДАЙЫНДАУ (Араластыру) ---
     if (!data.shuffledOptions) {
         let answers = data.options.map((opt, index) => {
             let text = typeof opt === 'object' ? opt.text : opt;
@@ -119,11 +124,9 @@ function loadQuestion() {
                 isCorrect: correctStatus 
             };
         });
-        // Options үшін де сол shuffleArray функциясын қолданамыз
         data.shuffledOptions = shuffleArray(answers);
     }
 
-    // --- ЖАУАПТАРДЫ ШЫҒАРУ ---
     data.shuffledOptions.forEach((answerObj, uiIndex) => {
         const div = document.createElement('div');
         div.className = 'option-item';
@@ -144,7 +147,6 @@ function loadQuestion() {
         optionsList.appendChild(div);
     });
 
-    // Тарихты тексеру
     const history = userHistory[currentQuestionIndex];
     if (history && history.answered) {
         restoreState(history);
@@ -153,7 +155,6 @@ function loadQuestion() {
     }
 }
 
-// ТАРИХТАН ҚАЛПЫНА КЕЛТІРУ
 function restoreState(history) {
     const options = optionsList.children;
     for (let i = 0; i < options.length; i++) {
@@ -169,7 +170,6 @@ function restoreState(history) {
     checkBtn.style.display = 'none';
 }
 
-// ТАҢДАУ
 function selectOption(selectedDiv, uiIndex) {
     if (selectedDiv.classList.contains('disabled')) return;
 
@@ -189,7 +189,6 @@ function selectOption(selectedDiv, uiIndex) {
     }
 }
 
-// БІР ЖАУАПТЫ ТЕКСЕРУ
 function checkSingleAnswer(selectedDiv, uiIndex) {
     const isCorrect = selectedDiv.dataset.isCorrect === "true";
     if (isCorrect) score++;
@@ -208,7 +207,6 @@ function checkSingleAnswer(selectedDiv, uiIndex) {
     nextBtn.style.display = 'block';
 }
 
-// КӨП ЖАУАПТЫ ТЕКСЕРУ
 function checkMultiAnswer() {
     const options = optionsList.children;
     let allCorrectFound = true;
@@ -245,7 +243,6 @@ function checkMultiAnswer() {
     nextBtn.style.display = 'block';
 }
 
-// НАВИГАЦИЯ
 function nextQuestion() {
     if (currentQuestionIndex < totalQuestions - 1) {
         currentQuestionIndex++;
@@ -273,12 +270,10 @@ function jumpToQuestion() {
     }
 }
 
-// Enter басқанда секіру
 jumpInput.addEventListener("keypress", function(event) {
     if (event.key === "Enter") jumpToQuestion();
 });
 
-// НӘТИЖЕ
 function showResults() {
     quizScreen.style.display = 'none';
     resultScreen.style.display = 'block';
@@ -298,5 +293,4 @@ function showResults() {
     }
 }
 
-// Іске қосу
 loadQuestion();
