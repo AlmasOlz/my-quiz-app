@@ -1115,7 +1115,7 @@ matht:[{
         },
         {
             question: "Жасанды интеллект (ЖИ) элементтері бар Java жобасының мысалы бола алатын не?",
-            options: ["Чат-бот (Мәтіндік категориялауды қолданатын)", "Қарапайым \"Hello World\" бағдарламасы", "Деректер базасына қосылу", "Тек графикалық интерфейсі бар қосымша", "Файл жүйесін басқару"],
+            options: ["Чат-бот ", "Қарапайым \"Hello World\" бағдарламасы", "Деректер базасына қосылу", "Тек графикалық интерфейсі бар қосымша", "Файл жүйесін басқару"],
             correct: 0
         },
         {
@@ -1125,15 +1125,20 @@ matht:[{
         },
         {
             question: "Weka-да деректер жиынтығы қандай форматта ұсынылады?",
-            options: ["ARFF (Attribute-Relation File Format)", "HTML", "PDF", "MP3", "JSON"],
+            options: ["ARFF", "HTML", "PDF", "MP3", "JSON"],
             correct: 0
         }
     ],
        javaa: [
       {
-            question: "Public static void main әдісі үшін қандай параметр жарнамалары дұрыс? (2 дұрыс жауап)",
-            options: ["String[] args", "String args[]", "Strings args[]", "String args"],
-            correct: [0, 1]
+            question: "Public static void main әдісі үшін қандай параметр жарнамалары дұрыс?",
+            options: ["String[] args", "Strings args[]", "String args"],
+            correct: [0]
+        },
+        {
+            question: "Public static void main әдісі үшін қандай параметр жарнамалары дұрыс?",
+            options: ["String args[]", "Strings args[]", "String args"],
+            correct: [0]
         },
         {
             question: "Ұсынылған пакеттердің қайсысында class System бар?",
@@ -1146,14 +1151,24 @@ matht:[{
             correct: 0
         },
         {
-            question: "Java кілт сөздері қандай сөздер? (2 дұрыс жауап)",
-            options: ["for", "void", "classpath", "main", "out"],
-            correct: [0, 1]
+            question: "Java кілт сөздері қандай сөздер?",
+            options: [ "void", "classpath", "main", "out"],
+            correct: [0]
+        },
+        {
+            question: "Java кілт сөздері қандай сөздер?",
+            options: ["for", "classpath", "main", "out"],
+            correct: [0]
         },
         {
             question: "Кластың әдісін жариялау кезінде қандай кілттік сөздерді қолдануға болады? (2 дұрыс жауап)",
-            options: ["final", "abstract", "volatile", "enum", "default"],
-            correct: [0, 1]
+            options: [ "abstract", "volatile", "enum", "default"],
+            correct: 0
+        },
+        {
+            question: "Кластың әдісін жариялау кезінде қандай кілттік сөздерді қолдануға болады? (2 дұрыс жауап)",
+            options: ["final", "volatile", "enum", "default"],
+            correct: 0
         },
         {
             question: "Келесі айнымалы атауларының қайсысы дұрыс? (3 дұрыс жауап)",
@@ -1172,7 +1187,7 @@ matht:[{
         },
         {
             question: "Object класына қатысты келесі әдістердің қайсысы final-әдіс болып табылады? (4 дұрыс жауап)",
-            options: ["getClass()", "notify()", "wait()", "notifyAll()", "finalize()"],
+            options: ["getClass()", "notify()", "wait()", "notifyAll()", "finalize()","clone()"],
             correct: [0, 1, 2, 3]
         },
         {
@@ -1190,14 +1205,14 @@ matht:[{
         {
             question: "Компиляция мен іске қосу нәтижесінде не болады?",
             img: "images/java1.png",
-            options: ["00", "01", "11", "compilation fails", "runtime error"],
-            correct: 3
+            options: ["compilation fails","00", "01", "11",  "runtime error"],
+            correct: 0
         },
         {
             question: "Кодты командалық жолдан 'java P R I V E T' деп іске қосқанда нәтиже қандай?",
             img: "images/java2.png",
-            options: ["RVIR", "IEVI", "PIRP", "compilation fails"],
-            correct: 1
+            options: ["IEVI","RVIR",  "PIRP", "compilation fails"],
+            correct: 0
         },
         {
             question: "Код фрагментін орындау нәтижесінде value айнымалысының мәні (Ternary)?",
@@ -1236,13 +1251,18 @@ matht:[{
         },
         {
             question: "Келесі әдіс жарияланымдарының қайсысы дұрыс?",
-            options: ["final static void method(){}", "protected abstract void method();", "private final void method(){}", "Барлығы дұрыс емес"],
+            options: ["final static void method(){}", "protected abstract void method();", "private final void method(){}", "public protected void method(){}","default void method();","public static method(){}"],
             correct: [0, 1, 2] // Бұл жерде бірнешеуі дұрыс болуы мүмкін
         },
         {
-            question: "Пакетте жарияланған кластың дұрыс жарияланымы?",
-            options: ["public class Type {}", "final public class Type {}", "class Type {}", "abstract class Type {}"],
-            correct: [0, 1, 2, 3]
+            question: "Келесі жарияланымдардың қайсысы пакетте жарияланған кластың дұрыс жарияланымын көрсетеді? ",
+            options: ["final abstract class Type {}",
+            "public static class Type {}",
+            "final public class Type {}",
+            "protected abstract class Type {}",
+            "class Type {}",
+            "abstract default class Type {}"],
+            correct:[2,4]
         },
         {
             question: "Нөлдік сілтеме (null) арқылы статикалық әдісті шақыру нәтижесі?",
@@ -1259,7 +1279,7 @@ matht:[{
         {
             question: "Generics: компиляциялап іске қосу нәтижесі?",
              img: "images/java10.png",
-            options: ["false true", "true false", "false false", "true true"],
+            options: ["falsetrue", "truefalse", "falsefalse", "truetrue"],
             correct: 0
         },
         {
@@ -1283,7 +1303,7 @@ matht:[{
         {
             question: "Конструкторлар тізбегі (Chaining): нәтижесі?",
              img: "images/java14.png",
-            options: ["10", "12", "01", "compilation fails"],
+            options: ["10", "12", "01", "compilation fails","21","runtime exception"],
             correct: 0
         },
         {
@@ -1295,8 +1315,8 @@ matht:[{
         {
             question: "Әдісті қайта анықтау (Override): line 1 орнына не қоюға болады?",
              img: "images/java16.png",
-            options: ["void action(){}", "public void action(){}", "protected void action(){}", "int action() {}"],
-            correct: [0, 1]
+            options: ["void action(){}", "public void action(){}", "protected void action(){}", "int action() {}","private void action(){}"],
+            correct: [0, 1,2]
         },
         {
             question: "Super конструктор: Қай мәлімдеме дұрыс?",
@@ -2557,1546 +2577,956 @@ javaq: [
             correct: 0
         }
     ],
-    javaru: [
-        {
-            question: "Ұсынылған пакеттердің қайсысында class System бар?",
-            options: [
-                "java.lang",
-                "java.io",
-                "java.base",
-                "java.util"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java тілінде қай сөздер кілттік сөздер (keywords) болып табылады?",
-            options: [
-                "void",
-                "classpath",
-                "main",
-                "out"
-            ],
-            correct: 0
-        },
-        {
-            question: "First.java қосымшасын компиляциялау үшін қандай команда орындалады?",
-            options: [
-                "javac First.java",
-                "javac First",
-                "java First.class",
-                "java First.java"
-            ],
-            correct: 0
-        },
-        {
-            question: "Массивтің қай хабарландыруы (declaration) дұрыс?",
-            options: [
-                "String array [] = {\"j\", \"r\", \"e\"};",
-                "String array [] = new String {\"j\" \"s\" \"e\"};",
-                "String array [] = { \"j \" \" v\" \"m\"};",
-                "String array = {\"j\", \"d\", \"k\"};"
-            ],
-            correct: 0
-        },
-        {
-            question: "Object класының қай әдістері final болып табылады?",
-            options: [
-                "getClass()",
-                "finalize()",
-                "clone()"
-            ],
-            correct: 0
-        },
-        {
-            question: "line 1 орнына қандай әдістер қойылуы мүмкін?",
-            options: [
-                "public void action(){}",
-                "int action() {}",
-                "void action(){}",
-                "private void action(){}",
-                "protected void action(){}"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java.util.Queue дегеніміз не?",
-            options: [
-                "FIFO (First-In-First-Out)",
-                "LIFO",
-                "Map",
-                "Массив",
-                "Байланысты тізім"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java Collections Framework қандай бөліктерден тұрады?",
-            options: [
-                "Интерфейстер, Реализациялар, Алгоритмдер",
-                "Кластар",
-                "Массивтер",
-                "Реализациялар",
-                "Алгоритмдер"
-            ],
-            correct: 0
-        },
-        {
-            question: "Коллекция өлшемін анықтайтын әдіс?",
-            options: [
-                "size()",
-                "length()",
-                "count()",
-                "getSize()",
-                "measure()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Коллекцияда элемент бар-жоғын тексеру?",
-            options: [
-                "contains()",
-                "exists()",
-                "has()",
-                "check()",
-                "find()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Бос екенін тексеру?",
-            options: [
-                "isEmpty()",
-                "size()",
-                "contains()",
-                "containsAll()",
-                "clear()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java-дағы класс деген не?",
-            options: [
-                "Объектілерді құруға арналған шаблон (сызба)",
-                "Функциялар жиыны",
-                "Сандық тип",
-                "Файл"
-            ],
-            correct: 0
-        },
-        {
-            question: "this кілт сөзі не істейді?",
-            options: [
-                "Ағымдағы объектіге сілтеме жасайды",
-                "Ата-ана класс",
-                "Статикалық айнымалы",
-                "Әдісті аяқтайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Exception деген не?",
-            options: [
-                "Орындау кезіндегі қате (Runtime error)",
-                "Компиляция қатесі",
-                "Хабарлама",
-                "Мәлімет типі"
-            ],
-            correct: 0
-        },
-        {
-            question: "ArrayList деген не?",
-            options: [
-                "Өлшемі өзгеретін динамикалық массив",
-                "Статикалық массив",
-                "Тек сандар",
-                "Кесте"
-            ],
-            correct: 0
-        },
-        {
-            question: "private модификаторы не істейді?",
-            options: [
-                "Тек класс ішінде қолжетімді етеді",
-                "Барлық жерде қолжетімді",
-                "Тыйым салады",
-                "Мұрагерлікке береді"
-            ],
-            correct: 0
-        },
-        {
-            question: "Коллекция дегеніміз не?",
-            options: [
-                "Объектілер тобын сақтайтын қойма",
-                "Массив",
-                "Сұрыптау әдісі",
-                "Ағындар (threads) интерфейсі",
-                "Жолдар үшін"
-            ],
-            correct: 0
-        },
-        {
-            question: "Бірегей (уникалды) элементтерді сақтайтын интерфейс:",
-            options: [
-                "Set",
-                "List",
-                "Queue",
-                "Map",
-                "Collection"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java SE 5 нұсқасында пайда болған ерекшелік?",
-            options: [
-                "Generics (Жалпыламалар)",
-                "Ағын қауіпсіздігі (Потокобезопасность)",
-                "Vector/Stack",
-                "Object-ті қолдамайды",
-                "Коллекциялар жойылған"
-            ],
-            correct: 0
-        },
-        {
-            question: "Барлық элементтерді қалай өшіруге болады?",
-            options: [
-                "clear()",
-                "remove()",
-                "removeIf()",
-                "deleteAll()",
-                "forEach()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Iterator арқылы келесі элементті алу?",
-            options: [
-                "next()",
-                "hasNext()",
-                "getNext()",
-                "remove()",
-                "forEachRemaining()"
-            ],
-            correct: 0
-        },
-        {
-            question: "ArrayList-ке индекс бойынша элемент қосу?",
-            options: [
-                "add(int index, E element)",
-                "add(E element)",
-                "set()",
-                "insert()",
-                "push()"
-            ],
-            correct: 0
-        },
-        {
-            question: "List.copyOf() әдісі не қайтарады?",
-            options: [
-                "Өзгермейтін (Immutable) тізім",
-                "Өзгермелі тізім",
-                "5 элементті көшіреді",
-                "Массив",
-                "Өшіреді"
-            ],
-            correct: 0
-        },
-        {
-            question: "Stream API ерекшелігі?",
-            options: [
-                "Деректерді сақтамайды (тек өңдейді)",
-                "Элементтерді сақтайды",
-                "Бірден орындайды",
-                "Әрқашан көп ағынды (multithreaded)",
-                "Қайта шақырылады"
-            ],
-            correct: 0
-        },
-        {
-            question: "Stream-де сүзгілеу (фильтрация) әдісі?",
-            options: [
-                "filter()",
-                "map()",
-                "distinct()",
-                "peek()",
-                "forEach()"
-            ],
-            correct: 0
-        },
-        {
-            question: "flatMap әдісі не істейді?",
-            options: [
-                "Күрделі құрылымды жазық ағынға айналдырады",
-                "Жоғарғы регистр",
-                "Сұрыптайды",
-                "Шектейді",
-                "Өткізіп жібереді"
-            ],
-            correct: 0
-        },
-        {
-            question: "Optional класы не үшін қажет?",
-            options: [
-                "NullPointerException қатесінен қорғау үшін",
-                "SQL",
-                "JSON",
-                "Thread",
-                "Hash"
-            ],
-            correct: 0
-        },
-        {
-            question: "Serialization (Сериализация) деген не?",
-            options: [
-                "Объектіні байттар тізбегіне айналдыру",
-                "Процессор уақыты",
-                "Жады",
-                "Сұрыптайды",
-                "Қате"
-            ],
-            correct: 0
-        },
-        {
-            question: "finally блогы қашан орындалады?",
-            options: [
-                "Әрқашан (ерекше жағдай болса да, болмаса да)",
-                "Ешқашан",
-                "Қате кезде",
-                "return кезінде",
-                "throw кезінде"
-            ],
-            correct: 0
-        },
-        {
-            question: "Интерфейстегі әдістер әдепкі бойынша қандай?",
-            options: [
-                "public abstract",
-                "Private",
-                "Final",
-                "Static",
-                "Synchronized"
-            ],
-            correct: 0
-        },
-        {
-            question: "HashSet элементтерді қалай сақтайды?",
-            options: [
-                "Хэш механизмі арқылы (реті сақталмайды)",
-                "Индекс",
-                "Кілт–мән",
-                "Реттік",
-                "Соңына"
-            ],
-            correct: 0
-        },
-        {
-            question: "final әдістің ерекшелігі?",
-            options: [
-                "Оны қайта анықтауға (override) болмайды",
-                "жойылады",
-                "екі рет",
-                "private",
-                "static"
-            ],
-            correct: 0
-        },
-        {
-            question: "Төмендегілердің қайсысы Reference type (Сілтемелік тип)?",
-            options: [
-                "Array (Массив)",
-                "int",
-                "double",
-                "boolean",
-                "char"
-            ],
-            correct: 0
-        },
-        {
-            question: "Garbage collector (Қоқыс жинаушы) не істейді?",
-            options: [
-                "Пайдаланылмаған объектілерді жадыдан жояды",
-                "Өшіреді",
-                "Көбейтеді",
-                "Массив жасайды",
-                "Компиляциялайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "String immutable деген не?",
-            options: [
-                "Жол объектісі құрылғаннан кейін өзгермейді",
-                "Төменгі регистр",
-                "null",
-                "Тез",
-                "Конструкторсыз"
-            ],
-            correct: 0
-        },
-        {
-            question: "Collections.sort() не істейді?",
-            options: [
-                "Тізімді сұрыптайды",
-                "Теріс",
-                "Жояды",
-                "HashMap",
-                "Архив"
-            ],
-            correct: 0
-        },
-        {
-            question: "Төмендегілердің қайсысы Интерфейс?",
-            options: [
-                "Runnable",
-                "String",
-                "File",
-                "Scanner",
-                "Thread"
-            ],
-            correct: 0
-        },
-        {
-            question: "synchronized сөзі не үшін қолданылады?",
-            options: [
-                "Көп ағынды ортада қауіпсіздік үшін",
-                "Файл",
-                "GUI",
-                "SQL",
-                "Коммент"
-            ],
-            correct: 0
-        },
-        {
-            question: "this нені білдіреді?",
-            options: [
-                "Ағымдағы объект",
-                "my",
-                "ref",
-                "obj",
-                "current"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java-да қателерді өңдеу механизмі?",
-            options: [
-                "Exception handling (try-catch)",
-                "Encapsulation",
-                "Mapping",
-                "Serialization",
-                "Configuration"
-            ],
-            correct: 0
-        },
-        {
-            question: "package дегеніміз не?",
-            options: [
-                "Кластар мен интерфейстерді топтау",
-                "Өшіру",
-                "Жады",
-                "Сұрыптау",
-                "Файл"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java-да бүтін сандарды бөлу нәтижесі: 10 / 4?",
-            options: [
-                "2",
-                "2.5",
-                "3",
-                "4",
-                "0"
-            ],
-            correct: 0
-        },
-        {
-            question: "Массив индексі ауқымнан шықса қандай қате шығады?",
-            options: [
-                "ArrayIndexOutOfBoundsException",
-                "OK",
-                "ArithmeticException",
-                "Кеңейеді",
-                "0"
-            ],
-            correct: 0
-        },
-        {
-            question: "final айнымалының мағынасы?",
-            options: [
-                "Оның мәнін өзгертуге болмайды (тұрақты)",
-                "Конструкторда",
-                "Мұрагерленеді",
-                "Класс ішінде",
-                "static"
-            ],
-            correct: 0
-        },
-        {
-            question: "Объектілерді сұрыптау үшін қолданылатын интерфейс?",
-            options: [
-                "Comparable",
-                "Serializable",
-                "Runnable",
-                "AutoCloseable",
-                "Cloneable"
-            ],
-            correct: 0
-        },
-        {
-            question: "Кілт–мән жұбы (Key-value pair) түрінде сақтайтын коллекция?",
-            options: [
-                "HashMap",
-                "ArrayList",
-                "HashSet",
-                "LinkedList",
-                "TreeSet"
-            ],
-            correct: 0
-        },
-        {
-            question: "new операторы не істейді?",
-            options: [
-                "Жаңа объект жасайды",
-                "Айнымалы",
-                "Жадыны босату",
-                "Салыстырады",
-                "Өшіреді"
-            ],
-            correct: 0
-        },
-        {
-            question: "Жолдың бос екенін тексеру?",
-            options: [
-                "isEmpty()",
-                "str == \"\"",
-                "isNull()",
-                "equals()",
-                "empty()"
-            ],
-            correct: 0
-        },
-        {
-            question: "static методтың ерекшелігі?",
-            options: [
-                "Ол объектіге емес, класқа тиесілі",
-                "override болмайды",
-                "объектке тиесілі",
-                "объект жасайды",
-                "авто іске қосылады"
-            ],
-            correct: 0
-        },
-        {
-            question: "instanceof операторы не істейді?",
-            options: [
-                "Объектінің белгілі бір типке жататынын тексереді",
-                "салыстырады",
-                "размер",
-                "объект жасайды",
-                "ссылку тексеру"
-            ],
-            correct: 0
-        },
-        {
-            question: "Collection интерфейсінің барлық элементтерді жою үшін қай әдісі қолданылады?",
-            options: [
-                "clear()",
-                "removeAll()",
-                "delete()",
-                "erase()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Тізімнің (List) ортасына элемент енгізуге мүмкіндік беретін әдіс қайсы?",
-            options: [
-                "add(index, element)",
-                "put(index, element)",
-                "add(element)",
-                "insert(element)"
-            ],
-            correct: 0
-        },
-        {
-            question: "Коллекциялардағы contains() әдісі қалай жұмыс істейді?",
-            options: [
-                "Элементтің бар-жоғын тексереді (equals арқылы)",
-                "Объектінің белгілі бір индексте сақталғанын тексереді",
-                "equals-ты қолданбай, элементті хэш бойынша іздейді",
-                "Тек жолдарды (String) іздейді"
-            ],
-            correct: 0
-        },
-        {
-            question: "retainAll(Collection c) әдісі не істейді?",
-            options: [
-                "Тек басқа коллекцияда бар элементтерді қалдырады",
-                "Басқа коллекцияда бар элементтерді өшіреді",
-                "Екі коллекцияны біріктіреді",
-                "Коллекцияны тазалайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Map-тің элементтер санын қайтаратын әдісі?",
-            options: [
-                "size()",
-                "count()",
-                "length()",
-                "total()"
-            ],
-            correct: 0
-        },
-        {
-            question: "HashMap-те кілт бойынша мәнді алу үшін қай әдіс қолданылады?",
-            options: [
-                "get(key)",
-                "getValue(key)",
-                "find(key)",
-                "fetch(key)"
-            ],
-            correct: 0
-        },
-        {
-            question: "Элементтердің қосылу ретін сақтайтын Set қайсы?",
-            options: [
-                "LinkedHashSet",
-                "TreeSet",
-                "HashSet",
-                "EnumSet"
-            ],
-            correct: 0
-        },
-        {
-            question: "ArrayList-тің индекс бойынша элементті өшіретін әдісі?",
-            options: [
-                "remove(index)",
-                "pop(index)",
-                "delete(index)",
-                "remove(element)"
-            ],
-            correct: 0
-        },
-        {
-            question: "Iterator-да келесі элементке өту үшін қандай әдіс бар?",
-            options: [
-                "next()",
-                "getNext()",
-                "forward()",
-                "continue()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Тізімді сұрыптау үшін қандай әдіс қолданылады?",
-            options: [
-                "Collections.sort(list)",
-                "list.sortUp()",
-                "list.order()",
-                "Arrays.sort(list)"
-            ],
-            correct: 0
-        },
-        {
-            question: "ООП-ның төрт іргелі қағидасы қандай?",
-            options: [
-                "Полиморфизм, Инкапсуляция, Мұрагерлік, Абстракция",
-                "Агрегация, Композиция, Ассоциация, Делегирование",
-                "Итерация, Рекурсия, Параллелизм, Асинхрондылық",
-                "Синхрондау, Достық функциялар, Көптік мұрагерлік"
-            ],
-            correct: 0
-        },
-        {
-            question: "Командалық жол аргументтерінің санын алу үшін қандай өріс қолданылады?",
-            options: [
-                "args.length",
-                "args.count",
-                "args.size()",
-                "args[0]"
-            ],
-            correct: 0
-        },
-        {
-            question: "Қатаң инкапсуляцияны қамтамасыз ететін модификатор қайсы?",
-            options: [
-                "private",
-                "protected",
-                "public",
-                "package-private"
-            ],
-            correct: 0
-        },
-        {
-            question: "private өрісті тікелей өзгертуге әрекеттенгенде не болады?",
-            options: [
-                "Компиляция қатесі",
-                "Ескерту, бірақ сәтті орындалады",
-                "RuntimeException",
-                "Set-әдісін автоматты шақыру"
-            ],
-            correct: 0
-        },
-        {
-            question: "main() әдісіндегі static сөзінің мақсаты не?",
-            options: [
-                "Әдісті объект құрмай-ақ шақыруға мүмкіндік береді",
-                "Көріну аймағын шектейді",
-                "Әдісті виртуалды етеді",
-                "Кез келген мәнді қайтаруға мүмкіндік береді"
-            ],
-            correct: 0
-        },
-        {
-            question: "Әдепкі бойынша (package-private) қолданылатын модификатор қайсы?",
-            options: [
-                "package-private (кілт сөзсіз)",
-                "public",
-                "protected",
-                "private"
-            ],
-            correct: 0
-        },
-        {
-            question: "Класты мұралауға тыйым салатын кілт сөз қайсы?",
-            options: [
-                "final",
-                "abstract",
-                "implements",
-                "static"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java жады жұмысының C++ тілінен негізгі айырмашылығы:",
-            options: [
-                "Қоқысты автоматты жинау, жадыға тікелей қолжетімділік жоқ",
-                "Барлық объектілер стекте құрылады",
-                "Міндетті көрсеткіштер (pointers)",
-                "Жадыны тек new арқылы бөлу"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java-мен жұмыс істеу үшін қандай IDE-лер ұсынылады?",
-            options: [
-                "IntelliJ IDEA, Eclipse, NetBeans",
-                "VS Code, Atom, Sublime",
-                "Android Studio, Visual Studio, Xcode",
-                "Notepad++, Vim, Nano"
-            ],
-            correct: 0
-        },
-        {
-            question: "JDK дегеніміз не?",
-            options: [
-                "Әзірлеуге арналған толық жинақ: JRE + компилятор + құралдар",
-                "Тек JVM",
-                "Компиляторсыз орындау ортасы",
-                "Байткод интерпретаторы"
-            ],
-            correct: 0
-        },
-        {
-            question: "JDBC-де SQL-сұраныстарды орындау үшін қандай интерфейс қолданылады?",
-            options: [
-                "Statement",
-                "Connection",
-                "ResultSet",
-                "DriverManager"
-            ],
-            correct: 0
-        },
-        {
-            question: "Бар жазбаны өзгертетін SQL операторы қайсы?",
-            options: [
-                "UPDATE",
-                "INSERT",
-                "SELECT",
-                "ALTER"
-            ],
-            correct: 0
-        },
-        {
-            question: "setAutoCommit(false) не істейді?",
-            options: [
-                "Транзакцияларды автоматты бекітуді (commit) өшіреді",
-                "Тек оқу режимін қосады",
-                "Қосылымды үзеді",
-                "Операцияларды автоматты бекітеді"
-            ],
-            correct: 0
-        },
-        {
-            question: "Қосылысқа бағдарланған (connection-oriented) хаттама қайсы?",
-            options: [
-                "TCP",
-                "UDP",
-                "HTTP",
-                "ICMP"
-            ],
-            correct: 0
-        },
-        {
-            question: "TCP-сервер құратын класс қайсы?",
-            options: [
-                "ServerSocket",
-                "Socket",
-                "DatagramSocket",
-                "URLConnection"
-            ],
-            correct: 0
-        },
-        {
-            question: "HTTP қандай портты қолданады?",
-            options: [
-                "80",
-                "20",
-                "21",
-                "443"
-            ],
-            correct: 0
-        },
-        {
-            question: "DOM және SAX айырмашылығы:",
-            options: [
-                "DOM құжатты толығымен жүктейді, SAX — ағындық",
-                "SAX құжатты толығымен жүктейді",
-                "DOM тек JSON-мен жұмыс істейді",
-                "SAX тек XML жазады"
-            ],
-            correct: 0
-        },
-        {
-            question: "DOM-ағашын жасайтын класс қайсы?",
-            options: [
-                "DocumentBuilder",
-                "SAXParser",
-                "XMLFormatter",
-                "XmlDocumentFactory"
-            ],
-            correct: 0
-        },
-        {
-            question: "XSD-ға негізделген валидация механизмі қайсы?",
-            options: [
-                "XML-Schema (XSD)",
-                "DTD",
-                "JSON-Schema",
-                "CSV-Schema"
-            ],
-            correct: 0
-        },
-        {
-            question: "SAX оқиғаларын өңдеуге жауапты интерфейс қайсы?",
-            options: [
-                "DefaultHandler",
-                "Handler",
-                "EventManager",
-                "SAXWorker"
-            ],
-            correct: 0
-        },
-        {
-            question: "ResultSet-тің келесі жолына қалай өтуге болады?",
-            options: [
-                "next()",
-                "nextRow()",
-                "move()",
-                "forward()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Параметрленген SQL сұраныстар үшін қандай объект қолданылады?",
-            options: [
-                "PreparedStatement",
-                "Statement",
-                "Callable",
-                "SQLSetter"
-            ],
-            correct: 0
-        },
-        {
-            question: "Транзакцияны қалай іске қосуға болады?",
-            options: [
-                "setAutoCommit(false)",
-                "begin()",
-                "startTransaction()",
-                "commitStart()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Сақталған процедураларды шақыруға арналған интерфейс:",
-            options: [
-                "CallableStatement",
-                "StoredStatement",
-                "FunctionStatement",
-                "OperationCall"
-            ],
-            correct: 0
-        },
-        {
-            question: "Клиент тарапында TCP-қосылым орнататын класс қайсы?",
-            options: [
-                "Socket",
-                "DatagramSocket",
-                "ServerSocket",
-                "TcpChannel"
-            ],
-            correct: 0
-        },
-        {
-            question: "Қосылым орнатпай жұмыс істейтін хаттама қайсы?",
-            options: [
-                "UDP",
-                "TCP",
-                "FTP",
-                "HTTP"
-            ],
-            correct: 0
-        },
-        {
-            question: "TCP-сервер класы:",
-            options: [
-                "ServerSocket",
-                "SocketListener",
-                "TcpServer",
-                "ServiceSocket"
-            ],
-            correct: 0
-        },
-        {
-            question: "Physical, Data Link, Network деңгейлерін қамтитын модель қайсы?",
-            options: [
-                "OSI/ISO",
-                "TCP/IP",
-                "VPN",
-                "SSL"
-            ],
-            correct: 0
-        },
-        {
-            question: "DatagramPacket не үшін қолданылады?",
-            options: [
-                "UDP-датаграммалар үшін",
-                "TCP-деректерді тасымалдау үшін",
-                "HTTP үшін",
-                "WebSocket үшін"
-            ],
-            correct: 0
-        },
-        {
-            question: "Оқиғалық модельге (event-based) жататын парсер қайсы?",
-            options: [
-                "SAX",
-                "DOM",
-                "JAXB",
-                "JDOM"
-            ],
-            correct: 0
-        },
-        {
-            question: "XML-ді жадыға ағаш ретінде жүктейтін модель қайсы?",
-            options: [
-                "DOM",
-                "SAX",
-                "StAX",
-                "Stream API"
-            ],
-            correct: 0
-        },
-        {
-            question: "XML-ді тізбектей оқитын API (курсорлық модель) қайсы?",
-            options: [
-                "StAX",
-                "SAX",
-                "XPath",
-                "DOM"
-            ],
-            correct: 0
-        },
-        {
-            question: "XSD-схема нені анықтайды?",
-            options: [
-                "XML құрылымын, типтерін және шектеулерін",
-                "Қолжетімділік құқықтарын",
-                "JSON моделін",
-                "Ағаш түйіндерін"
-            ],
-            correct: 0
-        },
-        {
-            question: "DOM-парсерді құруға арналған класс:",
-            options: [
-                "DocumentBuilderFactory",
-                "DocumentBuilder",
-                "DOMCreatorFactory",
-                "XMLFactory"
-            ],
-            correct: 0
-        },
-        {
-            question: "Сұранысты қайта орындау кезінде PreparedStatement әрекеті туралы қай тұжырым дұрыс?",
-            options: [
-                "PreparedStatement SQL-ді бір рет компиляциялайды және қайталанатын execute* шақырулары дайын орындау жоспарын қолданады",
-                "PreparedStatement әр жолы SQL-ді қайта талдайды (parse), бірақ параметрлерді сақтайды",
-                "PreparedStatement SQL-ді тек executeUpdate() кезінде компиляциялайды, executeQuery() кезінде емес",
-                "PreparedStatement тек параметрлерді кэштейді, ал SQL-жоспары қайта құрылады"
-            ],
-            correct: 0
-        },
-        {
-            question: "Егер batch-операциялар кезінде сұраныстардың бірі SQLException шақырса және драйверде continueBatchOnError=false режимі тұрса, не болады?",
-            options: [
-                "Batch орындалуы бірден тоқтайды, драйвер ішінара нәтижемен BatchUpdateException лақтырады",
-                "Драйвер қалған сұраныстарды орындауды жалғастырады және статустар массивін қайтарады",
-                "Драйвер тек соңғы сұранысты кері қайтарады (rollback), қалғандары бекітіледі",
-                "Барлық сұраныстар орындалады, бірақ қате еленбейді"
-            ],
-            correct: 0
-        },
-        {
-            question: "JDBC параметрсіз execute() шақыру кезінде PreparedStatement үшін қайтарылатын ResultSet-метадеректерін қалай анықтайды?",
-            options: [
-                "Метадеректер PreparedStatement SQL-үлгісі негізінде қалыптасады, тіпті параметрлер орнатылмаса да",
-                "Метадеректер тек барлық параметрлер орнатылғаннан кейін қолжетімді болады",
-                "Метадеректер тек орындалу кезінде алынады, ал execute()-ке дейін қолжетімсіз",
-                "Метадеректерді драйвер тек бірінші жолды алғаннан кейін қалыптастырады"
-            ],
-            correct: 0
-        },
-        {
-            question: "autoCommit=true режимі қосулы кезде Connection.commit() шақырылса не болады?",
-            options: [
-                "SQLException лақтырылады",
-                "Метод қатесіз орындалады, бірақ іс жүзінде ешқандай транзакция бекітілмейді (commit жасалмайды)",
-                "Қосылым автоматты түрде транзакцияларды қолмен басқару режиміне ауысады",
-                "JDBC commit жасайды және содан кейін autoCommit-ті өшіреді"
-            ],
-            correct: 0
-        },
-        {
-            question: "Неліктен PreparedStatement пайдалану Statement-ке қарағанда қауіпсіздікті арттырады?",
-            options: [
-                "SQL-код пен параметрлер бөлек жіберіледі, бұл SQL-инъекциялардың алдын алады",
-                "PreparedStatement параметрлерді автоматты түрде шифрлайды",
-                "PreparedStatement тек транзакция ішінде орындалуы мүмкін",
-                "PreparedStatement пайдаланушы мәндері бар сұраныстарды орындай алмайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Дерекқор құрылымы (кестелер, бағандар атаулары) туралы ақпарат алуға мүмкіндік беретін JDBC объектісі қайсы?",
-            options: [
-                "DatabaseMetaData",
-                "ResultSetMetaData",
-                "SchemaInspector",
-                "CatalogProvider"
-            ],
-            correct: 0
-        },
-        {
-            question: "ResultSet интерфейсінің курсор деректер жинағының бірінші жолының алдында тұрғанын анықтайтын әдісі қайсы?",
-            options: [
-                "isBeforeFirst()",
-                "isAtStart()",
-                "cursorAtFirst()",
-                "before()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Қолданыстағы қосылымнан құрылған PreparedStatement объектісінде close() шақырылса не болады?",
-            options: [
-                "Тек PreparedStatement жабылады, бірақ қосылым (connection) ашық қалады",
-                "Statement те, Connection да жабылады",
-                "Statement жабылғанда белсенді транзакция кері қайтарылады (rollback)",
-                "Драйвер close әдісін елемейді"
-            ],
-            correct: 0
-        },
-        {
-            question: "ServerSocket класының кіріс TCP-қосылымды қабылдау үшін қолданылатын әдісі?",
-            options: [
-                "accept()",
-                "connect()",
-                "receive()",
-                "open()"
-            ],
-            correct: 0
-        },
-        {
-            question: "commit немесе rollback орындалғаннан кейін жаңа транзакцияны айқын бастау үшін Connection интерфейсінің қай әдісі қолданылады?",
-            options: [
-                "setAutoCommit(false)",
-                "start()",
-                "beginTransaction()",
-                "openTransaction()"
-            ],
-            correct: 0
-        },
-        {
-            question: "Document интерфейсінің жаңа XML-ағаш элементін жасайтын әдісі қайсы?",
-            options: [
-                "createElement(String tagName)",
-                "addNode(String tagName)",
-                "buildElement(String tagName)",
-                "makeNode(String tagName)"
-            ],
-            correct: 0
-        },
-        {
-            question: "Iterator<E> типті объект нақты нені сақтайды?",
-            options: [
-                "Коллекцияға сілтеме және аралаудың ішкі күйін",
-                "Тек ағымдағы элементтің индексін",
-                "Ағымдағы және келесі элементті, бірақ алдыңғысын емес",
-                "Бүкіл коллекцияның көшірмесін"
-            ],
-            correct: 0
-        },
-        {
-            question: "Кәдімгі Iterator-ды пайдалану кезінде неге ConcurrentModificationException пайда болады?",
-            options: [
-                "Себебі итератор құрылғаннан кейін коллекция құрылымдық жағынан өзгертілген",
-                "Себебі коллекция элементтері тең",
-                "Себебі коллекция тым үлкен",
-                "JVM қатені кездейсоқ жасайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Stream-де collect() әдісінен кейін map() шақырылса не болады?",
-            options: [
-                "Runtime-қате (IllegalStateException: stream has already been operated upon or closed)",
-                "Бәрі қалыпты жұмыс істейді",
-                "Компиляция қатесі — стрим жабық",
-                "Бос нәтиже қайтарады"
-            ],
-            correct: 0
-        },
-        {
-            question: "Төмендегілердің қайсысы checked exceptions (тексерілетін ерекшеліктер) қатарына жатады?",
-            options: [
-                "IOException",
-                "RuntimeException",
-                "NullPointerException",
-                "IllegalArgumentException"
-            ],
-            correct: 0
-        },
-        {
-            question: "Неліктен List.of(...) арқылы құрылған тізімді өзгертуге болмайды?",
-            options: [
-                "Себебі ол өзгермейтін (immutable) тізімді қайтарады",
-                "Элементтер жалқау (lazy) түрде көшіріледі",
-                "Әдістер асинхронды жұмыс істейді",
-                "Ол тұрақсыз құрылымды пайдаланады"
-            ],
-            correct: 0
-        },
-        {
-            question: "Files.newBufferedReader(Path path) әдісі не істейді?",
-            options: [
-                "Символдарды оқитын Reader құрады",
-                "Байттарды оқитын Reader құрады",
-                "Writer құрады",
-                "Объектілер ағынын құрады"
-            ],
-            correct: 0
-        },
-        {
-            question: "Неліктен parallelStream() әрқашан жылдамырақ бола бермейді?",
-            options: [
-                "Параллельдіктің үстеме шығындары оның пайдасынан жоғары болуы мүмкін",
-                "Stream API параллель жұмыс істей алмайды",
-                "Бір ағынды (поток) қолданады",
-                "Тек macOS-та жұмыс істейді"
-            ],
-            correct: 0
-        },
-        {
-            question: "throw new Exception() орындалғанда не болады?",
-            options: [
-                "Метод аяқталады, ерекшелік объектісі құрылады және басқару өңдеушіге (handler) беріледі",
-                "Ерекшелік жай ғана логқа жазылады",
-                "Бағдарлама әрі қарай жалғасады",
-                "JVM бүкіл процесті тоқтатады"
-            ],
-            correct: 0
-        },
-        {
-            question: "InputStream-нің Reader-ден айырмашылығы неде?",
-            options: [
-                "InputStream байттармен жұмыс істейді, Reader — символдармен",
-                "InputStream жылдамырақ",
-                "Reader тек файлдармен жұмыс істейді",
-                "InputStream тек checked-қателерді шақырады"
-            ],
-            correct: 0
-        },
-        {
-            question: "Iterator-да remove() әдісі не үшін қажет?",
-            options: [
-                "Аралау кезінде ConcurrentModificationException алмай, элементтерді қауіпсіз жою үшін",
-                "Индекс бойынша жою үшін",
-                "Коллекцияны тазалау үшін",
-                "Жылдамырақ жою жолын шақыру үшін"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java-да полиморфизм деген не?",
-            options: [
-                "Объектінің көптеген формаларды қабылдау қабілеті",
-                "Бір кластың бірнеше класты мұралау мүмкіндігі",
-                "Ата-аналық кластың бастапқы кодын өзгерту мүмкіндігі",
-                "Геттерлер мен сеттерлерді автоматты генерациялау"
-            ],
-            correct: 0
-        },
-        {
-            question: "Класты мұралауға тыйым салатын модификатор қайсы?",
-            options: [
-                "final",
-                "static",
-                "private",
-                "protected"
-            ],
-            correct: 0
-        },
-        {
-            question: "Методты қайта анықтағанда (overriding) не болады?",
-            options: [
-                "Методтың әрекеті (behavior) ішкі класта өзгереді",
-                "Параметрлер саны өзгереді",
-                "Қайтарылатын мәннің типі үйлесімсіз типке өзгереді",
-                "Метод статикалық болады"
-            ],
-            correct: 0
-        },
-        {
-            question: "Егер класс интерфейсті жүзеге асырып (implements), бірақ оның барлық әдістерін қайта анықтамаса не болады?",
-            options: [
-                "Класты abstract деп белгілеу керек",
-                "Код сәтті компиляцияланады",
-                "Интерфейсті final деп белгілеу керек",
-                "Интерфейстерді толығымен жүзеге асыруға болмайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java-да интерфейс құрамында не болуы мүмкін?",
-            options: [
-                "Абстрактілі әдістер, default-әдістер және static-әдістер",
-                "Тек абстрактілі әдістер",
-                "Тек константалар",
-                "Кез келген типтегі өрістер"
-            ],
-            correct: 0
-        },
-        {
-            question: "Outer ішіндегі статикалық емес Inner ішкі класының объектісін қалай құруға болады?",
-            options: [
-                "Outer.Inner obj = new Outer().new Inner();",
-                "Inner obj = new Inner();",
-                "Inner obj = Outer.new Inner();",
-                "Inner obj = new Outer.Inner();"
-            ],
-            correct: 0
-        },
-        {
-            question: "@Override аннотациясы нені білдіреді?",
-            options: [
-                "Метод суперкласстың әдісін қайта анықтайды",
-                "Метод тек бір рет шақырылады",
-                "Метод автоматты түрде мұраланады",
-                "Метод ата-аналық кластың айнымалыларын жасырады"
-            ],
-            correct: 0
-        },
-        {
-            question: "Интерфейс басқа интерфейсті мұралай ала ма?",
-            options: [
-                "Иә, extends кілт сөзін қолдану арқылы",
-                "Жоқ, тек кластар ғана мұралай алады",
-                "Иә, implements кілт сөзін қолдану арқылы",
-                "Егер екеуі де @Inherited деп белгіленсе ғана"
-            ],
-            correct: 0
-        },
-        {
-            question: "Абстрактілі кластарды қолданудың артықшылығы неде?",
-            options: [
-                "Мұрагерлер үшін ортақ функционалды жүзеге асыруға болады",
-                "Абстрактілі кластың данасын (instance) құруға болады",
-                "Абстрактілі кластарда конструктор болмайды",
-                "Барлық әдістер абстрактілі болуға міндетті"
-            ],
-            correct: 0
-        },
-        {
-            question: "Ескірген (қолданыстан шыққан) әдістерді белгілеу үшін қандай аннотация қолданылады?",
-            options: [
-                "@Deprecated",
-                "@Obsolete",
-                "@Override",
-                "@Old"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java-да функционалды интерфейс деген не?",
-            options: [
-                "Дәл бір абстрактілі әдісі бар интерфейс",
-                "Тек default-әдістері бар интерфейс",
-                "Тек статикалық әдістері бар интерфейс",
-                "Әдістері жоқ интерфейс"
-            ],
-            correct: 0
-        },
-        {
-            question: "String класы объектісінің мазмұнын өзгертуге бола ма?",
-            options: [
-                "Жоқ, String — өзгермейтін (immutable) тип",
-                "Иә, append және insert әдістерімен",
-                "Иә, егер жол new арқылы құрылса",
-                "Иә, substring әдісімен"
-            ],
-            correct: 0
-        },
-        {
-            question: "throw операторы не істейді?",
-            options: [
-                "Ерекшелікті (exception) қолмен лақтырады",
-                "Бағдарламаны аяқтайды",
-                "Ерекшелік объектісін жасайды, бірақ лақтырмайды",
-                "Методтың ықтимал ерекшеліктерін жариялайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Жолдық литерал қалай құрылады?",
-            options: [
-                "\"text\" арқылы, ол литералдар пулына түседі",
-                "Тек new String(\"text\") арқылы",
-                "String.valueOf() арқылы",
-                "StringBuilder.toString() арқылы"
-            ],
-            correct: 0
-        },
-        {
-            question: "Аргументі жоқ, бірақ мән қайтаратын функцияны сипаттайтын интерфейс қайсы?",
-            options: [
-                "Supplier",
-                "Consumer",
-                "Predicate",
-                "UnaryOperator"
-            ],
-            correct: 0
-        },
-        {
-            question: "Ерекшелік болса да, әрқашан орындалатын блок қайсы?",
-            options: [
-                "finally",
-                "try",
-                "catch",
-                "throw"
-            ],
-            correct: 0
-        },
-        {
-            question: "Лямбда-өрнек деген не?",
-            options: [
-                "Функционалды интерфейсті жүзеге асырудың қысқаша жазба формасы",
-                "Анонимді класс құру тәсілі",
-                "Аты жоқ метод",
-                "Аты жоқ конструктор"
-            ],
-            correct: 0
-        },
-        {
-            question: "UTF-8 бен UTF-16 айырмашылығы неде?",
-            options: [
-                "UTF-8: 1–4 байт, UTF-16: 2 немесе 4 байт",
-                "UTF-8 символдар ұзындығы бекітілген",
-                "UTF-16 әрқашан 1 байт қолданады",
-                "Айырмашылық жоқ"
-            ],
-            correct: 0
-        },
-        {
-            question: "finally блогы қашан орындалмай қалуы мүмкін?",
-            options: [
-                "Егер JVM апатты түрде аяқталса (System.exit)",
-                "Ешқашан",
-                "Егер ерекшелік болмаса",
-                "Егер бірнеше catch болса"
-            ],
-            correct: 0
-        },
-        {
-            question: "StringBuilder объектілерінің мазмұнын қалай дұрыс салыстыруға болады?",
-            options: [
-                "sb1.toString().equals(sb2.toString()) арқылы",
-                "== операторымен",
-                "equals() арқылы, себебі ол қайта анықталған",
-                "=== операторымен"
-            ],
-            correct: 0
-        },
-        {
-            question: "Бұл бағдарлама не шығарады? Function&lt;String, Integer&gt; f = String::length; System.out.println(f.apply(\"Java\"));",
-            options: [
-                "4",
-                "3",
-                "Компиляция қатесі",
-                "0"
-            ],
-            correct: 0
-        },
-        {
-            question: "Бұл код не шығарады? long count = Stream.of(\"aa\", \"b\", \"ccc\", \"dd\").filter(s -> s.length() > 1).count(); System.out.println(count);",
-            options: [
-                "3",
-                "2",
-                "1",
-                "0"
-            ],
-            correct: 0
-        },
-        {
-            question: "Меншіктеу кезінде объектілік сілтеме өзін қалай ұстайды?",
-            options: [
-                "Сол объектіге сілтеме көшіріледі",
-                "Конструктор арқылы жаңа объект құрылады",
-                "Өрістердің тек бір бөлігі көшіріледі",
-                "JVM автоматты түрде терең (deep) көшірме жасайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Локальды айнымалыны инициализацияламай тұрып қолдануға тырысқанда не болады?",
-            options: [
-                "Компилятор мән берілмегендіктен қате туралы хабарлайды",
-                "Айнымалы автоматты түрде нөл болады",
-                "Мән стек жадынан алынады",
-                "JVM оны әдепкі бойынша өзі инициализациялайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java өрнектерінде қай оператордың басымдығы жоғары?",
-            options: [
-                "Қосу операторы +",
-                "Логикалық оператор &&",
-                "Теңдік операторы ==",
-                "Меншіктеу операторы ="
-            ],
-            correct: 0
-        },
-        {
-            question: "Неліктен Optional қолдану орындалу уақытындағы қателерді (runtime errors) болдырмауға көмектеседі?",
-            options: [
-                "Ол мәннің жоқтығын айқын өңдеуге мәжбүрлеу арқылы NullPointerException-нің алдын алады",
-                "Optional деректерге жылдамырақ қолжетімділікті қамтамасыз етеді",
-                "Optional if тексерулерінің қажеттілігін алмастырады",
-                "Optional сілтемені жадының басқа аймағында сақтайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Тек қайтаратын типімен ерекшеленетін екі әдісті шамадан тыс жүктеуге (overload) тырысқанда не болады?",
-            options: [
-                "Компилятор әдістер сигнатурасы бірдей болғандықтан қате береді",
-                "Типі кеңірек әдіс таңдалады",
-                "Екі әдіс те рұқсат етілген болып саналады",
-                "JVM орындалу уақытында сәйкес әдісті таңдайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Метод параметрлерінде final кілт сөзі не үшін қолданылады?",
-            options: [
-                "Параметрді метод денесінің ішінде өзгертуге болмауы үшін",
-                "Методты қайта анықтауға (override) тыйым салу үшін",
-                "Параметр сілтеме арқылы емес, мән бойынша берілуі үшін",
-                "Параметр автоматты түрде класс өрісі болуы үшін"
-            ],
-            correct: 0
-        },
-        {
-            question: "Жаңа дана жасалғанда int[] массивінің элементтері қалай инициализацияланады?",
-            options: [
-                "Барлық элементтер автоматты түрде 0 мәнін алады",
-                "Әр элемент псевдокездейсоқ сан алады",
-                "Массив null мәндермен толтырылады",
-                "Компилятор массивті қолмен толтыруды талап етеді"
-            ],
-            correct: 0
-        },
-        {
-            question: "Бір кластың ішінде бір конструктордан екіншісін шақыру кезінде не рұқсат етіледі?",
-            options: [
-                "Басқа конструкторды тек this(...) шақыруы арқылы шақыруға болады",
-                "Конструкторды класс атымен тікелей шақыруға болады",
-                "Егер екінші конструктор default кілт сөзімен белгіленсе ғана рұқсат етіледі",
-                "JVM мұндай шақыруды тек бос конструкторлар үшін орындайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Бір кластың бірнеше данасын құру кезінде static-өріс өзін қалай ұстайды?",
-            options: [
-                "Өріс барлық объектілер үшін ортақ болып табылады және класс деректері аймағында сақталады",
-                "Әр объект статикалық өрістің өз көшірмесін жасайды",
-                "Өріс тек бірінші құрылған объектіде болады",
-                "Өріс әр конструктор шақырылған сайын қайта инициализацияланады"
-            ],
-            correct: 0
-        },
-        {
-            question: "Java 7-ге дейін switch операторында қандай деректер типін қолдануға болмайтын еді?",
-            options: [
-                "String",
-                "byte",
-                "char",
-                "int"
-            ],
-            correct: 0
-        },
-        {
-            question: "Терминалды операциядан кейін (мысалы, collect()) Stream-де map() шақыру неге әрқашан қатеге әкеледі?",
-            options: [
-                "Себебі терминалды операциядан кейін ағын жабық болып саналады және кез келген аралық операторды шақыру IllegalStateException-ге әкеледі",
-                "Себебі collect() деректерді өңдеуді жалғастыруға мүмкіндік бермей, жояды",
-                "Себебі map() тек параллель ағындарда қолданылады",
-                "Себебі collect()-тен кейін Stream автоматты түрде жаңа ағын ашып, күйін тастайды"
-            ],
-            correct: 0
-        },
-        {
-            question: "Егер терминалды операциядан кейін Stream-операциясы орындалып, тағы бір аралық операция шақырылса не болады?",
-            options: [
-                "Runtime-қате (IllegalStateException) болады, себебі стрим жабық",
-                "Код орындалады, бірақ бос стрим қайтарады",
-                "Компиляция қатесі болады",
-                "Операция автоматты түрде қайта орындалады"
-            ],
-            correct: 0
-        },
-        {
-            question: "for-each циклінің ішінде коллекция құрылымын өзгерту неге ConcurrentModificationException қатесіне әкеледі?",
-            options: [
-                "Итератор құру кезінде коллекция құрылымын бекітеді және оның өзгеруі ішкі модификация есептегішін бұзады",
-                "for-each көп ағынды итераторды қолданады",
-                "Аралау алдында коллекция толығымен көшіріледі",
-                "JVM итерация кезінде коллекцияны бұғаттайды"
-            ],
-            correct: 0
-        }
+    javaru:[
+        
+    {
+        question: "Ұсынылған пакеттердің қайсысында class System бар?",
+        options: ["java.lang", "java.io", "java.base", "java.util"],
+        correct: 0
+    },
+    {
+        question: "Java тілінде қай сөздер кілттік сөздер (keywords) болып табылады?",
+        options: ["void", "classpath", "main", "out"],
+        correct: 0
+    },
+    {
+        question: "First.java қосымшасын компиляциялау үшін қандай команда орындалады?",
+        options: ["javac First.java", "javac First", "java First.class", "java First.java"],
+        correct: 0
+    },
+    {
+        question: "Массивтің қай хабарландыруы (declaration) дұрыс?",
+        options: ["String array [] = {\"j\", \"r\", \"e\"};", "String array [] = new String {\"j\" \"s\" \"e\"};", "String array [] = { \"j \" \" v\" \"m\"};", "String array = {\"j\", \"d\", \"k\"};"],
+        correct: 0
+    },
+    {
+        question: "Object класының қай әдістері final болып табылады?",
+        options: ["getClass()", "finalize()", "clone()"],
+        correct: 0
+    },
+    {
+        question: "line 1 орнына қандай әдістер қойылуы мүмкін?",
+        options: ["public void action(){}", "int action() {}", "void action(){}", "private void action(){}", "protected void action(){}"],
+        correct: 0
+    },
+    {
+        question: "Java.util.Queue дегеніміз не?",
+        options: ["FIFO", "LIFO", "Map", "Массив", "Байланысты тізім"],
+        correct: 0
+    },
+    {
+        question: "Java Collections Framework қандай бөліктерден тұрады?",
+        options: ["Интерфейстер", "Кластар", "Массивтер", "Реализациялар", "Алгоритмдер"],
+        correct: 0
+    },
+    {
+        question: "Коллекция өлшемін анықтайтын әдіс?",
+        options: ["size()", "length()", "count()", "getSize()", "measure()"],
+        correct: 0
+    },
+    {
+        question: "Коллекцияда элемент бар-жоғын тексеру?",
+        options: ["contains()", "exists()", "has()", "check()", "find()"],
+        correct: 0
+    },
+    {
+        question: "Бос екенін тексеру?",
+        options: ["isEmpty()", "size()", "contains()", "containsAll()", "clear()"],
+        correct: 0
+    },
+    {
+        question: "Java-дағы класс деген не?",
+        options: ["Шаблон", "Функциялар жиыны", "Сандық тип", "Файл"],
+        correct: 0
+    },
+    {
+        question: "this не істейді?",
+        options: ["Ағымдағы объект", "Ата-ана класс", "Статикалық айнымалы", "Әдісті аяқтайды"],
+        correct: 0
+    },
+    {
+        question: "Exception деген не?",
+        options: ["Орындау кезіндегі қате", "Компиляция қатесі", "Хабарлама", "Мәлімет типі"],
+        correct: 0
+    },
+    {
+        question: "ArrayList деген не?",
+        options: ["Динамикалық коллекция", "Статикалық массив", "Тек сандар", "Кесте"],
+        correct: 0
+    },
+    {
+        question: "private не істейді?",
+        options: ["Тек класс ішінде", "Барлық жерде", "Тыйым салады", "Мұрагерлікке береді"],
+        correct: 0
+    },
+    {
+        question: "Коллекция дегеніміз не?",
+        options: ["Объектілер қоймасы (сақтау орны)", "Массив", "Сұрыптау әдісі", "Ағындар (threads) интерфейсі", "Жолдар үшін"],
+        correct: 0
+    },
+    {
+        question: "Бірегей (уникалды) элементтер интерфейсі:",
+        options: ["Set", "List", "Queue", "Map", "Collection"],
+        correct: 0
+    },
+    {
+        question: "Java SE 5 ерекшелігі?",
+        options: ["Generics", "Ағын қауіпсіздігі (Потокобезопасность)", "Vector/Stack", "Object-ті қолдамайды", "Коллекциялар жойылған"],
+        correct: 0
+    },
+    {
+        question: "Барлық элементтерді қалай өшіруге болады?",
+        options: ["clear()", "remove()", "removeIf()", "deleteAll()", "forEach()"],
+        correct: 0
+    },
+    {
+        question: "Iterator келесі элемент?",
+        options: ["next()", "hasNext()", "getNext()", "remove()", "forEachRemaining()"],
+        correct: 0
+    },
+    {
+        question: "ArrayList индекс бойынша енгізу?",
+        options: ["add(int, E)", "add(E)", "set()", "insert()", "push()"],
+        correct: 0
+    },
+    {
+        question: "List.copyOf?",
+        options: ["Өзгермейтін (Immutable)", "Өзгермелі тізім", "5 элементті көшіреді", "Массив", "Өшіреді"],
+        correct: 0
+    },
+    {
+        question: "Stream ерекшелігі?",
+        options: ["Сақтамайды", "Элементтерді сақтайды", "Бірден орындайды", "Әрқашан көп ағынды (multithreaded)", "Қайта шақырылады"],
+        correct: 0
+    },
+    {
+        question: "Stream сүзгілеу (фильтрация)?",
+        options: ["filter()", "map()", "distinct()", "peek()", "forEach()"],
+        correct: 0
+    },
+    {
+        question: "flatMap?",
+        options: ["Құрылымды ағынға айналдырады", "Жоғарғы регистр", "Сұрыптайды", "Шектейді", "Өткізіп жібереді"],
+        correct: 0
+    },
+    {
+        question: "Optional?",
+        options: ["Null-дан қорғау", "SQL", "JSON", "Thread", "Hash"],
+        correct: 0
+    },
+    {
+        question: "Serialization?",
+        options: ["Байтқа айналдырады", "Процессор уақыты", "Жады", "Сұрыптайды", "Қате"],
+        correct: 0
+    },
+    {
+        question: "finally қашан орындалады?",
+        options: ["Әрқашан", "Ешқашан", "Қате кезде", "return кезінде", "throw кезінде"],
+        correct: 0
+    },
+    {
+        question: "Интерфейстегі методтар?",
+        options: ["Abstract", "Private", "Final", "Static", "Synchronized"],
+        correct: 0
+    },
+    {
+        question: "HashSet сақтау?",
+        options: ["Хэш", "Индекс", "Кілт–мән", "Реттік", "Соңына"],
+        correct: 0
+    },
+    {
+        question: "final метод?",
+        options: ["override болмайды", "жойылады", "екі рет", "private", "static"],
+        correct: 0
+    },
+    {
+        question: "Reference type (Сілтемелік тип):",
+        options: ["Array", "int", "double", "boolean", "char"],
+        correct: 0
+    },
+    {
+        question: "Garbage collector?",
+        options: ["Жояды", "Өшіреді", "Көбейтеді", "Массив жасайды", "Компиляциялайды"],
+        correct: 0
+    },
+    {
+        question: "String immutable?",
+        options: ["Өзгермейді", "Төменгі регистр", "null", "Тез", "Конструкторсыз"],
+        correct: 0
+    },
+    {
+        question: "Collections.sort?",
+        options: ["Сұрыптайды", "Теріс", "Жояды", "HashMap", "Архив"],
+        correct: 0
+    },
+    {
+        question: "Интерфейс?",
+        options: ["Runnable", "String", "File", "Scanner", "Thread"],
+        correct: 0
+    },
+    {
+        question: "synchronized?",
+        options: ["Қауіпсіздік", "Файл", "GUI", "SQL", "Коммент"],
+        correct: 0
+    },
+    {
+        question: "this?",
+        options: ["Объект", "my", "ref", "obj", "current"],
+        correct: 0
+    },
+    {
+        question: "Қате өңдеу?",
+        options: ["Exception handling", "Encapsulation", "Mapping", "Serialization", "Configuration"],
+        correct: 0
+    },
+    {
+        question: "package?",
+        options: ["Топтау", "Өшіру", "Жады", "Сұрыптау", "Файл"],
+        correct: 0
+    },
+    {
+        question: "10 / 4:",
+        options: ["2", "2.5", "3", "4", "0"],
+        correct: 0
+    },
+    {
+        question: "Индекс ауқымнан тыс (Out of bounds)?",
+        options: ["ArrayIndexOutOfBoundsException", "OK", "ArithmeticException", "Кеңейеді", "0"],
+        correct: 0
+    },
+    {
+        question: "final айнымалы?",
+        options: ["Өзгермейді", "Конструкторда", "Мұрагерленеді", "Класс ішінде", "static"],
+        correct: 0
+    },
+    {
+        question: "Сұрыптау интерфейсі?",
+        options: ["Comparable", "Serializable", "Runnable", "AutoCloseable", "Cloneable"],
+        correct: 0
+    },
+    {
+        question: "Кілт–мән жұбы (Key-value pair)?",
+        options: ["HashMap", "ArrayList", "HashSet", "LinkedList", "TreeSet"],
+        correct: 0
+    },
+    {
+        question: "new не істейді?",
+        options: ["Объект (жасайды)", "Айнымалы", "Жадыны босату", "Салыстырады", "Өшіреді"],
+        correct: 0
+    },
+    {
+        question: "Бос жолды тексеру?",
+        options: ["isEmpty()", "str == \"\"", "isNull()", "equals()", "empty()"],
+        correct: 0
+    },
+    {
+        question: "static метод?",
+        options: ["класқа тиесілі", "override болмайды", "объектке тиесілі", "объект жасайды", "авто іске қосылады"],
+        correct: 0
+    },
+    {
+        question: "instanceof?",
+        options: ["тип тексереді", "салыстырады", "размер", "объект жасайды", "ссылку тексеру"],
+        correct: 0
+    }
+
+
+    ],
+
+    javarus:[
+        
+    {
+        question: "Collection интерфейсінің барлық элементтерді жою үшін қай әдісі қолданылады?",
+        options: ["clear()", "removeAll()", "delete()", "erase()"],
+        correct: 0
+    },
+    {
+        question: "Тізімнің (List) ортасына элемент енгізуге мүмкіндік беретін әдіс қайсы?",
+        options: ["add(index, element)", "put(index, element)", "add(element)", "insert(element)"],
+        correct: 0
+    },
+    {
+        question: "Коллекциялардағы contains() әдісі қалай жұмыс істейді?",
+        options: ["Элементтің бар-жоғын тексереді (equals арқылы)", "Объектінің белгілі бір индексте сақталғанын тексереді", "equals-ты қолданбай, элементті хэш бойынша іздейді", "Тек жолдарды (String) іздейді"],
+        correct: 0
+    },
+    {
+        question: "retainAll(Collection c) әдісі не істейді?",
+        options: ["Тек басқа коллекцияда бар элементтерді қалдырады", "Басқа коллекцияда бар элементтерді өшіреді", "Екі коллекцияны біріктіреді", "Коллекцияны тазалайды"],
+        correct: 0
+    },
+    {
+        question: "Map-тің элементтер санын қайтаратын әдісі?",
+        options: ["size()", "count()", "length()", "total()"],
+        correct: 0
+    },
+    {
+        question: "HashMap-те кілт бойынша мәнді алу үшін қай әдіс қолданылады?",
+        options: ["get(key)", "getValue(key)", "find(key)", "fetch(key)"],
+        correct: 0
+    },
+    {
+        question: "Элементтердің қосылу ретін сақтайтын Set қайсы?",
+        options: ["LinkedHashSet", "TreeSet", "HashSet", "EnumSet"],
+        correct: 0
+    },
+    {
+        question: "ArrayList-тің индекс бойынша элементті өшіретін әдісі?",
+        options: ["remove(index)", "pop(index)", "delete(index)", "remove(element)"],
+        correct: 0
+    },
+    {
+        question: "Iterator-да келесі элементке өту үшін қандай әдіс бар?",
+        options: ["next()", "getNext()", "forward()", "continue()"],
+        correct: 0
+    },
+    {
+        question: "Тізімді сұрыптау үшін қандай әдіс қолданылады?",
+        options: ["Collections.sort(list)", "list.sortUp()", "list.order()", "Arrays.sort(list)"],
+        correct: 0
+    },
+    {
+        question: "ООП-ның төрт іргелі қағидасы қандай?",
+        options: ["Полиморфизм, Инкапсуляция, Мұрагерлік, Абстракция", "Агрегация, Композиция, Ассоциация, Делегирование", "Итерация, Рекурсия, Параллелизм, Асинхрондылық", "Синхрондау, Достық функциялар, Көптік мұрагерлік"],
+        correct: 0
+    },
+    {
+        question: "Командалық жол аргументтерінің санын алу үшін қандай өріс қолданылады?",
+        options: ["args.length", "args.count", "args.size()", "args[0]"],
+        correct: 0
+    },
+    {
+        question: "Қатаң инкапсуляцияны қамтамасыз ететін модификатор қайсы?",
+        options: ["private", "protected", "public", "package-private"],
+        correct: 0
+    },
+    {
+        question: "private өрісті тікелей өзгертуге әрекеттенгенде не болады?",
+        options: ["Компиляция қатесі", "Ескерту, бірақ сәтті орындалады", "RuntimeException", "Set-әдісін автоматты шақыру"],
+        correct: 0
+    },
+    {
+        question: "main() әдісіндегі static сөзінің мақсаты не?",
+        options: ["Әдісті объект құрмай-ақ шақыруға мүмкіндік береді", "Көріну аймағын шектейді", "Әдісті виртуалды етеді", "Кез келген мәнді қайтаруға мүмкіндік береді"],
+        correct: 0
+    },
+    {
+        question: "Әдепкі бойынша (package-private) қолданылатын модификатор қайсы?",
+        options: ["package-private", "public", "protected", "private"],
+        correct: 0
+    },
+    {
+        question: "Класты мұралауға тыйым салатын кілт сөз қайсы?",
+        options: ["final", "abstract", "implements", "static"],
+        correct: 0
+    },
+    {
+        question: "Java жады жұмысының C++ тілінен негізгі айырмашылығы:",
+        options: ["Қоқысты автоматты жинау, жадыға тікелей қолжетімділік жоқ", "Барлық объектілер стекте құрылады", "Міндетті көрсеткіштер (pointers)", "Жадыны тек new арқылы бөлу"],
+        correct: 0
+    },
+    {
+        question: "Java-мен жұмыс істеу үшін қандай IDE-лер ұсынылады?",
+        options: ["IntelliJ IDEA, Eclipse, NetBeans", "VS Code, Atom, Sublime", "Android Studio, Visual Studio, Xcode", "Notepad++, Vim, Nano"],
+        correct: 0
+    },
+    {
+        question: "JDK дегеніміз не?",
+        options: ["Әзірлеуге арналған толық жинақ: JRE + компилятор + құралдар", "Тек JVM", "Компиляторсыз орындау ортасы", "Байткод интерпретаторы"],
+        correct: 0
+    },
+    {
+        question: "JDBC-де SQL-сұраныстарды орындау үшін қандай интерфейс қолданылады?",
+        options: ["Statement", "Connection", "ResultSet", "DriverManager"],
+        correct: 0
+    },
+    {
+        question: "Бар жазбаны өзгертетін SQL операторы қайсы?",
+        options: ["UPDATE", "INSERT", "SELECT", "ALTER"],
+        correct: 0
+    },
+    {
+        question: "setAutoCommit(false) не істейді?",
+        options: ["Транзакцияларды автоматты бекітуді (commit) өшіреді", "Тек оқу режимін қосады", "Қосылымды үзеді", "Операцияларды автоматты бекітеді"],
+        correct: 0
+    },
+    {
+        question: "Қосылысқа бағдарланған (connection-oriented) хаттама қайсы?",
+        options: ["TCP", "UDP", "HTTP", "ICMP"],
+        correct: 0
+    },
+    {
+        question: "TCP-сервер құратын класс қайсы?",
+        options: ["ServerSocket", "Socket", "DatagramSocket", "URLConnection"],
+        correct: 0
+    },
+    {
+        question: "HTTP қандай портты қолданады?",
+        options: ["80", "20", "21", "443"],
+        correct: 0
+    },
+    {
+        question: "DOM және SAX айырмашылығы:",
+        options: ["DOM құжатты толығымен жүктейді, SAX — ағындық", "SAX құжатты толығымен жүктейді", "DOM тек JSON-мен жұмыс істейді", "SAX тек XML жазады"],
+        correct: 0
+    },
+    {
+        question: "DOM-ағашын жасайтын класс қайсы?",
+        options: ["DocumentBuilder", "SAXParser", "XMLFormatter", "XmlDocumentFactory"],
+        correct: 0
+    },
+    {
+        question: "XSD-ға негізделген валидация механизмі қайсы?",
+        options: ["XML-Schema (XSD)", "DTD", "JSON-Schema", "CSV-Schema"],
+        correct: 0
+    },
+    {
+        question: "SAX оқиғаларын өңдеуге жауапты интерфейс қайсы?",
+        options: ["DefaultHandler", "Handler", "EventManager", "SAXWorker"],
+        correct: 0
+    },
+    {
+        question: "ResultSet-тің келесі жолына қалай өтуге болады?",
+        options: ["next()", "nextRow()", "move()", "forward()"],
+        correct: 0
+    },
+    {
+        question: "Параметрленген SQL сұраныстар үшін қандай объект қолданылады?",
+        options: ["PreparedStatement", "Statement", "Callable", "SQLSetter"],
+        correct: 0
+    },
+    {
+        question: "Транзакцияны қалай іске қосуға болады?",
+        options: ["setAutoCommit(false)", "begin()", "startTransaction()", "commitStart()"],
+        correct: 0
+    },
+    {
+        question: "Сақталған процедураларды шақыруға арналған интерфейс:",
+        options: ["CallableStatement", "StoredStatement", "FunctionStatement", "OperationCall"],
+        correct: 0
+    },
+    {
+        question: "Клиент тарапында TCP-қосылым орнататын класс қайсы?",
+        options: ["Socket", "DatagramSocket", "ServerSocket", "TcpChannel"],
+        correct: 0
+    },
+    {
+        question: "Қосылым орнатпай жұмыс істейтін хаттама қайсы?",
+        options: ["UDP", "TCP", "FTP", "HTTP"],
+        correct: 0
+    },
+    {
+        question: "TCP-сервер класы:",
+        options: ["ServerSocket", "SocketListener", "TcpServer", "ServiceSocket"],
+        correct: 0
+    },
+    {
+        question: "Physical, Data Link, Network деңгейлерін қамтитын модель қайсы?",
+        options: ["OSI/ISO", "TCP/IP", "VPN", "SSL"],
+        correct: 0
+    },
+    {
+        question: "DatagramPacket не үшін қолданылады?",
+        options: ["UDP-датаграммалар үшін", "TCP-деректерді тасымалдау үшін", "HTTP үшін", "WebSocket үшін"],
+        correct: 0
+    },
+    {
+        question: "Оқиғалық модельге (event-based) жататын парсер қайсы?",
+        options: ["SAX", "DOM", "JAXB", "JDOM"],
+        correct: 0
+    },
+    {
+        question: "XML-ді жадыға ағаш ретінде жүктейтін модель қайсы?",
+        options: ["DOM", "SAX", "StAX", "Stream API"],
+        correct: 0
+    },
+    {
+        question: "XML-ді тізбектей оқитын API (курсорлық модель) қайсы?",
+        options: ["StAX", "SAX", "XPath", "DOM"],
+        correct: 0
+    },
+    {
+        question: "XSD-схема нені анықтайды?",
+        options: ["XML құрылымын, типтерін және шектеулерін", "Қолжетімділік құқықтарын", "JSON моделін", "Ағаш түйіндерін"],
+        correct: 0
+    },
+    {
+        question: "DOM-парсерді құруға арналған класс:",
+        options: ["DocumentBuilderFactory", "DocumentBuilder", "DOMCreatorFactory", "XMLFactory"],
+        correct: 0
+    },
+    {
+        question: "Сұранысты қайта орындау кезінде PreparedStatement әрекеті туралы қай тұжырым дұрыс?",
+        options: ["PreparedStatement SQL-ді бір рет компиляциялайды және қайталанатын execute* шақырулары дайын орындау жоспарын қолданады", "PreparedStatement әр жолы SQL-ді қайта талдайды (parse), бірақ параметрлерді сақтайды", "PreparedStatement SQL-ді тек executeUpdate() кезінде компиляциялайды, executeQuery() кезінде емес", "PreparedStatement тек параметрлерді кэштейді, ал SQL-жоспары қайта құрылады"],
+        correct: 0
+    },
+    {
+        question: "Егер batch-операциялар кезінде сұраныстардың бірі SQLException шақырса және драйверде continueBatchOnError=false режимі тұрса, не болады?",
+        options: ["Batch орындалуы бірден тоқтайды, драйвер ішінара нәтижемен BatchUpdateException лақтырады", "Драйвер қалған сұраныстарды орындауды жалғастырады және статустар массивін қайтарады", "Драйвер тек соңғы сұранысты кері қайтарады (rollback), қалғандары бекітіледі", "Барлық сұраныстар орындалады, бірақ қате еленбейді"],
+        correct: 0
+    },
+    {
+        question: "JDBC параметрсіз execute() шақыру кезінде PreparedStatement үшін қайтарылатын ResultSet-метадеректерін қалай анықтайды?",
+        options: ["Метадеректер PreparedStatement SQL-үлгісі негізінде қалыптасады, тіпті параметрлер орнатылмаса да", "Метадеректер тек барлық параметрлер орнатылғаннан кейін қолжетімді болады", "Метадеректер тек орындалу кезінде алынады, ал execute()-ке дейін қолжетімсіз", "Метадеректерді драйвер тек бірінші жолды алғаннан кейін қалыптастырады"],
+        correct: 0
+    },
+    {
+        question: "autoCommit=true режимі қосулы кезде Connection.commit() шақырылса не болады?",
+        options: ["SQLException лақтырылады", "Метод қатесіз орындалады, бірақ іс жүзінде ешқандай транзакция бекітілмейді (commit жасалмайды)", "Қосылым автоматты түрде транзакцияларды қолмен басқару режиміне ауысады", "JDBC commit жасайды және содан кейін autoCommit-ті өшіреді"],
+        correct: 0
+    },
+    {
+        question: "Неліктен PreparedStatement пайдалану Statement-ке қарағанда қауіпсіздікті арттырады?",
+        options: ["SQL-код пен параметрлер бөлек жіберіледі, бұл SQL-инъекциялардың алдын алады", "PreparedStatement параметрлерді автоматты түрде шифрлайды", "PreparedStatement тек транзакция ішінде орындалуы мүмкін", "PreparedStatement пайдаланушы мәндері бар сұраныстарды орындай алмайды"],
+        correct: 0
+    },
+    {
+        question: "Дерекқор құрылымы (кестелер, бағандар атаулары) туралы ақпарат алуға мүмкіндік беретін JDBC объектісі қайсы?",
+        options: ["DatabaseMetaData", "ResultSetMetaData", "SchemaInspector", "CatalogProvider"],
+        correct: 0
+    },
+    {
+        question: "ResultSet интерфейсінің курсор деректер жинағының бірінші жолының алдында тұрғанын анықтайтын әдісі қайсы?",
+        options: ["isBeforeFirst()", "isAtStart()", "cursorAtFirst()", "before()"],
+        correct: 0
+    },
+    {
+        question: "Қолданыстағы қосылымнан құрылған PreparedStatement объектісінде close() шақырылса не болады?",
+        options: [
+            "Тек PreparedStatement жабылады, бірақ қосылым (connection) ашық қалады",
+            "Statement те, Connection да жабылады",
+            "Statement жабылғанда белсенді транзакция кері қайтарылады (rollback)",
+            "Драйвер close әдісін елемейді"
+        ],
+        correct: 0
+    },
+    {
+        question: "ServerSocket класының кіріс TCP-қосылымды қабылдау үшін қолданылатын әдісі?",
+        options: ["accept()", "connect()", "receive()", "open()"],
+        correct: 0
+    },
+    {
+        question: "commit немесе rollback орындалғаннан кейін жаңа транзакцияны айқын бастау үшін Connection интерфейсінің қай әдісі қолданылады?",
+        options: ["setAutoCommit(false)", "start()", "beginTransaction()", "openTransaction()"],
+        correct: 0
+    },
+    {
+        question: "Document интерфейсінің жаңа XML-ағаш элементін жасайтын әдісі қайсы?",
+        options: ["createElement(String tagName)", "addNode(String tagName)", "buildElement(String tagName)", "makeNode(String tagName)"],
+        correct: 0
+    },
+    {
+        question: "Iterator<E> типті объект нақты нені сақтайды?",
+        options: [
+            "Коллекцияға сілтеме және аралаудың ішкі күйін",
+            "Тек ағымдағы элементтің индексін",
+            "Ағымдағы және келесі элементті, бірақ алдыңғысын емес",
+            "Бүкіл коллекцияның көшірмесін"
+        ],
+        correct: 0
+    },
+    {
+        question: "Кәдімгі Iterator-ды пайдалану кезінде неге ConcurrentModificationException пайда болады?",
+        options: [
+            "Себебі итератор құрылғаннан кейін коллекция құрылымдық жағынан өзгертілген",
+            "Себебі коллекция элементтері тең",
+            "Себебі коллекция тым үлкен",
+            "JVM қатені кездейсоқ жасайды"
+        ],
+        correct: 0
+    },
+    {
+        question: "Stream-де collect() әдісінен кейін map() шақырылса не болады?",
+        options: [
+            "Runtime-қате (IllegalStateException: stream has already been operated upon or closed)",
+            "Бәрі қалыпты жұмыс істейді",
+            "Компиляция қатесі — стрим жабық",
+            "Бос нәтиже қайтарады"
+        ],
+        correct: 0
+    },
+    {
+        question: "Төмендегілердің қайсысы checked exceptions (тексерілетін ерекшеліктер) қатарына жатады?",
+        options: ["IOException", "RuntimeException", "NullPointerException", "IllegalArgumentException"],
+        correct: 0
+    },
+    {
+        question: "Неліктен List.of(...) арқылы құрылған тізімді өзгертуге болмайды?",
+        options: [
+            "Себебі ол өзгермейтін (immutable) тізімді қайтарады",
+            "Элементтер жалқау (lazy) түрде көшіріледі",
+            "Әдістер асинхронды жұмыс істейді",
+            "Ол тұрақсыз құрылымды пайдаланады"
+        ],
+        correct: 0
+    },
+    {
+        question: "Files.newBufferedReader(Path path) әдісі не істейді?",
+        options: [
+            "Символдарды оқитын Reader құрады",
+            "Байттарды оқитын Reader құрады",
+            "Writer құрады",
+            "Объектілер ағынын құрады"
+        ],
+        correct: 0
+    },
+    {
+        question: "Неліктен parallelStream() әрқашан жылдамырақ бола бермейді?",
+        options: [
+            "Параллельдіктің үстеме шығындары оның пайдасынан жоғары болуы мүмкін",
+            "Stream API параллель жұмыс істей алмайды",
+            "Бір ағынды (поток) қолданады",
+            "Тек macOS-та жұмыс істейді"
+        ],
+        correct: 0
+    },
+    {
+        question: "throw new Exception() орындалғанда не болады?",
+        options: [
+            "Метод аяқталады, ерекшелік объектісі құрылады және басқару өңдеушіге (handler) беріледі",
+            "Ерекшелік жай ғана логқа жазылады",
+            "Бағдарлама әрі қарай жалғасады",
+            "JVM бүкіл процесті тоқтатады"
+        ],
+        correct: 0
+    },
+    {
+        question: "InputStream-нің Reader-ден айырмашылығы неде?",
+        options: [
+            "InputStream байттармен жұмыс істейді, Reader — символдармен",
+            "InputStream жылдамырақ",
+            "Reader тек файлдармен жұмыс істейді",
+            "InputStream тек checked-қателерді шақырады"
+        ],
+        correct: 0
+    },
+    {
+        question: "Iterator-да remove() әдісі не үшін қажет?",
+        options: [
+            "Аралау кезінде ConcurrentModificationException алмай, элементтерді қауіпсіз жою үшін",
+            "Индекс бойынша жою үшін",
+            "Коллекцияны тазалау үшін",
+            "Жылдамырақ жою жолын шақыру үшін"
+        ],
+        correct: 0
+    },
+    {
+        question: "Java-да полиморфизм деген не?",
+        options: [
+            "Объектінің көптеген формаларды қабылдау қабілеті",
+            "Бір кластың бірнеше класты мұралау мүмкіндігі",
+            "Ата-аналық кластың бастапқы кодын өзгерту мүмкіндігі",
+            "Геттерлер мен сеттерлерді автоматты генерациялау"
+        ],
+        correct: 0
+    },
+    {
+        question: "Класты мұралауға тыйым салатын модификатор қайсы?",
+        options: ["final", "static", "private", "protected"],
+        correct: 0
+    },
+    {
+        question: "Методты қайта анықтағанда (overriding) не болады?",
+        options: [
+            "Методтың әрекеті (behavior) ішкі класта өзгереді",
+            "Параметрлер саны өзгереді",
+            "Қайтарылатын мәннің типі үйлесімсіз типке өзгереді",
+            "Метод статикалық болады"
+        ],
+        correct: 0
+    },
+    {
+        question: "Егер класс интерфейсті жүзеге асырып (implements), бірақ оның барлық әдістерін қайта анықтамаса не болады?",
+        options: [
+            "Класты abstract деп белгілеу керек",
+            "Код сәтті компиляцияланады",
+            "Интерфейсті final деп белгілеу керек",
+            "Интерфейстерді толығымен жүзеге асыруға болмайды"
+        ],
+        correct: 0
+    },
+    {
+        question: "Java-да интерфейс құрамында не болуы мүмкін?",
+        options: [
+            "Абстрактілі әдістер, default-әдістер және static-әдістер",
+            "Тек абстрактілі әдістер",
+            "Тек константалар",
+            "Кез келген типтегі өрістер"
+        ],
+        correct: 0
+    },
+    {
+        question: "Outer ішіндегі статикалық емес Inner ішкі класының объектісін қалай құруға болады?",
+        options: [
+            "Outer.Inner obj = new Outer().new Inner();",
+            "Inner obj = new Inner();",
+            "Inner obj = Outer.new Inner();",
+            "Inner obj = new Outer.Inner();"
+        ],
+        correct: 0
+    },
+    {
+        question: "@Override аннотациясы нені білдіреді?",
+        options: [
+            "Метод суперкласстың әдісін қайта анықтайды",
+            "Метод тек бір рет шақырылады",
+            "Метод автоматты түрде мұраланады",
+            "Метод ата-аналық кластың айнымалыларын жасырады"
+        ],
+        correct: 0
+    },
+    {
+        question: "Интерфейс басқа интерфейсті мұралай ала ма?",
+        options: [
+            "Иә, extends кілт сөзін қолдану арқылы",
+            "Жоқ, тек кластар ғана мұралай алады",
+            "Иә, implements кілт сөзін қолдану арқылы",
+            "Егер екеуі де @Inherited деп белгіленсе ғана"
+        ],
+        correct: 0
+    },
+    {
+        question: "Абстрактілі кластарды қолданудың артықшылығы неде?",
+        options: [
+            "Мұрагерлер үшін ортақ функционалды жүзеге асыруға болады",
+            "Абстрактілі кластың данасын (instance) құруға болады",
+            "Абстрактілі кластарда конструктор болмайды",
+            "Барлық әдістер абстрактілі болуға міндетті"
+        ],
+        correct: 0
+    },
+    {
+        question: "Ескірген (қолданыстан шыққан) әдістерді белгілеу үшін қандай аннотация қолданылады?",
+        options: ["@Deprecated", "@Obsolete", "@Override", "@Old"],
+        correct: 0
+    },
+    {
+        question: "Java-да функционалды интерфейс деген не?",
+        options: [
+            "Дәл бір абстрактілі әдісі бар интерфейс",
+            "Тек default-әдістері бар интерфейс",
+            "Тек статикалық әдістері бар интерфейс",
+            "Әдістері жоқ интерфейс"
+        ],
+        correct: 0
+    },
+    {
+        question: "String класы объектісінің мазмұнын өзгертуге бола ма?",
+        options: [
+            "Жоқ, String — өзгермейтін (immutable) тип",
+            "Иә, append және insert әдістерімен",
+            "Иә, егер жол new арқылы құрылса",
+            "Иә, substring әдісімен"
+        ],
+        correct: 0
+    },
+    {
+        question: "throw операторы не істейді?",
+        options: [
+            "Ерекшелікті (exception) қолмен лақтырады",
+            "Бағдарламаны аяқтайды",
+            "Ерекшелік объектісін жасайды, бірақ лақтырмайды",
+            "Методтың ықтимал ерекшеліктерін жариялайды"
+        ],
+        correct: 0
+    },
+    {
+        question: "Жолдық литерал қалай құрылады?",
+        options: [
+            "\"text\" арқылы, ол литералдар пулына түседі",
+            "Тек new String(\"text\") арқылы",
+            "String.valueOf() арқылы",
+            "StringBuilder.toString() арқылы"
+        ],
+        correct: 0
+    },
+    {
+        question: "Аргументі жоқ, бірақ мән қайтаратын функцияны сипаттайтын интерфейс қайсы?",
+        options: ["Supplier", "Consumer", "Predicate", "UnaryOperator"],
+        correct: 0
+    },
+    {
+        question: "Ерекшелік болса да, әрқашан орындалатын блок қайсы?",
+        options: ["finally", "try", "catch", "throw"],
+        correct: 0
+    },
+    {
+        question: "Лямбда-өрнек деген не?",
+        options: [
+            "Функционалды интерфейсті жүзеге асырудың қысқаша жазба формасы",
+            "Анонимді класс құру тәсілі",
+            "Аты жоқ метод",
+            "Аты жоқ конструктор"
+        ],
+        correct: 0
+    },
+    {
+        question: "UTF-8 бен UTF-16 айырмашылығы неде?",
+        options: [
+            "UTF-8: 1–4 байт, UTF-16: 2 немесе 4 байт",
+            "UTF-8 символдар ұзындығы бекітілген",
+            "UTF-16 әрқашан 1 байт қолданады",
+            "Айырмашылық жоқ"
+        ],
+        correct: 0
+    },
+    {
+        question: "finally блогы қашан орындалмай қалуы мүмкін?",
+        options: [
+            "Егер JVM апатты түрде аяқталса (System.exit)",
+            "Ешқашан",
+            "Егер ерекшелік болмаса",
+            "Егер бірнеше catch болса"
+        ],
+        correct: 0
+    },
+    {
+        question: "StringBuilder объектілерінің мазмұнын қалай дұрыс салыстыруға болады?",
+        options: [
+            "sb1.toString().equals(sb2.toString()) арқылы",
+            "== операторымен",
+            "equals() арқылы, себебі ол қайта анықталған",
+            "=== операторымен"
+        ],
+        correct: 0
+    },
+    {
+        question: "Бұл бағдарлама не шығарады? Function<String, Integer> f = String::length; System.out.println(f.apply(\"Java\"));",
+        options: ["4", "3", "Компиляция қатесі", "0"],
+        correct: 0
+    },
+    {
+        question: "Бұл код не шығарады? long count = Stream.of(\"aa\", \"b\", \"ccc\", \"dd\").filter(s -> s.length() > 1).count(); System.out.println(count);",
+        options: ["3", "2", "1", "0"],
+        correct: 0
+    },
+    {
+        question: "Меншіктеу кезінде объектілік сілтеме өзін қалай ұстайды?",
+        options: [
+            "Сол объектіге сілтеме көшіріледі",
+            "Конструктор арқылы жаңа объект құрылады",
+            "Өрістердің тек бір бөлігі көшіріледі",
+            "JVM автоматты түрде терең (deep) көшірме жасайды"
+        ],
+        correct: 0
+    },
+    {
+        question: "Локальды айнымалыны инициализацияламай тұрып қолдануға тырысқанда не болады?",
+        options: [
+            "Компилятор мән берілмегендіктен қате туралы хабарлайды",
+            "Айнымалы автоматты түрде нөл болады",
+            "Мән стек жадынан алынады",
+            "JVM оны әдепкі бойынша өзі инициализациялайды"
+        ],
+        correct: 0
+    },
+    {
+        question: "Java өрнектерінде қай оператордың басымдығы жоғары?",
+        options: [
+            "Қосу операторы +",
+            "Логикалық оператор &&",
+            "Теңдік операторы ==",
+            "Меншіктеу операторы ="
+        ],
+        correct: 0
+    },
+    {
+        question: "Неліктен Optional қолдану орындалу уақытындағы қателерді (runtime errors) болдырмауға көмектеседі?",
+        options: [
+            "Ол мәннің жоқтығын айқын өңдеуге мәжбүрлеу арқылы NullPointerException-нің алдын алады",
+            "Optional деректерге жылдамырақ қолжетімділікті қамтамасыз етеді",
+            "Optional if тексерулерінің қажеттілігін алмастырады",
+            "Optional сілтемені жадының басқа аймағында сақтайды"
+        ],
+        correct: 0
+    },
+    {
+        question: "Тек қайтаратын типімен ерекшеленетін екі әдісті шамадан тыс жүктеуге (overload) тырысқанда не болады?",
+        options: [
+            "Компилятор әдістер сигнатурасы бірдей болғандықтан қате береді",
+            "Типі кеңірек әдіс таңдалады",
+            "Екі әдіс те рұқсат етілген болып саналады",
+            "JVM орындалу уақытында сәйкес әдісті таңдайды"
+        ],
+        correct: 0
+    },
+    {
+        question: "Метод параметрлерінде final кілт сөзі не үшін қолданылады?",
+        options: [
+            "Параметрді метод денесінің ішінде өзгертуге болмауы үшін",
+            "Методты қайта анықтауға (override) тыйым салу үшін",
+            "Параметр сілтеме арқылы емес, мән бойынша берілуі үшін",
+            "Параметр автоматты түрде класс өрісі болуы үшін"
+        ],
+        correct: 0
+    },
+    {
+        question: "Жаңа дана жасалғанда int[] массивінің элементтері қалай инициализацияланады?",
+        options: [
+            "Барлық элементтер автоматты түрде 0 мәнін алады",
+            "Әр элемент псевдокездейсоқ сан алады",
+            "Массив null мәндермен толтырылады",
+            "Компилятор массивті қолмен толтыруды талап етеді"
+        ],
+        correct: 0
+    },
+    {
+        question: "Бір кластың ішінде бір конструктордан екіншісін шақыру кезінде не рұқсат етіледі?",
+        options: [
+            "Басқа конструкторды тек this(...) шақыруы арқылы шақыруға болады",
+            "Конструкторды класс атымен тікелей шақыруға болады",
+            "Егер екінші конструктор default кілт сөзімен белгіленсе ғана рұқсат етіледі",
+            "JVM мұндай шақыруды тек бос конструкторлар үшін орындайды"
+        ],
+        correct: 0
+    },
+    {
+        question: "Бір кластың бірнеше данасын құру кезінде static-өріс өзін қалай ұстайды?",
+        options: [
+            "Өріс барлық объектілер үшін ортақ болып табылады және класс деректері аймағында сақталады",
+            "Әр объект статикалық өрістің өз көшірмесін жасайды",
+            "Өріс тек бірінші құрылған объектіде болады",
+            "Өріс әр конструктор шақырылған сайын қайта инициализацияланады"
+        ],
+        correct: 0
+    },
+    {
+        question: "Java 7-ге дейін switch операторында қандай деректер типін қолдануға болмайтын еді?",
+        options: ["String", "byte", "char", "int"],
+        correct: 0
+    },
+    {
+        question: "Терминалды операциядан кейін (мысалы, collect()) Stream-де map() шақыру неге әрқашан қатеге әкеледі?",
+        options: [
+            "Себебі терминалды операциядан кейін ағын жабық болып саналады және кез келген аралық операторды шақыру IllegalStateException-ге әкеледі",
+            "Себебі collect() деректерді өңдеуді жалғастыруға мүмкіндік бермей, жояды",
+            "Себебі map() тек параллель ағындарда қолданылады",
+            "Себебі collect()-тен кейін Stream автоматты түрде жаңа ағын ашып, күйін тастайды"
+        ],
+        correct: 0
+    },
+    {
+        question: "Егер терминалды операциядан кейін Stream-операциясы орындалып, тағы бір аралық операция шақырылса не болады?",
+        options: [
+            "Runtime-қате (IllegalStateException) болады, себебі стрим жабық",
+            "Код орындалады, бірақ бос стрим қайтарады",
+            "Компиляция қатесі болады",
+            "Операция автоматты түрде қайта орындалады"
+        ],
+        correct: 0
+    },
+    {
+        question: "for-each циклінің ішінде коллекция құрылымын өзгерту неге ConcurrentModificationException қатесіне әкеледі?",
+        options: [
+            "Итератор құру кезінде коллекция құрылымын бекітеді және оның өзгеруі ішкі модификация есептегішін бұзады",
+            "for-each көп ағынды итераторды қолданады",
+            "Аралау алдында коллекция толығымен көшіріледі",
+            "JVM итерация кезінде коллекцияны бұғаттайды"
+        ],
+        correct: 0
+    }
+
+
     ],
 
    sysadmin: [
