@@ -13703,5 +13703,10 @@ allTests.javarandom = [
     ...(allTests.javaa || []),
     ...(allTests.javas || []),
     ...(allTests.javaq || []),
-    ...(allTests.javaru || [])
+    ...(allTests.javaru || []),
+    ...(allTests.javarus || [])
+];
+allTests.javabook = [
+...(allTests.javaru || []),
+...(allTests.javaa || [])
 ];
