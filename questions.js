@@ -1487,7 +1487,7 @@ matht:[{
         {
             question: "Exception handling (ArithmeticException): нәтижесі?",
              img: "images/java37.png",
-            options: ["FinallyE0", "E0", "E0Finally", "E0E1"],
+            options: ["E0","FinallyE0",  "E0Finally", "E0E1"],
             correct: 0
         },
         {
@@ -1499,8 +1499,14 @@ matht:[{
         {
             question: "B класының конструкторын жариялау (Throws)?",
              img: "images/java39.png",
-            options: ["B() throws IOException{}", "B() throws Exception {}", "B() throws FileNotFoundException{", "B(){}"],
-            correct: [0, 1]
+            options: ["B() throws IOException{}", "B() throws FileNotFoundException{}","B() throws IIlegalArgumentException{}", "B(){}"],
+            correct: 0
+        },
+         {
+            question: "B класының конструкторын жариялау (Throws)?",
+             img: "images/java39.png",
+            options: ["B() throws Exception {}", "B() throws FileNotFoundException{}","B() throws IIlegalArgumentException{}", "B(){}"],
+            correct: 0
         },
         {
             question: "Әдісті қайта анықтау (Throws Exception):",
