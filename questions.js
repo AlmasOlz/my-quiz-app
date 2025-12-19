@@ -1403,13 +1403,19 @@ matht:[{
         {
             question: "Сілтемелерді типтеу (Casting): Қайсысы дұрыс?",
              img: "images/java26.png",
-            options: ["First a = (First)new Clazz();",  "Second d = (Second) new Clazz();", "Klass e = (Second)new Clazz();"],
+            options: ["First a = (First)new Clazz();",  "Second b = (First c) new Clazz();", "Klass e = (Second)new Clazz();"],
             correct: 0
         },
         {
             question: "Сілтемелерді типтеу (Casting): Қайсысы дұрыс?",
              img: "images/java26.png",
-            options: [ "First c = (First)new Klass();", "Second d = (Second) new Clazz();", "Klass e = (Second)new Clazz();"],
+            options: [ "First c = (First)new Klass();", "Second b = (First c) new Clazz();", "Klass e = (Second)new Clazz();"],
+            correct: 0
+        },
+         {
+            question: "Сілтемелерді типтеу (Casting): Қайсысы дұрыс?",
+             img: "images/java26.png",
+            options: [ "Second d = (Second) new Clazz();", "Klass e = (Second)new Clazz();","Second b = (First c) new Clazz();"],
             correct: 0
         },
         {
