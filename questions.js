@@ -1133,12 +1133,12 @@ matht:[{
       {
             question: "Public static void main әдісі үшін қандай параметр жарнамалары дұрыс?",
             options: ["String[] args", "Strings args[]", "String args"],
-            correct: [0]
+            correct: 0
         },
         {
             question: "Public static void main әдісі үшін қандай параметр жарнамалары дұрыс?",
             options: ["String args[]", "Strings args[]", "String args"],
-            correct: [0]
+            correct: 0
         },
         {
             question: "Ұсынылған пакеттердің қайсысында class System бар?",
@@ -1153,12 +1153,12 @@ matht:[{
         {
             question: "Java кілт сөздері қандай сөздер?",
             options: [ "void", "classpath", "main", "out"],
-            correct: [0]
+            correct: 0
         },
         {
             question: "Java кілт сөздері қандай сөздер?",
             options: ["for", "classpath", "main", "out"],
-            correct: [0]
+            correct: 0
         },
         {
             question: "Кластың әдісін жариялау кезінде қандай кілттік сөздерді қолдануға болады? (2 дұрыс жауап)",
@@ -1264,6 +1264,16 @@ matht:[{
             "abstract default class Type {}"],
             correct:[2,4]
         },
+         {
+            question: "Келесі жарияланымдардың қайсысы пакетте жарияланған кластың дұрыс жарияланымын көрсетеді? ",
+            options: ["final abstract class Type {}",
+            "public static class Type {}",
+            "final public class Type {}",
+            "protected abstract class Type {}",
+            "class Type {}",
+            "abstract default class Type {}"],
+            correct:[2,4]
+        },
         {
             question: "Нөлдік сілтеме (null) арқылы статикалық әдісті шақыру нәтижесі?",
              img: "images/java8.png",
@@ -1315,8 +1325,20 @@ matht:[{
         {
             question: "Әдісті қайта анықтау (Override): line 1 орнына не қоюға болады?",
              img: "images/java16.png",
-            options: ["void action(){}", "public void action(){}", "protected void action(){}", "int action() {}","private void action(){}"],
-            correct: [0, 1,2]
+            options: ["void action(){}", "int action() {}","private void action(){}"],
+            correct: 0
+        },
+        {
+            question: "Әдісті қайта анықтау (Override): line 1 орнына не қоюға болады?",
+             img: "images/java16.png",
+            options: ["public void action(){}", "int action() {}","private void action(){}"],
+            correct: 0
+        },
+        {
+            question: "Әдісті қайта анықтау (Override): line 1 орнына не қоюға болады?",
+             img: "images/java16.png",
+            options: [ "protected void action(){}", "int action() {}","private void action(){}"],
+            correct: 0
         },
         {
             question: "Super конструктор: Қай мәлімдеме дұрыс?",
@@ -1369,14 +1391,26 @@ matht:[{
         {
             question: "Класс пен интерфейс: дұрыс жарияланымды табыңыз.",
              img: "images/java25.png",
-            options: ["class Edit extends Read implements Readable {}", "interface Editable extends Readable{}", "interface Editable implements Readable{}", "class Edit implements Readable, Read {}"],
-            correct: [0, 1]
+            options: ["class Edit extends Read implements Readable {}",  "interface Editable implements Readable{}", "class Edit implements Readable, Read {}"],
+            correct: 0
+        },
+        {
+            question: "Класс пен интерфейс: дұрыс жарияланымды табыңыз.",
+             img: "images/java25.png",
+            options: ["interface Editable extends Readable{}", "interface Editable implements Readable{}", "class Edit implements Readable, Read {}"],
+            correct: 0
         },
         {
             question: "Сілтемелерді типтеу (Casting): Қайсысы дұрыс?",
              img: "images/java26.png",
-            options: ["First a = (First)new Clazz();", "First c = (First)new Klass();", "Second d = (Second) new Clazz();", "Klass e = (Second)new Clazz();"],
-            correct: [0, 1]
+            options: ["First a = (First)new Clazz();",  "Second d = (Second) new Clazz();", "Klass e = (Second)new Clazz();"],
+            correct: 0
+        },
+        {
+            question: "Сілтемелерді типтеу (Casting): Қайсысы дұрыс?",
+             img: "images/java26.png",
+            options: [ "First c = (First)new Klass();", "Second d = (Second) new Clazz();", "Klass e = (Second)new Clazz();"],
+            correct: 0
         },
         {
             question: "Stream API: count() нәтижесі?",
@@ -1393,7 +1427,13 @@ matht:[{
         {
             question: "Stream: ең үлкен бүтін элементті табу (line 1)?",
              img: "images/java29.png",
-            options: ["numbers.max()", "numbers.boxed().max(...)", "numbers.max(Integer::max).get()", "numbers.max(...).get()"],
+            options: ["numbers.max()", "numbers.max(Integer::max).get()", "numbers.max(Comparator.comparing(n -> n)).get()","numbers.max(Comparator.comparing(n -> n))"],
+            correct: 0
+        },
+        {
+            question: "Stream: ең үлкен бүтін элементті табу (line 1)?",
+             img: "images/java29.png",
+            options: [ "numbers.boxed().max(Comparator.comparing(n -> n)).get()", "numbers.max(Integer::max).get()", "numbers.max(Comparator.comparing(n -> n)).get()","numbers.max(Comparator.comparing(n -> n))"],
             correct: 0
         },
         {
@@ -1459,8 +1499,14 @@ matht:[{
         {
             question: "Әдісті қайта анықтау (Throws Exception):",
              img: "images/java40.png",
-            options: ["void m(){}", "void m() throws FileNotFoundException {}", "void m() throws IOException {}", "void m() throws Exception {}"],
-            correct: [0, 1]
+            options: ["void m(){}",  "void m() throws IOException {}", "void m() throws Exception {}"],
+            correct: 0
+        },
+        {
+            question: "Әдісті қайта анықтау (Throws Exception):",
+             img: "images/java40.png",
+            options: [ "void m() throws FileNotFoundException {}", "void m() throws IOException {}", "void m() throws Exception {}"],
+            correct: 0
         },
         {
             question: "Консольдан оқу (BufferedReader): line 1?",
