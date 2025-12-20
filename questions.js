@@ -3734,7 +3734,7 @@ javaq: [
         correct: 0
     },
     {
-        question: "Тасымал, бағыт, үзу белгілерін тазалау командалары?",
+        question: "Тасымал, бағыт, үзу белгілерін тазалау командалары? Дұрыс жауабы негізі CLC, CLD, CLI ",
         options: ["STC, STD, STI", "CBW, CWD, CDD, CWDE", "CLC, CLD, CLI", "SUB, SBB, AAS, DAS", "AAS, AAD, AAM, DAS, DAA"],
         correct: 0
     },
@@ -4306,7 +4306,7 @@ javaq: [
         correct: 0
     },
     {
-        question: "Тасымал арқылы циклдық солға жылжыту (қайталау):",
+        question: "Тасымал арқылы циклдық солға жылжыту:",
         options: ["RCL", "RCR", "ROR", "ROL", "SAL"],
         correct: 0
     },
