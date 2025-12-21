@@ -4597,6 +4597,259 @@ javaq: [
 
 
     ],
+ssysadmin:[
+    {
+        question: "INT 21h функция нөмірі қай регистрге жазылады?",
+        options: ["AH", "BH", "CL", "DX", "ESI"],
+        correct: 0
+    },
+    {
+        question: "INT 21h үзуінің файл құру функциясы қайсы?",
+        options: ["3Ch", "40h", "3Eh", "3Dh", "3Fh"],
+        correct: 0
+    },
+    {
+        question: "INT 21h үзуінің файлға немесе құрылғыға жазу функциясы?",
+        options: ["40h", "3Eh", "3Dh", "3Fh", "3Ch"],
+        correct: 0
+    },
+    {
+        question: "INT 21h үзуінің файлды жабу функциясы?",
+        options: ["3Eh", "3Dh", "3Fh", "3Ch", "40h"],
+        correct: 0
+    },
+    {
+        question: "INT 21h үзуінің файлды ашу функциясы?",
+        options: ["3Dh", "3Fh", "3Ch", "40h", "3Eh"],
+        correct: 0
+    },
+    {
+        question: "INT 21h үзуінің файлдан оқу функциясы?",
+        options: ["3Fh", "3Ch", "40h", "3Eh", "3Dh"],
+        correct: 0
+    },
+    {
+        question: "INT 21h үзуінің файлдың уақытын алу (AL=0) және орнату (AL=1) функциясы қайсы?",
+        options: ["57h", "41h", "3Ch", "40h", "3Eh"],
+        correct: 0
+    },
+    {
+        question: "INT 21h үзуінің файлды өшіру функциясы қайсы?",
+        options: ["41h", "3Ch", "40h", "3Eh", "3Dh"],
+        correct: 0
+    },
+    {
+        question: "INT 21h үзуінің файлдың атын өзгерту функциясы қайсы?",
+        options: ["56h", "3Ch", "40h", "3Eh", "3Dh"],
+        correct: 0
+    },
+    {
+        question: "INT 21h үзуінің файл атрибутын алу (AL=0) немесе орнату (AL=1) функциясы қайсы?",
+        options: ["43h", "3Ch", "40h", "3Eh", "3Dh"],
+        correct: 0
+    },
+    {
+        question: "int 21h командасында n нені көрсетеді?",
+        options: ["Үзу нөмірі", "Байт саны", "Кездейсоқ", "Команда нөмірі", "Функция нөмірі"],
+        correct: 0
+    },
+    {
+        question: "INT 21h командасының функция нөмірі қай регистрге орналастырылады?",
+        options: ["AH", "BH", "CL", "DX", "ESI"],
+        correct: 0
+    },
+    {
+        question: "INT 21h — символды бейнесімен шығару функциясы:",
+        options: ["06h", "01h", "07h", "08h", "0Ah"],
+        correct: 0
+    },
+    
+    {
+        question: "INT 21h — тікелей енгізу–шығару:",
+        options: ["06h", "01h", "07h", "08h", "0Ah"],
+        correct: 0
+    },
+    {
+        question: "INT 21h — символды бейнесіз енгізу (Ctrl/C тексерілмейді):",
+        options: ["07h", "01h", "06h", "08h", "0Ah"],
+        correct: 0
+    },
+    {
+        question: "INT 21h — символды бейнесіз енгізу (Ctrl/C тексеріледі):",
+        options: ["08h", "01h", "06h", "07h", "0Ah"],
+        correct: 0
+    },
+    {
+        question: "INT 21h — буфер арқылы бейнесі бар жолды енгізу:",
+        options: ["0Ah", "01h", "06h", "07h", "08h"],
+        correct: 0
+    },
+    {
+        question: "INT 21h — стандартты құрылғы күйін тексеру:",
+        options: ["0Bh", "0Ch", "07h", "08h", "0Ah"],
+        correct: 0
+    },
+    {
+        question: "INT 21h — кіріс буферін тазарту және енгізу:",
+        options: ["0Ch", "0Bh", "07h", "08h", "0Ah"],
+        correct: 0
+    },{
+        question: "Жолдан байтты AL-ге жүктейтін команда:",
+        options: ["LODSB", "STOSB", "SCASB", "LODSW", "XLAT"],
+        correct: 0
+    },
+    {
+        question: "Порт номері ретінде қолданылатын регистр:",
+        options: ["DX", "DI", "BX", "CX", "AH"],
+        correct: 0
+    },
+    {
+        question: "Қадамдық орындауды басқаратын жалауша:",
+        options: ["TF", "IF", "ZF", "CF", "PF"],
+        correct: 0
+    },
+    {
+        question: "Таратқыш–жолды көрсететін регистр жұбы:",
+        options: ["DS, SI", "ES, DI", "DS, BX", "ES, CX", "GS, DI"],
+        correct: 0
+    },
+    {
+        question: "Арифметикалық оңға жылжыту командасы:",
+        options: ["SAR", "SHR", "SHL", "SAL", "ROR"],
+        correct: 0
+    },
+    {
+        question: "MOV AX, 2[SI] — қандай адрестеу?",
+        options: ["Индекстік", "Тура", "Регистрлік", "Базалық", "Масштабталған"],
+        correct: 0
+    },
+    {
+        question: "Жолдарды өңдеуге бағыттайтын жалауша:",
+        options: ["DF", "CF", "ZF", "IF", "AF"],
+        correct: 0
+    },
+    
+    {
+        question: "Бөлуден қалдық (операнд — байт):",
+        options: ["AH", "AX", "BL", "BH", "AL"],
+        correct: 0
+    },
+    {
+        question: "CALL орындалғанда стекке не түседі?",
+        options: ["IP", "BP", "BH", "DS", "AX"],
+        correct: 0
+    },
+     {
+        question: "SCASB қай регистрмен салыстырады?",
+        options: ["AL", "BL", "DL", "DS", "AX"],
+        correct: 0
+    },
+    {
+        question: "1 өрнек 2 өрнекке тең болса ақиқат:",
+        options: ["EQ", "NE", "LT", "GT", "жоқ"],
+        correct: 0
+    },
+    {
+        question: "1 өрнек 2 өрнекке тең емес:",
+        options: ["NE", "EQ", "LT", "GT", "жоқ"],
+        correct: 0
+    },
+    {
+        question: "1 өрнек 2 өрнектен кіші:",
+        options: ["LT", "NE", "EQ", "GT", "жоқ"],
+        correct: 0
+    },
+    {
+        question: "1 өрнек 2 өрнектен үлкен:",
+        options: ["GT", "LT", "NE", "EQ", "жоқ"],
+        correct: 0
+    },
+    {
+        question: "Логикалық оператор — өрнек ақиқат болса жалған, әйтпесе ақиқат:",
+        options: ["NOT", "AND", "OR", "XOR", "жоқ"],
+        correct: 0
+    },
+    {
+        question: "1 және 2 өрнек екеуі де ақиқат:",
+        options: ["AND", "NOT", "OR", "XOR", "жоқ"],
+        correct: 0
+    },
+    {
+        question: "Циклдық оңға жылжыту командасы:",
+        options: ["ROR", "ROL", "RCR", "RCL", "SAL"],
+        correct: 0
+    },
+    {
+        question: "Тасымал арқылы циклдық солға жылжыту:",
+        options: ["RCL", "RCR", "ROR", "ROL", "SAL"],
+        correct: 0
+    },
+    {
+        question: "Тасымал арқылы циклдық солға жылжыту:",
+        options: ["RCL", "RCR", "ROR", "ROL", "SAL"],
+        correct: 0
+    },
+    {
+        question: "LOOP үшін қай регистр санайды?",
+        options: ["CX", "DX", "AX", "BX", "SP"],
+        correct: 0
+    },
+    {
+        question: "Егер көбейгіш байт болса, көбейткіш қайда?",
+        options: ["AL", "AX", "AH", "BL", "BH"],
+        correct: 0
+    },
+    {
+        question: "Егер көбейгіш сөз болса, көбейткіш қайда?",
+        options: ["AX", "AL", "DX", "BL", "BH"],
+        correct: 0
+    },
+    {
+        question: "Көбейгіш қоссөз болса — көбейткіш қайда?",
+        options: ["EAX", "AX", "EBX", "ECX", "AL"],
+        correct: 0
+    },
+    {
+        question: "Көбейгіш байт болса — нәтиженің кіші бөлігі:",
+        options: ["AL", "BL", "AX", "EAX", "DX"],
+        correct: 0
+    },
+    {
+        question: "Көбейгіш байт болса — үлкен бөлігі:",
+        options: ["AH", "BL", "AL", "DL", "LDH"],
+        correct: 0
+    },
+    {
+        question: "Бөлгіш байт болса — бөлінгіш қайда?",
+        options: ["AX", "EAX", "BX", "EBX", "AH"],
+        correct: 0
+    },
+    {
+        question: "Бөлгіш сөз болса — бөлінгіштің кіші бөлігі:",
+        options: ["AX", "DX", "BX", "CX", "BL"],
+        correct: 0
+    },
+    {
+        question: "Бөлінгіштің үлкен бөлігі:",
+        options: ["DX", "AX", "DL", "DH", "AH"],
+        correct: 0
+    },
+    {
+        question: "Егер бөлінгіш AX болса — қалдық:",
+        options: ["DX", "AL", "AH", "AX", "DL"],
+        correct: 0
+    },
+    {
+        question: "Бөлгіш байт болса — қалдық:",
+        options: ["AH", "DX", "CX", "AX", "DL"],
+        correct: 0
+    },
+    {
+        question: "xor al,al / add al,11 нәтижесі:",
+        options: ["0Bh", "1Bh", "0Ah", "0Ch", "0Fh"],
+        correct: 0
+    },
+],
     mathnine: [
         {
             question: "Егер X және Y тәуелсіз болса, онда D(X±Y)=?",
