@@ -36,6 +36,10 @@ if (allTests[topic]) {
         shuffleArray(currentQuestions); // <--- Қате түзелді: currentQuestions (s бар)
         quizTitle = "Системный програмирование:  Random Test"; // <--- Тақырып түзелді
     }
+    else if (topic === 'ssysadmin') {
+        shuffleArray(currentQuestions); // <--- Қате түзелді: currentQuestions (s бар)
+        quizTitle = "Системный програмирование:  Random Test"; // <--- Тақырып түзелді
+    }
 
     // --- Басқа тақырыптар ---
     else if (topic === 'os') quizTitle = "Операциялық жүйелер";
