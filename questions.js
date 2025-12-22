@@ -13972,3 +13972,11 @@ allTests.javabook = [
 allTests.sysadminRandom=[
     ...(allTests.sysadmin || [])
 ];
+allTests.mathall=[
+...(allTests.math || []),
+    ...(allTests.mathnine || []),
+    ...(allTests.mathten || []),
+    ...(allTests.matht|| []),
+     ...(allTests.mathrk || []),
+     
+];
