@@ -40,6 +40,10 @@ if (allTests[topic]) {
         shuffleArray(currentQuestions); // <--- Қате түзелді: currentQuestions (s бар)
         quizTitle = "Системный програмирование:  Random Test"; // <--- Тақырып түзелді
     }
+    else if (topic === 'mathall') {
+       
+        quizTitle = "math all";
+    }
 
     // --- Басқа тақырыптар ---
     else if (topic === 'os') quizTitle = "Операциялық жүйелер";
