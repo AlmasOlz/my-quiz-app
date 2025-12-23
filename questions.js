@@ -13978,7 +13978,7 @@ mathh:[
         correct: 0
     },
     {
-        question: "npq үлкен болғанда Муавр-Лаплас қолданылады. npq > ?",
+        question: "npq үлкен болғанда Муавр-Лаплас қолданылады. npq >= ?",
         options: ["10", "2", "1", "5", "50"],
         correct: 0
     },
@@ -14472,7 +14472,11 @@ allTests.javatest =[
 ...(allTests.java || []),
 ...(allTests.javaq || []),
 
-]
+];
+allTests.javat=[
+    ...(allTests.java || []),
+...(allTests.javaq || []),
+];
 allTests.sysadminRandom=[
     ...(allTests.sysadmin || [])
 ];

@@ -48,6 +48,10 @@ if (allTests[topic]) {
        
         quizTitle = "java жиналған тест";
     }
+     else if (topic === 'javat') {
+       
+        quizTitle = "java біз жасаған + ағай берген";
+    }
 
     // --- Басқа тақырыптар ---
     else if (topic === 'os') quizTitle = "Операциялық жүйелер";
