@@ -14197,19 +14197,19 @@ mathh:[
 
     {
         question: "Бернулли сызбасында дәл $k$ табыстың ықтималдығының дұрыс формуласы:",
-         img: "images/new/1.png",
+         img: "images/math/new/1.png",
         options: ["B","A","C","D","E"],
         correct: 0
     },
     {
         question: "Байес формуласының дұрыс жазылуы:",
-        img: "images/new/2.png",
+        img: "images/math/new/2.png",
         options: ["C","A","B","D","E"],
         correct: 0
     },
     {
         question: "Лаплас функциясының анықтамасы:",
-        img: "images/new/3.png",
+        img: "images/math/new/3.png",
         options: ["B","A","C","D","E"],
         correct: 0
     },
@@ -14243,13 +14243,13 @@ mathh:[
     
     {
         question: "Толық ықтималдық формуласының дұрыс түрі:",
-        img: "images/new/4.png",
+        img: "images/math/new/4.png",
         options: ["C","A","B","D","E"],
         correct: 0
     },
     {
         question: "Қай формула қате жазылған?",
-        img: "images/new/5.png",
+        img: "images/math/new/5.png",
         options: ["D","A","B","C","E"],
         correct: 0
     },
@@ -14269,7 +14269,7 @@ mathh:[
     
     {
        question: "10 элементтің ішінен 3 элемент таңдалды (рет маңызды емес). Әр элемент таңдалу ықтималдығы бірдей. Бір нақты комбинацияның ықтималдығы:",
-        img: "images/new/6.png",
+        img: "images/math/new/6.png",
         options: ["C","A","B","D","E"],
         correct: 0
     },
