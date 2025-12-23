@@ -44,6 +44,10 @@ if (allTests[topic]) {
        
         quizTitle = "math all";
     }
+     else if (topic === 'javatest') {
+       
+        quizTitle = "java жиналған тест";
+    }
 
     // --- Басқа тақырыптар ---
     else if (topic === 'os') quizTitle = "Операциялық жүйелер";

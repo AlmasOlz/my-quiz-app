@@ -1161,12 +1161,12 @@ matht:[{
             correct: 0
         },
         {
-            question: "Кластың әдісін жариялау кезінде қандай кілттік сөздерді қолдануға болады? (2 дұрыс жауап)",
+            question: "Кластың әдісін жариялау кезінде қандай кілттік сөздерді қолдануға болады? ",
             options: [ "abstract", "volatile", "enum", "default"],
             correct: 0
         },
         {
-            question: "Кластың әдісін жариялау кезінде қандай кілттік сөздерді қолдануға болады? (2 дұрыс жауап)",
+            question: "Кластың әдісін жариялау кезінде қандай кілттік сөздерді қолдануға болады?",
             options: ["final", "volatile", "enum", "default"],
             correct: 0
         },
@@ -1256,23 +1256,25 @@ matht:[{
         },
         {
             question: "Келесі жарияланымдардың қайсысы пакетте жарияланған кластың дұрыс жарияланымын көрсетеді? ",
-            options: ["final abstract class Type {}",
+            options: [ "final public class Type {}",
+                "final abstract class Type {}",
             "public static class Type {}",
-            "final public class Type {}",
+           
             "protected abstract class Type {}",
-            "class Type {}",
+            
             "abstract default class Type {}"],
-            correct:[2,4]
+            correct:0
         },
          {
             question: "Келесі жарияланымдардың қайсысы пакетте жарияланған кластың дұрыс жарияланымын көрсетеді? ",
-            options: ["final abstract class Type {}",
+            options: ["class Type {}",
+                "final abstract class Type {}",
             "public static class Type {}",
-            "final public class Type {}",
+            
             "protected abstract class Type {}",
-            "class Type {}",
+            
             "abstract default class Type {}"],
-            correct:[2,4]
+            correct:0
         },
         {
             question: "Нөлдік сілтеме (null) арқылы статикалық әдісті шақыру нәтижесі?",
@@ -14324,8 +14326,17 @@ allTests.javarandom = [
 ];
 allTests.javabook = [
 ...(allTests.javaru || []),
-...(allTests.javaa || [])
+...(allTests.javaa || []),
+
+
 ];
+allTests.javatest =[
+    ...(allTests.javaru || []),
+...(allTests.javaa || []),
+...(allTests.java || []),
+...(allTests.javaq || []),
+
+]
 allTests.sysadminRandom=[
     ...(allTests.sysadmin || [])
 ];
