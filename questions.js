@@ -1303,7 +1303,7 @@ matht:[{
         {
             question: "action() әдісінде бос орынға не жазу керек (new instance)?",
              img: "images/java12.png",
-            options: ["new X()", "super", "this", "X"],
+            options: ["new X()", "super", "this", "X","new X"],
             correct: 0
         },
         {
