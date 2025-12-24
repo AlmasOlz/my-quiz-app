@@ -52,6 +52,10 @@ if (allTests[topic]) {
        
         quizTitle = "java біз жасаған + ағай берген";
     }
+     else if (topic === 'javate') {
+        shuffleArray(currentQuestions); // <--- Қате түзелді: currentQuestions (s бар)
+       quizTitle = "java біз жасаған + ағай берген";
+    }
 
     // --- Басқа тақырыптар ---
     else if (topic === 'os') quizTitle = "Операциялық жүйелер";
