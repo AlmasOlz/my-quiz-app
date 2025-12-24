@@ -2852,7 +2852,7 @@ javaq: [
     {
         question: "this?",
         options: ["Объект", "my", "ref", "obj", "current"],
-        correct: 0
+        correct: 4
     },
     {
         question: "Қате өңдеу?",
