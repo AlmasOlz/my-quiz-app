@@ -1523,13 +1523,19 @@ matht:[{
         {
             question: "Әдісті қайта анықтау (Throws Exception):",
              img: "images/java40.png",
-            options: ["void m(){}",  "void m() throws IOException {}", "void m() throws Exception {}","void m() throws FileNotFoundException,IOException {}","void m() throws ExceptionInInitializerError{}"],
+            options: ["void m(){}",  "void m() throws IOException {}", "void m() throws Exception {}","void m() throws FileNotFoundException,IOException {}"],
             correct: 0
         },
         {
             question: "Әдісті қайта анықтау (Throws Exception):",
              img: "images/java40.png",
-            options: [ "void m() throws FileNotFoundException {}", "void m() throws IOException {}", "void m() throws Exception {}","void m() throws FileNotFoundException,IOException {}","void m() throws ExceptionInInitializerError{}",],
+            options: [ "void m() throws FileNotFoundException {}", "void m() throws IOException {}", "void m() throws Exception {}","void m() throws FileNotFoundException,IOException {}",],
+            correct: 0
+        },
+        {
+            question: "Әдісті қайта анықтау (Throws Exception):",
+             img: "images/java40.png",
+            options: [ "void m() throws ExceptionInInitializerError {}", "void m() throws IOException {}", "void m() throws Exception {}","void m() throws FileNotFoundException,IOException {}",],
             correct: 0
         },
         {
