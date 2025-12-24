@@ -1430,7 +1430,7 @@ matht:[{
             question: "Stream findFirst(): нәтижесі?",
              img: "images/java28.png",
             options: ["0 1 JDK", "0 0 JDK", "0 JDK", "0 1 2 3 4 JDK"],
-            correct: 0
+            correct: 1
         },
         {
             question: "Stream: ең үлкен бүтін элементті табу (line 1)?",
@@ -1453,7 +1453,11 @@ matht:[{
         {
             question: "4-тен қысқа жолдар санын анықтау (line 1)?",
              img: "images/java31.png",
-            options: ["strings.filter(x -> x.length() <= 4).count()", "strings.peek(...).count()", "strings.map(...).count()"],
+            options: ["strings.filter(x -> x.length() <= 4).count()", 
+                "strings.filter(x -> x.length() <= 4).mapToInt(Integer::valueOf).count()",
+        "strings.map(x -> x.length() <= 4).count()",
+        "strings.peek(x -> x.length() <= 4).count().get()",
+    ],
             correct: 0
         },
         {
@@ -1471,7 +1475,13 @@ matht:[{
         {
             question: "String Pool: қай оператор true береді?",
              img: "images/java34.png",
-            options: ["s2 == s4", "s2 == s3", "s1 == s2", "s1 == s3"],
+            options: ["s2 == s4", "s1 == s2", "s1 == s3","s2.equals(s1)"],
+            correct: 0
+        },
+        {
+            question: "String Pool: қай оператор true береді?",
+             img: "images/java34.png",
+            options: ["s2 == s3", "s1 == s2", "s1 == s3","s2.equals(s1)"],
             correct: 0
         },
         {
@@ -1513,26 +1523,30 @@ matht:[{
         {
             question: "Әдісті қайта анықтау (Throws Exception):",
              img: "images/java40.png",
-            options: ["void m(){}",  "void m() throws IOException {}", "void m() throws Exception {}"],
+            options: ["void m(){}",  "void m() throws IOException {}", "void m() throws Exception {}","void m() throws FileNotFoundException,IOException {}","void m() throws ExceptionInInitializerError{}"],
             correct: 0
         },
         {
             question: "Әдісті қайта анықтау (Throws Exception):",
              img: "images/java40.png",
-            options: [ "void m() throws FileNotFoundException {}", "void m() throws IOException {}", "void m() throws Exception {}"],
+            options: [ "void m() throws FileNotFoundException {}", "void m() throws IOException {}", "void m() throws Exception {}","void m() throws FileNotFoundException,IOException {}","void m() throws ExceptionInInitializerError{}",],
             correct: 0
         },
         {
             question: "Консольдан оқу (BufferedReader): line 1?",
              img: "images/java41.png",
-            options: ["int number = Integer.valueOf(reader.readLine());", "int number = reader.read();", "int number = new Scanner(...);", "int number = String.parseInt(...)"],
+            options: ["int number = Integer.valueOf(reader.readLine());", "int number = reader.read();", "int number = new Scanner(reader.nextInt());", "int number = String.parseInt(reader.readline())","Ешқайсысы"],
             correct: 0
         },
         {
-            question: "Files.copy: егер файл бар болса?",
+            question: "Егер 'datares/data' каталогында 'mail.properties' файлы бар болса, кодты іске қосқанда нәтижесі қандай болады?",
              img: "images/java42.png",
-            options: ["FileAlreadyExistsException", "NoSuchFileException", "FileNotFoundException", "Файл көшіріледі"],
-            correct: 0
+            options: ["NoSuchFileException ерекшелігін шығару",
+            "FileAlreadyExistsException ерекшелігін шығару",
+            "FileNotFoundException ерекшелігін шығару",
+            "Код дұрыс орындалады, бірақ ешқандай өзгеріс болмайды",
+            "mail.properties файлы datares каталогына көшіріледі"],
+            correct: 4
         },
         {
             question: "BufferedWriter конструкторларының қайсысы қате?",
@@ -1543,7 +1557,7 @@ matht:[{
         {
             question: "Stream GroupingBy: нәтижесі?",
              img: "images/java44.png",
-            options: ["50.0 70.0 (ретсіз)", "1, 50.0...", "Ештеңе шығарылмайды", "70.0 50.0"],
+            options: ["70.0 50.0 ","50.0 70.0 50.0 ", "1, 50.0 5, 70.0 7, 50.0", "Ештеңе шығарылмайды", "5, 70.0 7,50.0"],
             correct: 0
         },
         {
@@ -1567,13 +1581,13 @@ matht:[{
         {
             question: "Map compute methods: нәтижесі?",
              img: "images/java48.png",
-            options: ["1, 3", "4, 3", "2, 4", "runtime error"],
+            options: ["[1, 3]", "[4, 3]", "[2, 4]", "runtime error"],
             correct: 0
         },
         {
             question: "Stream Match (anyMatch): нәтижесі?",
              img: "images/java49.png",
-            options: ["anyMatch(i -> i == 2);", "noneMatch...", "allMatch...", "findFirst()"],
+            options: ["anyMatch(i -> i == 2);", "noneMatch(i -> i == 2)", "allMatch(i -> i == 2)", "findFirst()"],
             correct: 0
         },
         {
