@@ -56,6 +56,10 @@ if (allTests[topic]) {
         shuffleArray(currentQuestions); // <--- Қате түзелді: currentQuestions (s бар)
        quizTitle = "java біз жасаған + ағай берген";
     }
+     else if (topic === 'mathhh') {
+        shuffleArray(currentQuestions); // <--- Қате түзелді: currentQuestions (s бар)
+       quizTitle = "math random";
+    }
 
     // --- Басқа тақырыптар ---
     else if (topic === 'os') quizTitle = "Операциялық жүйелер";
